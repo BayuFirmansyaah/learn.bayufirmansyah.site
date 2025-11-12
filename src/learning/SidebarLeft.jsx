@@ -1,5 +1,5 @@
 import React from 'react';
-import * as LaravelMateri from './materi/Laravel.js';
+import * as LaravelMateri from './materi/Laravel/index.js';
 import * as KotlinMateri from './materi/Kotlin.js';
 import * as FlutterMateri from './materi/Flutter.js';
 import * as JavaScriptMateri from './materi/JavaScript.js';

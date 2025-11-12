@@ -1,6 +1,7 @@
 import React from 'react';
 import CodeBlock from './components/CodeBlock';
 import StructuredContent from './components/StructuredContent';
+import NavigationButtons from './components/NavigationButtons';
 import * as LaravelMateri from './materi/Laravel/index.js';
 import * as KotlinMateri from './materi/Kotlin.js';
 import * as FlutterMateri from './materi/Flutter.js';
@@ -243,9 +244,10 @@ function detectLanguage(category, code) {
   return 'text';
 }
 
-export default function Content({ category, currentMateriIndex }) {
+export default function Content({ category, currentMateriIndex, setCurrentMateriIndex }) {
   const materiModule = materiMap[category];
   const materiList = materiModule?.materiList || [];
+  const totalMateri = materiList.length;
   const currentMateri = materiList[currentMateriIndex];
 
   if (!currentMateri) {
@@ -267,6 +269,12 @@ export default function Content({ category, currentMateriIndex }) {
       <main className="content">
         <article className="materi-content">
           <MateriComponent />
+          <NavigationButtons 
+            category={category}
+            currentIndex={currentMateriIndex}
+            totalMateri={totalMateri}
+            onNavigate={setCurrentMateriIndex}
+          />
         </article>
       </main>
     );
@@ -281,6 +289,12 @@ export default function Content({ category, currentMateriIndex }) {
       <main className="content">
         <article className="materi-content">
           <StructuredContent materi={currentMateri} />
+          <NavigationButtons 
+            category={category}
+            currentIndex={currentMateriIndex}
+            totalMateri={totalMateri}
+            onNavigate={setCurrentMateriIndex}
+          />
         </article>
       </main>
     );
@@ -311,6 +325,12 @@ export default function Content({ category, currentMateriIndex }) {
             }
           })}
         </div>
+        <NavigationButtons 
+          category={category}
+          currentIndex={currentMateriIndex}
+          totalMateri={totalMateri}
+          onNavigate={setCurrentMateriIndex}
+        />
       </article>
     </main>
   );

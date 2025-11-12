@@ -25,6 +25,7 @@ export default function Layout({ category, currentMateriIndex, setCurrentMateriI
         <Content 
           category={category} 
           currentMateriIndex={currentMateriIndex}
+          setCurrentMateriIndex={setCurrentMateriIndex}
         />
       </div>
     </div>
