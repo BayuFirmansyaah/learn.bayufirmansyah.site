@@ -30,7 +30,7 @@ import 'prismjs/components/prism-json';
  * - <CodeBlock caption="...">code</CodeBlock> (caption removed)
  * - <CodeBlock code="..." /> (deprecated)
  * 
- * ✅ DO: 
+ *  DO: 
  * - <p className="code-caption">Caption</p>
  * - <CodeBlock language="php">{`code`}</CodeBlock>
  */

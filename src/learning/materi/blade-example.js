@@ -604,7 +604,7 @@ class Alert extends Component
       ],
       code: {
         language: "text",
-        example: `✅ DO:
+        example: ` DO:
 • Gunakan {{ }} untuk escape data (mencegah XSS)
 • Buat master layout untuk konsistensi struktur
 • Gunakan Components untuk reusable UI elements

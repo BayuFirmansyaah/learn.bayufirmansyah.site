@@ -37,12 +37,12 @@ Bahasa essential untuk web development
 
 ## 🎯 Fitur
 
-- ✅ **67 Materi Pembelajaran** lengkap dalam Bahasa Indonesia
-- ✅ **Layout 3 Kolom**: Sidebar kiri (daftar materi), Konten tengah, Sidebar kanan (key points)
-- ✅ **Navigasi Mudah**: Klik kategori → langsung belajar
-- ✅ **UI Modern**: Warna biru #4361ee yang clean dan professional
-- ✅ **Responsive**: Optimal di desktop, tablet, dan mobile
-- ✅ **Hot Reload**: Perubahan code langsung terlihat
+-  **67 Materi Pembelajaran** lengkap dalam Bahasa Indonesia
+-  **Layout 3 Kolom**: Sidebar kiri (daftar materi), Konten tengah, Sidebar kanan (key points)
+-  **Navigasi Mudah**: Klik kategori → langsung belajar
+-  **UI Modern**: Warna biru #4361ee yang clean dan professional
+-  **Responsive**: Optimal di desktop, tablet, dan mobile
+-  **Hot Reload**: Perubahan code langsung terlihat
 
 ## 📦 Instalasi
 

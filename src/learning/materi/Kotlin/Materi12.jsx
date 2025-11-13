@@ -72,7 +72,7 @@ val stringProducer: Producer<String> = object : Producer<String> {
     override fun produce() = "Hello"
 }
 
-val anyProducer: Producer<Any> = stringProducer  // ✅ OK (covariant)`}
+val anyProducer: Producer<Any> = stringProducer  //  OK (covariant)`}
         </CodeBlock>
 
         <Note type="tip">
@@ -106,9 +106,9 @@ val strings = mixed.filterIsInstance<String>()  // ["two", "four"]`}
       <Section id="conclusion" heading="Kesimpulan">
         <p>Generics di Kotlin menyediakan:</p>
         <ul>
-          <li>✅ Type-safe generic programming</li>
-          <li>✅ Variance annotations (in/out)</li>
-          <li>✅ Reified type parameters untuk runtime type information</li>
+          <li> Type-safe generic programming</li>
+          <li> Variance annotations (in/out)</li>
+          <li> Reified type parameters untuk runtime type information</li>
         </ul>
 
         <Note type="success">

@@ -327,11 +327,11 @@ val first10Fib = fibonacci.take(10).toList()  // [0, 1, 1, 2, 3, 5, 8, 13, 21, 3
         </p>
 
         <ul>
-          <li>✅ <strong>List:</strong> Ordered collections dengan index</li>
-          <li>✅ <strong>Set:</strong> Unique elements, no duplicates</li>
-          <li>✅ <strong>Map:</strong> Key-value pairs</li>
-          <li>✅ <strong>Operations:</strong> Filter, map, reduce, group, dan lainnya</li>
-          <li>✅ <strong>Sequences:</strong> Lazy evaluation untuk performance</li>
+          <li> <strong>List:</strong> Ordered collections dengan index</li>
+          <li> <strong>Set:</strong> Unique elements, no duplicates</li>
+          <li> <strong>Map:</strong> Key-value pairs</li>
+          <li> <strong>Operations:</strong> Filter, map, reduce, group, dan lainnya</li>
+          <li> <strong>Sequences:</strong> Lazy evaluation untuk performance</li>
         </ul>
 
         <Note type="success">

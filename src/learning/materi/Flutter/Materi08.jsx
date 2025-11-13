@@ -685,27 +685,27 @@ class _ContactFormState extends State<ContactForm> {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Always dispose TextEditingControllers di dispose()</li>
-          <li>✅ Use Form & TextFormField untuk complex forms dengan validation</li>
-          <li>✅ Provide visual feedback untuk user interactions (ripples, colors)</li>
-          <li>✅ Use appropriate keyboard types (email, number, phone)</li>
-          <li>✅ Validate input sebelum submit</li>
-          <li>✅ Show clear error messages</li>
-          <li>✅ Use InkWell untuk Material Design ripple effects</li>
-          <li>✅ Disable buttons during async operations</li>
+          <li> Always dispose TextEditingControllers di dispose()</li>
+          <li> Use Form & TextFormField untuk complex forms dengan validation</li>
+          <li> Provide visual feedback untuk user interactions (ripples, colors)</li>
+          <li> Use appropriate keyboard types (email, number, phone)</li>
+          <li> Validate input sebelum submit</li>
+          <li> Show clear error messages</li>
+          <li> Use InkWell untuk Material Design ripple effects</li>
+          <li> Disable buttons during async operations</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ TextField untuk text input dengan controller</li>
-          <li>✅ TextFormField untuk forms dengan built-in validation</li>
-          <li>✅ Various button types: ElevatedButton, OutlinedButton, TextButton, IconButton</li>
-          <li>✅ Selection widgets: Checkbox, Radio, Switch</li>
-          <li>✅ GestureDetector untuk custom gestures</li>
-          <li>✅ InkWell untuk Material ripple effects</li>
-          <li>✅ Slider untuk range selection</li>
-          <li>✅ Form validation dengan GlobalKey</li>
+          <li> TextField untuk text input dengan controller</li>
+          <li> TextFormField untuk forms dengan built-in validation</li>
+          <li> Various button types: ElevatedButton, OutlinedButton, TextButton, IconButton</li>
+          <li> Selection widgets: Checkbox, Radio, Switch</li>
+          <li> GestureDetector untuk custom gestures</li>
+          <li> InkWell untuk Material ripple effects</li>
+          <li> Slider untuk range selection</li>
+          <li> Form validation dengan GlobalKey</li>
         </ul>
       </Section>
     </MateriLayout>

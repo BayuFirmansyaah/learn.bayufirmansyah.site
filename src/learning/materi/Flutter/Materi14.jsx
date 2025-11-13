@@ -584,27 +584,27 @@ class FileStorageExample {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Compress images before upload (use flutter_image_compress)</li>
-          <li>✅ Cache network images untuk better performance</li>
-          <li>✅ Use appropriate image formats (WebP for better compression)</li>
-          <li>✅ Always dispose audio/video players</li>
-          <li>✅ Handle permissions properly (camera, storage, microphone)</li>
-          <li>✅ Show loading states untuk async media operations</li>
-          <li>✅ Test on different screen sizes & densities</li>
-          <li>✅ Validate file types before processing</li>
+          <li> Compress images before upload (use flutter_image_compress)</li>
+          <li> Cache network images untuk better performance</li>
+          <li> Use appropriate image formats (WebP for better compression)</li>
+          <li> Always dispose audio/video players</li>
+          <li> Handle permissions properly (camera, storage, microphone)</li>
+          <li> Show loading states untuk async media operations</li>
+          <li> Test on different screen sizes & densities</li>
+          <li> Validate file types before processing</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Image.asset() untuk local images, Image.network() untuk remote</li>
-          <li>✅ image_picker untuk camera & gallery access</li>
-          <li>✅ Custom fonts via pubspec.yaml atau google_fonts</li>
-          <li>✅ audioplayers untuk audio playback</li>
-          <li>✅ video_player untuk video playback</li>
-          <li>✅ file_picker untuk document selection</li>
-          <li>✅ path_provider untuk local file storage</li>
-          <li>✅ Always handle errors & loading states</li>
+          <li> Image.asset() untuk local images, Image.network() untuk remote</li>
+          <li> image_picker untuk camera & gallery access</li>
+          <li> Custom fonts via pubspec.yaml atau google_fonts</li>
+          <li> audioplayers untuk audio playback</li>
+          <li> video_player untuk video playback</li>
+          <li> file_picker untuk document selection</li>
+          <li> path_provider untuk local file storage</li>
+          <li> Always handle errors & loading states</li>
         </ul>
       </Section>
     </MateriLayout>

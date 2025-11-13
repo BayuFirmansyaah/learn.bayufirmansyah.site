@@ -105,13 +105,13 @@ firebase deploy
 
 ## Post-Deployment Checklist
 
-- ✅ Check semua halaman load dengan benar
-- ✅ Test navigasi antar kategori
-- ✅ Test navigasi antar materi
-- ✅ Check responsiveness di mobile
-- ✅ Verify Font Awesome icons load
-- ✅ Check browser console untuk errors
-- ✅ Test di different browsers (Chrome, Firefox, Safari)
+-  Check semua halaman load dengan benar
+-  Test navigasi antar kategori
+-  Test navigasi antar materi
+-  Check responsiveness di mobile
+-  Verify Font Awesome icons load
+-  Check browser console untuk errors
+-  Test di different browsers (Chrome, Firefox, Safari)
 
 ## Troubleshooting
 

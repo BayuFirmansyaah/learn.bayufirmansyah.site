@@ -488,25 +488,25 @@ class CounterView extends StatelessWidget {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use setState() untuk simple local state</li>
-          <li>✅ Provider/Riverpod untuk app-wide state</li>
-          <li>✅ Separate business logic from UI</li>
-          <li>✅ Use Selector untuk performance optimization</li>
-          <li>✅ Keep state classes focused (single responsibility)</li>
-          <li>✅ Test state logic independently</li>
-          <li>✅ Don't mix multiple state management solutions</li>
-          <li>✅ Document your state management architecture</li>
+          <li> Use setState() untuk simple local state</li>
+          <li> Provider/Riverpod untuk app-wide state</li>
+          <li> Separate business logic from UI</li>
+          <li> Use Selector untuk performance optimization</li>
+          <li> Keep state classes focused (single responsibility)</li>
+          <li> Test state logic independently</li>
+          <li> Don't mix multiple state management solutions</li>
+          <li> Document your state management architecture</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Provider: Easy, recommended by Flutter team</li>
-          <li>✅ Riverpod: Better Provider with compile-time safety</li>
-          <li>✅ BLoC: Stream-based, good for large apps</li>
-          <li>✅ Use Selector untuk avoid unnecessary rebuilds</li>
-          <li>✅ Choose based on app size & team experience</li>
-          <li>✅ Consistency is key - stick with one solution</li>
+          <li> Provider: Easy, recommended by Flutter team</li>
+          <li> Riverpod: Better Provider with compile-time safety</li>
+          <li> BLoC: Stream-based, good for large apps</li>
+          <li> Use Selector untuk avoid unnecessary rebuilds</li>
+          <li> Choose based on app size & team experience</li>
+          <li> Consistency is key - stick with one solution</li>
         </ul>
       </Section>
     </MateriLayout>

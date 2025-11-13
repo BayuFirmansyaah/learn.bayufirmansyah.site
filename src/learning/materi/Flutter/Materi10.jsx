@@ -530,27 +530,27 @@ class CartScreen extends StatelessWidget {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use named routes untuk better code organization</li>
-          <li>✅ Pass data via constructor untuk type safety</li>
-          <li>✅ Use async/await untuk handle return values</li>
-          <li>✅ Implement 404 page di onGenerateRoute</li>
-          <li>✅ Use pushReplacement untuk login/logout flows</li>
-          <li>✅ Keep navigation logic in one place</li>
-          <li>✅ Use IndexedStack untuk bottom navigation tabs</li>
-          <li>✅ Test deep linking early in development</li>
+          <li> Use named routes untuk better code organization</li>
+          <li> Pass data via constructor untuk type safety</li>
+          <li> Use async/await untuk handle return values</li>
+          <li> Implement 404 page di onGenerateRoute</li>
+          <li> Use pushReplacement untuk login/logout flows</li>
+          <li> Keep navigation logic in one place</li>
+          <li> Use IndexedStack untuk bottom navigation tabs</li>
+          <li> Test deep linking early in development</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Navigator.push() untuk navigate forward</li>
-          <li>✅ Navigator.pop() untuk go back</li>
-          <li>✅ Named routes dengan routes map di MaterialApp</li>
-          <li>✅ Pass arguments via constructor atau settings.arguments</li>
-          <li>✅ Return data dengan Navigator.pop(context, data)</li>
-          <li>✅ onGenerateRoute untuk dynamic routing</li>
-          <li>✅ PageRouteBuilder untuk custom transitions</li>
-          <li>✅ Nested navigation untuk complex apps</li>
+          <li> Navigator.push() untuk navigate forward</li>
+          <li> Navigator.pop() untuk go back</li>
+          <li> Named routes dengan routes map di MaterialApp</li>
+          <li> Pass arguments via constructor atau settings.arguments</li>
+          <li> Return data dengan Navigator.pop(context, data)</li>
+          <li> onGenerateRoute untuk dynamic routing</li>
+          <li> PageRouteBuilder untuk custom transitions</li>
+          <li> Nested navigation untuk complex apps</li>
         </ul>
       </Section>
     </MateriLayout>

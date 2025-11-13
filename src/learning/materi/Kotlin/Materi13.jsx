@@ -180,10 +180,10 @@ numbers()
 
       <Section id="conclusion" heading="Kesimpulan">
         <ul>
-          <li>✅ Coroutines lightweight untuk async operations</li>
-          <li>✅ Suspend functions untuk sequential async code</li>
-          <li>✅ Dispatchers untuk thread management</li>
-          <li>✅ Flow untuk reactive streams</li>
+          <li> Coroutines lightweight untuk async operations</li>
+          <li> Suspend functions untuk sequential async code</li>
+          <li> Dispatchers untuk thread management</li>
+          <li> Flow untuk reactive streams</li>
         </ul>
 
         <Note type="success">

@@ -121,9 +121,9 @@ val user = User.create("John")`}
       <Section id="conclusion" heading="Kesimpulan">
         <p>Extension functions powerful untuk:</p>
         <ul>
-          <li>✅ Menambah utility functions ke existing classes</li>
-          <li>✅ Membuat DSLs yang readable</li>
-          <li>✅ Organize code tanpa modifying original classes</li>
+          <li> Menambah utility functions ke existing classes</li>
+          <li> Membuat DSLs yang readable</li>
+          <li> Organize code tanpa modifying original classes</li>
         </ul>
 
         <Note type="success">

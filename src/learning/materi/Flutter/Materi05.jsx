@@ -102,12 +102,12 @@ dog.fetch();      // Buddy is fetching (own method)`}
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Classes & Objects - Blueprint dan instances</li>
-          <li>✅ Constructors - Default, named, factory</li>
-          <li>✅ Properties & Methods - State dan behavior</li>
-          <li>✅ Inheritance - extends untuk reuse code</li>
-          <li>✅ Abstract classes & Interfaces</li>
-          <li>✅ Mixins - Reusable code blocks</li>
+          <li> Classes & Objects - Blueprint dan instances</li>
+          <li> Constructors - Default, named, factory</li>
+          <li> Properties & Methods - State dan behavior</li>
+          <li> Inheritance - extends untuk reuse code</li>
+          <li> Abstract classes & Interfaces</li>
+          <li> Mixins - Reusable code blocks</li>
         </ul>
         <Note type="success">
           <strong>Next:</strong> Materi Widget Basics - Mulai build UI dengan Flutter!

@@ -104,7 +104,7 @@ people.forEach { (name, age, _) ->
 // ❌ Invalid
 // data class Empty()  // No parameters
 
-// ✅ Valid
+//  Valid
 data class Single(val value: String)
 
 // Data class dengan secondary constructor
@@ -298,7 +298,7 @@ fun createUser(id: UserId, email: Email) {
 // ❌ Compile error - type mismatch
 // createUser("user123", "email@example.com")
 
-// ✅ Correct usage
+//  Correct usage
 createUser(UserId("user123"), Email("email@example.com"))
 
 // Value classes dapat punya functions
@@ -326,10 +326,10 @@ println(password.obfuscate())  // *********`}
         </p>
 
         <ul>
-          <li>✅ <strong>Data Classes:</strong> Auto-generated equals, hashCode, toString, copy</li>
-          <li>✅ <strong>Sealed Classes:</strong> Restricted hierarchies dengan exhaustive when</li>
-          <li>✅ <strong>Enum vs Sealed:</strong> Kapan menggunakan masing-masing</li>
-          <li>✅ <strong>Value Classes:</strong> Type-safe wrappers tanpa runtime overhead</li>
+          <li> <strong>Data Classes:</strong> Auto-generated equals, hashCode, toString, copy</li>
+          <li> <strong>Sealed Classes:</strong> Restricted hierarchies dengan exhaustive when</li>
+          <li> <strong>Enum vs Sealed:</strong> Kapan menggunakan masing-masing</li>
+          <li> <strong>Value Classes:</strong> Type-safe wrappers tanpa runtime overhead</li>
         </ul>
 
         <Note type="success">

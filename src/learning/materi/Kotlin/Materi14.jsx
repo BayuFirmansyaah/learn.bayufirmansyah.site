@@ -158,9 +158,9 @@ println("Size: \${attrs.size()}")`}
 
       <Section id="conclusion" heading="Kesimpulan">
         <ul>
-          <li>✅ Kotlin provides convenient extension functions untuk file I/O</li>
-          <li>✅ <code>use</code> function untuk automatic resource management</li>
-          <li>✅ Walk API untuk directory traversal</li>
+          <li> Kotlin provides convenient extension functions untuk file I/O</li>
+          <li> <code>use</code> function untuk automatic resource management</li>
+          <li> Walk API untuk directory traversal</li>
         </ul>
 
         <Note type="success">

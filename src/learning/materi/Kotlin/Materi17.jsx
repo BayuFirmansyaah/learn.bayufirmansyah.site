@@ -36,14 +36,14 @@ package com.example.myapp.utils
 
       <Section id="prefer-val" heading="Prefer val over var">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - immutable by default
+{`//  GOOD - immutable by default
 val name = "John"
 val users = mutableListOf<User>()  // val with mutable collection
 
 // ❌ AVOID - unnecessary mutability
 var name = "John"  // Will it change? If not, use val
 
-// ✅ GOOD - var only when necessary
+//  GOOD - var only when necessary
 var counter = 0
 for (i in 1..10) {
     counter += i
@@ -53,20 +53,20 @@ for (i in 1..10) {
 
       <Section id="null-safety" heading="Embrace Null Safety">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - use safe calls and elvis
+{`//  GOOD - use safe calls and elvis
 val length = name?.length ?: 0
 user?.address?.city?.let { println(it) }
 
 // ❌ AVOID - !! operator
 val length = name!!.length  // Risky!
 
-// ✅ GOOD - early return for null
+//  GOOD - early return for null
 fun processUser(user: User?) {
     val validUser = user ?: return
     // Work with validUser (non-nullable)
 }
 
-// ✅ GOOD - use requireNotNull/checkNotNull
+//  GOOD - use requireNotNull/checkNotNull
 fun init() {
     val config = requireNotNull(loadConfig()) {
         "Configuration is required"
@@ -77,14 +77,14 @@ fun init() {
 
       <Section id="expressions" heading="Use Expression Bodies">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - expression body for simple functions
+{`//  GOOD - expression body for simple functions
 fun add(a: Int, b: Int) = a + b
 fun isEven(n: Int) = n % 2 == 0
 
-// ✅ GOOD - if as expression
+//  GOOD - if as expression
 val max = if (a > b) a else b
 
-// ✅ GOOD - when as expression
+//  GOOD - when as expression
 val result = when (status) {
     Status.SUCCESS -> "OK"
     Status.ERROR -> "Failed"
@@ -97,7 +97,7 @@ val result = when (status) {
         <CodeBlock language="kotlin">
 {`val numbers = listOf(1, 2, 3, 4, 5)
 
-// ✅ GOOD - functional style
+//  GOOD - functional style
 val evens = numbers.filter { it % 2 == 0 }
 val doubled = numbers.map { it * 2 }
 val sum = numbers.reduce { acc, n -> acc + n }
@@ -108,13 +108,13 @@ for (n in numbers) {
     if (n % 2 == 0) evens.add(n)
 }
 
-// ✅ GOOD - chaining
+//  GOOD - chaining
 val result = numbers
     .filter { it > 2 }
     .map { it * 2 }
     .sum()
 
-// ✅ GOOD - use sequences for large collections
+//  GOOD - use sequences for large collections
 largeList.asSequence()
     .filter { it > 0 }
     .map { it * 2 }
@@ -125,32 +125,32 @@ largeList.asSequence()
 
       <Section id="scope-functions" heading="Use Scope Functions Wisely">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - let for null safety
+{`//  GOOD - let for null safety
 user?.let { u ->
     println("User: \${u.name}")
     save(u)
 }
 
-// ✅ GOOD - apply for object configuration
+//  GOOD - apply for object configuration
 val person = Person().apply {
     name = "John"
     age = 25
     email = "john@mail.com"
 }
 
-// ✅ GOOD - also for side effects
+//  GOOD - also for side effects
 val result = calculateValue()
     .also { println("Result: $it") }
     .also { logToAnalytics(it) }
 
-// ✅ GOOD - run for grouping
+//  GOOD - run for grouping
 val result = run {
     val a = fetchA()
     val b = fetchB()
     combine(a, b)
 }
 
-// ✅ GOOD - with for multiple calls on object
+//  GOOD - with for multiple calls on object
 with(StringBuilder()) {
     append("Hello")
     append(" ")
@@ -162,11 +162,11 @@ with(StringBuilder()) {
 
       <Section id="extension" heading="Use Extension Functions">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - extend existing classes
+{`//  GOOD - extend existing classes
 fun String.isPalindrome() = this == this.reversed()
 fun Int.squared() = this * this
 
-// ✅ GOOD - organize utilities as extensions
+//  GOOD - organize utilities as extensions
 fun Context.showToast(message: String) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }
@@ -174,14 +174,14 @@ fun Context.showToast(message: String) {
 // Usage
 activity.showToast("Hello!")
 
-// ✅ GOOD - extend nullable types when appropriate
+//  GOOD - extend nullable types when appropriate
 fun String?.orDefault(default: String = "") = this ?: default`}
         </CodeBlock>
       </Section>
 
       <Section id="data-classes" heading="Use Data Classes">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - data class for data holders
+{`//  GOOD - data class for data holders
 data class User(val id: String, val name: String, val age: Int)
 
 // Auto-generated: equals, hashCode, toString, copy
@@ -197,7 +197,7 @@ class User(val id: String, val name: String) {
 
       <Section id="sealed" heading="Use Sealed Classes for State">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - sealed class for restricted hierarchies
+{`//  GOOD - sealed class for restricted hierarchies
 sealed class UiState {
     object Loading : UiState()
     data class Success(val data: List<Item>) : UiState()
@@ -216,7 +216,7 @@ fun render(state: UiState) = when (state) {
 
       <Section id="coroutines" heading="Use Coroutines for Async">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - structured concurrency
+{`//  GOOD - structured concurrency
 suspend fun loadUserData(userId: String): UserData {
     return coroutineScope {
         val user = async { fetchUser(userId) }
@@ -225,7 +225,7 @@ suspend fun loadUserData(userId: String): UserData {
     }
 }
 
-// ✅ GOOD - use appropriate dispatcher
+//  GOOD - use appropriate dispatcher
 suspend fun saveToFile(data: String) {
     withContext(Dispatchers.IO) {
         File("data.txt").writeText(data)
@@ -235,7 +235,7 @@ suspend fun saveToFile(data: String) {
 // ❌ AVOID - GlobalScope (no lifecycle management)
 GlobalScope.launch { /* ... */ }
 
-// ✅ GOOD - use viewModelScope, lifecycleScope
+//  GOOD - use viewModelScope, lifecycleScope
 class MyViewModel : ViewModel() {
     fun loadData() {
         viewModelScope.launch {
@@ -248,7 +248,7 @@ class MyViewModel : ViewModel() {
 
       <Section id="type-inference" heading="Let Type Inference Work">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - let compiler infer types
+{`//  GOOD - let compiler infer types
 val name = "John"  // String inferred
 val numbers = listOf(1, 2, 3)  // List<Int> inferred
 
@@ -256,7 +256,7 @@ val numbers = listOf(1, 2, 3)  // List<Int> inferred
 val name: String = "John"
 val numbers: List<Int> = listOf(1, 2, 3)
 
-// ✅ GOOD - explicit types when it improves clarity
+//  GOOD - explicit types when it improves clarity
 val result: Result<User> = loadUser()  // Makes return type clear`}
         </CodeBlock>
       </Section>
@@ -266,14 +266,14 @@ val result: Result<User> = loadUser()  // Makes return type clear`}
 {`val name = "John"
 val age = 25
 
-// ✅ GOOD - string templates
+//  GOOD - string templates
 val message = "Name: $name, Age: $age"
 val calculation = "Next year: \${age + 1}"
 
 // ❌ AVOID - string concatenation
 val message = "Name: " + name + ", Age: " + age
 
-// ✅ GOOD - raw strings for multiline
+//  GOOD - raw strings for multiline
 val json = """
     {
         "name": "$name",
@@ -285,16 +285,16 @@ val json = """
 
       <Section id="destructuring" heading="Use Destructuring">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - destructure data classes
+{`//  GOOD - destructure data classes
 val (name, age) = user
 println("$name is $age years old")
 
-// ✅ GOOD - in loops
+//  GOOD - in loops
 for ((key, value) in map) {
     println("$key = $value")
 }
 
-// ✅ GOOD - in lambdas
+//  GOOD - in lambdas
 people.forEach { (name, age) ->
     println("$name: $age")
 }`}
@@ -303,7 +303,7 @@ people.forEach { (name, age) ->
 
       <Section id="default-args" heading="Use Default Arguments">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD - default arguments over overloading
+{`//  GOOD - default arguments over overloading
 fun connect(
     host: String = "localhost",
     port: Int = 8080,
@@ -325,16 +325,16 @@ fun connect(host: String, port: Int) { connect(host, port, 30) }`}
       <Section id="conclusion" heading="Kesimpulan">
         <p><strong>Kotlin Best Practices Summary:</strong></p>
         <ul>
-          <li>✅ Prefer <code>val</code> over <code>var</code></li>
-          <li>✅ Embrace null safety, avoid <code>!!</code></li>
-          <li>✅ Use expression bodies untuk simple functions</li>
-          <li>✅ Leverage collection functions</li>
-          <li>✅ Use scope functions appropriately</li>
-          <li>✅ Prefer data classes untuk data</li>
-          <li>✅ Use sealed classes untuk restricted hierarchies</li>
-          <li>✅ Use coroutines untuk async operations</li>
-          <li>✅ Let type inference work</li>
-          <li>✅ Use string templates, destructuring, defaults</li>
+          <li> Prefer <code>val</code> over <code>var</code></li>
+          <li> Embrace null safety, avoid <code>!!</code></li>
+          <li> Use expression bodies untuk simple functions</li>
+          <li> Leverage collection functions</li>
+          <li> Use scope functions appropriately</li>
+          <li> Prefer data classes untuk data</li>
+          <li> Use sealed classes untuk restricted hierarchies</li>
+          <li> Use coroutines untuk async operations</li>
+          <li> Let type inference work</li>
+          <li> Use string templates, destructuring, defaults</li>
         </ul>
 
         <Note type="success">

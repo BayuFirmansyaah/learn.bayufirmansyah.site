@@ -29,7 +29,7 @@ var height = 175.5;       // double
 var isStudent = true;     // bool
 
 // Type sudah fixed, tidak bisa reassign dengan type berbeda
-name = 'Jane';            // ✅ OK - same type
+name = 'Jane';            //  OK - same type
 // name = 123;            // ❌ ERROR - different type
 
 print('Name: $name, Age: $age');`}
@@ -45,8 +45,8 @@ print('Name: $name, Age: $age');`}
           <CodeBlock language="dart">
 {`// final - Runtime constant (nilai bisa dari hasil computation)
 final String name = 'John';
-final currentTime = DateTime.now();        // ✅ OK
-final userInput = getUserInput();          // ✅ OK
+final currentTime = DateTime.now();        //  OK
+final userInput = getUserInput();          //  OK
 
 // Tidak bisa reassign
 // name = 'Jane';                          // ❌ ERROR
@@ -111,7 +111,7 @@ double scientific = 1.5e3;  // 1500.0
 
 // num - Parent class of int and double
 num temperature = 36.5;     // Can be int or double
-temperature = 37;           // ✅ OK
+temperature = 37;           //  OK
 
 // Conversion
 int age = 25;
@@ -455,8 +455,8 @@ int age = 25;
 // Nullable - CAN be null (add ?)
 String? middleName;        // null by default
 int? optionalAge;
-middleName = 'Smith';      // ✅ OK
-middleName = null;         // ✅ OK
+middleName = 'Smith';      //  OK
+middleName = null;         //  OK
 
 // Must check null before use
 if (middleName != null) {
@@ -508,7 +508,7 @@ void initialize() {
 
 void use() {
   initialize();
-  print(description);  // ✅ OK - already initialized
+  print(description);  //  OK - already initialized
 }
 
 // late with lazy initialization
@@ -680,13 +680,13 @@ class Person {
           Di materi ini, kita telah mempelajari fundamental Dart:
         </p>
         <ul>
-          <li>✅ <strong>Variables:</strong> var, final, const, dan explicit types</li>
-          <li>✅ <strong>Data Types:</strong> int, double, String, bool, List, Map, Set</li>
-          <li>✅ <strong>String Interpolation:</strong> $ dan $&#123;&#125; untuk elegant string formatting</li>
-          <li>✅ <strong>Operators:</strong> Arithmetic, assignment, comparison, logical, cascade</li>
-          <li>✅ <strong>Null Safety:</strong> ?, ?., ??, ??=, ! untuk handle null dengan aman</li>
-          <li>✅ <strong>Type Inference:</strong> Dart pintar detect types otomatis</li>
-          <li>✅ <strong>Comments:</strong> //, /* */, /// untuk documentation</li>
+          <li> <strong>Variables:</strong> var, final, const, dan explicit types</li>
+          <li> <strong>Data Types:</strong> int, double, String, bool, List, Map, Set</li>
+          <li> <strong>String Interpolation:</strong> $ dan $&#123;&#125; untuk elegant string formatting</li>
+          <li> <strong>Operators:</strong> Arithmetic, assignment, comparison, logical, cascade</li>
+          <li> <strong>Null Safety:</strong> ?, ?., ??, ??=, ! untuk handle null dengan aman</li>
+          <li> <strong>Type Inference:</strong> Dart pintar detect types otomatis</li>
+          <li> <strong>Comments:</strong> //, /* */, /// untuk documentation</li>
         </ul>
 
         <Note type="success">

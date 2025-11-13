@@ -275,10 +275,10 @@ Route::get('/posts/{post:slug}', function (Post $post) {
  * - content: string
  * 
  * Benefits of This Format:
- * ✅ No parsing needed - structure maps directly to UI
- * ✅ Clear separation: headings, text, code, notes
- * ✅ Easy to add features (tables, images, videos)
- * ✅ Maintainable and scalable
- * ✅ Type-safe with TypeScript
- * ✅ Bootstrap-style documentation structure
+ *  No parsing needed - structure maps directly to UI
+ *  Clear separation: headings, text, code, notes
+ *  Easy to add features (tables, images, videos)
+ *  Maintainable and scalable
+ *  Type-safe with TypeScript
+ *  Bootstrap-style documentation structure
  */

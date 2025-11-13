@@ -242,11 +242,11 @@ class UserViewModel : ViewModel() {
 
       <Section id="conclusion" heading="Kesimpulan">
         <ul>
-          <li>✅ Kotlin adalah first-class language untuk Android</li>
-          <li>✅ Modern Android development dengan Jetpack libraries</li>
-          <li>✅ Jetpack Compose untuk declarative UI</li>
-          <li>✅ Coroutines untuk asynchronous operations</li>
-          <li>✅ Room untuk local database</li>
+          <li> Kotlin adalah first-class language untuk Android</li>
+          <li> Modern Android development dengan Jetpack libraries</li>
+          <li> Jetpack Compose untuk declarative UI</li>
+          <li> Coroutines untuk asynchronous operations</li>
+          <li> Room untuk local database</li>
         </ul>
 
         <Note type="success">

@@ -67,9 +67,9 @@ class _CounterState extends State<Counter> {
 
         <Subsection id="setstate-rules" heading="setState() Rules">
           <ul>
-            <li>✅ Always call setState() untuk update UI</li>
-            <li>✅ Keep setState() calls fast - no async operations inside</li>
-            <li>✅ Only change state yang benar-benar butuh update UI</li>
+            <li> Always call setState() untuk update UI</li>
+            <li> Keep setState() calls fast - no async operations inside</li>
+            <li> Only change state yang benar-benar butuh update UI</li>
             <li>❌ Jangan call setState() di initState() atau dispose()</li>
             <li>❌ Jangan call setState() setelah widget disposed</li>
           </ul>
@@ -80,7 +80,7 @@ void _badIncrement() {
   _count++;  // UI won't update!
 }
 
-// ✅ GOOD: Use setState
+//  GOOD: Use setState
 void _goodIncrement() {
   setState(() {
     _count++;  // UI will rebuild
@@ -95,7 +95,7 @@ void _badAsync() {
   });
 }
 
-// ✅ GOOD: Async outside, setState after
+//  GOOD: Async outside, setState after
 void _goodAsync() async {
   await Future.delayed(Duration(seconds: 1));
   setState(() {
@@ -469,26 +469,26 @@ class CartScreen extends StatelessWidget {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use setState() untuk simple local state</li>
-          <li>✅ Lift state up ke common parent when shared</li>
-          <li>✅ Use Provider untuk app-wide state</li>
-          <li>✅ Keep models focused (single responsibility)</li>
-          <li>✅ Call notifyListeners() after state changes</li>
-          <li>✅ Use context.read() untuk one-time operations</li>
-          <li>✅ Use context.watch() atau Consumer untuk rebuilds</li>
-          <li>✅ Don't watch more than you need</li>
+          <li> Use setState() untuk simple local state</li>
+          <li> Lift state up ke common parent when shared</li>
+          <li> Use Provider untuk app-wide state</li>
+          <li> Keep models focused (single responsibility)</li>
+          <li> Call notifyListeners() after state changes</li>
+          <li> Use context.read() untuk one-time operations</li>
+          <li> Use context.watch() atau Consumer untuk rebuilds</li>
+          <li> Don't watch more than you need</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ State adalah data yang berubah during app lifecycle</li>
-          <li>✅ setState() untuk local state management</li>
-          <li>✅ Lift state up untuk share between siblings</li>
-          <li>✅ Provider for app-wide state management</li>
-          <li>✅ ChangeNotifier + notifyListeners() pattern</li>
-          <li>✅ context.watch() rebuilds, context.read() doesn't</li>
-          <li>✅ MultiProvider untuk multiple state objects</li>
+          <li> State adalah data yang berubah during app lifecycle</li>
+          <li> setState() untuk local state management</li>
+          <li> Lift state up untuk share between siblings</li>
+          <li> Provider for app-wide state management</li>
+          <li> ChangeNotifier + notifyListeners() pattern</li>
+          <li> context.watch() rebuilds, context.read() doesn't</li>
+          <li> MultiProvider untuk multiple state objects</li>
         </ul>
       </Section>
     </MateriLayout>

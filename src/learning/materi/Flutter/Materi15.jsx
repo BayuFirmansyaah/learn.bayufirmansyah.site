@@ -613,27 +613,27 @@ class _SlideInCardState extends State<SlideInCard>
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use implicit animations untuk simple cases (AnimatedContainer, etc.)</li>
-          <li>✅ Use explicit animations untuk complex sequences</li>
-          <li>✅ Always dispose AnimationControllers!</li>
-          <li>✅ Use AnimatedBuilder untuk performance</li>
-          <li>✅ Keep animations short (200-400ms typical)</li>
-          <li>✅ Use Curves untuk natural motion</li>
-          <li>✅ Test animations on low-end devices</li>
-          <li>✅ Don't over-animate - subtlety is key</li>
+          <li> Use implicit animations untuk simple cases (AnimatedContainer, etc.)</li>
+          <li> Use explicit animations untuk complex sequences</li>
+          <li> Always dispose AnimationControllers!</li>
+          <li> Use AnimatedBuilder untuk performance</li>
+          <li> Keep animations short (200-400ms typical)</li>
+          <li> Use Curves untuk natural motion</li>
+          <li> Test animations on low-end devices</li>
+          <li> Don't over-animate - subtlety is key</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Implicit animations: Easy, automatic (AnimatedContainer, AnimatedOpacity)</li>
-          <li>✅ Explicit animations: Full control dengan AnimationController</li>
-          <li>✅ Tween: Define start and end values</li>
-          <li>✅ Curves: Add natural motion feel</li>
-          <li>✅ Hero: Automatic transitions between screens</li>
-          <li>✅ AnimatedBuilder: Efficient rebuilds</li>
-          <li>✅ Staggered animations: Multiple animations dengan intervals</li>
-          <li>✅ Always dispose controllers!</li>
+          <li> Implicit animations: Easy, automatic (AnimatedContainer, AnimatedOpacity)</li>
+          <li> Explicit animations: Full control dengan AnimationController</li>
+          <li> Tween: Define start and end values</li>
+          <li> Curves: Add natural motion feel</li>
+          <li> Hero: Automatic transitions between screens</li>
+          <li> AnimatedBuilder: Efficient rebuilds</li>
+          <li> Staggered animations: Multiple animations dengan intervals</li>
+          <li> Always dispose controllers!</li>
         </ul>
       </Section>
     </MateriLayout>

@@ -412,7 +412,7 @@ void createUser2({required String name, required int age, String? email}) {
 }
 
 // Must provide required parameters
-createUser2(name: 'John', age: 25);  // ✅ OK
+createUser2(name: 'John', age: 25);  //  OK
 // createUser2(name: 'John');        // ❌ ERROR - age is required
 
 // Named with default values
@@ -564,15 +564,15 @@ void main() {
   // Function scope
   String functionName = 'Function';
   
-  print(globalName);    // ✅ Accessible
-  print(functionName);  // ✅ Accessible
+  print(globalName);    //  Accessible
+  print(functionName);  //  Accessible
   
   if (true) {
     // Block scope
     String blockName = 'Block';
-    print(globalName);    // ✅ Accessible
-    print(functionName);  // ✅ Accessible
-    print(blockName);     // ✅ Accessible
+    print(globalName);    //  Accessible
+    print(functionName);  //  Accessible
+    print(blockName);     //  Accessible
   }
   
   // print(blockName);    // ❌ ERROR - not accessible outside block
@@ -669,13 +669,13 @@ void printGlobal() {
       {/* Rangkuman */}
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ <strong>If-Else:</strong> Conditional logic untuk decision making</li>
-          <li>✅ <strong>Switch-Case:</strong> Multiple conditions yang lebih readable</li>
-          <li>✅ <strong>Loops:</strong> for, while, do-while, forEach untuk iteration</li>
-          <li>✅ <strong>Break & Continue:</strong> Control loop execution</li>
-          <li>✅ <strong>Functions:</strong> Basic, arrow, optional, named parameters</li>
-          <li>✅ <strong>Anonymous Functions:</strong> Lambdas untuk callbacks</li>
-          <li>✅ <strong>Higher-Order Functions:</strong> Functions sebagai parameters/return values</li>
+          <li> <strong>If-Else:</strong> Conditional logic untuk decision making</li>
+          <li> <strong>Switch-Case:</strong> Multiple conditions yang lebih readable</li>
+          <li> <strong>Loops:</strong> for, while, do-while, forEach untuk iteration</li>
+          <li> <strong>Break & Continue:</strong> Control loop execution</li>
+          <li> <strong>Functions:</strong> Basic, arrow, optional, named parameters</li>
+          <li> <strong>Anonymous Functions:</strong> Lambdas untuk callbacks</li>
+          <li> <strong>Higher-Order Functions:</strong> Functions sebagai parameters/return values</li>
         </ul>
 
         <Note type="success">

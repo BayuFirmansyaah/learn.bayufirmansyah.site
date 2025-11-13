@@ -122,10 +122,10 @@ class MyApp extends StatelessWidget {
             <strong>Efisiensi Development:</strong>
           </p>
           <ul>
-            <li>✅ Satu team untuk semua platform (hemat resource)</li>
-            <li>✅ Feature parity - semua platform update bersamaan</li>
-            <li>✅ Consistent UI/UX di semua platform</li>
-            <li>✅ Maintenance lebih mudah - fix bug sekali untuk semua</li>
+            <li> Satu team untuk semua platform (hemat resource)</li>
+            <li> Feature parity - semua platform update bersamaan</li>
+            <li> Consistent UI/UX di semua platform</li>
+            <li> Maintenance lebih mudah - fix bug sekali untuk semua</li>
           </ul>
         </Subsection>
 
@@ -186,11 +186,11 @@ Container(
           </CodeBlock>
 
           <ul>
-            <li>✅ Material 3 Design System (latest)</li>
-            <li>✅ iOS Cupertino widgets</li>
-            <li>✅ Custom theming & dark mode support</li>
-            <li>✅ Responsive & adaptive layouts</li>
-            <li>✅ Rich animations & transitions built-in</li>
+            <li> Material 3 Design System (latest)</li>
+            <li> iOS Cupertino widgets</li>
+            <li> Custom theming & dark mode support</li>
+            <li> Responsive & adaptive layouts</li>
+            <li> Rich animations & transitions built-in</li>
           </ul>
         </Subsection>
 
@@ -334,8 +334,8 @@ class User {
                 </tr>
                 <tr>
                   <td style={{padding: '12px', border: '1px solid #dee2e6'}}><strong>Hot Reload</strong></td>
-                  <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Super fast (ms)</td>
-                  <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Fast Refresh</td>
+                  <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Super fast (ms)</td>
+                  <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Fast Refresh</td>
                 </tr>
                 <tr>
                   <td style={{padding: '12px', border: '1px solid #dee2e6'}}><strong>UI Components</strong></td>
@@ -454,7 +454,7 @@ class User {
 
         <Subsection id="ideal-for" heading="Flutter Ideal Untuk:">
           <p>
-            <strong>✅ Cocok untuk Flutter:</strong>
+            <strong> Cocok untuk Flutter:</strong>
           </p>
           <ul>
             <li>Startup & MVP - rapid development dengan budget terbatas</li>
@@ -610,13 +610,13 @@ class User {
           Di materi ini, kita telah mempelajari:
         </p>
         <ul>
-          <li>✅ Flutter adalah UI framework cross-platform dari Google dengan Dart language</li>
-          <li>✅ Keunggulan: Hot Reload, Single Codebase, Native Performance, Beautiful UI</li>
-          <li>✅ Flutter Architecture: Widget Tree, Rendering Engine (Skia/Impeller), Dart</li>
-          <li>✅ Perbandingan dengan React Native dan Native Development</li>
-          <li>✅ Use cases: dari startup MVP sampai enterprise apps</li>
-          <li>✅ Ecosystem: 45,000+ packages, strong community, rich tooling</li>
-          <li>✅ Prerequisites & System Requirements untuk mulai belajar</li>
+          <li> Flutter adalah UI framework cross-platform dari Google dengan Dart language</li>
+          <li> Keunggulan: Hot Reload, Single Codebase, Native Performance, Beautiful UI</li>
+          <li> Flutter Architecture: Widget Tree, Rendering Engine (Skia/Impeller), Dart</li>
+          <li> Perbandingan dengan React Native dan Native Development</li>
+          <li> Use cases: dari startup MVP sampai enterprise apps</li>
+          <li> Ecosystem: 45,000+ packages, strong community, rich tooling</li>
+          <li> Prerequisites & System Requirements untuk mulai belajar</li>
         </ul>
 
         <Note type="tip">

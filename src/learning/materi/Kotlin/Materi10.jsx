@@ -20,7 +20,7 @@ var name: String = "John"
 
 // Nullable type (dengan ?)
 var nickname: String? = "Johnny"
-nickname = null  // ✅ OK
+nickname = null  //  OK
 
 // Function dengan nullable parameters & return
 fun greet(name: String?): String? {
@@ -102,7 +102,7 @@ val name = firstName ?: lastName ?: defaultName  // "Anonymous"`}
           <CodeBlock language="kotlin">
 {`// !! operator - assert value is not null (throw NPE if null)
 val name: String? = "John"
-val length = name!!.length  // ✅ OK - name is not null
+val length = name!!.length  //  OK - name is not null
 
 val nullName: String? = null
 // val length2 = nullName!!.length  // ❌ NullPointerException
@@ -178,8 +178,8 @@ fun process(a: String?, b: String?) {
 {`// as? - safe cast operator (returns null if cast fails)
 val obj: Any = "Hello"
 
-val str: String? = obj as? String  // ✅ "Hello"
-val num: Int? = obj as? Int        // ✅ null (no exception)
+val str: String? = obj as? String  //  "Hello"
+val num: Int? = obj as? Int        //  null (no exception)
 
 // Using safe cast dengan elvis
 fun getStringLength(obj: Any): Int {
@@ -305,19 +305,19 @@ val javaList: List<String?>? = getJavaList()`}
       {/* Best Practices */}
       <Section id="best-practices" heading="Null Safety Best Practices">
         <CodeBlock language="kotlin">
-{`// ✅ GOOD: Use val dengan non-nullable types
+{`//  GOOD: Use val dengan non-nullable types
 val name: String = "John"
 
-// ✅ GOOD: Use safe call
+//  GOOD: Use safe call
 val length = name?.length
 
-// ✅ GOOD: Use elvis operator untuk default
+//  GOOD: Use elvis operator untuk default
 val displayName = nickname ?: "Guest"
 
-// ✅ GOOD: Use let untuk null-safe operations
+//  GOOD: Use let untuk null-safe operations
 user?.let { println(it.name) }
 
-// ✅ GOOD: Early return untuk null checks
+//  GOOD: Early return untuk null checks
 fun process(data: String?) {
     if (data == null) return
     // data is non-nullable here
@@ -333,19 +333,19 @@ fun process(data: String?) {
 // ❌ AVOID: Unnecessary nullable types
 // var count: Int? = 0  // Should be: var count: Int = 0
 
-// ✅ GOOD: Use require/check untuk validation
+//  GOOD: Use require/check untuk validation
 fun setAge(age: Int?) {
     requireNotNull(age) { "Age cannot be null" }
     require(age >= 0) { "Age must be positive" }
     this.age = age
 }
 
-// ✅ GOOD: Use nullable returns untuk "not found" cases
+//  GOOD: Use nullable returns untuk "not found" cases
 fun findUser(id: String): User? {
     return database.query(id)  // null if not found
 }
 
-// ✅ GOOD: Use Result type untuk operations that can fail
+//  GOOD: Use Result type untuk operations that can fail
 fun loadData(): Result<Data> {
     return try {
         Result.success(database.load())
@@ -363,12 +363,12 @@ fun loadData(): Result<Data> {
         </p>
 
         <ul>
-          <li>✅ Nullable types dengan <code>?</code> operator</li>
-          <li>✅ Safe call <code>?.</code> dan Elvis <code>?:</code> operators</li>
-          <li>✅ Not-null assertion <code>!!</code> (use sparingly)</li>
-          <li>✅ Smart casts setelah null checks</li>
-          <li>✅ Scope functions dengan null safety</li>
-          <li>✅ Best practices untuk null-safe code</li>
+          <li> Nullable types dengan <code>?</code> operator</li>
+          <li> Safe call <code>?.</code> dan Elvis <code>?:</code> operators</li>
+          <li> Not-null assertion <code>!!</code> (use sparingly)</li>
+          <li> Smart casts setelah null checks</li>
+          <li> Scope functions dengan null safety</li>
+          <li> Best practices untuk null-safe code</li>
         </ul>
 
         <Note type="success">

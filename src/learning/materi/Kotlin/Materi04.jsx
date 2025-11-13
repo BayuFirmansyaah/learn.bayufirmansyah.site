@@ -746,12 +746,12 @@ fun featureNotReady() {
         </p>
 
         <ul>
-          <li>✅ <strong>If Expression:</strong> Conditional logic yang return value</li>
-          <li>✅ <strong>When Expression:</strong> Powerful replacement untuk switch-case</li>
-          <li>✅ <strong>For Loop:</strong> Iterate ranges, arrays, dan collections</li>
-          <li>✅ <strong>While/Do-While:</strong> Condition-based loops</li>
-          <li>✅ <strong>Break/Continue:</strong> Loop control dengan labels</li>
-          <li>✅ <strong>Exception Handling:</strong> Try-catch sebagai expression</li>
+          <li> <strong>If Expression:</strong> Conditional logic yang return value</li>
+          <li> <strong>When Expression:</strong> Powerful replacement untuk switch-case</li>
+          <li> <strong>For Loop:</strong> Iterate ranges, arrays, dan collections</li>
+          <li> <strong>While/Do-While:</strong> Condition-based loops</li>
+          <li> <strong>Break/Continue:</strong> Loop control dengan labels</li>
+          <li> <strong>Exception Handling:</strong> Try-catch sebagai expression</li>
         </ul>
 
         <Note type="success">

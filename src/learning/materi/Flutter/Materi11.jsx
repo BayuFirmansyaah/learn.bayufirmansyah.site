@@ -591,27 +591,27 @@ class _WeatherScreenState extends State<WeatherScreen> {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Always handle errors dengan try-catch</li>
-          <li>✅ Set timeout untuk prevent hanging requests</li>
-          <li>✅ Use model classes untuk type safety</li>
-          <li>✅ Implement retry mechanism untuk failed requests</li>
-          <li>✅ Show loading indicators during requests</li>
-          <li>✅ Cache data when appropriate</li>
-          <li>✅ Use environment variables untuk API keys</li>
-          <li>✅ Validate response status codes</li>
+          <li> Always handle errors dengan try-catch</li>
+          <li> Set timeout untuk prevent hanging requests</li>
+          <li> Use model classes untuk type safety</li>
+          <li> Implement retry mechanism untuk failed requests</li>
+          <li> Show loading indicators during requests</li>
+          <li> Cache data when appropriate</li>
+          <li> Use environment variables untuk API keys</li>
+          <li> Validate response status codes</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ http package untuk HTTP requests</li>
-          <li>✅ GET, POST, PUT, DELETE methods</li>
-          <li>✅ json.decode() untuk parse JSON</li>
-          <li>✅ Model classes dengan fromJson() factory</li>
-          <li>✅ FutureBuilder untuk async UI updates</li>
-          <li>✅ Error handling dengan try-catch</li>
-          <li>✅ Headers untuk authentication</li>
-          <li>✅ Timeout untuk prevent hanging</li>
+          <li> http package untuk HTTP requests</li>
+          <li> GET, POST, PUT, DELETE methods</li>
+          <li> json.decode() untuk parse JSON</li>
+          <li> Model classes dengan fromJson() factory</li>
+          <li> FutureBuilder untuk async UI updates</li>
+          <li> Error handling dengan try-catch</li>
+          <li> Headers untuk authentication</li>
+          <li> Timeout untuk prevent hanging</li>
         </ul>
       </Section>
     </MateriLayout>

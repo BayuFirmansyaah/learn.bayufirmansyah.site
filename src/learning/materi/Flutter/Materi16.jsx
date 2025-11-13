@@ -560,29 +560,29 @@ print(name!);  // Throws if null`}
 
       <Section id="best-practices" heading="Testing Best Practices">
         <ul>
-          <li>✅ Write tests as you code (TDD approach)</li>
-          <li>✅ Test one thing per test</li>
-          <li>✅ Use descriptive test names</li>
-          <li>✅ Follow AAA pattern: Arrange, Act, Assert</li>
-          <li>✅ Mock external dependencies</li>
-          <li>✅ Test edge cases and error scenarios</li>
-          <li>✅ Keep tests independent (no shared state)</li>
-          <li>✅ Aim for 80% code coverage</li>
-          <li>✅ Run tests in CI/CD pipeline</li>
-          <li>✅ Use DevTools untuk performance profiling</li>
+          <li> Write tests as you code (TDD approach)</li>
+          <li> Test one thing per test</li>
+          <li> Use descriptive test names</li>
+          <li> Follow AAA pattern: Arrange, Act, Assert</li>
+          <li> Mock external dependencies</li>
+          <li> Test edge cases and error scenarios</li>
+          <li> Keep tests independent (no shared state)</li>
+          <li> Aim for 80% code coverage</li>
+          <li> Run tests in CI/CD pipeline</li>
+          <li> Use DevTools untuk performance profiling</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Unit tests: Test functions/classes (fastest)</li>
-          <li>✅ Widget tests: Test UI components (medium speed)</li>
-          <li>✅ Integration tests: Test complete flows (slowest)</li>
-          <li>✅ Mockito untuk create test doubles</li>
-          <li>✅ Use Flutter DevTools untuk debugging</li>
-          <li>✅ Breakpoints & debugger() untuk step-through debugging</li>
-          <li>✅ Performance testing dengan TimelineSummary</li>
-          <li>✅ Run: <code>flutter test</code> untuk all tests</li>
+          <li> Unit tests: Test functions/classes (fastest)</li>
+          <li> Widget tests: Test UI components (medium speed)</li>
+          <li> Integration tests: Test complete flows (slowest)</li>
+          <li> Mockito untuk create test doubles</li>
+          <li> Use Flutter DevTools untuk debugging</li>
+          <li> Breakpoints & debugger() untuk step-through debugging</li>
+          <li> Performance testing dengan TimelineSummary</li>
+          <li> Run: <code>flutter test</code> untuk all tests</li>
         </ul>
       </Section>
     </MateriLayout>

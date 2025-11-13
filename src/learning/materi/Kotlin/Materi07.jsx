@@ -107,7 +107,7 @@ open class Base {
 }
 
 class Derived : Base() {
-    override var property: String = "Derived"  // ✅ OK
+    override var property: String = "Derived"  //  OK
 }`}
           </CodeBlock>
         </Subsection>
@@ -431,11 +431,11 @@ fun handleResult(result: Result<String>) = when (result) {
         </p>
 
         <ul>
-          <li>✅ Inheritance dengan open classes & override</li>
-          <li>✅ Interfaces dengan default implementations</li>
-          <li>✅ Abstract classes untuk shared behavior</li>
-          <li>✅ Polymorphism untuk flexible code</li>
-          <li>✅ Delegation pattern dengan <code>by</code> keyword</li>
+          <li> Inheritance dengan open classes & override</li>
+          <li> Interfaces dengan default implementations</li>
+          <li> Abstract classes untuk shared behavior</li>
+          <li> Polymorphism untuk flexible code</li>
+          <li> Delegation pattern dengan <code>by</code> keyword</li>
         </ul>
 
         <Note type="success">

@@ -353,12 +353,12 @@ when (Day.MONDAY) {
         </p>
 
         <ul>
-          <li>✅ Classes dan constructors (primary & secondary)</li>
-          <li>✅ Properties dengan custom getters/setters</li>
-          <li>✅ Visibility modifiers (private, protected, internal, public)</li>
-          <li>✅ Object declarations dan companion objects</li>
-          <li>✅ Nested & inner classes</li>
-          <li>✅ Enum classes</li>
+          <li> Classes dan constructors (primary & secondary)</li>
+          <li> Properties dengan custom getters/setters</li>
+          <li> Visibility modifiers (private, protected, internal, public)</li>
+          <li> Object declarations dan companion objects</li>
+          <li> Nested & inner classes</li>
+          <li> Enum classes</li>
         </ul>
 
         <Note type="success">

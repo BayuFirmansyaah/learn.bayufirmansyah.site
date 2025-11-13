@@ -662,25 +662,25 @@ class UserService {
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use SharedPreferences untuk simple settings</li>
-          <li>✅ Use SQLite untuk complex relational data</li>
-          <li>✅ Use Hive untuk fast object storage</li>
-          <li>✅ Never store sensitive data unencrypted</li>
-          <li>✅ Initialize storage in main() before runApp()</li>
-          <li>✅ Handle database migrations properly</li>
-          <li>✅ Close databases when not needed</li>
-          <li>✅ Use singleton pattern untuk database helpers</li>
+          <li> Use SharedPreferences untuk simple settings</li>
+          <li> Use SQLite untuk complex relational data</li>
+          <li> Use Hive untuk fast object storage</li>
+          <li> Never store sensitive data unencrypted</li>
+          <li> Initialize storage in main() before runApp()</li>
+          <li> Handle database migrations properly</li>
+          <li> Close databases when not needed</li>
+          <li> Use singleton pattern untuk database helpers</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ SharedPreferences untuk key-value storage</li>
-          <li>✅ SQLite untuk relational database dengan SQL</li>
-          <li>✅ Hive untuk NoSQL object storage</li>
-          <li>✅ Choose based on data complexity & performance needs</li>
-          <li>✅ Initialize before app runs</li>
-          <li>✅ Handle errors & migrations</li>
+          <li> SharedPreferences untuk key-value storage</li>
+          <li> SQLite untuk relational database dengan SQL</li>
+          <li> Hive untuk NoSQL object storage</li>
+          <li> Choose based on data complexity & performance needs</li>
+          <li> Initialize before app runs</li>
+          <li> Handle errors & migrations</li>
         </ul>
       </Section>
     </MateriLayout>

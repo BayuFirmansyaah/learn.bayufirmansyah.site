@@ -30,7 +30,7 @@ export default function Materi02() {
           <Note type="warning">
             <strong>Jangan extract ke folder yang butuh elevated privileges seperti:</strong><br/>
             ❌ <code>C:\Program Files\</code><br/>
-            ✅ <code>C:\src\flutter</code> atau <code>C:\Users\YourName\flutter</code>
+             <code>C:\src\flutter</code> atau <code>C:\Users\YourName\flutter</code>
           </Note>
 
           <p>
@@ -830,16 +830,16 @@ pod --version  # Should be >= 1.11.0`}
           Selamat! Anda telah berhasil setup Flutter development environment lengkap. Di materi ini kita telah:
         </p>
         <ul>
-          <li>✅ Download & install Flutter SDK untuk Windows/macOS/Linux</li>
-          <li>✅ Setup environment variables & PATH</li>
-          <li>✅ Run <code>flutter doctor</code> untuk check system</li>
-          <li>✅ Install IDE (Android Studio / VS Code) dengan Flutter plugins</li>
-          <li>✅ Setup Android emulator / iOS simulator</li>
-          <li>✅ Accept Android licenses</li>
-          <li>✅ Create project Flutter pertama dengan <code>flutter create</code></li>
-          <li>✅ Memahami struktur folder Flutter project</li>
-          <li>✅ Run aplikasi dengan <code>flutter run</code></li>
-          <li>✅ Mencoba Hot Reload yang amazing!</li>
+          <li> Download & install Flutter SDK untuk Windows/macOS/Linux</li>
+          <li> Setup environment variables & PATH</li>
+          <li> Run <code>flutter doctor</code> untuk check system</li>
+          <li> Install IDE (Android Studio / VS Code) dengan Flutter plugins</li>
+          <li> Setup Android emulator / iOS simulator</li>
+          <li> Accept Android licenses</li>
+          <li> Create project Flutter pertama dengan <code>flutter create</code></li>
+          <li> Memahami struktur folder Flutter project</li>
+          <li> Run aplikasi dengan <code>flutter run</code></li>
+          <li> Mencoba Hot Reload yang amazing!</li>
         </ul>
 
         <Note type="success">

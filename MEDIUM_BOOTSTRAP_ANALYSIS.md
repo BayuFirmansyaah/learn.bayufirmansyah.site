@@ -99,7 +99,7 @@ Color: #212529 (dark)
 - ❌ NO captions inside
 - ❌ NO explanations inside
 - ❌ NO comments explaining (comments OK if part of code)
-- ✅ ONLY executable/valid code
+-  ONLY executable/valid code
 
 ---
 
@@ -132,7 +132,7 @@ Caption renders inside! Should be outside.
 
 ---
 
-## ✅ PROPOSED SOLUTION
+##  PROPOSED SOLUTION
 
 ### 1. Typography System (Medium-inspired)
 
@@ -283,36 +283,36 @@ useEffect(() => {
 ## 📐 IMPLEMENTATION PLAN
 
 ### Phase 1: Typography System (30 min)
-1. ✅ Install Lora font (Charter alternative)
-2. ✅ Update CSS variables dengan Medium values
-3. ✅ Apply to all text elements
-4. ✅ Set max-width 680px
-5. ✅ Test reading experience
+1.  Install Lora font (Charter alternative)
+2.  Update CSS variables dengan Medium values
+3.  Apply to all text elements
+4.  Set max-width 680px
+5.  Test reading experience
 
 ### Phase 2: Code Block Refactor (45 min)
-1. ✅ Remove caption prop from inside block
-2. ✅ Update CodeBlock component
-3. ✅ Apply Bootstrap styling
-4. ✅ Install & configure Prism.js
-5. ✅ Update Materi01.jsx as example
+1.  Remove caption prop from inside block
+2.  Update CodeBlock component
+3.  Apply Bootstrap styling
+4.  Install & configure Prism.js
+5.  Update Materi01.jsx as example
 
 ### Phase 3: Component Updates (30 min)
-1. ✅ Update Section styling
-2. ✅ Update MateriLayout max-width
-3. ✅ Remove unnecessary decorations
-4. ✅ Ensure clean, minimal design
+1.  Update Section styling
+2.  Update MateriLayout max-width
+3.  Remove unnecessary decorations
+4.  Ensure clean, minimal design
 
 ### Phase 4: Convert All Materi (2-3 hours)
-1. ✅ Update all code blocks: caption outside
-2. ✅ Ensure ONLY code in blocks
-3. ✅ Apply new typography
-4. ✅ Test each materi
+1.  Update all code blocks: caption outside
+2.  Ensure ONLY code in blocks
+3.  Apply new typography
+4.  Test each materi
 
 ### Phase 5: Polish (30 min)
-1. ✅ Mobile responsive
-2. ✅ Smooth scroll
-3. ✅ Focus states
-4. ✅ Final testing
+1.  Mobile responsive
+2.  Smooth scroll
+3.  Focus states
+4.  Final testing
 
 **Total: 4-5 hours**
 
@@ -332,13 +332,13 @@ useEffect(() => {
 
 ### AFTER (Target):
 ```
-✅ Serif font for body (Lora/Georgia)
-✅ Larger text (21px)
-✅ Optimal width (680px)
-✅ Code blocks Bootstrap-style
-✅ Caption outside blocks
-✅ Syntax highlighting
-✅ Medium-like reading experience
+ Serif font for body (Lora/Georgia)
+ Larger text (21px)
+ Optimal width (680px)
+ Code blocks Bootstrap-style
+ Caption outside blocks
+ Syntax highlighting
+ Medium-like reading experience
 ```
 
 ---

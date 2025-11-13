@@ -68,7 +68,7 @@ echo "Hello World";
 {`code here`}
 </CodeBlock>
 
-// ✅ CORRECT - Caption outside as separate <p>
+//  CORRECT - Caption outside as separate <p>
 <p className="code-caption">Correct pattern</p>
 <CodeBlock language="php">
 {`code here`}
@@ -211,7 +211,7 @@ Before marking materi as converted:
 ## Target: All Materi
 
 ### Laravel (20 materi)
-- [x] Materi 01 - Pengenalan Laravel ✅
+- [x] Materi 01 - Pengenalan Laravel 
 - [ ] Materi 02 - Installation & Setup
 - [ ] Materi 03 - Routing
 - [ ] Materi 04 - Controllers

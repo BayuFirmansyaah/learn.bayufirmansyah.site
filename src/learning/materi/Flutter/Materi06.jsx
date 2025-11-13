@@ -561,12 +561,12 @@ MaterialApp(                    // Root
       {/* Best Practices */}
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ <strong>Extract widgets</strong> - buat custom widgets daripada nested hell</li>
-          <li>✅ <strong>Use const constructors</strong> - optimize rebuild performance</li>
-          <li>✅ <strong>StatelessWidget first</strong> - pakai StatefulWidget hanya jika butuh state</li>
-          <li>✅ <strong>Meaningful names</strong> - widget names should describe purpose</li>
-          <li>✅ <strong>Single responsibility</strong> - satu widget satu purpose</li>
-          <li>✅ <strong>Cleanup in dispose()</strong> - prevent memory leaks</li>
+          <li> <strong>Extract widgets</strong> - buat custom widgets daripada nested hell</li>
+          <li> <strong>Use const constructors</strong> - optimize rebuild performance</li>
+          <li> <strong>StatelessWidget first</strong> - pakai StatefulWidget hanya jika butuh state</li>
+          <li> <strong>Meaningful names</strong> - widget names should describe purpose</li>
+          <li> <strong>Single responsibility</strong> - satu widget satu purpose</li>
+          <li> <strong>Cleanup in dispose()</strong> - prevent memory leaks</li>
         </ul>
 
         <CodeBlock language="dart">
@@ -589,7 +589,7 @@ build() {
   );
 }
 
-// ✅ Good: Extract to widgets
+//  Good: Extract to widgets
 build() {
   return Container(
     child: Column(
@@ -606,7 +606,7 @@ Widget _buildHeader() {
   return HeaderWidget();
 }
 
-// ✅ Even better: Separate widget classes
+//  Even better: Separate widget classes
 class HeaderWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -655,14 +655,14 @@ class HeaderWidget extends StatelessWidget {
       {/* Rangkuman */}
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Everything is a widget - UI components, layout, styling</li>
-          <li>✅ StatelessWidget untuk static UI, StatefulWidget untuk mutable state</li>
-          <li>✅ Widget lifecycle: initState, build, didUpdateWidget, dispose</li>
-          <li>✅ setState() untuk trigger rebuild</li>
-          <li>✅ Basic widgets: Text, Container, Button, Image, Icon</li>
-          <li>✅ Widget tree structure - parent-child relationships</li>
-          <li>✅ Extract complex UI to separate widgets</li>
-          <li>✅ Use const constructors untuk performance</li>
+          <li> Everything is a widget - UI components, layout, styling</li>
+          <li> StatelessWidget untuk static UI, StatefulWidget untuk mutable state</li>
+          <li> Widget lifecycle: initState, build, didUpdateWidget, dispose</li>
+          <li> setState() untuk trigger rebuild</li>
+          <li> Basic widgets: Text, Container, Button, Image, Icon</li>
+          <li> Widget tree structure - parent-child relationships</li>
+          <li> Extract complex UI to separate widgets</li>
+          <li> Use const constructors untuk performance</li>
         </ul>
       </Section>
     </MateriLayout>

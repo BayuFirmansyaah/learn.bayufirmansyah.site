@@ -618,28 +618,28 @@ Align(
       {/* Best Practices */}
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use <code>ListView.builder</code> untuk lists dengan banyak items</li>
-          <li>✅ Use <code>const</code> constructors untuk static widgets</li>
-          <li>✅ Avoid nesting <code>ListView</code> inside <code>Column</code> without <code>shrinkWrap</code></li>
-          <li>✅ Use <code>Expanded</code> untuk fill available space di Row/Column</li>
-          <li>✅ Use <code>Stack</code> untuk overlays, badges, floating elements</li>
-          <li>✅ Extract complex layouts ke separate widgets</li>
-          <li>✅ Test layouts pada different screen sizes</li>
+          <li> Use <code>ListView.builder</code> untuk lists dengan banyak items</li>
+          <li> Use <code>const</code> constructors untuk static widgets</li>
+          <li> Avoid nesting <code>ListView</code> inside <code>Column</code> without <code>shrinkWrap</code></li>
+          <li> Use <code>Expanded</code> untuk fill available space di Row/Column</li>
+          <li> Use <code>Stack</code> untuk overlays, badges, floating elements</li>
+          <li> Extract complex layouts ke separate widgets</li>
+          <li> Test layouts pada different screen sizes</li>
         </ul>
       </Section>
 
       {/* Rangkuman */}
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Row & Column untuk linear layouts (horizontal/vertical)</li>
-          <li>✅ Expanded & Flexible untuk flexible sizing</li>
-          <li>✅ Stack & Positioned untuk overlapping widgets</li>
-          <li>✅ ListView untuk scrollable lists (use builder for performance)</li>
-          <li>✅ GridView untuk 2D grids</li>
-          <li>✅ Wrap untuk auto-wrapping layouts</li>
-          <li>✅ SingleChildScrollView untuk scrollable content</li>
-          <li>✅ Padding, SizedBox untuk spacing</li>
-          <li>✅ Align & Center untuk positioning</li>
+          <li> Row & Column untuk linear layouts (horizontal/vertical)</li>
+          <li> Expanded & Flexible untuk flexible sizing</li>
+          <li> Stack & Positioned untuk overlapping widgets</li>
+          <li> ListView untuk scrollable lists (use builder for performance)</li>
+          <li> GridView untuk 2D grids</li>
+          <li> Wrap untuk auto-wrapping layouts</li>
+          <li> SingleChildScrollView untuk scrollable content</li>
+          <li> Padding, SizedBox untuk spacing</li>
+          <li> Align & Center untuk positioning</li>
         </ul>
       </Section>
     </MateriLayout>

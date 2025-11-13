@@ -229,10 +229,10 @@ fun \`test with virtual time\`() = runTest {
 
       <Section id="conclusion" heading="Kesimpulan">
         <ul>
-          <li>✅ JUnit 5 untuk unit testing</li>
-          <li>✅ MockK untuk mocking dan verification</li>
-          <li>✅ Parameterized tests untuk multiple test cases</li>
-          <li>✅ Coroutine testing dengan runTest</li>
+          <li> JUnit 5 untuk unit testing</li>
+          <li> MockK untuk mocking dan verification</li>
+          <li> Parameterized tests untuk multiple test cases</li>
+          <li> Coroutine testing dengan runTest</li>
         </ul>
 
         <Note type="success">

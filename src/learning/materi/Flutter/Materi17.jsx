@@ -29,13 +29,13 @@ export default function Materi17() {
             <tbody>
               <tr>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}><strong>Hot Reload</strong></td>
-                <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Ya</td>
+                <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Ya</td>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}>❌ Tidak</td>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}>❌ Tidak</td>
               </tr>
               <tr>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}><strong>Debugging</strong></td>
-                <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Full support</td>
+                <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Full support</td>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}>⚠️ Limited</td>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}>❌ Disabled</td>
               </tr>
@@ -53,8 +53,8 @@ export default function Materi17() {
               </tr>
               <tr>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}><strong>Assertions</strong></td>
-                <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Enabled</td>
-                <td style={{padding: '12px', border: '1px solid #dee2e6'}}>✅ Enabled</td>
+                <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Enabled</td>
+                <td style={{padding: '12px', border: '1px solid #dee2e6'}}> Enabled</td>
                 <td style={{padding: '12px', border: '1px solid #dee2e6'}}>❌ Disabled</td>
               </tr>
               <tr>
@@ -326,10 +326,10 @@ flutter build appbundle --obfuscate --split-debug-info=build/app/outputs/symbols
             <strong>Benefits of AAB over APK:</strong>
           </p>
           <ul>
-            <li>✅ Smaller download sizes (up to 35% smaller)</li>
-            <li>✅ Dynamic delivery - user hanya download yang dibutuhkan</li>
-            <li>✅ Easy to support multiple architectures</li>
-            <li>✅ Required for new apps di Play Store (sejak August 2021)</li>
+            <li> Smaller download sizes (up to 35% smaller)</li>
+            <li> Dynamic delivery - user hanya download yang dibutuhkan</li>
+            <li> Easy to support multiple architectures</li>
+            <li> Required for new apps di Play Store (sejak August 2021)</li>
           </ul>
         </Subsection>
 
@@ -429,16 +429,16 @@ adb uninstall com.yourcompany.yourapp`}
 
         <Subsection id="testing-checklist" heading="Pre-Release Testing Checklist">
           <ul>
-            <li>✅ Test di berbagai Android versions (min: API 21/Android 5.0)</li>
-            <li>✅ Test di different screen sizes (small, medium, large, tablet)</li>
-            <li>✅ Test offline functionality</li>
-            <li>✅ Test app lifecycle (minimize, restore, rotation)</li>
-            <li>✅ Test permissions (camera, location, storage, etc)</li>
-            <li>✅ Test deep links & notifications</li>
-            <li>✅ Check app size (Play Store limit: 150MB for APK)</li>
-            <li>✅ Run performance profiling</li>
-            <li>✅ Check crash reporting integration</li>
-            <li>✅ Test payment flows (if applicable)</li>
+            <li> Test di berbagai Android versions (min: API 21/Android 5.0)</li>
+            <li> Test di different screen sizes (small, medium, large, tablet)</li>
+            <li> Test offline functionality</li>
+            <li> Test app lifecycle (minimize, restore, rotation)</li>
+            <li> Test permissions (camera, location, storage, etc)</li>
+            <li> Test deep links & notifications</li>
+            <li> Check app size (Play Store limit: 150MB for APK)</li>
+            <li> Run performance profiling</li>
+            <li> Check crash reporting integration</li>
+            <li> Test payment flows (if applicable)</li>
           </ul>
         </Subsection>
       </Section>
@@ -580,16 +580,16 @@ flutter build appbundle --obfuscate --split-debug-info=build/outputs/symbols
       {/* Best Practices */}
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ <strong>Always build AAB</strong> untuk Play Store (bukan APK)</li>
-          <li>✅ <strong>Enable obfuscation</strong> untuk production builds</li>
-          <li>✅ <strong>Upload debug symbols</strong> untuk readable crash reports</li>
-          <li>✅ <strong>Test thoroughly</strong> sebelum production release</li>
-          <li>✅ <strong>Use staged rollout</strong> untuk minimize risk</li>
-          <li>✅ <strong>Backup keystore</strong> di multiple secure locations</li>
-          <li>✅ <strong>Monitor crash reports</strong> di Play Console</li>
-          <li>✅ <strong>Respond to reviews</strong> untuk improve rating</li>
-          <li>✅ <strong>Keep dependencies updated</strong> untuk security</li>
-          <li>✅ <strong>Follow Play Store policies</strong> untuk avoid rejection</li>
+          <li> <strong>Always build AAB</strong> untuk Play Store (bukan APK)</li>
+          <li> <strong>Enable obfuscation</strong> untuk production builds</li>
+          <li> <strong>Upload debug symbols</strong> untuk readable crash reports</li>
+          <li> <strong>Test thoroughly</strong> sebelum production release</li>
+          <li> <strong>Use staged rollout</strong> untuk minimize risk</li>
+          <li> <strong>Backup keystore</strong> di multiple secure locations</li>
+          <li> <strong>Monitor crash reports</strong> di Play Console</li>
+          <li> <strong>Respond to reviews</strong> untuk improve rating</li>
+          <li> <strong>Keep dependencies updated</strong> untuk security</li>
+          <li> <strong>Follow Play Store policies</strong> untuk avoid rejection</li>
         </ul>
 
         <Note type="success">
@@ -659,16 +659,16 @@ java -version`}
           Congratulations! 🎉 Anda telah menyelesaikan semua materi Flutter dari basic sampai production!
         </p>
         <ul>
-          <li>✅ Build modes: Debug, Profile, Release</li>
-          <li>✅ App signing dengan keystore</li>
-          <li>✅ Configure signing di Gradle</li>
-          <li>✅ Setup app icons & splash screen</li>
-          <li>✅ Build APK & AAB dengan obfuscation</li>
-          <li>✅ Versioning & build numbers</li>
-          <li>✅ Testing APK pada devices</li>
-          <li>✅ Publishing ke Google Play Store</li>
-          <li>✅ Release management & staged rollout</li>
-          <li>✅ Best practices untuk production apps</li>
+          <li> Build modes: Debug, Profile, Release</li>
+          <li> App signing dengan keystore</li>
+          <li> Configure signing di Gradle</li>
+          <li> Setup app icons & splash screen</li>
+          <li> Build APK & AAB dengan obfuscation</li>
+          <li> Versioning & build numbers</li>
+          <li> Testing APK pada devices</li>
+          <li> Publishing ke Google Play Store</li>
+          <li> Release management & staged rollout</li>
+          <li> Best practices untuk production apps</li>
         </ul>
 
         <Note type="success">

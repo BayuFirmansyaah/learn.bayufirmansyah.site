@@ -101,7 +101,7 @@ name = null  // ❌ Compile error!
 
 // Harus explicitly declare nullable type dengan "?"
 var nickname: String? = "Johnny"
-nickname = null  // ✅ OK
+nickname = null  //  OK
 
 // Safe call operator - hanya execute jika tidak null
 val length = nickname?.length  // Result: Int? (nullable Int)

@@ -551,11 +551,11 @@ val result5 = "Hello".also { println(it.length) }  // "Hello"`}
         </p>
 
         <ul>
-          <li>✅ Function declarations dengan default parameters dan vararg</li>
-          <li>✅ Lambda expressions dengan concise syntax</li>
-          <li>✅ Higher-order functions untuk functional programming</li>
-          <li>✅ Function references dengan <code>::</code> operator</li>
-          <li>✅ Scope functions: let, run, with, apply, also</li>
+          <li> Function declarations dengan default parameters dan vararg</li>
+          <li> Lambda expressions dengan concise syntax</li>
+          <li> Higher-order functions untuk functional programming</li>
+          <li> Function references dengan <code>::</code> operator</li>
+          <li> Scope functions: let, run, with, apply, also</li>
         </ul>
 
         <Note type="success">

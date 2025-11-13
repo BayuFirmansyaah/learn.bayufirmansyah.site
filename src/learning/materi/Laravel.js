@@ -348,30 +348,30 @@ cd my-app
         code: {
           language: "text",
           example: `❌ Issue: "composer: command not found"
-✅ Solution: Pastikan Composer ada di PATH environment variable
+ Solution: Pastikan Composer ada di PATH environment variable
    - Windows: Restart terminal setelah install
    - Linux/Mac: echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
 
 ❌ Issue: "php artisan serve" tidak jalan
-✅ Solution: 
+ Solution: 
    1. Cek PHP installed: php --version
    2. Cek PHP path: which php
    3. Install PHP jika belum: sudo apt install php8.2-cli
 
 ❌ Issue: "Database connection error"
-✅ Solution:
+ Solution:
    1. Pastikan MySQL running: sudo service mysql status
    2. Test connection: mysql -u root -p
    3. Cek credentials di .env benar
    4. Pastikan database sudah dibuat: CREATE DATABASE my_database;
 
 ❌ Issue: "The stream or file could not be opened"
-✅ Solution: Fix permission untuk storage dan cache
+ Solution: Fix permission untuk storage dan cache
    chmod -R 775 storage bootstrap/cache
    chown -R www-data:www-data storage bootstrap/cache
 
 ❌ Issue: Port 8000 already in use
-✅ Solution: Gunakan port lain
+ Solution: Gunakan port lain
    php artisan serve --port=8001`
         }
       }
@@ -716,7 +716,7 @@ Route::get('/product/{product:slug}', function (App\\Models\\Product $product) {
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Route Groups: prefix, middleware, namespace untuk organize",
         color: "green"
       },
@@ -1032,7 +1032,7 @@ class OrderController extends Controller
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Keep Controllers Thin - Logic ke Services, validation ke Form Requests",
         color: "green"
       }
@@ -1338,7 +1338,7 @@ return new class extends Migration
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Always define down() method, use softDeletes() untuk safe delete",
         color: "green"
       }
@@ -1694,7 +1694,7 @@ echo $product->formatted_price;  // "Rp 15.000.000"`,
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Use SoftDeletes untuk safe delete, findOrFail() untuk auto 404",
         color: "green"
       }
@@ -2137,7 +2137,7 @@ foreach ($orders as $order) {
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Eager Loading: with() untuk prevent N+1 query problem",
         color: "green"
       },
@@ -2508,7 +2508,7 @@ php artisan migrate:fresh --seed
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Register seeders di DatabaseSeeder dengan logical order",
         color: "green"
       }
@@ -2884,7 +2884,7 @@ class ReportController extends Controller
       },
       {
         type: "best-practice",
-        icon: "✅",
+        icon: "",
         text: "Use Query Builder untuk complex reports, Eloquent untuk CRUD",
         color: "green"
       }

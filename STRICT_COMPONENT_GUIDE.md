@@ -8,7 +8,7 @@ All helper components now enforce **strict prop validation** for consistency and
 
 ## 📦 CodeBlock Component
 
-### ✅ Correct Usage (STRICT)
+###  Correct Usage (STRICT)
 
 ```jsx
 <CodeBlock language="php" caption="Optional caption text">
@@ -38,7 +38,7 @@ If `children` is missing, component will render error message with usage instruc
 
 ## 📑 Section Component
 
-### ✅ Correct Usage (STRICT)
+###  Correct Usage (STRICT)
 
 ```jsx
 <Section id="unique-section-id" heading="Section Title" level={2}>
@@ -72,7 +72,7 @@ If `children` is missing, component will render error message with usage instruc
 
 ## 📑 Subsection Component
 
-### ✅ Correct Usage (STRICT)
+###  Correct Usage (STRICT)
 
 ```jsx
 <Subsection id="subsection-id" heading="Subsection Title">
@@ -92,7 +92,7 @@ If `children` is missing, component will render error message with usage instruc
 
 ## 💡 Note Component
 
-### ✅ Correct Usage (STRICT)
+###  Correct Usage (STRICT)
 
 ```jsx
 <Note type="info">
@@ -121,7 +121,7 @@ If `children` is missing, component will render error message with usage instruc
 // Old way with content prop
 <Note type="tip" content="Text here" />
 ```
-✅ Works but prefer using `children` for consistency.
+ Works but prefer using `children` for consistency.
 
 ### ❌ Don't Use:
 ```jsx
@@ -140,7 +140,7 @@ If `children` is missing, component will render error message with usage instruc
 
 ## 📐 MateriLayout Component
 
-### ✅ Correct Usage
+###  Correct Usage
 
 ```jsx
 export default function Materi01() {
@@ -246,7 +246,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 
 ---
 
-## ✅ Benefits of Strict Mode
+##  Benefits of Strict Mode
 
 1. **Consistency** - All materi use same component API
 2. **Type Safety** - Props validated at runtime
@@ -264,7 +264,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 // ❌ Wrong
 <CodeBlock language="php" />
 
-// ✅ Correct
+//  Correct
 <CodeBlock language="php">
 {`<?php echo "Hello"; ?>`}
 </CodeBlock>
@@ -275,7 +275,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 // ❌ Wrong
 <Section id="test">Content</Section>
 
-// ✅ Correct
+//  Correct
 <Section id="test" heading="Test Section">Content</Section>
 ```
 
@@ -284,7 +284,7 @@ Route::get('/user/{name?}', function ($name = 'Guest') {
 // ❌ Wrong
 <Note type="error">Message</Note>
 
-// ✅ Correct
+//  Correct
 <Note type="danger">Message</Note>
 ```
 

@@ -680,12 +680,12 @@ rm -rf ~/.gradle/caches/
         </p>
 
         <ul>
-          <li>✅ Install JDK sebagai foundation untuk Kotlin</li>
-          <li>✅ Install Kotlin compiler untuk command-line development</li>
-          <li>✅ Setup IDE (IntelliJ IDEA) dengan Kotlin support</li>
-          <li>✅ Create dan run first Kotlin project</li>
-          <li>✅ Understand Gradle build system basics</li>
-          <li>✅ Know alternative development options (REPL, Playground, Scripts)</li>
+          <li> Install JDK sebagai foundation untuk Kotlin</li>
+          <li> Install Kotlin compiler untuk command-line development</li>
+          <li> Setup IDE (IntelliJ IDEA) dengan Kotlin support</li>
+          <li> Create dan run first Kotlin project</li>
+          <li> Understand Gradle build system basics</li>
+          <li> Know alternative development options (REPL, Playground, Scripts)</li>
         </ul>
 
         <Note type="success">

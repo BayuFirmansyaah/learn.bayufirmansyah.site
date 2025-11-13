@@ -44,24 +44,24 @@ val pi = 3.14159           // Type: Double`}
           <CodeBlock language="kotlin">
 {`// var = variable (mutable, can be reassigned)
 var counter: Int = 0
-counter = 1        // ✅ OK
-counter = 2        // ✅ OK
-counter++          // ✅ OK, now counter = 3
+counter = 1        //  OK
+counter = 2        //  OK
+counter++          //  OK, now counter = 3
 
 var message = "Hello"
-message = "Hi"     // ✅ OK
-message = "Hey"    // ✅ OK
+message = "Hi"     //  OK
+message = "Hey"    //  OK
 
 // Tipe data tetap harus sama
 var number = 10    // Type: Int
-number = 20        // ✅ OK
+number = 20        //  OK
 number = "twenty"  // ❌ Error: Type mismatch`}
           </CodeBlock>
         </Subsection>
 
         <Subsection id="val-vs-var-best-practice" heading="val vs var: Best Practices">
           <CodeBlock language="kotlin">
-{`// ✅ GOOD: Prefer val (immutable)
+{`//  GOOD: Prefer val (immutable)
 val firstName = "John"
 val lastName = "Doe"
 val fullName = "$firstName $lastName"
@@ -69,15 +69,15 @@ val fullName = "$firstName $lastName"
 // ❌ AVOID: var tanpa alasan
 var userName = "john_doe"  // Jika tidak perlu diubah, gunakan val
 
-// ✅ GOOD: var when necessary
+//  GOOD: var when necessary
 var score = 0
 for (i in 1..10) {
     score += i  // score berubah setiap iterasi
 }
 
-// ✅ GOOD: val dengan mutable collection
+//  GOOD: val dengan mutable collection
 val numbers = mutableListOf(1, 2, 3)
-numbers.add(4)  // ✅ OK - collection content berubah, tapi reference tidak
+numbers.add(4)  //  OK - collection content berubah, tapi reference tidak
 numbers = mutableListOf(5, 6)  // ❌ Error - cannot reassign val`}
           </CodeBlock>
 
@@ -621,7 +621,7 @@ fun getString(): String = "Hello"  // Explicit return type
 
 // Type inference limitations
 val ambiguous = null          // ❌ Error: cannot infer type
-val explicit: String? = null  // ✅ OK dengan explicit type`}
+val explicit: String? = null  //  OK dengan explicit type`}
           </CodeBlock>
         </Subsection>
 
@@ -662,7 +662,7 @@ if (mutableString != null) {
 // Solution: use local val
 val localString = mutableString
 if (localString != null) {
-    println(localString.length)  // ✅ OK
+    println(localString.length)  //  OK
 }`}
           </CodeBlock>
 
@@ -676,12 +676,12 @@ if (localString != null) {
           <CodeBlock language="kotlin">
 {`// Unsafe cast dengan as (throw exception jika gagal)
 val obj: Any = "Hello"
-val str: String = obj as String  // ✅ OK
+val str: String = obj as String  //  OK
 val num: Int = obj as Int        // ❌ ClassCastException
 
 // Safe cast dengan as? (return null jika gagal)
-val safeStr: String? = obj as? String  // ✅ "Hello"
-val safeNum: Int? = obj as? Int        // ✅ null (no exception)
+val safeStr: String? = obj as? String  //  "Hello"
+val safeNum: Int? = obj as? Int        //  null (no exception)
 
 // Real-world example
 fun processData(data: Any) {
@@ -824,11 +824,11 @@ val expensiveValue by lazy {
         </p>
 
         <ul>
-          <li>✅ <strong>Variables:</strong> <code>val</code> (immutable) vs <code>var</code> (mutable)</li>
-          <li>✅ <strong>Data Types:</strong> Numeric types, Boolean, Char, String, Arrays</li>
-          <li>✅ <strong>Operators:</strong> Arithmetic, comparison, logical, bitwise, ranges</li>
-          <li>✅ <strong>Type System:</strong> Type inference, smart casts, explicit casting</li>
-          <li>✅ <strong>Constants:</strong> <code>const val</code> vs <code>val</code></li>
+          <li> <strong>Variables:</strong> <code>val</code> (immutable) vs <code>var</code> (mutable)</li>
+          <li> <strong>Data Types:</strong> Numeric types, Boolean, Char, String, Arrays</li>
+          <li> <strong>Operators:</strong> Arithmetic, comparison, logical, bitwise, ranges</li>
+          <li> <strong>Type System:</strong> Type inference, smart casts, explicit casting</li>
+          <li> <strong>Constants:</strong> <code>const val</code> vs <code>val</code></li>
         </ul>
 
         <Note type="success">
