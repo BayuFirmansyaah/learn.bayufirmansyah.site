@@ -4,6 +4,18 @@
   
   const dispatch = createEventDispatcher();
   
+  let mobileMenuOpen = false;
+  let scrolled = false;
+  
+  // Handle scroll for navbar background
+  function handleScroll() {
+    scrolled = window.scrollY > 50;
+  }
+  
+  function toggleMobileMenu() {
+    mobileMenuOpen = !mobileMenuOpen;
+  }
+  
   const categories = [
     {
       name: 'Laravel',
@@ -40,8 +52,43 @@
   }
 </script>
 
+<svelte:window on:scroll={handleScroll} />
+
 <div class="landing-container">
-  <header class="hero">
+  <!-- Navigation Bar -->
+  <nav class="navbar" class:scrolled>
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <span class="brand-icon">
+          <i class="fa-solid fa-code"></i>
+        </span>
+        <span class="brand-text">ubay.tech</span>
+      </div>
+      
+      <div class="navbar-menu" class:active={mobileMenuOpen}>
+        <a href="#home" class="nav-link" on:click={() => mobileMenuOpen = false}>Home</a>
+        <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
+        <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Materi</a>
+        <a href="#testimonials" class="nav-link" on:click={() => mobileMenuOpen = false}>Testimoni</a>
+        <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="nav-link-social">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="#categories" class="nav-btn" on:click={() => mobileMenuOpen = false}>
+          Mulai Belajar
+        </a>
+      </div>
+      
+      <button class="mobile-menu-toggle" on:click={toggleMobileMenu} aria-label="Toggle menu">
+        <span class="hamburger" class:active={mobileMenuOpen}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
     <div class="hero-background-pattern"></div>
     <div class="hero-shapes">
       <div class="shape shape-1"></div>
@@ -112,7 +159,7 @@
     </div>
   </header>
 
-  <section class="about-section">
+  <section class="about-section" id="about">
     <div class="about-content">
       <div class="section-header">
         <h2 class="section-title-main">Pembelajaran yang Disesuaikan dengan Kebutuhan Anda</h2>
@@ -204,7 +251,7 @@
   </section>
 
   <!-- Social Proof Section -->
-  <section class="social-proof-section">
+  <section class="social-proof-section" id="testimonials">
     <div class="social-proof-content">
       <div class="section-header">
         <h2 class="section-title-main">Dipercaya oleh Pembelajar di Seluruh Indonesia</h2>
@@ -303,7 +350,7 @@
     </div>
   </section>
 
-  <section class="categories">
+  <section class="categories" id="categories">
     <div class="categories-content">
       <div class="section-header">
         <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
@@ -415,15 +462,257 @@
 </div>
 
 <style>
+  * {
+    scroll-behavior: smooth;
+  }
+
   .landing-container {
     min-height: 100vh;
     background: #F7FAFC;
   }
 
+  /* Navigation Bar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.3s ease;
+    padding: 20px 0;
+  }
+
+  .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.scrolled .navbar-brand {
+    color: #2D3748;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+    background: #FFD700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D3748;
+    font-size: 1.2rem;
+  }
+
+  .brand-text {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .navbar.scrolled .nav-link {
+    color: #4A5568;
+  }
+
+  .nav-link:hover {
+    color: #FFD700;
+  }
+
+  .navbar.scrolled .nav-link:hover {
+    color: #4361EE;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFD700;
+    transition: width 0.3s ease;
+  }
+
+  .navbar.scrolled .nav-link::after {
+    background: #4361EE;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .nav-link-social {
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.scrolled .nav-link-social {
+    color: #4A5568;
+  }
+
+  .nav-link-social:hover {
+    color: #FFD700;
+    transform: scale(1.2);
+  }
+
+  .navbar.scrolled .nav-link-social:hover {
+    color: #4361EE;
+  }
+
+  .nav-btn {
+    background: #FFD700;
+    color: #2D3748;
+    padding: 10px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    border: 2px solid #FFD700;
+  }
+
+  .nav-btn:hover {
+    background: transparent;
+    color: #FFD700;
+    transform: translateY(-2px);
+  }
+
+  .navbar.scrolled .nav-btn {
+    background: #4361EE;
+    color: white;
+    border-color: #4361EE;
+  }
+
+  .navbar.scrolled .nav-btn:hover {
+    background: transparent;
+    color: #4361EE;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .hamburger {
+    width: 28px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar.scrolled .hamburger span {
+    background: #2D3748;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  @media (max-width: 968px) {
+    .navbar-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 280px;
+      height: 100vh;
+      background: white;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 80px 30px 30px;
+      gap: 25px;
+      box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+    }
+
+    .navbar-menu.active {
+      right: 0;
+    }
+
+    .nav-link,
+    .nav-link-social {
+      color: #2D3748;
+      font-size: 1.1rem;
+    }
+
+    .nav-link:hover {
+      color: #4361EE;
+    }
+
+    .nav-btn {
+      background: #4361EE;
+      color: white;
+      border-color: #4361EE;
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobile-menu-toggle {
+      display: block;
+    }
+  }
+
   /* Hero Section - New Design */
   .hero {
     position: relative;
-    padding: 80px 20px;
+    padding: 140px 20px 80px;
     background: #4361EE;
     color: white;
     overflow: hidden;
