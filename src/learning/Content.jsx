@@ -3,7 +3,7 @@ import CodeBlock from './components/CodeBlock';
 import StructuredContent from './components/StructuredContent';
 import NavigationButtons from './components/NavigationButtons';
 import * as LaravelMateri from './materi/Laravel/index.js';
-import * as KotlinMateri from './materi/Kotlin.js';
+import * as KotlinMateri from './materi/Kotlin/index.js';
 import * as FlutterMateri from './materi/Flutter.js';
 import * as JavaScriptMateri from './materi/JavaScript.js';
 
