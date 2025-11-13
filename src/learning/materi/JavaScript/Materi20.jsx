@@ -10,7 +10,7 @@ export default function Materi20() {
       title="Performance & Optimization"
       description="Pelajari teknik optimasi performance di JavaScript"
     >
-      <Section title="Pengenalan Performance Optimization">
+      <Section id="pengenalan-performance-optimization" heading="Pengenalan Performance Optimization">
         <p>
           Performance optimization adalah meningkatkan speed, responsiveness, dan efficiency 
           of your code. Fokus pada: Load time, Runtime performance, Memory usage.
@@ -21,7 +21,7 @@ export default function Materi20() {
         </Note>
       </Section>
 
-      <Section title="Debounce">
+      <Section id="debounce" heading="Debounce">
         <p>
           Debounce adalah delay execution until after wait time has elapsed since last call.
           Berguna untuk expensive operations (search, resize, scroll).
@@ -84,7 +84,7 @@ window.addEventListener('resize', handleResize);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Throttle">
+      <Section id="throttle" heading="Throttle">
         <p>
           Throttle adalah limit execution to once per specified time period.
           Berguna untuk continuous events (scroll, mousemove).
@@ -148,7 +148,7 @@ const throttled = throttle(() => console.log('Throttled'), 1000);
         </CodeBlock>
       </Section>
 
-      <Section title="Memoization">
+      <Section id="memoization" heading="Memoization">
         <p>Memoization adalah cache function results untuk avoid redundant calculations.</p>
 
         <CodeBlock language="javascript">
@@ -240,7 +240,7 @@ const expensiveValue = useMemo(
         </CodeBlock>
       </Section>
 
-      <Section title="Lazy Loading">
+      <Section id="lazy-loading" heading="Lazy Loading">
         <p>Lazy loading adalah defer loading resources until needed.</p>
 
         <h3 className="text-lg font-semibold mb-2">Lazy Load Images</h3>
@@ -299,7 +299,7 @@ const module = await lazyLoadWithIndicator(() => import('./module.js'));`}
         </CodeBlock>
       </Section>
 
-      <Section title="Code Splitting">
+      <Section id="code-splitting" heading="Code Splitting">
         <p>Code splitting adalah break code into smaller chunks yang dapat loaded on demand.</p>
 
         <CodeBlock language="javascript">
@@ -354,7 +354,7 @@ const routes = [
         </CodeBlock>
       </Section>
 
-      <Section title="Virtual Scrolling">
+      <Section id="virtual-scrolling" heading="Virtual Scrolling">
         <p>Virtual scrolling adalah render hanya visible items dalam large lists.</p>
 
         <CodeBlock language="javascript">
@@ -423,7 +423,7 @@ new VirtualScroll(container, items, 50);
         </CodeBlock>
       </Section>
 
-      <Section title="Web Workers">
+      <Section id="web-workers" heading="Web Workers">
         <p>Web Workers run JavaScript in background thread untuk avoid blocking UI.</p>
 
         <CodeBlock language="javascript">
@@ -490,7 +490,7 @@ const result = await processLargeData(largeArray);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Performance Measurement">
+      <Section id="performance-measurement" heading="Performance Measurement">
         <CodeBlock language="javascript">
 {`// Performance API
 const start = performance.now();
@@ -535,7 +535,7 @@ longTaskObserver.observe({ entryTypes: ['longtask'] });`}
         </CodeBlock>
       </Section>
 
-      <Section title="Optimization Techniques">
+      <Section id="optimization-techniques" heading="Optimization Techniques">
         <div className="space-y-3">
           <div>
             <strong>1. Avoid Reflows/Repaints</strong>
@@ -624,7 +624,7 @@ element.addEventListener('transitionend', () => {
         </div>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-2">
           <div>
             <strong>1. Measure Before Optimizing</strong>
@@ -663,7 +663,7 @@ element.addEventListener('transitionend', () => {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Optimization Techniques:</h3>
           <ul className="space-y-2 list-disc list-inside">

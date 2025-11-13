@@ -10,7 +10,7 @@ export default function Materi14() {
       title="Error Handling"
       description="Pelajari cara menangani error dengan try/catch, throw, dan custom errors di JavaScript"
     >
-      <Section title="Pengenalan Error Handling">
+      <Section id="pengenalan-error-handling" heading="Pengenalan Error Handling">
         <p>
           Error handling adalah proses menangani error yang terjadi saat program berjalan. 
           Dengan error handling yang baik, program tidak crash dan memberikan feedback yang jelas.
@@ -22,7 +22,7 @@ export default function Materi14() {
         </Note>
       </Section>
 
-      <Section title="Try...Catch...Finally">
+      <Section id="trycatchfinally" heading="Try...Catch...Finally">
         <h3 className="text-lg font-semibold mb-2">Basic Try...Catch</h3>
         
         <CodeBlock language="javascript">
@@ -116,7 +116,7 @@ console.log(test());
         </CodeBlock>
       </Section>
 
-      <Section title="Throwing Errors">
+      <Section id="throwing-errors" heading="Throwing Errors">
         <h3 className="text-lg font-semibold mb-2">Throw Statement</h3>
         
         <CodeBlock language="javascript">
@@ -213,7 +213,7 @@ function validateEmail(email) {
         </CodeBlock>
       </Section>
 
-      <Section title="Custom Error Classes">
+      <Section id="custom-error-classes" heading="Custom Error Classes">
         <CodeBlock language="javascript">
 {`// Create custom error class
 class ValidationError extends Error {
@@ -300,7 +300,7 @@ try {
         </CodeBlock>
       </Section>
 
-      <Section title="Async Error Handling">
+      <Section id="async-error-handling" heading="Async Error Handling">
         <h3 className="text-lg font-semibold mb-2">Try/Catch dengan Async/Await</h3>
         
         <CodeBlock language="javascript">
@@ -414,7 +414,7 @@ function fetchWithRetry(url, retries = 3) {
         </CodeBlock>
       </Section>
 
-      <Section title="Error Boundaries (React Context)">
+      <Section id="error-boundaries-react-context" heading="Error Boundaries (React Context)">
         <CodeBlock language="javascript">
 {`// Error boundary wrapper for async operations
 class ErrorHandler {
@@ -460,7 +460,7 @@ const user = await fetchUser(1);
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan Error Objects, Bukan Strings</strong>
@@ -562,7 +562,7 @@ try {
         </div>
       </Section>
 
-      <Section title="Common Error Patterns">
+      <Section id="common-error-patterns" heading="Common Error Patterns">
         <CodeBlock language="javascript">
 {`// Pattern 1: Validation with early return
 function processOrder(order) {
@@ -655,7 +655,7 @@ if (collector.hasErrors()) {
         </CodeBlock>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

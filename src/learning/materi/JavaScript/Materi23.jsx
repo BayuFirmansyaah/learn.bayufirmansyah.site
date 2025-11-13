@@ -10,7 +10,7 @@ export default function Materi23() {
       title="Testing & Debugging"
       description="Pelajari testing dan debugging techniques di JavaScript"
     >
-      <Section title="Pengenalan Testing">
+      <Section id="pengenalan-testing" heading="Pengenalan Testing">
         <p>
           Testing adalah proses verify bahwa code works as expected. Types: Unit testing, 
           Integration testing, E2E testing.
@@ -21,7 +21,7 @@ export default function Materi23() {
         </Note>
       </Section>
 
-      <Section title="Unit Testing dengan Jest">
+      <Section id="unit-testing-dengan-jest" heading="Unit Testing dengan Jest">
         <p>Jest adalah popular testing framework untuk JavaScript.</p>
 
         <h3 className="text-lg font-semibold mb-2">Installation</h3>
@@ -134,7 +134,7 @@ expect(value).not.toBe(5);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Testing Async Code">
+      <Section id="testing-async-code" heading="Testing Async Code">
         <CodeBlock language="javascript">
 {`// Function to test
 export async function fetchUser(id) {
@@ -172,7 +172,7 @@ test('fetches user data', (done) => {
         </CodeBlock>
       </Section>
 
-      <Section title="Mocking">
+      <Section id="mocking" heading="Mocking">
         <p>Mocking adalah replace real implementations with test doubles.</p>
 
         <h3 className="text-lg font-semibold mb-2">Mock Functions</h3>
@@ -248,7 +248,7 @@ jest.mock('./api', () => ({
         </CodeBlock>
       </Section>
 
-      <Section title="Setup & Teardown">
+      <Section id="setup-teardown" heading="Setup & Teardown">
         <CodeBlock language="javascript">
 {`let database;
 
@@ -288,7 +288,7 @@ describe('User operations', () => {
         </CodeBlock>
       </Section>
 
-      <Section title="Test Coverage">
+      <Section id="test-coverage" heading="Test Coverage">
         <CodeBlock language="bash">
 {`# Run with coverage
 npm test -- --coverage
@@ -318,7 +318,7 @@ module.exports = {
         </CodeBlock>
       </Section>
 
-      <Section title="Debugging dengan Chrome DevTools">
+      <Section id="debugging-dengan-chrome-devtools" heading="Debugging dengan Chrome DevTools">
         <h3 className="text-lg font-semibold mb-2">Console Methods</h3>
         <CodeBlock language="javascript">
 {`// Basic logging
@@ -409,7 +409,7 @@ if (performance.memory) {
         </CodeBlock>
       </Section>
 
-      <Section title="Debugging Node.js">
+      <Section id="debugging-nodejs" heading="Debugging Node.js">
         <CodeBlock language="bash">
 {`# Start with inspector
 node --inspect app.js
@@ -444,7 +444,7 @@ node --inspect-brk app.js  # Break on first line
         </CodeBlock>
       </Section>
 
-      <Section title="Common Debugging Techniques">
+      <Section id="common-debugging-techniques" heading="Common Debugging Techniques">
         <div className="space-y-3">
           <div>
             <strong>1. Binary Search Debugging</strong>
@@ -496,7 +496,7 @@ console.assert(array.length > 0, 'Array should not be empty');`}
         </div>
       </Section>
 
-      <Section title="Error Tracking">
+      <Section id="error-tracking" heading="Error Tracking">
         <CodeBlock language="javascript">
 {`// Global error handler (browser)
 window.addEventListener('error', (event) => {
@@ -551,7 +551,7 @@ class ErrorBoundary {
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Write Tests First (TDD)</strong>
@@ -598,7 +598,7 @@ test('returns user object when valid ID provided', () => { });`}
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Testing:</h3>
           <ul className="space-y-2 list-disc list-inside">

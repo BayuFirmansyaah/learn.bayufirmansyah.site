@@ -10,7 +10,7 @@ export default function Materi25() {
       title="Build Production App"
       description="Pelajari cara build dan deploy production-ready JavaScript applications"
     >
-      <Section title="Pengenalan Production Build">
+      <Section id="pengenalan-production-build" heading="Pengenalan Production Build">
         <p>
           Production build adalah optimized version of your app untuk deployment. 
           Includes: minification, bundling, optimization, environment configuration.
@@ -21,7 +21,7 @@ export default function Materi25() {
         </Note>
       </Section>
 
-      <Section title="Environment Variables">
+      <Section id="environment-variables" heading="Environment Variables">
         <p>Environment variables store configuration yang berbeda per environment.</p>
 
         <h3 className="text-lg font-semibold mb-2">.env Files</h3>
@@ -133,7 +133,7 @@ Thumbs.db
         </CodeBlock>
       </Section>
 
-      <Section title="Build Process">
+      <Section id="build-process" heading="Build Process">
         <h3 className="text-lg font-semibold mb-2">Webpack Production Build</h3>
         <CodeBlock language="javascript">
 {`// webpack.config.js
@@ -271,7 +271,7 @@ export default defineConfig({
         </CodeBlock>
       </Section>
 
-      <Section title="Code Optimization">
+      <Section id="code-optimization" heading="Code Optimization">
         <h3 className="text-lg font-semibold mb-2">Tree Shaking</h3>
         <CodeBlock language="javascript">
 {`// Named imports (tree-shakeable)
@@ -361,7 +361,7 @@ if (process.env.NODE_ENV === 'development') {
         </CodeBlock>
       </Section>
 
-      <Section title="Asset Optimization">
+      <Section id="asset-optimization" heading="Asset Optimization">
         <h3 className="text-lg font-semibold mb-2">Image Optimization</h3>
         <CodeBlock language="javascript">
 {`// Webpack image optimization
@@ -436,7 +436,7 @@ images.forEach(img => observer.observe(img));`}
         </CodeBlock>
       </Section>
 
-      <Section title="Performance Monitoring">
+      <Section id="performance-monitoring" heading="Performance Monitoring">
         <CodeBlock language="javascript">
 {`// Performance API
 performance.mark('app-start');
@@ -487,7 +487,7 @@ transaction.finish();`}
         </CodeBlock>
       </Section>
 
-      <Section title="Deployment">
+      <Section id="deployment" heading="Deployment">
         <h3 className="text-lg font-semibold mb-2">Static Hosting (Vercel, Netlify)</h3>
         <CodeBlock language="bash">
 {`# Vercel
@@ -611,7 +611,7 @@ jobs:
         </CodeBlock>
       </Section>
 
-      <Section title="Production Checklist">
+      <Section id="production-checklist" heading="Production Checklist">
         <div className="bg-green-50 dark:bg-green-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Before Deployment:</h3>
           <ul className="space-y-2 list-disc list-inside">
@@ -636,7 +636,7 @@ jobs:
         </div>
       </Section>
 
-      <Section title="Post-Deployment">
+      <Section id="postdeployment" heading="Post-Deployment">
         <CodeBlock language="javascript">
 {`// Health check endpoint
 app.get('/health', (req, res) => {
@@ -677,7 +677,7 @@ process.on('SIGTERM', async () => {
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Use Environment-Specific Configs</strong>
@@ -716,7 +716,7 @@ process.on('SIGTERM', async () => {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Production Essentials:</h3>
           <ul className="space-y-2 list-disc list-inside">

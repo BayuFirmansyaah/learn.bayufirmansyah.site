@@ -10,7 +10,7 @@ export default function Materi12() {
       title="ES6+ Features"
       description="Pelajari fitur-fitur modern JavaScript dari ES6 (ES2015) hingga terbaru"
     >
-      <Section title="Pengenalan ES6+">
+      <Section id="pengenalan-es6" heading="Pengenalan ES6+">
         <p>
           ECMAScript 2015 (ES6) dan versi-versi selanjutnya membawa banyak fitur baru yang membuat 
           JavaScript lebih powerful, expressive, dan mudah ditulis. Mari pelajari fitur-fitur penting!
@@ -22,7 +22,7 @@ export default function Materi12() {
         </Note>
       </Section>
 
-      <Section title="Destructuring">
+      <Section id="destructuring" heading="Destructuring">
         <h3 className="text-lg font-semibold mb-2">Array Destructuring</h3>
         
         <CodeBlock language="javascript">
@@ -96,7 +96,7 @@ greetUser(user);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Spread & Rest Operators">
+      <Section id="spread-rest-operators" heading="Spread & Rest Operators">
         <h3 className="text-lg font-semibold mb-2">Spread Operator (...)</h3>
         
         <CodeBlock language="javascript">
@@ -160,7 +160,7 @@ console.log(rest);   // [2, 3, 4, 5]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Enhanced Object Literals">
+      <Section id="enhanced-object-literals" heading="Enhanced Object Literals">
         <CodeBlock language="javascript">
 {`const name = 'Alice';
 const age = 25;
@@ -191,7 +191,7 @@ console.log(student);  // { name: 'Bob', score: 95, test_2: 'passed' }`}
         </CodeBlock>
       </Section>
 
-      <Section title="Default Parameters">
+      <Section id="default-parameters" heading="Default Parameters">
         <CodeBlock language="javascript">
 {`// Basic default parameters
 function greet(name = 'Guest', message = 'Hello') {
@@ -222,7 +222,7 @@ configure();  // "Server: localhost:8080"`}
         </CodeBlock>
       </Section>
 
-      <Section title="Template Literals Lanjutan">
+      <Section id="template-literals-lanjutan" heading="Template Literals Lanjutan">
         <CodeBlock language="javascript">
 {`// Multiline strings
 const html = \`
@@ -263,7 +263,7 @@ const styles = css\`
         </CodeBlock>
       </Section>
 
-      <Section title="Optional Chaining (?.)">
+      <Section id="optional-chaining" heading="Optional Chaining (?.)">
         <CodeBlock language="javascript">
 {`const user = {
   name: 'Alice',
@@ -301,7 +301,7 @@ console.log(city);  // "Jakarta"`}
         </CodeBlock>
       </Section>
 
-      <Section title="Nullish Coalescing (??)">
+      <Section id="nullish-coalescing" heading="Nullish Coalescing (??)">
         <CodeBlock language="javascript">
 {`// ?? returns right side only if left is null/undefined
 const value1 = null ?? 'default';
@@ -342,7 +342,7 @@ configure({ timeout: 0, retries: 0, debug: false });
         </CodeBlock>
       </Section>
 
-      <Section title="For...of Loop">
+      <Section id="forof-loop" heading="For...of Loop">
         <CodeBlock language="javascript">
 {`// Iterate arrays
 const colors = ['red', 'green', 'blue'];
@@ -386,7 +386,7 @@ for (const index in arr) {
         </CodeBlock>
       </Section>
 
-      <Section title="Map & Set">
+      <Section id="map-set" heading="Map & Set">
         <h3 className="text-lg font-semibold mb-2">Map</h3>
         <CodeBlock language="javascript">
 {`// Create Map
@@ -472,7 +472,7 @@ numbers.clear();`}
         </CodeBlock>
       </Section>
 
-      <Section title="Symbols">
+      <Section id="symbols" heading="Symbols">
         <CodeBlock language="javascript">
 {`// Create unique symbol
 const sym1 = Symbol('description');
@@ -514,7 +514,7 @@ for (const value of obj) {
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan Destructuring untuk Parameter</strong>
@@ -556,7 +556,7 @@ const enabled = config.enabled ?? true;`}
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Fitur ES6+ yang Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

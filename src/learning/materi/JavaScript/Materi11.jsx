@@ -11,7 +11,7 @@ export default function Materi11() {
       description="Pelajari cara menangani operasi asynchronous dengan Callbacks, Promises, dan Async/Await"
     >
       {/* Intro */}
-      <Section title="Pengenalan Asynchronous Programming">
+      <Section id="pengenalan-asynchronous-programming" heading="Pengenalan Asynchronous Programming">
         <p>
           JavaScript adalah single-threaded, artinya hanya bisa menjalankan satu task pada satu waktu. 
           Asynchronous programming memungkinkan kita menjalankan operasi yang memakan waktu (seperti 
@@ -45,7 +45,7 @@ console.log('End');  // Langsung dijalankan, tidak tunggu setTimeout
       </Section>
 
       {/* Callbacks */}
-      <Section title="Callbacks">
+      <Section id="callbacks" heading="Callbacks">
         <h3 className="text-lg font-semibold mb-2">Callback Functions</h3>
         <p>Callback adalah function yang dipass sebagai argument ke function lain untuk dieksekusi nanti.</p>
         
@@ -111,7 +111,7 @@ getUser(1, (user) => {
       </Section>
 
       {/* Promises */}
-      <Section title="Promises">
+      <Section id="promises" heading="Promises">
         <h3 className="text-lg font-semibold mb-2">Membuat dan Menggunakan Promise</h3>
         <p>
           Promise adalah object yang merepresentasikan eventual completion (or failure) dari 
@@ -294,7 +294,7 @@ Promise.any([
       </Section>
 
       {/* Async/Await */}
-      <Section title="Async/Await">
+      <Section id="asyncawait" heading="Async/Await">
         <h3 className="text-lg font-semibold mb-2">Async Functions</h3>
         <p>
           Async/await adalah syntax sugar di atas promises yang membuat asynchronous code 
@@ -463,7 +463,7 @@ async function mixedFetch() {
       </Section>
 
       {/* Best Practices */}
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Prefer Async/Await over Promises</strong>
@@ -521,7 +521,7 @@ const [user, posts] = await Promise.all([
       </Section>
 
       {/* Summary */}
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

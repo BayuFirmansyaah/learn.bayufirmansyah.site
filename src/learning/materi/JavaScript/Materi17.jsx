@@ -10,7 +10,7 @@ export default function Materi17() {
       title="Functional Programming"
       description="Pelajari paradigma functional programming di JavaScript"
     >
-      <Section title="Pengenalan Functional Programming">
+      <Section id="pengenalan-functional-programming" heading="Pengenalan Functional Programming">
         <p>
           Functional Programming (FP) adalah paradigma yang memperlakukan computation sebagai 
           evaluasi mathematical functions, menghindari changing state dan mutable data.
@@ -22,7 +22,7 @@ export default function Materi17() {
         </Note>
       </Section>
 
-      <Section title="Pure Functions">
+      <Section id="pure-functions" heading="Pure Functions">
         <p>
           Pure function adalah function yang:
           1) Selalu return value yang sama untuk input yang sama
@@ -78,7 +78,7 @@ console.log(getDoubled([1, 2, 3]));  // Always [2, 4, 6]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Immutability">
+      <Section id="immutability" heading="Immutability">
         <p>Immutability berarti tidak modify data yang ada, selalu create new data.</p>
 
         <h3 className="text-lg font-semibold mb-2">Array Immutability</h3>
@@ -156,7 +156,7 @@ const updated = updateObject(state, ['user', 'address', 'city'], 'LA');`}
         </CodeBlock>
       </Section>
 
-      <Section title="Higher-Order Functions">
+      <Section id="higherorder-functions" heading="Higher-Order Functions">
         <p>
           Higher-order function adalah function yang:
           1) Menerima function sebagai argument, atau
@@ -209,7 +209,7 @@ numbers.reduce((a, b) => a + b, 0);  // reduce accepts function`}
         </CodeBlock>
       </Section>
 
-      <Section title="Function Composition">
+      <Section id="function-composition" heading="Function Composition">
         <p>Function composition adalah menggabungkan functions untuk create new function.</p>
 
         <CodeBlock language="javascript">
@@ -274,7 +274,7 @@ console.log(getAges(users));  // [25, 35]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Currying">
+      <Section id="currying" heading="Currying">
         <p>
           Currying adalah teknik transform function dengan multiple parameters 
           menjadi sequence of functions dengan single parameter.
@@ -347,7 +347,7 @@ const alice = users.find(isAlice);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Partial Application">
+      <Section id="partial-application" heading="Partial Application">
         <p>Partial application adalah fixing beberapa arguments of a function.</p>
 
         <CodeBlock language="javascript">
@@ -392,7 +392,7 @@ logWarning('Memory usage high', Date.now());`}
         </CodeBlock>
       </Section>
 
-      <Section title="Functors & Monads (Basics)">
+      <Section id="functors-monads-basics" heading="Functors & Monads (Basics)">
         <h3 className="text-lg font-semibold mb-2">Functor (Mappable)</h3>
         <p>Functor adalah container yang memiliki map method.</p>
 
@@ -508,7 +508,7 @@ const flat = Maybe.of(10)
         </CodeBlock>
       </Section>
 
-      <Section title="Recursion">
+      <Section id="recursion" heading="Recursion">
         <p>Functional programming sering menggunakan recursion instead of loops.</p>
 
         <CodeBlock language="javascript">
@@ -570,7 +570,7 @@ console.log(flatten([1, [2, [3, 4], 5], 6]));  // [1, 2, 3, 4, 5, 6]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Real-World Examples">
+      <Section id="realworld-examples" heading="Real-World Examples">
         <h3 className="text-lg font-semibold mb-2">Data Pipeline</h3>
         <CodeBlock language="javascript">
 {`const data = [
@@ -657,7 +657,7 @@ console.log(ageValidation);    // { valid: true }`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Prefer Pure Functions</strong>
@@ -714,7 +714,7 @@ const result = divide(10, 0)
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

@@ -10,7 +10,7 @@ export default function Materi22() {
       title="API Integration"
       description="Pelajari cara integrate dengan REST APIs di JavaScript"
     >
-      <Section title="Pengenalan API Integration">
+      <Section id="pengenalan-api-integration" heading="Pengenalan API Integration">
         <p>
           API (Application Programming Interface) adalah interface yang memungkinkan komunikasi 
           antara applications. REST API adalah architectural style yang paling populer.
@@ -21,7 +21,7 @@ export default function Materi22() {
         </Note>
       </Section>
 
-      <Section title="Fetch API">
+      <Section id="fetch-api" heading="Fetch API">
         <p>Fetch API adalah modern way untuk make HTTP requests di browser.</p>
 
         <h3 className="text-lg font-semibold mb-2">Basic GET Request</h3>
@@ -147,7 +147,7 @@ await deleteUser(1);`}
         </CodeBlock>
       </Section>
 
-      <Section title="API Client Class">
+      <Section id="api-client-class" heading="API Client Class">
         <p>Create reusable API client dengan error handling dan authentication.</p>
 
         <CodeBlock language="javascript">
@@ -265,7 +265,7 @@ const filteredUsers = await api.get('/users', {
         </CodeBlock>
       </Section>
 
-      <Section title="Authentication">
+      <Section id="authentication" heading="Authentication">
         <h3 className="text-lg font-semibold mb-2">JWT (JSON Web Token)</h3>
         <CodeBlock language="javascript">
 {`class AuthService {
@@ -398,7 +398,7 @@ async function updateProfile(data) {
         </CodeBlock>
       </Section>
 
-      <Section title="Error Handling">
+      <Section id="error-handling" heading="Error Handling">
         <CodeBlock language="javascript">
 {`class ApiError extends Error {
   constructor(message, status, data = null) {
@@ -490,7 +490,7 @@ async function fetchUserWithErrorHandling(id) {
         </CodeBlock>
       </Section>
 
-      <Section title="Request Cancellation">
+      <Section id="request-cancellation" heading="Request Cancellation">
         <p>Use AbortController untuk cancel ongoing requests.</p>
 
         <CodeBlock language="javascript">
@@ -587,7 +587,7 @@ class ApiClient {
         </CodeBlock>
       </Section>
 
-      <Section title="Retry Logic">
+      <Section id="retry-logic" heading="Retry Logic">
         <CodeBlock language="javascript">
 {`async function fetchWithRetry(url, options = {}, maxRetries = 3) {
   let lastError;
@@ -649,7 +649,7 @@ const data = await api.requestWithRetry('/users', {}, 3);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Always Handle Errors</strong>
@@ -704,7 +704,7 @@ if (!data || !data.id) {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

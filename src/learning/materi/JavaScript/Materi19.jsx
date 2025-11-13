@@ -10,7 +10,7 @@ export default function Materi19() {
       title="Design Patterns"
       description="Pelajari design patterns populer dalam JavaScript"
     >
-      <Section title="Pengenalan Design Patterns">
+      <Section id="pengenalan-design-patterns" heading="Pengenalan Design Patterns">
         <p>
           Design patterns adalah solusi reusable untuk masalah umum dalam software design.
           Terbagi menjadi 3 kategori: Creational, Structural, Behavioral.
@@ -21,7 +21,7 @@ export default function Materi19() {
         </Note>
       </Section>
 
-      <Section title="1. Module Pattern">
+      <Section id="1-module-pattern" heading="1. Module Pattern">
         <p>Encapsulate private data dan expose public API.</p>
 
         <CodeBlock language="javascript">
@@ -109,7 +109,7 @@ console.log(UserModule.getAll());`}
         </CodeBlock>
       </Section>
 
-      <Section title="2. Singleton Pattern">
+      <Section id="2-singleton-pattern" heading="2. Singleton Pattern">
         <p>Ensure hanya satu instance of a class exists.</p>
 
         <CodeBlock language="javascript">
@@ -185,7 +185,7 @@ console.log(config2.get('apiUrl'));  // "https://new-api.example.com"`}
         </CodeBlock>
       </Section>
 
-      <Section title="3. Factory Pattern">
+      <Section id="3-factory-pattern" heading="3. Factory Pattern">
         <p>Create objects tanpa specify exact class.</p>
 
         <CodeBlock language="javascript">
@@ -276,7 +276,7 @@ bike.drive();  // "Riding a bike"`}
         </CodeBlock>
       </Section>
 
-      <Section title="4. Observer Pattern">
+      <Section id="4-observer-pattern" heading="4. Observer Pattern">
         <p>Define subscription mechanism untuk notify multiple objects.</p>
 
         <CodeBlock language="javascript">
@@ -377,7 +377,7 @@ store.setState({ count: 1 });  // Notifies all subscribers`}
         </CodeBlock>
       </Section>
 
-      <Section title="5. Strategy Pattern">
+      <Section id="5-strategy-pattern" heading="5. Strategy Pattern">
         <p>Define family of algorithms dan make them interchangeable.</p>
 
         <CodeBlock language="javascript">
@@ -467,7 +467,7 @@ console.log(validate('test@example.com', 'email'));  // true`}
         </CodeBlock>
       </Section>
 
-      <Section title="6. Decorator Pattern">
+      <Section id="6-decorator-pattern" heading="6. Decorator Pattern">
         <p>Add behavior to objects dynamically.</p>
 
         <CodeBlock language="javascript">
@@ -553,7 +553,7 @@ decoratedAdd(5, 3);`}
         </CodeBlock>
       </Section>
 
-      <Section title="7. Proxy Pattern">
+      <Section id="7-proxy-pattern" heading="7. Proxy Pattern">
         <p>Control access to an object dengan providing substitute/placeholder.</p>
 
         <CodeBlock language="javascript">
@@ -636,7 +636,7 @@ console.log(cachedFib(10));  // Cache hit`}
         </CodeBlock>
       </Section>
 
-      <Section title="8. Command Pattern">
+      <Section id="8-command-pattern" heading="8. Command Pattern">
         <p>Encapsulate request as object untuk parametrize clients dan support undo.</p>
 
         <CodeBlock language="javascript">
@@ -770,7 +770,7 @@ console.log(calculator.getValue());  // 20`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Don't Overuse Patterns</strong>
@@ -812,7 +812,7 @@ class UserFactory {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Design Patterns:</h3>
           <ul className="space-y-2 list-disc list-inside">

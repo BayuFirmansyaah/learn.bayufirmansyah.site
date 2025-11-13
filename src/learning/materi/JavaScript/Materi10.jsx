@@ -11,7 +11,7 @@ export default function Materi10() {
       description="Pelajari cara menangani interaksi user seperti click, input, submit, dan berbagai event lainnya"
     >
       {/* Intro */}
-      <Section title="Pengenalan Events">
+      <Section id="pengenalan-events" heading="Pengenalan Events">
         <p>
           Events adalah aksi atau kejadian yang terjadi di halaman web, seperti user mengklik 
           tombol, mengetik di input, scroll halaman, dll. JavaScript dapat "mendengarkan" dan 
@@ -41,7 +41,7 @@ button.addEventListener('click', function() {
       </Section>
 
       {/* addEventListener */}
-      <Section title="addEventListener()">
+      <Section id="addeventlistener" heading="addEventListener()">
         <h3 className="text-lg font-semibold mb-2">Syntax Dasar</h3>
         <p>Method modern dan direkomendasikan untuk menangani events.</p>
         
@@ -135,7 +135,7 @@ button.addEventListener('click', handler, {
       </Section>
 
       {/* Event Object */}
-      <Section title="Event Object">
+      <Section id="event-object" heading="Event Object">
         <h3 className="text-lg font-semibold mb-2">Mengakses Event Object</h3>
         <p>Setiap event handler menerima object yang berisi informasi tentang event.</p>
         
@@ -246,7 +246,7 @@ child.addEventListener('click', () => {
       </Section>
 
       {/* Event Types */}
-      <Section title="Jenis-jenis Event">
+      <Section id="jenisjenis-event" heading="Jenis-jenis Event">
         <h3 className="text-lg font-semibold mb-2">Mouse Events</h3>
         
         <CodeBlock language="javascript">
@@ -462,7 +462,7 @@ window.addEventListener('load', checkWindowSize);`}
       </Section>
 
       {/* Event Bubbling & Capturing */}
-      <Section title="Event Bubbling & Capturing">
+      <Section id="event-bubbling-capturing" heading="Event Bubbling & Capturing">
         <h3 className="text-lg font-semibold mb-2">Event Propagation</h3>
         <p>
           Event di DOM melalui 3 fase: Capturing → Target → Bubbling. 
@@ -509,7 +509,7 @@ inner.addEventListener('click', (e) => {
       </Section>
 
       {/* Event Delegation */}
-      <Section title="Event Delegation">
+      <Section id="event-delegation" heading="Event Delegation">
         <h3 className="text-lg font-semibold mb-2">Konsep Event Delegation</h3>
         <p>
           Memanfaatkan event bubbling untuk attach listener ke parent element, 
@@ -580,7 +580,7 @@ function addTodo(text) {
       </Section>
 
       {/* Custom Events */}
-      <Section title="Custom Events">
+      <Section id="custom-events" heading="Custom Events">
         <h3 className="text-lg font-semibold mb-2">Membuat Custom Event</h3>
         <p>Membuat dan dispatch event custom untuk komunikasi antar komponen.</p>
         
@@ -648,7 +648,7 @@ dataStore.update('username', 'Alice');`}
       </Section>
 
       {/* Best Practices */}
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan addEventListener, Bukan Inline Handlers</strong>
@@ -756,7 +756,7 @@ searchInput.addEventListener('input', debounce((e) => {
       </Section>
 
       {/* Summary */}
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

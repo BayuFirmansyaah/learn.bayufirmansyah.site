@@ -10,7 +10,7 @@ export default function Materi21() {
       title="Modern JavaScript Tools"
       description="Pelajari tools modern untuk JavaScript development"
     >
-      <Section title="Pengenalan Modern Tools">
+      <Section id="pengenalan-modern-tools" heading="Pengenalan Modern Tools">
         <p>
           Modern JavaScript development requires berbagai tools: package managers, bundlers, 
           transpilers, linters, formatters. Tools ini improve developer experience dan code quality.
@@ -21,7 +21,7 @@ export default function Materi21() {
         </Note>
       </Section>
 
-      <Section title="npm (Node Package Manager)">
+      <Section id="npm-node-package-manager" heading="npm (Node Package Manager)">
         <p>npm adalah package manager default untuk Node.js ecosystem.</p>
 
         <h3 className="text-lg font-semibold mb-2">package.json</h3>
@@ -116,7 +116,7 @@ npm audit fix`}
         </CodeBlock>
       </Section>
 
-      <Section title="Yarn">
+      <Section id="yarn" heading="Yarn">
         <p>Yarn adalah alternative package manager, faster dan more reliable.</p>
 
         <CodeBlock language="bash">
@@ -158,7 +158,7 @@ yarn global remove nodemon
         </CodeBlock>
       </Section>
 
-      <Section title="Webpack">
+      <Section id="webpack" heading="Webpack">
         <p>Webpack adalah module bundler yang bundle JavaScript, CSS, images, etc.</p>
 
         <h3 className="text-lg font-semibold mb-2">webpack.config.js</h3>
@@ -244,7 +244,7 @@ npx webpack serve
         </CodeBlock>
       </Section>
 
-      <Section title="Vite">
+      <Section id="vite" heading="Vite">
         <p>Vite adalah next-generation build tool, extremely fast dengan native ES modules.</p>
 
         <CodeBlock language="bash">
@@ -292,7 +292,7 @@ export default defineConfig({
         </CodeBlock>
       </Section>
 
-      <Section title="Babel">
+      <Section id="babel" heading="Babel">
         <p>Babel adalah JavaScript transpiler yang converts modern JS to older versions.</p>
 
         <CodeBlock language="bash">
@@ -350,7 +350,7 @@ var obj = { a: a, b: b };`}
         </CodeBlock>
       </Section>
 
-      <Section title="ESLint">
+      <Section id="eslint" heading="ESLint">
         <p>ESLint adalah linting tool untuk identify and fix problems in JavaScript code.</p>
 
         <CodeBlock language="bash">
@@ -419,7 +419,7 @@ npm install --save-dev eslint-config-standard`}
         </CodeBlock>
       </Section>
 
-      <Section title="Prettier">
+      <Section id="prettier" heading="Prettier">
         <p>Prettier adalah opinionated code formatter.</p>
 
         <CodeBlock language="bash">
@@ -470,7 +470,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
         </CodeBlock>
       </Section>
 
-      <Section title="Git Hooks dengan Husky">
+      <Section id="git-hooks-dengan-husky" heading="Git Hooks dengan Husky">
         <p>Husky allows running scripts before git commands.</p>
 
         <CodeBlock language="bash">
@@ -504,7 +504,7 @@ npx husky add .husky/pre-commit "npx lint-staged"
         </CodeBlock>
       </Section>
 
-      <Section title="TypeScript">
+      <Section id="typescript" heading="TypeScript">
         <p>TypeScript adds static typing to JavaScript.</p>
 
         <CodeBlock language="bash">
@@ -579,7 +579,7 @@ function getUserById(id: ID): User | null {
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Use package.json Scripts</strong>
@@ -618,7 +618,7 @@ function getUserById(id: ID): User | null {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Essential Tools:</h3>
           <ul className="space-y-2 list-disc list-inside">

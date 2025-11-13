@@ -11,7 +11,7 @@ export default function Materi08() {
       description="Pelajari berbagai method untuk memanipulasi string di JavaScript"
     >
       {/* Intro */}
-      <Section title="Pengenalan String">
+      <Section id="pengenalan-string" heading="Pengenalan String">
         <p>
           String adalah tipe data yang merepresentasikan teks. JavaScript menyediakan 
           banyak method built-in untuk memanipulasi string seperti mengubah format, 
@@ -41,7 +41,7 @@ console.log(str);  // Output: "hello"`}
       </Section>
 
       {/* Template Literals */}
-      <Section title="Template Literals">
+      <Section id="template-literals" heading="Template Literals">
         <p>
           Template literals menggunakan backticks (`) dan memungkinkan interpolasi 
           variabel, multi-line string, dan expression embedding.
@@ -83,7 +83,7 @@ console.log(result);
       </Section>
 
       {/* String Properties */}
-      <Section title="String Properties">
+      <Section id="string-properties" heading="String Properties">
         <h3 className="text-lg font-semibold mb-2">length</h3>
         <p>Mendapatkan panjang string (jumlah karakter).</p>
         
@@ -106,7 +106,7 @@ console.log(text[10]);    // Output: undefined`}
       </Section>
 
       {/* String Search Methods */}
-      <Section title="Method Pencarian String">
+      <Section id="method-pencarian-string" heading="Method Pencarian String">
         <h3 className="text-lg font-semibold mb-2">indexOf() & lastIndexOf()</h3>
         <p>Mencari posisi (index) dari substring atau karakter.</p>
         
@@ -180,7 +180,7 @@ console.log(isImageFile("document.pdf"));     // Output: false`}
       </Section>
 
       {/* String Extraction Methods */}
-      <Section title="Method Ekstraksi String">
+      <Section id="method-ekstraksi-string" heading="Method Ekstraksi String">
         <h3 className="text-lg font-semibold mb-2">slice()</h3>
         <p>Mengambil sebagian string berdasarkan index awal dan akhir.</p>
         
@@ -254,7 +254,7 @@ console.log(text[0]);                // Output: "H" (sama dengan charAt(0))`}
       </Section>
 
       {/* String Transform Methods */}
-      <Section title="Method Transformasi String">
+      <Section id="method-transformasi-string" heading="Method Transformasi String">
         <h3 className="text-lg font-semibold mb-2">toUpperCase() & toLowerCase()</h3>
         <p>Mengubah string menjadi huruf besar atau kecil.</p>
         
@@ -355,7 +355,7 @@ console.log(indent("Hello", 2));     // Output: "    Hello"`}
       </Section>
 
       {/* String Replace Methods */}
-      <Section title="Method Replace String">
+      <Section id="method-replace-string" heading="Method Replace String">
         <h3 className="text-lg font-semibold mb-2">replace()</h3>
         <p>Mengganti substring pertama yang ditemukan dengan string baru.</p>
         
@@ -407,7 +407,7 @@ console.log(safe);
       </Section>
 
       {/* Split & Join */}
-      <Section title="Split & Join">
+      <Section id="split-join" heading="Split & Join">
         <h3 className="text-lg font-semibold mb-2">split()</h3>
         <p>Memecah string menjadi array berdasarkan delimiter.</p>
         
@@ -472,7 +472,7 @@ console.log(createSlug("Learn JavaScript Programming"));
       </Section>
 
       {/* String Comparison */}
-      <Section title="Perbandingan String">
+      <Section id="perbandingan-string" heading="Perbandingan String">
         <p>
           String dapat dibandingkan menggunakan operator perbandingan. 
           Perbandingan dilakukan berdasarkan nilai Unicode (lexicographical order).
@@ -509,7 +509,7 @@ console.log(names);  // Output: ["Alice", "Bob", "Charlie"]`}
       </Section>
 
       {/* Escape Characters */}
-      <Section title="Escape Characters">
+      <Section id="escape-characters" heading="Escape Characters">
         <p>
           Karakter khusus yang diawali dengan backslash (\) untuk merepresentasikan 
           karakter yang tidak bisa ditulis langsung.
@@ -554,7 +554,7 @@ console.log(escapes);`}
       </Section>
 
       {/* Best Practices */}
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan Template Literals untuk String Kompleks</strong>
@@ -624,7 +624,7 @@ text.replace(/old/g, "new");`}
       </Section>
 
       {/* Summary */}
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

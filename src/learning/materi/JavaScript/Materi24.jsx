@@ -10,7 +10,7 @@ export default function Materi24() {
       title="Security Best Practices"
       description="Pelajari security practices untuk JavaScript applications"
     >
-      <Section title="Pengenalan Security">
+      <Section id="pengenalan-security" heading="Pengenalan Security">
         <p>
           Security adalah protecting applications dari attacks dan vulnerabilities. 
           Common threats: XSS, CSRF, Injection, Authentication issues.
@@ -21,7 +21,7 @@ export default function Materi24() {
         </Note>
       </Section>
 
-      <Section title="Cross-Site Scripting (XSS)">
+      <Section id="crosssite-scripting-xss" heading="Cross-Site Scripting (XSS)">
         <p>
           XSS adalah injection attack dimana attacker injects malicious scripts 
           ke dalam trusted websites.
@@ -101,7 +101,7 @@ if (isSafeHash(hash)) {
         </CodeBlock>
       </Section>
 
-      <Section title="Cross-Site Request Forgery (CSRF)">
+      <Section id="crosssite-request-forgery-csrf" heading="Cross-Site Request Forgery (CSRF)">
         <p>
           CSRF adalah attack yang tricks user into executing unwanted actions 
           on authenticated application.
@@ -160,7 +160,7 @@ app.post('/transfer', (req, res) => {
         </CodeBlock>
       </Section>
 
-      <Section title="Input Validation">
+      <Section id="input-validation" heading="Input Validation">
         <CodeBlock language="javascript">
 {`// Validate all user input
 class Validator {
@@ -235,7 +235,7 @@ function validateUsername(username) {
         </CodeBlock>
       </Section>
 
-      <Section title="Authentication & Authorization">
+      <Section id="authentication-authorization" heading="Authentication & Authorization">
         <h3 className="text-lg font-semibold mb-2">Secure Password Handling</h3>
         <CodeBlock language="javascript">
 {`// ❌ Never store plain text passwords!
@@ -351,7 +351,7 @@ localStorage.setItem('token', token);  // Vulnerable to XSS!`}
         </CodeBlock>
       </Section>
 
-      <Section title="Content Security Policy (CSP)">
+      <Section id="content-security-policy-csp" heading="Content Security Policy (CSP)">
         <p>CSP adalah security layer that helps prevent XSS attacks.</p>
 
         <CodeBlock language="javascript">
@@ -388,7 +388,7 @@ res.setHeader(
         </CodeBlock>
       </Section>
 
-      <Section title="HTTPS & Secure Communication">
+      <Section id="https-secure-communication" heading="HTTPS & Secure Communication">
         <CodeBlock language="javascript">
 {`// Always use HTTPS
 // Redirect HTTP to HTTPS
@@ -427,7 +427,7 @@ fetch('/api/reset-password', {
         </CodeBlock>
       </Section>
 
-      <Section title="Dependency Security">
+      <Section id="dependency-security" heading="Dependency Security">
         <CodeBlock language="bash">
 {`# Audit dependencies regularly
 npm audit
@@ -458,7 +458,7 @@ npm prune
         </CodeBlock>
       </Section>
 
-      <Section title="Secure Coding Practices">
+      <Section id="secure-coding-practices" heading="Secure Coding Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Never Trust User Input</strong>
@@ -549,7 +549,7 @@ app.use((err, req, res, next) => {
         </div>
       </Section>
 
-      <Section title="Security Checklist">
+      <Section id="security-checklist" heading="Security Checklist">
         <div className="bg-yellow-50 dark:bg-yellow-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Essential Security Measures:</h3>
           <ul className="space-y-2 list-disc list-inside">
@@ -572,7 +572,7 @@ app.use((err, req, res, next) => {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Key Security Concepts:</h3>
           <ul className="space-y-2 list-disc list-inside">

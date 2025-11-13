@@ -10,7 +10,7 @@ export default function Materi15() {
       title="Local Storage & Session Storage"
       description="Pelajari cara menyimpan data di browser dengan Web Storage API"
     >
-      <Section title="Pengenalan Web Storage">
+      <Section id="pengenalan-web-storage" heading="Pengenalan Web Storage">
         <p>
           Web Storage API memungkinkan kita menyimpan data key-value di browser. Ada 2 jenis: 
           localStorage (persisten) dan sessionStorage (temporary, hilang saat tab ditutup).
@@ -22,7 +22,7 @@ export default function Materi15() {
         </Note>
       </Section>
 
-      <Section title="localStorage">
+      <Section id="localstorage" heading="localStorage">
         <h3 className="text-lg font-semibold mb-2">Basic Operations</h3>
         
         <CodeBlock language="javascript">
@@ -115,7 +115,7 @@ const settings = getFromStorage('settings', { theme: 'light', lang: 'en' });`}
         </CodeBlock>
       </Section>
 
-      <Section title="sessionStorage">
+      <Section id="sessionstorage" heading="sessionStorage">
         <p>
           sessionStorage sama dengan localStorage, tapi data hilang saat tab/window ditutup.
           Data persisten selama tab tetap buka (refresh page OK).
@@ -164,7 +164,7 @@ form.addEventListener('submit', (e) => {
         </CodeBlock>
       </Section>
 
-      <Section title="Storage Events">
+      <Section id="storage-events" heading="Storage Events">
         <p>Storage events dipicu saat localStorage berubah di tab/window lain.</p>
         
         <CodeBlock language="javascript">
@@ -200,7 +200,7 @@ window.addEventListener('storage', (e) => {
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3 className="text-lg font-semibold mb-2">Theme Switcher</h3>
         
         <CodeBlock language="javascript">
@@ -466,7 +466,7 @@ function displayRecentSearches() {
         </CodeBlock>
       </Section>
 
-      <Section title="Storage Wrapper Class">
+      <Section id="storage-wrapper-class" heading="Storage Wrapper Class">
         <CodeBlock language="javascript">
 {`class Storage {
   constructor(type = 'local') {
@@ -556,7 +556,7 @@ console.log(\`Storage size: \${storage.getSize()} bytes\`);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Always Use Try/Catch</strong>
@@ -650,7 +650,7 @@ function getWithExpiry(key) {
         </div>
       </Section>
 
-      <Section title="localStorage vs sessionStorage vs Cookies">
+      <Section id="localstorage-vs-sessionstorage-vs-cookies" heading="localStorage vs sessionStorage vs Cookies">
         <div className="overflow-x-auto">
           <table className="min-w-full border">
             <thead className="bg-gray-100 dark:bg-gray-800">
@@ -691,7 +691,7 @@ function getWithExpiry(key) {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

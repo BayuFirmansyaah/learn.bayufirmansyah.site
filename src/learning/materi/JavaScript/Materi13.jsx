@@ -10,7 +10,7 @@ export default function Materi13() {
       title="Array Advanced Methods"
       description="Pelajari method array tingkat lanjut untuk data transformation dan manipulation"
     >
-      <Section title="Array Method Tingkat Lanjut">
+      <Section id="array-method-tingkat-lanjut" heading="Array Method Tingkat Lanjut">
         <p>
           JavaScript menyediakan method-method powerful untuk manipulasi array. Method ini 
           sangat berguna untuk data transformation, filtering, dan aggregation.
@@ -22,7 +22,7 @@ export default function Materi13() {
         </Note>
       </Section>
 
-      <Section title="find() & findIndex()">
+      <Section id="find-findindex" heading="find() & findIndex()">
         <h3 className="text-lg font-semibold mb-2">find() - Mencari Element Pertama</h3>
         
         <CodeBlock language="javascript">
@@ -86,7 +86,7 @@ console.log(lastIndex);  // 5`}
         </CodeBlock>
       </Section>
 
-      <Section title="every() & some()">
+      <Section id="every-some" heading="every() & some()">
         <h3 className="text-lg font-semibold mb-2">every() - Semua Harus True</h3>
         
         <CodeBlock language="javascript">
@@ -147,7 +147,7 @@ console.log(hasTruthy);  // true`}
         </CodeBlock>
       </Section>
 
-      <Section title="flat() & flatMap()">
+      <Section id="flat-flatmap" heading="flat() & flatMap()">
         <h3 className="text-lg font-semibold mb-2">flat() - Flatten Nested Arrays</h3>
         
         <CodeBlock language="javascript">
@@ -213,7 +213,7 @@ console.log(allOrders);  // [1, 2, 3, 4, 5]`}
         </CodeBlock>
       </Section>
 
-      <Section title="at() Method">
+      <Section id="at-method" heading="at() Method">
         <CodeBlock language="javascript">
 {`const arr = ['a', 'b', 'c', 'd', 'e'];
 
@@ -239,7 +239,7 @@ const lastNew = arr.at(-1);           // New way (cleaner)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Array.from()">
+      <Section id="arrayfrom" heading="Array.from()">
         <CodeBlock language="javascript">
 {`// Convert array-like to array
 const divs = document.querySelectorAll('div');  // NodeList
@@ -277,7 +277,7 @@ console.log(mapArray);  // [['a', 1], ['b', 2]]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Array.of()">
+      <Section id="arrayof" heading="Array.of()">
         <CodeBlock language="javascript">
 {`// Create array from arguments
 const arr1 = Array.of(1, 2, 3);
@@ -296,7 +296,7 @@ console.log(Array.of());          // []`}
         </CodeBlock>
       </Section>
 
-      <Section title="includes() vs indexOf()">
+      <Section id="includes-vs-indexof" heading="includes() vs indexOf()">
         <CodeBlock language="javascript">
 {`const numbers = [1, 2, 3, NaN, 5];
 
@@ -327,7 +327,7 @@ if (index !== -1) {
         </CodeBlock>
       </Section>
 
-      <Section title="toSorted(), toReversed(), toSpliced() [ES2023]">
+      <Section id="tosorted-toreversed-tospliced-es2023" heading="toSorted(), toReversed(), toSpliced() [ES2023]">
         <p>Method immutable baru yang tidak mengubah array original.</p>
         
         <CodeBlock language="javascript">
@@ -360,7 +360,7 @@ console.log(numbers);   // [3, 1, 4, 1, 5] (unchanged)`}
         </CodeBlock>
       </Section>
 
-      <Section title="group() & groupToMap() [ES2024]">
+      <Section id="group-grouptomap-es2024" heading="group() & groupToMap() [ES2024]">
         <CodeBlock language="javascript">
 {`const products = [
   { name: 'Laptop', category: 'Electronics', price: 1000 },
@@ -409,7 +409,7 @@ console.log(byAge);
         </CodeBlock>
       </Section>
 
-      <Section title="Chaining Methods">
+      <Section id="chaining-methods" heading="Chaining Methods">
         <CodeBlock language="javascript">
 {`const users = [
   { name: 'Alice', age: 25, active: true },
@@ -447,7 +447,7 @@ console.log(\`Total: $\${total}\`);  // Total: $1180`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan find() daripada filter()[0]</strong>
@@ -495,7 +495,7 @@ const reversed = numbers.toReversed();
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Method Array Tingkat Lanjut:</h3>
           <ul className="space-y-2 list-disc list-inside">

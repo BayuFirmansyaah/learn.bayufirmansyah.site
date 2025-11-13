@@ -10,7 +10,7 @@ export default function Materi18() {
       title="JavaScript Engine & Memory Management"
       description="Pelajari cara kerja JavaScript engine, event loop, dan memory management"
     >
-      <Section title="JavaScript Engine">
+      <Section id="javascript-engine" heading="JavaScript Engine">
         <p>
           JavaScript engine adalah program yang executes JavaScript code. Popular engines: 
           V8 (Chrome, Node.js), SpiderMonkey (Firefox), JavaScriptCore (Safari).
@@ -56,7 +56,7 @@ var hoisted = 'value';
         </CodeBlock>
       </Section>
 
-      <Section title="Call Stack">
+      <Section id="call-stack" heading="Call Stack">
         <p>
           Call stack adalah data structure yang track function calls. LIFO (Last In, First Out).
         </p>
@@ -106,7 +106,7 @@ countdown(5);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Memory Heap">
+      <Section id="memory-heap" heading="Memory Heap">
         <p>
           Heap adalah memory space untuk object allocation. Unstructured, non-contiguous memory.
         </p>
@@ -136,7 +136,7 @@ console.log(person1.name);  // "Bob" (different objects)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Event Loop">
+      <Section id="event-loop" heading="Event Loop">
         <p>
           Event loop adalah mechanism yang allows JavaScript (single-threaded) 
           untuk perform non-blocking operations.
@@ -266,7 +266,7 @@ console.log('7');
         </CodeBlock>
       </Section>
 
-      <Section title="Garbage Collection">
+      <Section id="garbage-collection" heading="Garbage Collection">
         <p>
           Garbage collection adalah automatic memory management. JavaScript uses 
           mark-and-sweep algorithm.
@@ -374,7 +374,7 @@ function betterCache(obj, value) {
         </CodeBlock>
       </Section>
 
-      <Section title="WeakMap & WeakSet">
+      <Section id="weakmap-weakset" heading="WeakMap & WeakSet">
         <p>WeakMap dan WeakSet hold weak references, allowing garbage collection.</p>
 
         <CodeBlock language="javascript">
@@ -425,7 +425,7 @@ obj3 = null;  // Can be collected
         </CodeBlock>
       </Section>
 
-      <Section title="Performance Optimization">
+      <Section id="performance-optimization" heading="Performance Optimization">
         <h3 className="text-lg font-semibold mb-2">1. Avoid Memory Leaks</h3>
         <CodeBlock language="javascript">
 {`class EventEmitter {
@@ -554,7 +554,7 @@ self.onmessage = (e) => {
         </CodeBlock>
       </Section>
 
-      <Section title="Debugging Memory">
+      <Section id="debugging-memory" heading="Debugging Memory">
         <CodeBlock language="javascript">
 {`// Chrome DevTools Memory Profiler:
 // 1. Open DevTools → Memory tab
@@ -589,7 +589,7 @@ measurePerformance(() => {
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Clean Up Event Listeners</strong>
@@ -643,7 +643,7 @@ function doWork() {
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

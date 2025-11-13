@@ -11,7 +11,7 @@ export default function Materi09() {
       description="Pelajari cara memanipulasi HTML dan CSS menggunakan JavaScript melalui Document Object Model (DOM)"
     >
       {/* Intro */}
-      <Section title="Pengenalan DOM">
+      <Section id="pengenalan-dom" heading="Pengenalan DOM">
         <p>
           Document Object Model (DOM) adalah representasi struktur HTML dalam bentuk tree/pohon 
           yang dapat diakses dan dimanipulasi oleh JavaScript. DOM memungkinkan kita untuk 
@@ -51,7 +51,7 @@ document
       </Section>
 
       {/* Selecting Elements */}
-      <Section title="Memilih Elemen DOM">
+      <Section id="memilih-elemen-dom" heading="Memilih Elemen DOM">
         <h3 className="text-lg font-semibold mb-2">getElementById()</h3>
         <p>Memilih elemen berdasarkan ID (hanya mengembalikan 1 elemen).</p>
         
@@ -142,7 +142,7 @@ console.log(document.querySelectorAll('.not-exist').length);  // 0`}
       </Section>
 
       {/* Manipulating Content */}
-      <Section title="Mengubah Konten Elemen">
+      <Section id="mengubah-konten-elemen" heading="Mengubah Konten Elemen">
         <h3 className="text-lg font-semibold mb-2">textContent</h3>
         <p>Mengambil atau mengubah teks di dalam elemen (tanpa HTML).</p>
         
@@ -232,7 +232,7 @@ select.value = "USA";  // Mengubah option yang dipilih`}
       </Section>
 
       {/* Manipulating Attributes */}
-      <Section title="Mengubah Atribut Elemen">
+      <Section id="mengubah-atribut-elemen" heading="Mengubah Atribut Elemen">
         <h3 className="text-lg font-semibold mb-2">getAttribute() & setAttribute()</h3>
         <p>Membaca dan mengubah atribut HTML.</p>
         
@@ -289,7 +289,7 @@ div.dataset.status = 'active';     // Menambah data-status="active"`}
       </Section>
 
       {/* Manipulating Classes */}
-      <Section title="Mengubah Class CSS">
+      <Section id="mengubah-class-css" heading="Mengubah Class CSS">
         <h3 className="text-lg font-semibold mb-2">classList</h3>
         <p>API modern untuk memanipulasi class CSS (lebih baik dari className).</p>
         
@@ -349,7 +349,7 @@ button.className += ' active';  // Jangan lupa spasi!
       </Section>
 
       {/* Manipulating Styles */}
-      <Section title="Mengubah Style CSS">
+      <Section id="mengubah-style-css" heading="Mengubah Style CSS">
         <h3 className="text-lg font-semibold mb-2">style Property</h3>
         <p>Mengubah inline style CSS secara langsung.</p>
         
@@ -426,7 +426,7 @@ console.log(beforeStyles.content);
       </Section>
 
       {/* Creating and Removing Elements */}
-      <Section title="Membuat dan Menghapus Elemen">
+      <Section id="membuat-dan-menghapus-elemen" heading="Membuat dan Menghapus Elemen">
         <h3 className="text-lg font-semibold mb-2">createElement() & appendChild()</h3>
         <p>Membuat elemen baru dan menambahkannya ke DOM.</p>
         
@@ -539,7 +539,7 @@ oldChild.replaceWith(newChild);  // Lebih simple!`}
       </Section>
 
       {/* Traversing DOM */}
-      <Section title="Navigasi DOM Tree">
+      <Section id="navigasi-dom-tree" heading="Navigasi DOM Tree">
         <h3 className="text-lg font-semibold mb-2">Parent, Children, Siblings</h3>
         <p>Navigasi hubungan antar elemen.</p>
         
@@ -576,7 +576,7 @@ console.log(list);`}
       </Section>
 
       {/* Best Practices */}
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Gunakan querySelector/querySelectorAll</strong>
@@ -663,7 +663,7 @@ document.body.appendChild(fragment);  // Hanya 1 reflow`}
       </Section>
 
       {/* Summary */}
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">

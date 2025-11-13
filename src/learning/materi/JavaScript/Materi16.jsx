@@ -10,7 +10,7 @@ export default function Materi16() {
       title="Object-Oriented Programming (OOP)"
       description="Pelajari paradigma pemrograman berorientasi objek di JavaScript"
     >
-      <Section title="Pengenalan OOP">
+      <Section id="pengenalan-oop" heading="Pengenalan OOP">
         <p>
           Object-Oriented Programming (OOP) adalah paradigma pemrograman yang mengorganisir kode 
           dalam bentuk objek yang memiliki properties (data) dan methods (behavior).
@@ -49,7 +49,7 @@ const bob = createPerson('Bob', 30);`}
         </CodeBlock>
       </Section>
 
-      <Section title="Classes">
+      <Section id="classes" heading="Classes">
         <h3 className="text-lg font-semibold mb-2">Basic Class</h3>
         
         <CodeBlock language="javascript">
@@ -134,7 +134,7 @@ console.log(rect.area);  // 100
         </CodeBlock>
       </Section>
 
-      <Section title="Encapsulation">
+      <Section id="encapsulation" heading="Encapsulation">
         <p>
           Encapsulation adalah menyembunyikan detail implementasi dan hanya expose interface publik.
         </p>
@@ -231,7 +231,7 @@ console.log(user._password);  // "newSecret456"`}
         </CodeBlock>
       </Section>
 
-      <Section title="Inheritance">
+      <Section id="inheritance" heading="Inheritance">
         <p>Inheritance memungkinkan class mewarisi properties dan methods dari class lain.</p>
 
         <h3 className="text-lg font-semibold mb-2">Basic Inheritance</h3>
@@ -323,7 +323,7 @@ console.log(circle.getArea());   // 78.54`}
         </CodeBlock>
       </Section>
 
-      <Section title="Polymorphism">
+      <Section id="polymorphism" heading="Polymorphism">
         <p>
           Polymorphism memungkinkan objek berbeda merespon method yang sama dengan cara berbeda.
         </p>
@@ -413,7 +413,7 @@ printShapeInfo(new Circle(5));`}
         </CodeBlock>
       </Section>
 
-      <Section title="Static Methods & Properties">
+      <Section id="static-methods-properties" heading="Static Methods & Properties">
         <p>Static members milik class, bukan instance.</p>
 
         <CodeBlock language="javascript">
@@ -491,7 +491,7 @@ console.log(c2.id);  // 2`}
         </CodeBlock>
       </Section>
 
-      <Section title="Abstract Classes (Pattern)">
+      <Section id="abstract-classes-pattern" heading="Abstract Classes (Pattern)">
         <p>JavaScript tidak punya abstract keyword, tapi kita bisa simulasikan.</p>
 
         <CodeBlock language="javascript">
@@ -559,7 +559,7 @@ moto.start();  // "Honda motorcycle (150cc) started"`}
         </CodeBlock>
       </Section>
 
-      <Section title="Composition Over Inheritance">
+      <Section id="composition-over-inheritance" heading="Composition Over Inheritance">
         <p>Sering kali composition lebih flexible daripada inheritance.</p>
 
         <h3 className="text-lg font-semibold mb-2">Problem dengan Inheritance</h3>
@@ -697,7 +697,7 @@ post.validate();`}
         </CodeBlock>
       </Section>
 
-      <Section title="Real-World Example: E-commerce">
+      <Section id="realworld-example-ecommerce" heading="Real-World Example: E-commerce">
         <CodeBlock language="javascript">
 {`// Product hierarchy
 class Product {
@@ -842,7 +842,7 @@ console.log('Items:', cart.getItemCount());`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <div className="space-y-3">
           <div>
             <strong>1. Prefer Composition Over Inheritance</strong>
@@ -925,7 +925,7 @@ class Validator { }`}
         </div>
       </Section>
 
-      <Section title="Rangkuman">
+      <Section id="rangkuman" heading="Rangkuman">
         <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Konsep Penting:</h3>
           <ul className="space-y-2 list-disc list-inside">
