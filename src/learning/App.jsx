@@ -21,9 +21,16 @@ function LearningPage({ selectedCategory, onBack }) {
   const { category: urlCategory, materiId } = useParams();
   const navigate = useNavigate();
 
-  // Capitalize category from URL for internal use
+  // Map URL category to proper case for internal use
+  const categoryMap = {
+    'laravel': 'Laravel',
+    'kotlin': 'Kotlin',
+    'flutter': 'Flutter',
+    'javascript': 'JavaScript'
+  };
+  
   const category = urlCategory 
-    ? urlCategory.charAt(0).toUpperCase() + urlCategory.slice(1).toLowerCase()
+    ? categoryMap[urlCategory.toLowerCase()] || urlCategory
     : selectedCategory;
 
   // Convert materiId to number and validate

@@ -44,7 +44,7 @@
       description: 'Bahasa pemrograman untuk web development modern',
       icon: 'fa-brands fa-square-js',
       color: '#F7DF1E',
-      totalMateri: 13
+      totalMateri: 25
     }
   ];
   
