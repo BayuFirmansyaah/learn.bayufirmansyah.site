@@ -1,7 +1,7 @@
 import React from 'react';
 import * as LaravelMateri from './materi/Laravel/index.js';
 import * as KotlinMateri from './materi/Kotlin/index.js';
-import * as FlutterMateri from './materi/Flutter.js';
+import * as FlutterMateri from './materi/Flutter/index.js';
 import * as JavaScriptMateri from './materi/JavaScript.js';
 
 const materiMap = {
