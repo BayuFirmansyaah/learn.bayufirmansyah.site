@@ -455,7 +455,7 @@ console.log(\`Total: $\${total}\`);  // Total: $1180`}
 {`// ❌ Inefficient
 const user = users.filter(u => u.id === 1)[0];
 
-// ✅ Efficient (stops at first match)
+// Efficient (stops at first match)
 const user = users.find(u => u.id === 1);`}
             </CodeBlock>
           </div>
@@ -466,7 +466,7 @@ const user = users.find(u => u.id === 1);`}
 {`// ❌ Unnecessary filter
 if (users.filter(u => u.age > 18).length > 0) {}
 
-// ✅ Direct check
+// Direct check
 if (users.some(u => u.age > 18)) {}`}
             </CodeBlock>
           </div>
@@ -477,7 +477,7 @@ if (users.some(u => u.age > 18)) {}`}
 {`// ❌ Two iterations
 const result = arr.map(x => [x, x * 2]).flat();
 
-// ✅ One iteration
+// One iteration
 const result = arr.flatMap(x => [x, x * 2]);`}
             </CodeBlock>
           </div>
@@ -485,7 +485,7 @@ const result = arr.flatMap(x => [x, x * 2]);`}
           <div>
             <strong>4. Prefer Immutable Methods</strong>
             <CodeBlock language="javascript">
-{`// ✅ Immutable (ES2023)
+{`// Immutable (ES2023)
 const sorted = numbers.toSorted();
 const reversed = numbers.toReversed();
 

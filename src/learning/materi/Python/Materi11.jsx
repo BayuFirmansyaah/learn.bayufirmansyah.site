@@ -147,11 +147,11 @@ if __name__ == "__main__":
 
       <Section title="Summary">
         <ul>
-          <li>✅ Module = Python file dengan reusable code</li>
-          <li>✅ Import dengan: import, from...import</li>
-          <li>✅ Built-in modules: math, random, datetime, os, sys, etc.</li>
-          <li>✅ Package = directory dengan __init__.py</li>
-          <li>✅ Use <code>if __name__ == "__main__":</code> untuk executable code</li>
+          <li>Module = Python file dengan reusable code</li>
+          <li>Import dengan: import, from...import</li>
+          <li>Built-in modules: math, random, datetime, os, sys, etc.</li>
+          <li>Package = directory dengan __init__.py</li>
+          <li>Use <code>if __name__ == "__main__":</code> untuk executable code</li>
         </ul>
       </Section>
     </MateriLayout>

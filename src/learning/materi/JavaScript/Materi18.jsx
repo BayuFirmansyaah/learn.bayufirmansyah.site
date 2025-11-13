@@ -319,7 +319,7 @@ function leak2() {
     console.log('tick');
   }, 1000);
   
-  // ✅ Fix: clearInterval when done
+  // Fix: clearInterval when done
   const id = setInterval(() => {}, 1000);
   // Later: clearInterval(id);
 }
@@ -329,7 +329,7 @@ function leak3() {
   const button = document.getElementById('btn');
   button.addEventListener('click', handleClick);
   
-  // ✅ Fix: remove when done
+  // Fix: remove when done
   // button.removeEventListener('click', handleClick);
 }
 
@@ -354,7 +354,7 @@ function leak5() {
   document.body.removeChild(div);
   
   // 'reference' still points to div (memory leak)
-  // ✅ Fix: reference = null;
+  // Fix: reference = null;
 }
 
 // 6. Cache without limits
@@ -362,7 +362,7 @@ const cache = {};
 function leak6(key, value) {
   cache[key] = value;  // Cache grows forever
   
-  // ✅ Fix: Use WeakMap or implement LRU cache
+  // Fix: Use WeakMap or implement LRU cache
 }
 
 // Better: WeakMap (auto garbage collected)
@@ -521,7 +521,7 @@ function processHeavy(data) {
   }
 }
 
-// ✅ Non-blocking (chunked)
+// Non-blocking (chunked)
 async function processHeavyAsync(data, chunkSize = 1000) {
   for (let i = 0; i < data.length; i += chunkSize) {
     const chunk = data.slice(i, i + chunkSize);
@@ -536,7 +536,7 @@ async function processHeavyAsync(data, chunkSize = 1000) {
   }
 }
 
-// ✅ Web Worker (separate thread)
+// Web Worker (separate thread)
 // main.js
 const worker = new Worker('worker.js');
 
@@ -634,7 +634,7 @@ class MyClass {
 {`// ❌ Global (never collected)
 globalVar = 'value';
 
-// ✅ Local scope
+// Local scope
 function doWork() {
   const localVar = 'value';
 }`}

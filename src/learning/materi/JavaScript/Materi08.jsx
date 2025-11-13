@@ -562,7 +562,7 @@ console.log(escapes);`}
 {`// ❌ Buruk - sulit dibaca
 const message = "Hello " + name + ", your balance is $" + balance;
 
-// ✅ Baik - lebih mudah dibaca
+// Baik - lebih mudah dibaca
 const message = \`Hello \${name}, your balance is $\${balance}\`;`}
             </CodeBlock>
           </div>
@@ -573,7 +573,7 @@ const message = \`Hello \${name}, your balance is $\${balance}\`;`}
 {`// ❌ Buruk
 if (text.indexOf("JavaScript") !== -1) { }
 
-// ✅ Baik - lebih jelas
+// Baik - lebih jelas
 if (text.includes("JavaScript")) { }`}
             </CodeBlock>
           </div>
@@ -581,7 +581,7 @@ if (text.includes("JavaScript")) { }`}
           <div>
             <strong>3. Gunakan slice() Daripada substring() atau substr()</strong>
             <CodeBlock language="javascript">
-{`// ✅ Baik - slice() lebih konsisten dan mendukung index negatif
+{`// Baik - slice() lebih konsisten dan mendukung index negatif
 const sub = text.slice(0, 5);
 const last = text.slice(-3);`}
             </CodeBlock>
@@ -590,7 +590,7 @@ const last = text.slice(-3);`}
           <div>
             <strong>4. Gunakan trim() untuk Input User</strong>
             <CodeBlock language="javascript">
-{`// ✅ Selalu trim input user
+{`// Selalu trim input user
 const username = userInput.trim();
 if (username.length === 0) {
   throw new Error("Username tidak boleh kosong");
@@ -601,7 +601,7 @@ if (username.length === 0) {
           <div>
             <strong>5. Case-Insensitive Comparison</strong>
             <CodeBlock language="javascript">
-{`// ✅ Convert ke lowercase/uppercase untuk perbandingan
+{`// Convert ke lowercase/uppercase untuk perbandingan
 if (input.toLowerCase() === expected.toLowerCase()) {
   // Match!
 }`}
@@ -614,7 +614,7 @@ if (input.toLowerCase() === expected.toLowerCase()) {
 {`// ❌ Buruk - hanya replace yang pertama
 text.replace("old", "new");
 
-// ✅ Baik - replace semua
+// Baik - replace semua
 text.replaceAll("old", "new");
 // atau dengan regex
 text.replace(/old/g, "new");`}

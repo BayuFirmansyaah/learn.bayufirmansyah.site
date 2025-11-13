@@ -345,7 +345,7 @@ let numbers = [40, 100, 1, 5, 25, 10];
 numbers.sort();
 console.log(numbers);  // [1, 10, 100, 25, 40, 5] (wrong!)
 
-// ✅ Correct (ascending)
+// Correct (ascending)
 numbers.sort((a, b) => a - b);
 console.log(numbers);  // [1, 5, 10, 25, 40, 100]
 
@@ -503,27 +503,27 @@ console.log(board[0][0]);  // "X" (top-left)`}
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use <code>map()</code> untuk transform data</li>
-          <li>✅ Use <code>filter()</code> untuk filter data</li>
-          <li>✅ Use <code>reduce()</code> untuk aggregate data</li>
-          <li>✅ Chain methods untuk complex operations</li>
-          <li>✅ Use spread operator untuk copy/merge arrays</li>
-          <li>✅ Use destructuring untuk extract values</li>
-          <li>✅ Avoid mutating original array (use methods that return new array)</li>
-          <li>✅ Use <code>const</code> untuk arrays (content can change, but not reassign)</li>
+          <li>Use <code>map()</code> untuk transform data</li>
+          <li>Use <code>filter()</code> untuk filter data</li>
+          <li>Use <code>reduce()</code> untuk aggregate data</li>
+          <li>Chain methods untuk complex operations</li>
+          <li>Use spread operator untuk copy/merge arrays</li>
+          <li>Use destructuring untuk extract values</li>
+          <li>Avoid mutating original array (use methods that return new array)</li>
+          <li>Use <code>const</code> untuk arrays (content can change, but not reassign)</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Arrays store ordered collections of values</li>
-          <li>✅ <code>push/pop</code> untuk add/remove from end</li>
-          <li>✅ <code>unshift/shift</code> untuk add/remove from start</li>
-          <li>✅ <code>map()</code> transform, <code>filter()</code> select, <code>reduce()</code> aggregate</li>
-          <li>✅ <code>forEach()</code> iterate, <code>find()</code> search</li>
-          <li>✅ Method chaining untuk powerful transformations</li>
-          <li>✅ Destructuring untuk extract values</li>
-          <li>✅ Spread operator (<code>...</code>) untuk copy/merge</li>
+          <li>Arrays store ordered collections of values</li>
+          <li><code>push/pop</code> untuk add/remove from end</li>
+          <li><code>unshift/shift</code> untuk add/remove from start</li>
+          <li><code>map()</code> transform, <code>filter()</code> select, <code>reduce()</code> aggregate</li>
+          <li><code>forEach()</code> iterate, <code>find()</code> search</li>
+          <li>Method chaining untuk powerful transformations</li>
+          <li>Destructuring untuk extract values</li>
+          <li>Spread operator (<code>...</code>) untuk copy/merge</li>
         </ul>
       </Section>
     </MateriLayout>

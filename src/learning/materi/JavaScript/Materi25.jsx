@@ -78,7 +78,7 @@ module.exports = {
 // Usage
 console.log(process.env.API_URL);
 
-// ✅ Validation
+// Validation
 function getConfig() {
   const required = ['API_URL', 'JWT_SECRET'];
   
@@ -274,13 +274,13 @@ export default defineConfig({
       <Section title="Code Optimization">
         <h3 className="text-lg font-semibold mb-2">Tree Shaking</h3>
         <CodeBlock language="javascript">
-{`// ✅ Named imports (tree-shakeable)
+{`// Named imports (tree-shakeable)
 import { debounce, throttle } from 'lodash-es';
 
 // ❌ Default import (imports everything)
 import _ from 'lodash';
 
-// ✅ Import only what you need
+// Import only what you need
 import debounce from 'lodash-es/debounce';
 
 // Side-effect free modules
@@ -331,7 +331,7 @@ const routes = [
 
         <h3 className="text-lg font-semibold mb-2 mt-4">Remove Unused Code</h3>
         <CodeBlock language="javascript">
-{`// ✅ Remove console.logs in production
+{`// Remove console.logs in production
 if (process.env.NODE_ENV !== 'production') {
   console.log('Debug info');
 }
@@ -343,7 +343,7 @@ if (process.env.NODE_ENV !== 'production') {
 //   }
 // }
 
-// ✅ Remove dead code
+// Remove dead code
 const DEBUG = false;
 
 if (DEBUG) {
@@ -351,7 +351,7 @@ if (DEBUG) {
   console.log('Debug mode');
 }
 
-// ✅ Conditional imports
+// Conditional imports
 let logger;
 if (process.env.NODE_ENV === 'development') {
   logger = require('./debug-logger');
@@ -615,23 +615,23 @@ jobs:
         <div className="bg-green-50 dark:bg-green-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Before Deployment:</h3>
           <ul className="space-y-2 list-disc list-inside">
-            <li>✅ Environment variables configured</li>
-            <li>✅ Production build tested locally</li>
-            <li>✅ Code minified and uglified</li>
-            <li>✅ Bundle size analyzed and optimized</li>
-            <li>✅ Images optimized (compressed, lazy loaded)</li>
-            <li>✅ Fonts optimized (woff2, font-display: swap)</li>
-            <li>✅ Remove console.logs</li>
-            <li>✅ Error tracking configured (Sentry)</li>
-            <li>✅ Analytics configured (Google Analytics, etc.)</li>
-            <li>✅ Performance monitoring setup</li>
-            <li>✅ Security headers configured (CSP, HSTS)</li>
-            <li>✅ HTTPS enabled</li>
-            <li>✅ CDN configured (if needed)</li>
-            <li>✅ Caching strategy implemented</li>
-            <li>✅ Database backups automated</li>
-            <li>✅ Monitoring/alerts configured</li>
-            <li>✅ Documentation updated</li>
+            <li>Environment variables configured</li>
+            <li>Production build tested locally</li>
+            <li>Code minified and uglified</li>
+            <li>Bundle size analyzed and optimized</li>
+            <li>Images optimized (compressed, lazy loaded)</li>
+            <li>Fonts optimized (woff2, font-display: swap)</li>
+            <li>Remove console.logs</li>
+            <li>Error tracking configured (Sentry)</li>
+            <li>Analytics configured (Google Analytics, etc.)</li>
+            <li>Performance monitoring setup</li>
+            <li>Security headers configured (CSP, HSTS)</li>
+            <li>HTTPS enabled</li>
+            <li>CDN configured (if needed)</li>
+            <li>Caching strategy implemented</li>
+            <li>Database backups automated</li>
+            <li>Monitoring/alerts configured</li>
+            <li>Documentation updated</li>
           </ul>
         </div>
       </Section>

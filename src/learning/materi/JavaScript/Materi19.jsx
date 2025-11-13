@@ -792,7 +792,7 @@ console.log(calculator.getValue());  // 20`}
 {`// ❌ Over-engineered
 class SingletonFactoryStrategyObserver { }
 
-// ✅ Simple
+// Simple
 const config = { apiUrl: '...' };`}
             </CodeBlock>
           </div>

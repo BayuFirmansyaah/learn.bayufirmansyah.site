@@ -227,7 +227,7 @@ for fruit in fruits:
 # ❌ Cannot add
 # fruits.append("date")  # AttributeError
 
-# ✅ Can create new tuple
+# Can create new tuple
 new_fruits = fruits + ("date",)
 
 # Workaround: convert to list, modify, convert back
@@ -297,7 +297,7 @@ name, _, city = get_user()  # Ignore age`}
             </tr>
             <tr>
               <td style={{ padding: '10px', border: '1px solid #ddd' }}>Mutable</td>
-              <td style={{ padding: '10px', border: '1px solid #ddd' }}>✅ Yes</td>
+              <td style={{ padding: '10px', border: '1px solid #ddd' }}>Yes</td>
               <td style={{ padding: '10px', border: '1px solid #ddd' }}>❌ No</td>
             </tr>
             <tr>
@@ -454,13 +454,13 @@ for num in numbers:
     if num % 2 == 0:
         numbers.remove(num)  # Skips elements!
 
-# ✅ Loop over copy
+# Loop over copy
 numbers = [1, 2, 3, 4, 5]
 for num in numbers[:]:
     if num % 2 == 0:
         numbers.remove(num)
 
-# ✅ Better: list comprehension
+# Better: list comprehension
 numbers = [num for num in numbers if num % 2 != 0]`}
         </CodeBlock>
 
@@ -470,7 +470,7 @@ numbers = [num for num in numbers if num % 2 != 0]`}
 single = (1)
 print(type(single))  # <class 'int'>
 
-# ✅ Tuple needs comma
+# Tuple needs comma
 single = (1,)
 print(type(single))  # <class 'tuple'>`}
         </CodeBlock>
@@ -494,25 +494,25 @@ print(original)  # [[1, 2], [3, 4]] ✅`}
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Use <code>list</code> untuk data yang berubah, <code>tuple</code> untuk data konstan</li>
-          <li>✅ List comprehension lebih readable daripada loop+append</li>
-          <li>✅ Use <code>enumerate()</code> untuk loop dengan index</li>
-          <li>✅ Tuple unpacking untuk cleaner code</li>
-          <li>✅ Avoid modifying list saat loop, gunakan copy atau comprehension</li>
-          <li>✅ Use tuples untuk multiple return values dari function</li>
-          <li>✅ Single item tuple needs trailing comma: <code>(item,)</code></li>
+          <li>Use <code>list</code> untuk data yang berubah, <code>tuple</code> untuk data konstan</li>
+          <li>List comprehension lebih readable daripada loop+append</li>
+          <li>Use <code>enumerate()</code> untuk loop dengan index</li>
+          <li>Tuple unpacking untuk cleaner code</li>
+          <li>Avoid modifying list saat loop, gunakan copy atau comprehension</li>
+          <li>Use tuples untuk multiple return values dari function</li>
+          <li>Single item tuple needs trailing comma: <code>(item,)</code></li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ <strong>List:</strong> Mutable, ordered collection dengan banyak methods</li>
-          <li>✅ <strong>Tuple:</strong> Immutable, ordered collection, lebih cepat</li>
-          <li>✅ Indexing & slicing sama untuk keduanya</li>
-          <li>✅ List methods: append, insert, remove, pop, sort, reverse, dll</li>
-          <li>✅ Tuple methods: count, index saja (karena immutable)</li>
-          <li>✅ Tuple unpacking untuk extract values</li>
-          <li>✅ Use tuple untuk data yang tidak berubah (coordinates, config, constants)</li>
+          <li><strong>List:</strong> Mutable, ordered collection dengan banyak methods</li>
+          <li><strong>Tuple:</strong> Immutable, ordered collection, lebih cepat</li>
+          <li>Indexing & slicing sama untuk keduanya</li>
+          <li>List methods: append, insert, remove, pop, sort, reverse, dll</li>
+          <li>Tuple methods: count, index saja (karena immutable)</li>
+          <li>Tuple unpacking untuk extract values</li>
+          <li>Use tuple untuk data yang tidak berubah (coordinates, config, constants)</li>
         </ul>
       </Section>
     </MateriLayout>

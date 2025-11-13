@@ -152,13 +152,13 @@ make_sound(cat)  # Meow!`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ Multiple inheritance: class C(A, B)</li>
-          <li>✅ MRO: Method Resolution Order</li>
-          <li>✅ ABC: Abstract Base Classes dengan @abstractmethod</li>
-          <li>✅ @classmethod: Operates on class</li>
-          <li>✅ @staticmethod: Independent utility functions</li>
-          <li>✅ Operator overloading: __add__, __sub__, etc.</li>
-          <li>✅ Polymorphism: Same interface, different implementations</li>
+          <li>Multiple inheritance: class C(A, B)</li>
+          <li>MRO: Method Resolution Order</li>
+          <li>ABC: Abstract Base Classes dengan @abstractmethod</li>
+          <li>@classmethod: Operates on class</li>
+          <li>@staticmethod: Independent utility functions</li>
+          <li>Operator overloading: __add__, __sub__, etc.</li>
+          <li>Polymorphism: Same interface, different implementations</li>
         </ul>
       </Section>
     </MateriLayout>

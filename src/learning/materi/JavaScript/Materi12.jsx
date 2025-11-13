@@ -275,7 +275,7 @@ const styles = css\`
 // ❌ Without optional chaining (bisa error)
 // console.log(user.profile.bio);  // TypeError: Cannot read property 'bio' of undefined
 
-// ✅ With optional chaining
+// With optional chaining
 console.log(user.profile?.bio);  // undefined (no error)
 console.log(user.address?.city);  // "Jakarta"
 console.log(user.address?.country);  // undefined
@@ -519,7 +519,7 @@ for (const value of obj) {
           <div>
             <strong>1. Gunakan Destructuring untuk Parameter</strong>
             <CodeBlock language="javascript">
-{`// ✅ Clear dan flexible
+{`// Clear dan flexible
 function createUser({ name, email, role = 'user' }) {
   return { name, email, role };
 }
@@ -531,7 +531,7 @@ createUser({ name: 'Alice', email: 'alice@example.com' });`}
           <div>
             <strong>2. Gunakan Spread untuk Immutable Updates</strong>
             <CodeBlock language="javascript">
-{`// ✅ Immutable
+{`// Immutable
 const user = { name: 'Alice', age: 25 };
 const updatedUser = { ...user, age: 26 };  // New object`}
             </CodeBlock>
@@ -540,7 +540,7 @@ const updatedUser = { ...user, age: 26 };  // New object`}
           <div>
             <strong>3. Optional Chaining untuk Nested Access</strong>
             <CodeBlock language="javascript">
-{`// ✅ Safe
+{`// Safe
 const city = user.address?.city ?? 'Unknown';`}
             </CodeBlock>
           </div>
@@ -548,7 +548,7 @@ const city = user.address?.city ?? 'Unknown';`}
           <div>
             <strong>4. Use ?? for Default Values (not ||)</strong>
             <CodeBlock language="javascript">
-{`// ✅ Correct untuk 0 dan false
+{`// Correct untuk 0 dan false
 const timeout = config.timeout ?? 5000;
 const enabled = config.enabled ?? true;`}
             </CodeBlock>

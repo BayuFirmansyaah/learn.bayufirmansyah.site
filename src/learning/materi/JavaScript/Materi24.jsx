@@ -34,7 +34,7 @@ const userComment = '<script>alert("XSS")</script>';
 document.getElementById('comments').innerHTML = userComment;
 // Script executes!
 
-// ✅ Escape HTML
+// Escape HTML
 function escapeHtml(text) {
   const div = document.createElement('div');
   div.textContent = text;
@@ -45,11 +45,11 @@ const safeComment = escapeHtml(userComment);
 document.getElementById('comments').innerHTML = safeComment;
 // Shows as text, not executed
 
-// ✅ Use textContent (not innerHTML)
+// Use textContent (not innerHTML)
 document.getElementById('comments').textContent = userComment;
 // Always safe, treats as text
 
-// ✅ Sanitize with DOMPurify
+// Sanitize with DOMPurify
 import DOMPurify from 'dompurify';
 
 const dirty = '<img src=x onerror=alert("XSS")>';
@@ -65,10 +65,10 @@ const name = params.get('name');
 document.getElementById('greeting').innerHTML = \`Hello, \${name}!\`;
 // URL: ?name=<script>alert("XSS")</script>
 
-// ✅ Escape or use textContent
+// Escape or use textContent
 document.getElementById('greeting').textContent = \`Hello, \${name}!\`;
 
-// ✅ Validate input
+// Validate input
 function isValidName(name) {
   return /^[a-zA-Z\\s]+$/.test(name);
 }
@@ -86,10 +86,10 @@ if (isValidName(name)) {
 const hash = window.location.hash.substring(1);
 document.getElementById('content').innerHTML = hash;
 
-// ✅ Safe
+// Safe
 document.getElementById('content').textContent = hash;
 
-// ✅ Validate before use
+// Validate before use
 function isSafeHash(hash) {
   // Only allow alphanumeric
   return /^[a-zA-Z0-9]+$/.test(hash);
@@ -114,7 +114,7 @@ app.post('/transfer', (req, res) => {
   // Transfer money (no CSRF protection!)
 });
 
-// ✅ Use CSRF tokens
+// Use CSRF tokens
 // Server generates token
 const csrfToken = generateToken();
 res.cookie('csrf-token', csrfToken);
@@ -140,14 +140,14 @@ app.post('/transfer', (req, res) => {
   // Process transfer
 });
 
-// ✅ SameSite cookies
+// SameSite cookies
 res.cookie('session', sessionId, {
   httpOnly: true,
   secure: true,
   sameSite: 'strict'  // Prevent cross-site requests
 });
 
-// ✅ Check Referer header
+// Check Referer header
 app.post('/transfer', (req, res) => {
   const referer = req.headers.referer;
   
@@ -162,7 +162,7 @@ app.post('/transfer', (req, res) => {
 
       <Section title="Input Validation">
         <CodeBlock language="javascript">
-{`// ✅ Validate all user input
+{`// Validate all user input
 class Validator {
   static isEmail(email) {
     return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email);
@@ -214,7 +214,7 @@ function createUser(data) {
   // Create user
 }
 
-// ✅ Whitelist approach (better than blacklist)
+// Whitelist approach (better than blacklist)
 function sanitizeInput(input, allowedChars = /^[a-zA-Z0-9\\s]+$/) {
   if (!allowedChars.test(input)) {
     throw new Error('Input contains invalid characters');
@@ -222,7 +222,7 @@ function sanitizeInput(input, allowedChars = /^[a-zA-Z0-9\\s]+$/) {
   return input;
 }
 
-// ✅ Length limits
+// Length limits
 function validateUsername(username) {
   if (username.length < 3 || username.length > 20) {
     throw new Error('Username must be 3-20 characters');
@@ -241,7 +241,7 @@ function validateUsername(username) {
 {`// ❌ Never store plain text passwords!
 users.push({ username, password });  // BAD!
 
-// ✅ Hash passwords (server-side)
+// Hash passwords (server-side)
 import bcrypt from 'bcrypt';
 
 // Register
@@ -253,7 +253,7 @@ users.push({ username, password: hashedPassword });
 const user = users.find(u => u.username === username);
 const isValid = await bcrypt.compare(password, user.password);
 
-// ✅ Password requirements
+// Password requirements
 function validatePassword(password) {
   const errors = [];
   
@@ -280,7 +280,7 @@ function validatePassword(password) {
   return errors;
 }
 
-// ✅ Rate limiting (prevent brute force)
+// Rate limiting (prevent brute force)
 const loginAttempts = new Map();
 
 async function login(username, password) {
@@ -306,7 +306,7 @@ async function login(username, password) {
 
         <h3 className="text-lg font-semibold mb-2 mt-4">JWT Security</h3>
         <CodeBlock language="javascript">
-{`// ✅ Secure JWT implementation
+{`// Secure JWT implementation
 import jwt from 'jsonwebtoken';
 
 // Generate token
@@ -330,7 +330,7 @@ function verifyToken(token) {
   }
 }
 
-// ✅ Store tokens securely
+// Store tokens securely
 // Server: httpOnly cookie (best)
 res.cookie('token', token, {
   httpOnly: true,  // Not accessible via JS
@@ -373,7 +373,7 @@ app.use((req, res, next) => {
 // <meta http-equiv="Content-Security-Policy" 
 //       content="default-src 'self'; script-src 'self'">
 
-// ✅ Strict CSP (no 'unsafe-inline')
+// Strict CSP (no 'unsafe-inline')
 // Use nonce for inline scripts
 const nonce = generateNonce();
 res.setHeader(
@@ -390,7 +390,7 @@ res.setHeader(
 
       <Section title="HTTPS & Secure Communication">
         <CodeBlock language="javascript">
-{`// ✅ Always use HTTPS
+{`// Always use HTTPS
 // Redirect HTTP to HTTPS
 app.use((req, res, next) => {
   if (req.headers['x-forwarded-proto'] !== 'https') {
@@ -399,7 +399,7 @@ app.use((req, res, next) => {
   next();
 });
 
-// ✅ Strict-Transport-Security header
+// Strict-Transport-Security header
 app.use((req, res, next) => {
   res.setHeader(
     'Strict-Transport-Security',
@@ -408,18 +408,18 @@ app.use((req, res, next) => {
   next();
 });
 
-// ✅ Secure cookies
+// Secure cookies
 res.cookie('session', sessionId, {
   secure: true,      // HTTPS only
   httpOnly: true,    // Not accessible via JS
   sameSite: 'strict'
 });
 
-// ✅ Don't expose sensitive data in URLs
+// Don't expose sensitive data in URLs
 // ❌ Bad
 fetch('/api/reset-password?token=secret123');
 
-// ✅ Good
+// Good
 fetch('/api/reset-password', {
   method: 'POST',
   body: JSON.stringify({ token: 'secret123' })
@@ -429,7 +429,7 @@ fetch('/api/reset-password', {
 
       <Section title="Dependency Security">
         <CodeBlock language="bash">
-{`# ✅ Audit dependencies regularly
+{`# Audit dependencies regularly
 npm audit
 npm audit fix
 
@@ -444,7 +444,7 @@ npm update
 # Use package-lock.json
 # Commit package-lock.json to ensure consistent versions
 
-# ✅ Avoid suspicious packages
+# Avoid suspicious packages
 # - Check npm downloads
 # - Check GitHub stars
 # - Read package code before installing
@@ -463,7 +463,7 @@ npm prune
           <div>
             <strong>1. Never Trust User Input</strong>
             <CodeBlock language="javascript">
-{`// ✅ Always validate and sanitize
+{`// Always validate and sanitize
 function processInput(input) {
   // Validate
   if (!isValid(input)) {
@@ -485,7 +485,7 @@ function processInput(input) {
 {`// ❌ Hardcoded secrets
 const API_KEY = 'abc123secret';
 
-// ✅ Environment variables
+// Environment variables
 const API_KEY = process.env.API_KEY;
 
 // .env (never commit!)
@@ -537,7 +537,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: err.stack });  // BAD!
 });
 
-// ✅ Generic error messages
+// Generic error messages
 app.use((err, req, res, next) => {
   console.error(err);  // Log internally
   res.status(500).json({ 
@@ -553,21 +553,21 @@ app.use((err, req, res, next) => {
         <div className="bg-yellow-50 dark:bg-yellow-900/30 p-6 rounded-lg">
           <h3 className="font-semibold mb-3">Essential Security Measures:</h3>
           <ul className="space-y-2 list-disc list-inside">
-            <li>✅ Escape/sanitize all user input</li>
-            <li>✅ Use HTTPS everywhere</li>
-            <li>✅ Implement CSP headers</li>
-            <li>✅ Hash passwords with bcrypt</li>
-            <li>✅ Use httpOnly, secure cookies</li>
-            <li>✅ Validate all input (whitelist approach)</li>
-            <li>✅ Implement CSRF protection</li>
-            <li>✅ Rate limit API endpoints</li>
-            <li>✅ Keep dependencies updated (npm audit)</li>
-            <li>✅ Use environment variables for secrets</li>
-            <li>✅ Enable CORS properly</li>
-            <li>✅ Log security events</li>
-            <li>✅ Handle errors safely (no stack traces)</li>
-            <li>✅ Implement authentication timeouts</li>
-            <li>✅ Use secure headers (helmet.js)</li>
+            <li>Escape/sanitize all user input</li>
+            <li>Use HTTPS everywhere</li>
+            <li>Implement CSP headers</li>
+            <li>Hash passwords with bcrypt</li>
+            <li>Use httpOnly, secure cookies</li>
+            <li>Validate all input (whitelist approach)</li>
+            <li>Implement CSRF protection</li>
+            <li>Rate limit API endpoints</li>
+            <li>Keep dependencies updated (npm audit)</li>
+            <li>Use environment variables for secrets</li>
+            <li>Enable CORS properly</li>
+            <li>Log security events</li>
+            <li>Handle errors safely (no stack traces)</li>
+            <li>Implement authentication timeouts</li>
+            <li>Use secure headers (helmet.js)</li>
           </ul>
         </div>
       </Section>

@@ -39,7 +39,7 @@ export default function Materi01() {
         <h3>2. Install di Windows</h3>
         <ul>
           <li>Jalankan installer</li>
-          <li>✅ <strong>PENTING:</strong> Centang "Add Python to PATH"</li>
+          <li><strong>PENTING:</strong> Centang "Add Python to PATH"</li>
           <li>Klik "Install Now"</li>
         </ul>
 
@@ -375,7 +375,7 @@ from myapp.utils import helper
 # ❌ Avoid wildcard imports
 # from module import *
 
-# ✅ Explicit imports
+# Explicit imports
 from math import sqrt, pi`}
         </CodeBlock>
       </Section>
@@ -478,10 +478,10 @@ pip install --user package_name
       <Section title="Next Steps">
         <p>Setelah instalasi berhasil, kamu siap untuk:</p>
         <ul>
-          <li>✅ Belajar Variables & Data Types (Materi 02)</li>
-          <li>✅ Memahami Operators (Materi 03)</li>
-          <li>✅ Control Flow - if/else, loops (Materi 04)</li>
-          <li>✅ Functions (Materi 05)</li>
+          <li>Belajar Variables & Data Types (Materi 02)</li>
+          <li>Memahami Operators (Materi 03)</li>
+          <li>Control Flow - if/else, loops (Materi 04)</li>
+          <li>Functions (Materi 05)</li>
         </ul>
 
         <Note type="success">

@@ -183,12 +183,12 @@ print(Person.is_adult(20))  # Static method`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ Decorator: Function yang memodifikasi function lain</li>
-          <li>✅ Syntax: @decorator_name di atas function</li>
-          <li>✅ functools.wraps: Preserve function metadata</li>
-          <li>✅ Decorator dengan arguments: Nested functions</li>
-          <li>✅ Built-in: @property, @staticmethod, @classmethod</li>
-          <li>✅ Use cases: logging, timing, caching, validation</li>
+          <li>Decorator: Function yang memodifikasi function lain</li>
+          <li>Syntax: @decorator_name di atas function</li>
+          <li>functools.wraps: Preserve function metadata</li>
+          <li>Decorator dengan arguments: Nested functions</li>
+          <li>Built-in: @property, @staticmethod, @classmethod</li>
+          <li>Use cases: logging, timing, caching, validation</li>
         </ul>
       </Section>
     </MateriLayout>

@@ -173,10 +173,10 @@ def safe_scrape(url):
         <Note type="warning">
           <strong>Web Scraping Ethics:</strong>
           <ul>
-            <li>✅ Check robots.txt file</li>
-            <li>✅ Add delays between requests</li>
-            <li>✅ Use User-Agent headers</li>
-            <li>✅ Respect rate limits</li>
+            <li>Check robots.txt file</li>
+            <li>Add delays between requests</li>
+            <li>Use User-Agent headers</li>
+            <li>Respect rate limits</li>
             <li>❌ Don't overload servers</li>
             <li>❌ Don't scrape copyrighted content</li>
           </ul>
@@ -202,12 +202,12 @@ def polite_scrape(urls):
 
       <Section title="Summary">
         <ul>
-          <li>✅ requests: Fetch web pages</li>
-          <li>✅ BeautifulSoup: Parse HTML</li>
-          <li>✅ find/find_all: Find elements</li>
-          <li>✅ CSS selectors: More powerful queries</li>
-          <li>✅ Be polite: Add delays, check robots.txt</li>
-          <li>✅ Error handling: Handle timeouts and errors</li>
+          <li>requests: Fetch web pages</li>
+          <li>BeautifulSoup: Parse HTML</li>
+          <li>find/find_all: Find elements</li>
+          <li>CSS selectors: More powerful queries</li>
+          <li>Be polite: Add delays, check robots.txt</li>
+          <li>Error handling: Handle timeouts and errors</li>
         </ul>
       </Section>
     </MateriLayout>

@@ -175,7 +175,7 @@ fetchUser(1)
         <p>Menghindari callback hell dengan chaining promises.</p>
         
         <CodeBlock language="javascript">
-{`// ✅ Promise chaining - lebih readable
+{`// Promise chaining - lebih readable
 fetchUser(1)
   .then((user) => fetchOrders(user.id))
   .then((orders) => fetchOrderDetails(orders[0].id))
@@ -421,7 +421,7 @@ async function sequentialFetch() {
   return { user, posts, comments };
 }
 
-// ✅ Parallel (cepat) - total 1 detik (operasi berjalan bersamaan)
+// Parallel (cepat) - total 1 detik (operasi berjalan bersamaan)
 async function parallelFetch() {
   const [user, posts, comments] = await Promise.all([
     fetchUser(1),
@@ -474,7 +474,7 @@ fetchUser(1)
   .then(orders => console.log(orders))
   .catch(error => console.error(error));
 
-// ✅ Async/await - cleaner
+// Async/await - cleaner
 async function getOrders() {
   try {
     const user = await fetchUser(1);
@@ -490,7 +490,7 @@ async function getOrders() {
           <div>
             <strong>2. Handle Errors Properly</strong>
             <CodeBlock language="javascript">
-{`// ✅ Always handle errors
+{`// Always handle errors
 async function fetchData() {
   try {
     const data = await fetch('/api/data');
@@ -510,7 +510,7 @@ async function fetchData() {
 const user = await fetchUser();
 const posts = await fetchPosts();
 
-// ✅ Parallel for better performance
+// Parallel for better performance
 const [user, posts] = await Promise.all([
   fetchUser(),
   fetchPosts()

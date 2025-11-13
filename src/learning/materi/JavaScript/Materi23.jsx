@@ -584,7 +584,7 @@ class ErrorBoundary {
 {`// ❌ Bad
 test('works', () => { });
 
-// ✅ Good
+// Good
 test('returns user object when valid ID provided', () => { });`}
             </CodeBlock>
           </div>

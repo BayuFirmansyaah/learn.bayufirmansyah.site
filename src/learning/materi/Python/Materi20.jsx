@@ -164,12 +164,12 @@ asyncio.run(main())`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ async/await: Define and call async functions</li>
-          <li>✅ asyncio.run(): Run async main function</li>
-          <li>✅ asyncio.gather(): Run multiple tasks concurrently</li>
-          <li>✅ asyncio.create_task(): Create background tasks</li>
-          <li>✅ aiohttp: Async HTTP requests</li>
-          <li>✅ Perfect untuk I/O-bound operations</li>
+          <li>async/await: Define and call async functions</li>
+          <li>asyncio.run(): Run async main function</li>
+          <li>asyncio.gather(): Run multiple tasks concurrently</li>
+          <li>asyncio.create_task(): Create background tasks</li>
+          <li>aiohttp: Async HTTP requests</li>
+          <li>Perfect untuk I/O-bound operations</li>
         </ul>
       </Section>
     </MateriLayout>

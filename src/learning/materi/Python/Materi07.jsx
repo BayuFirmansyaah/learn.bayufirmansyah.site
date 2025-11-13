@@ -416,7 +416,7 @@ def add_score(name, score, scores={}):
 result1 = add_score("Budi", 85)   # {'Budi': 85}
 result2 = add_score("Ani", 90)    # {'Budi': 85, 'Ani': 90} ⚠️
 
-# ✅ Correct
+# Correct
 def add_score(name, score, scores=None):
     if scores is None:
         scores = {}
@@ -430,7 +430,7 @@ def add_score(name, score, scores=None):
 empty = {}
 print(type(empty))  # <class 'dict'>
 
-# ✅ Correct for empty set
+# Correct for empty set
 empty_set = set()
 print(type(empty_set))  # <class 'set'>`}
         </CodeBlock>
@@ -443,37 +443,37 @@ for key in user:
     if key == "age":
         del user[key]  # RuntimeError!
 
-# ✅ Iterate over copy of keys
+# Iterate over copy of keys
 for key in list(user.keys()):
     if key == "age":
         del user[key]
 
-# ✅ Better: dict comprehension
+# Better: dict comprehension
 user = {k: v for k, v in user.items() if k != "age"}`}
         </CodeBlock>
       </Section>
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Use <code>get()</code> untuk safe access, hindari KeyError</li>
-          <li>✅ Dict comprehension untuk transform data</li>
-          <li>✅ Use <code>in</code> untuk check key existence</li>
-          <li>✅ Sets untuk remove duplicates dan membership testing (O(1))</li>
-          <li>✅ Use <code>collections.Counter</code> untuk frequency counting</li>
-          <li>✅ Avoid mutable default arguments (dict, list, set)</li>
-          <li>✅ frozenset untuk immutable sets (dapat jadi dict key)</li>
+          <li>Use <code>get()</code> untuk safe access, hindari KeyError</li>
+          <li>Dict comprehension untuk transform data</li>
+          <li>Use <code>in</code> untuk check key existence</li>
+          <li>Sets untuk remove duplicates dan membership testing (O(1))</li>
+          <li>Use <code>collections.Counter</code> untuk frequency counting</li>
+          <li>Avoid mutable default arguments (dict, list, set)</li>
+          <li>frozenset untuk immutable sets (dapat jadi dict key)</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ <strong>Dictionary:</strong> Key-value pairs, ordered (3.7+), mutable, keys unique</li>
-          <li>✅ Dict methods: get, keys, values, items, update, pop, clear</li>
-          <li>✅ Dict comprehension: <code>{`{k: v for k, v in ...}`}</code></li>
-          <li>✅ <strong>Set:</strong> Unordered, unique items, mathematical operations</li>
-          <li>✅ Set operations: union, intersection, difference, symmetric_difference</li>
-          <li>✅ frozenset untuk immutable version</li>
-          <li>✅ Use sets untuk unique items dan fast membership testing</li>
+          <li><strong>Dictionary:</strong> Key-value pairs, ordered (3.7+), mutable, keys unique</li>
+          <li>Dict methods: get, keys, values, items, update, pop, clear</li>
+          <li>Dict comprehension: <code>{`{k: v for k, v in ...}`}</code></li>
+          <li><strong>Set:</strong> Unordered, unique items, mathematical operations</li>
+          <li>Set operations: union, intersection, difference, symmetric_difference</li>
+          <li>frozenset untuk immutable version</li>
+          <li>Use sets untuk unique items dan fast membership testing</li>
         </ul>
       </Section>
     </MateriLayout>

@@ -545,10 +545,10 @@ element.style.width = '100px';
 element.style.height = '100px';
 element.style.margin = '10px';
 
-// ✅ Single reflow
+// Single reflow
 element.style.cssText = 'width: 100px; height: 100px; margin: 10px;';
 
-// ✅ Or use classes
+// Or use classes
 element.classList.add('styled');`}
             </CodeBlock>
           </div>
@@ -562,7 +562,7 @@ for (let i = 0; i < 1000; i++) {
   document.body.appendChild(div);  // Reflow each time
 }
 
-// ✅ Batch with fragment
+// Batch with fragment
 const fragment = document.createDocumentFragment();
 for (let i = 0; i < 1000; i++) {
   const div = document.createElement('div');
@@ -580,7 +580,7 @@ setInterval(() => {
   element.style.left = \`\${x}px\`;
 }, 16);
 
-// ✅ requestAnimationFrame
+// requestAnimationFrame
 function animate() {
   element.style.left = \`\${x}px\`;
   requestAnimationFrame(animate);
@@ -597,7 +597,7 @@ items.forEach(item => {
   item.addEventListener('click', handleClick);
 });
 
-// ✅ Single listener di parent
+// Single listener di parent
 parent.addEventListener('click', (e) => {
   if (e.target.matches('.item')) {
     handleClick(e);

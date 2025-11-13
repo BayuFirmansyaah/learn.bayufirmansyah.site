@@ -235,12 +235,12 @@ def create_user(user: User):
 
       <Section title="Summary">
         <ul>
-          <li>✅ FastAPI: Modern, fast Python web framework</li>
-          <li>✅ Pydantic: Data validation with type hints</li>
-          <li>✅ Automatic OpenAPI docs generation</li>
-          <li>✅ Async support out of the box</li>
-          <li>✅ Type hints for better IDE support</li>
-          <li>✅ Easy to build REST APIs quickly</li>
+          <li>FastAPI: Modern, fast Python web framework</li>
+          <li>Pydantic: Data validation with type hints</li>
+          <li>Automatic OpenAPI docs generation</li>
+          <li>Async support out of the box</li>
+          <li>Type hints for better IDE support</li>
+          <li>Easy to build REST APIs quickly</li>
         </ul>
       </Section>
     </MateriLayout>

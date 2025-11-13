@@ -134,11 +134,11 @@ print(list(first_10))  # [0, 1, 2, ..., 9]`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ Iterator: Object dengan __iter__() dan __next__()</li>
-          <li>✅ Generator: Function dengan yield keyword</li>
-          <li>✅ Generators are memory efficient (lazy evaluation)</li>
-          <li>✅ Generator expression: (expr for x in iterable)</li>
-          <li>✅ itertools: Built-in tools untuk iterators</li>
+          <li>Iterator: Object dengan __iter__() dan __next__()</li>
+          <li>Generator: Function dengan yield keyword</li>
+          <li>Generators are memory efficient (lazy evaluation)</li>
+          <li>Generator expression: (expr for x in iterable)</li>
+          <li>itertools: Built-in tools untuk iterators</li>
         </ul>
       </Section>
     </MateriLayout>

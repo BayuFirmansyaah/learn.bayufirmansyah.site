@@ -408,25 +408,25 @@ print(config.get("app_name"))`}
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Always use <code>with</code> statement (context manager)</li>
-          <li>✅ Handle exceptions (FileNotFoundError, PermissionError, etc.)</li>
-          <li>✅ Use <code>os.path.join()</code> untuk cross-platform paths</li>
-          <li>✅ Close files properly (atau gunakan <code>with</code>)</li>
-          <li>✅ Use binary mode ('rb', 'wb') untuk non-text files</li>
-          <li>✅ Specify encoding untuk text files: <code>open(file, 'r', encoding='utf-8')</code></li>
-          <li>✅ Use <code>newline=''</code> saat menulis CSV</li>
+          <li>Always use <code>with</code> statement (context manager)</li>
+          <li>Handle exceptions (FileNotFoundError, PermissionError, etc.)</li>
+          <li>Use <code>os.path.join()</code> untuk cross-platform paths</li>
+          <li>Close files properly (atau gunakan <code>with</code>)</li>
+          <li>Use binary mode ('rb', 'wb') untuk non-text files</li>
+          <li>Specify encoding untuk text files: <code>open(file, 'r', encoding='utf-8')</code></li>
+          <li>Use <code>newline=''</code> saat menulis CSV</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ File modes: 'r', 'w', 'a', 'x', 'r+', 'b'</li>
-          <li>✅ Read methods: read(), readline(), readlines()</li>
-          <li>✅ Write methods: write(), writelines()</li>
-          <li>✅ Use <code>with</code> statement untuk auto-close</li>
-          <li>✅ os module untuk file operations (rename, remove, exists)</li>
-          <li>✅ csv module untuk CSV files</li>
-          <li>✅ json module untuk JSON files</li>
+          <li>File modes: 'r', 'w', 'a', 'x', 'r+', 'b'</li>
+          <li>Read methods: read(), readline(), readlines()</li>
+          <li>Write methods: write(), writelines()</li>
+          <li>Use <code>with</code> statement untuk auto-close</li>
+          <li>os module untuk file operations (rename, remove, exists)</li>
+          <li>csv module untuk CSV files</li>
+          <li>json module untuk JSON files</li>
         </ul>
       </Section>
     </MateriLayout>

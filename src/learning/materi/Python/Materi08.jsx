@@ -412,7 +412,7 @@ text = "hello"
 text.upper()  # Creates new string but doesn't assign
 print(text)   # Still "hello"
 
-# ✅ Correct: assign result
+# Correct: assign result
 text = "hello"
 text = text.upper()
 print(text)   # "HELLO"`}
@@ -424,7 +424,7 @@ print(text)   # "HELLO"`}
 text = "Hello World"
 # first_word = text.split()[0]  # OK if not empty
 
-# ✅ Better: check first
+# Better: check first
 words = text.split()
 if words:
     first_word = words[0]`}
@@ -433,25 +433,25 @@ if words:
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Use f-strings untuk formatting (Python 3.6+)</li>
-          <li>✅ Use <code>strip()</code> untuk clean user input</li>
-          <li>✅ <code>startswith()</code> dan <code>endswith()</code> lebih readable daripada slicing</li>
-          <li>✅ <code>in</code> operator untuk check substring</li>
-          <li>✅ <code>join()</code> lebih efficient daripada concatenation dalam loop</li>
-          <li>✅ Remember: strings are immutable, methods return new strings</li>
+          <li>Use f-strings untuk formatting (Python 3.6+)</li>
+          <li>Use <code>strip()</code> untuk clean user input</li>
+          <li><code>startswith()</code> dan <code>endswith()</code> lebih readable daripada slicing</li>
+          <li><code>in</code> operator untuk check substring</li>
+          <li><code>join()</code> lebih efficient daripada concatenation dalam loop</li>
+          <li>Remember: strings are immutable, methods return new strings</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ Case: upper, lower, title, capitalize, swapcase</li>
-          <li>✅ Search: find, rfind, index, count, startswith, endswith</li>
-          <li>✅ Replace: replace</li>
-          <li>✅ Split/Join: split, join, splitlines</li>
-          <li>✅ Strip: strip, lstrip, rstrip</li>
-          <li>✅ Formatting: f-strings (recommended), format(), %</li>
-          <li>✅ Validation: isalpha, isdigit, isalnum, isspace, etc.</li>
-          <li>✅ Padding: center, ljust, rjust, zfill</li>
+          <li>Case: upper, lower, title, capitalize, swapcase</li>
+          <li>Search: find, rfind, index, count, startswith, endswith</li>
+          <li>Replace: replace</li>
+          <li>Split/Join: split, join, splitlines</li>
+          <li>Strip: strip, lstrip, rstrip</li>
+          <li>Formatting: f-strings (recommended), format(), %</li>
+          <li>Validation: isalpha, isdigit, isalnum, isspace, etc.</li>
+          <li>Padding: center, ljust, rjust, zfill</li>
         </ul>
       </Section>
     </MateriLayout>

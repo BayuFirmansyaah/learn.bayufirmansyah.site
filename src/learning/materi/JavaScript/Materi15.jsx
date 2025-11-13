@@ -561,7 +561,7 @@ console.log(\`Storage size: \${storage.getSize()} bytes\`);`}
           <div>
             <strong>1. Always Use Try/Catch</strong>
             <CodeBlock language="javascript">
-{`// ✅ Handle QuotaExceededError
+{`// Handle QuotaExceededError
 try {
   localStorage.setItem('key', largeData);
 } catch (error) {
@@ -601,7 +601,7 @@ try {
 localStorage.setItem('password', 'secret123');  // BAD!
 localStorage.setItem('creditCard', '1234-5678');  // BAD!
 
-// ✅ Simpan token dengan expiration
+// Simpan token dengan expiration
 const token = { value: 'abc123', expires: Date.now() + 3600000 };
 localStorage.setItem('token', JSON.stringify(token));`}
             </CodeBlock>
@@ -610,7 +610,7 @@ localStorage.setItem('token', JSON.stringify(token));`}
           <div>
             <strong>4. Gunakan Namespace untuk Keys</strong>
             <CodeBlock language="javascript">
-{`// ✅ Avoid key conflicts
+{`// Avoid key conflicts
 const APP_PREFIX = 'myapp_';
 
 function setItem(key, value) {

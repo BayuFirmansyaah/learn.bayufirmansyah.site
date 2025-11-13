@@ -161,13 +161,13 @@ if user:
 
       <Section title="Summary">
         <ul>
-          <li>✅ Type hints: Optional but highly recommended</li>
-          <li>✅ Basic types: int, str, float, bool</li>
-          <li>✅ Collections: List, Dict, Tuple, Set</li>
-          <li>✅ Optional: For nullable values</li>
-          <li>✅ Union: Multiple possible types</li>
-          <li>✅ Callable: Function types</li>
-          <li>✅ mypy: Static type checker</li>
+          <li>Type hints: Optional but highly recommended</li>
+          <li>Basic types: int, str, float, bool</li>
+          <li>Collections: List, Dict, Tuple, Set</li>
+          <li>Optional: For nullable values</li>
+          <li>Union: Multiple possible types</li>
+          <li>Callable: Function types</li>
+          <li>mypy: Static type checker</li>
         </ul>
       </Section>
     </MateriLayout>

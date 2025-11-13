@@ -696,8 +696,8 @@ if (!data || !data.id) {
           <div>
             <strong>5. Secure Authentication Tokens</strong>
             <CodeBlock language="javascript">
-{`// ✅ Store in httpOnly cookie (server-side)
-// ✅ Or localStorage with XSS protection
+{`// Store in httpOnly cookie (server-side)
+// Or localStorage with XSS protection
 // ❌ Don't expose in URL or client-side code`}
             </CodeBlock>
           </div>

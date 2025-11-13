@@ -46,7 +46,7 @@ print(name, age, height, is_student)
         </ul>
 
         <CodeBlock language="python">
-{`# ✅ Valid variable names
+{`# Valid variable names
 user_name = "Budi"
 _private = 100
 name2 = "Test"
@@ -476,7 +476,7 @@ else:
 usrName = "Budi"
 print(userName)  # NameError
 
-# ✅ Consistent naming
+# Consistent naming
 user_name = "Budi"
 print(user_name)`}
         </CodeBlock>
@@ -487,7 +487,7 @@ print(user_name)`}
 age = "25"
 result = age + 5  # TypeError: can only concatenate str
 
-# ✅ Convert first
+# Convert first
 age = int("25")
 result = age + 5  # 30`}
         </CodeBlock>
@@ -507,24 +507,24 @@ result = 10 % 3   # 1`}
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Gunakan nama variable yang descriptive: <code>user_age</code> lebih baik dari <code>x</code></li>
-          <li>✅ Follow PEP 8: snake_case untuk variables</li>
-          <li>✅ Gunakan f-strings untuk string formatting (Python 3.6+)</li>
-          <li>✅ Explicit type conversion lebih baik daripada implicit</li>
-          <li>✅ Use <code>isinstance()</code> untuk type checking, bukan <code>type() ==</code></li>
-          <li>✅ Constants pakai UPPERCASE</li>
-          <li>✅ Validate input dari user sebelum convert</li>
+          <li>Gunakan nama variable yang descriptive: <code>user_age</code> lebih baik dari <code>x</code></li>
+          <li>Follow PEP 8: snake_case untuk variables</li>
+          <li>Gunakan f-strings untuk string formatting (Python 3.6+)</li>
+          <li>Explicit type conversion lebih baik daripada implicit</li>
+          <li>Use <code>isinstance()</code> untuk type checking, bukan <code>type() ==</code></li>
+          <li>Constants pakai UPPERCASE</li>
+          <li>Validate input dari user sebelum convert</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ Python adalah dynamically typed (tidak perlu declare type)</li>
-          <li>✅ Built-in types: int, float, complex, str, bool, None</li>
-          <li>✅ Type conversion: int(), float(), str(), bool()</li>
-          <li>✅ String formatting: f-string (recommended)</li>
-          <li>✅ input() selalu return string, convert sesuai kebutuhan</li>
-          <li>✅ Follow naming conventions (snake_case, UPPERCASE constants)</li>
+          <li>Python adalah dynamically typed (tidak perlu declare type)</li>
+          <li>Built-in types: int, float, complex, str, bool, None</li>
+          <li>Type conversion: int(), float(), str(), bool()</li>
+          <li>String formatting: f-string (recommended)</li>
+          <li>input() selalu return string, convert sesuai kebutuhan</li>
+          <li>Follow naming conventions (snake_case, UPPERCASE constants)</li>
         </ul>
       </Section>
     </MateriLayout>

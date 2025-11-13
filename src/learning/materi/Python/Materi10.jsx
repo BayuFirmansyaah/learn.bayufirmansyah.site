@@ -398,14 +398,14 @@ result = safe_divide(10, "2")`}
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Catch specific exceptions, avoid bare <code>except:</code></li>
-          <li>✅ Don't silently ignore exceptions - log or handle properly</li>
-          <li>✅ Use <code>finally</code> untuk cleanup (close files, connections)</li>
-          <li>✅ Use <code>with</code> statement instead of try-finally for resources</li>
-          <li>✅ Raise exceptions early, handle late</li>
-          <li>✅ Custom exceptions untuk domain-specific errors</li>
-          <li>✅ Document what exceptions your functions can raise</li>
-          <li>✅ Order exception handlers from specific to general</li>
+          <li>Catch specific exceptions, avoid bare <code>except:</code></li>
+          <li>Don't silently ignore exceptions - log or handle properly</li>
+          <li>Use <code>finally</code> untuk cleanup (close files, connections)</li>
+          <li>Use <code>with</code> statement instead of try-finally for resources</li>
+          <li>Raise exceptions early, handle late</li>
+          <li>Custom exceptions untuk domain-specific errors</li>
+          <li>Document what exceptions your functions can raise</li>
+          <li>Order exception handlers from specific to general</li>
         </ul>
       </Section>
 
@@ -423,7 +423,7 @@ try:
     value = mydict["key"]
 except KeyError:
     value = None
-# ✅ Better: use get()
+# Better: use get()
 value = mydict.get("key")
 
 # ❌ Too broad exception
@@ -432,7 +432,7 @@ try:
     pass
 except Exception:
     pass
-# ✅ Better: specific exceptions
+# Better: specific exceptions
 try:
     # code
     pass
@@ -443,14 +443,14 @@ except (ValueError, TypeError):
 
       <Section title="Summary">
         <ul>
-          <li>✅ <code>try-except</code> untuk handle exceptions</li>
-          <li>✅ <code>else</code> runs jika no exception</li>
-          <li>✅ <code>finally</code> always runs (cleanup)</li>
-          <li>✅ <code>raise</code> untuk throw exceptions</li>
-          <li>✅ Custom exceptions: inherit from <code>Exception</code></li>
-          <li>✅ Common exceptions: ValueError, TypeError, KeyError, IndexError, etc.</li>
-          <li>✅ Catch specific exceptions, order from specific to general</li>
-          <li>✅ Use <code>with</code> untuk resource management</li>
+          <li><code>try-except</code> untuk handle exceptions</li>
+          <li><code>else</code> runs jika no exception</li>
+          <li><code>finally</code> always runs (cleanup)</li>
+          <li><code>raise</code> untuk throw exceptions</li>
+          <li>Custom exceptions: inherit from <code>Exception</code></li>
+          <li>Common exceptions: ValueError, TypeError, KeyError, IndexError, etc.</li>
+          <li>Catch specific exceptions, order from specific to general</li>
+          <li>Use <code>with</code> untuk resource management</li>
         </ul>
       </Section>
     </MateriLayout>

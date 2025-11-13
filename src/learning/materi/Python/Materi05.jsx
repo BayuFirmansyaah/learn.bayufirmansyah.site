@@ -470,14 +470,14 @@ for key, value in stats.items():
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Function names: lowercase with underscores (snake_case)</li>
-          <li>✅ One function, one responsibility (Single Responsibility Principle)</li>
-          <li>✅ Use docstrings untuk documentation</li>
-          <li>✅ Default parameters di akhir parameter list</li>
-          <li>✅ Avoid mutable default arguments (list, dict)</li>
-          <li>✅ Return early untuk reduce nesting</li>
-          <li>✅ Keep functions short (max 50-100 lines)</li>
-          <li>✅ Use type hints untuk better IDE support</li>
+          <li>Function names: lowercase with underscores (snake_case)</li>
+          <li>One function, one responsibility (Single Responsibility Principle)</li>
+          <li>Use docstrings untuk documentation</li>
+          <li>Default parameters di akhir parameter list</li>
+          <li>Avoid mutable default arguments (list, dict)</li>
+          <li>Return early untuk reduce nesting</li>
+          <li>Keep functions short (max 50-100 lines)</li>
+          <li>Use type hints untuk better IDE support</li>
         </ul>
       </Section>
 
@@ -492,7 +492,7 @@ def add_item(item, items=[]):
 list1 = add_item("apple")   # ['apple']
 list2 = add_item("banana")  # ['apple', 'banana'] ⚠️
 
-# ✅ Correct: use None as default
+# Correct: use None as default
 def add_item(item, items=None):
     if items is None:
         items = []
@@ -509,7 +509,7 @@ def add(a, b):
 x = add(5, 3)
 print(x)  # None
 
-# ✅ Correct
+# Correct
 def add(a, b):
     return a + b`}
         </CodeBlock>
@@ -517,14 +517,14 @@ def add(a, b):
 
       <Section title="Summary">
         <ul>
-          <li>✅ def keyword untuk define functions</li>
-          <li>✅ Parameters: positional, keyword, default, *args, **kwargs</li>
-          <li>✅ return untuk mengembalikan nilai</li>
-          <li>✅ Lambda untuk simple anonymous functions</li>
-          <li>✅ Scope: local, global, nonlocal</li>
-          <li>✅ Docstrings untuk documentation</li>
-          <li>✅ Recursion untuk self-referential problems</li>
-          <li>✅ Type hints untuk better code documentation</li>
+          <li>def keyword untuk define functions</li>
+          <li>Parameters: positional, keyword, default, *args, **kwargs</li>
+          <li>return untuk mengembalikan nilai</li>
+          <li>Lambda untuk simple anonymous functions</li>
+          <li>Scope: local, global, nonlocal</li>
+          <li>Docstrings untuk documentation</li>
+          <li>Recursion untuk self-referential problems</li>
+          <li>Type hints untuk better code documentation</li>
         </ul>
       </Section>
     </MateriLayout>

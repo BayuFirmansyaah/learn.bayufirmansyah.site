@@ -227,14 +227,14 @@ print(repr(book))     # Book('Python 101', 'John Doe', 300)`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ Class: Blueprint untuk objects</li>
-          <li>✅ Object: Instance dari class</li>
-          <li>✅ __init__: Constructor method</li>
-          <li>✅ self: Reference ke instance</li>
-          <li>✅ Inheritance: Child class extends parent</li>
-          <li>✅ Encapsulation: Private members dengan __prefix</li>
-          <li>✅ @property: Getter/setter decorators</li>
-          <li>✅ Magic methods: __str__, __repr__, __len__, dll</li>
+          <li>Class: Blueprint untuk objects</li>
+          <li>Object: Instance dari class</li>
+          <li>__init__: Constructor method</li>
+          <li>self: Reference ke instance</li>
+          <li>Inheritance: Child class extends parent</li>
+          <li>Encapsulation: Private members dengan __prefix</li>
+          <li>@property: Getter/setter decorators</li>
+          <li>Magic methods: __str__, __repr__, __len__, dll</li>
         </ul>
       </Section>
     </MateriLayout>

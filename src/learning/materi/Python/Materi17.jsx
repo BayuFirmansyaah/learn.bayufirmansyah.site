@@ -154,11 +154,11 @@ with temporary_directory('temp_work') as tmpdir:
 
       <Section title="Summary">
         <ul>
-          <li>✅ Context manager: Manages resource setup/cleanup</li>
-          <li>✅ with statement: Cleaner resource management</li>
-          <li>✅ Class-based: __enter__() dan __exit__()</li>
-          <li>✅ @contextmanager decorator: Easier with yield</li>
-          <li>✅ Use cases: files, DB connections, locks, timers</li>
+          <li>Context manager: Manages resource setup/cleanup</li>
+          <li>with statement: Cleaner resource management</li>
+          <li>Class-based: __enter__() dan __exit__()</li>
+          <li>@contextmanager decorator: Easier with yield</li>
+          <li>Use cases: files, DB connections, locks, timers</li>
         </ul>
       </Section>
     </MateriLayout>

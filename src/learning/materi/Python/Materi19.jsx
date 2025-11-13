@@ -164,11 +164,11 @@ with ThreadPoolExecutor(max_workers=3) as executor:
 
       <Section title="Summary">
         <ul>
-          <li>✅ threading: For I/O-bound tasks</li>
-          <li>✅ multiprocessing: For CPU-bound tasks</li>
-          <li>✅ Lock: Thread synchronization</li>
-          <li>✅ Pool: Easy parallel execution</li>
-          <li>✅ concurrent.futures: High-level interface</li>
+          <li>threading: For I/O-bound tasks</li>
+          <li>multiprocessing: For CPU-bound tasks</li>
+          <li>Lock: Thread synchronization</li>
+          <li>Pool: Easy parallel execution</li>
+          <li>concurrent.futures: High-level interface</li>
         </ul>
       </Section>
     </MateriLayout>

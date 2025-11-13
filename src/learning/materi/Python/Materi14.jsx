@@ -127,12 +127,12 @@ lookup = {u["name"]: u["age"] for u in users}`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ List comprehension: [expr for item in iterable if condition]</li>
-          <li>✅ Dict comprehension: {`{k: v for item in iterable}`}</li>
-          <li>✅ Set comprehension: {`{expr for item in iterable}`}</li>
-          <li>✅ Generator expression: (expr for item in iterable)</li>
-          <li>✅ Lebih readable dan efficient daripada loops</li>
-          <li>✅ Generators untuk large data (memory efficient)</li>
+          <li>List comprehension: [expr for item in iterable if condition]</li>
+          <li>Dict comprehension: {`{k: v for item in iterable}`}</li>
+          <li>Set comprehension: {`{expr for item in iterable}`}</li>
+          <li>Generator expression: (expr for item in iterable)</li>
+          <li>Lebih readable dan efficient daripada loops</li>
+          <li>Generators untuk large data (memory efficient)</li>
         </ul>
       </Section>
     </MateriLayout>

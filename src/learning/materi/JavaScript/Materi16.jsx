@@ -576,7 +576,7 @@ class VP extends Director { /* ... */ }
 // - Sulit reuse functionality across branches`}
         </CodeBlock>
 
-        <h3 className="text-lg font-semibold mb-2 mt-4">✅ Composition Pattern</h3>
+        <h3 className="text-lg font-semibold mb-2 mt-4">Composition Pattern</h3>
         <CodeBlock language="javascript">
 {`// Separate concerns into behaviors
 const canEat = (state) => ({
@@ -862,7 +862,7 @@ class User {
   validateInput() { }
 }
 
-// ✅ Separate concerns
+// Separate concerns
 class User { }
 class UserRepository { }
 class EmailService { }

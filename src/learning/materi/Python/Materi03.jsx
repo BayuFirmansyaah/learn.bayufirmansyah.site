@@ -113,7 +113,7 @@ print(a is c)  # True (same object)
 
 # For None, use 'is'
 x = None
-if x is None:  # ✅ Correct
+if x is None:  # Correct
     print("x is None")
     
 if x == None:  # ❌ Works, but not recommended
@@ -470,7 +470,7 @@ print(f"Category: {category}")`}
 if x = 10:  # SyntaxError
     print("Equal")
 
-# ✅ Comparison
+# Comparison
 if x == 10:
     print("Equal")`}
         </CodeBlock>
@@ -493,11 +493,11 @@ print(10 % 3)   # 1`}
 if x == 1 or 2 or 3:  # Always True!
     pass
 
-# ✅ Correct
+# Correct
 if x == 1 or x == 2 or x == 3:
     pass
 
-# ✅ Better: use 'in'
+# Better: use 'in'
 if x in [1, 2, 3]:
     pass`}
         </CodeBlock>
@@ -505,26 +505,26 @@ if x in [1, 2, 3]:
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Gunakan parentheses untuk clarity dalam complex expressions</li>
-          <li>✅ Prefer <code>is</code> untuk None checking</li>
-          <li>✅ Use <code>in</code> untuk membership testing, bukan multiple OR</li>
-          <li>✅ Ternary operator untuk simple conditions saja</li>
-          <li>✅ Avoid nested ternary (hard to read)</li>
-          <li>✅ Use short-circuit evaluation untuk performance</li>
-          <li>✅ Comparison chaining: <code>a &lt; x &lt; b</code> lebih readable</li>
+          <li>Gunakan parentheses untuk clarity dalam complex expressions</li>
+          <li>Prefer <code>is</code> untuk None checking</li>
+          <li>Use <code>in</code> untuk membership testing, bukan multiple OR</li>
+          <li>Ternary operator untuk simple conditions saja</li>
+          <li>Avoid nested ternary (hard to read)</li>
+          <li>Use short-circuit evaluation untuk performance</li>
+          <li>Comparison chaining: <code>a &lt; x &lt; b</code> lebih readable</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ Arithmetic: +, -, *, /, //, %, **</li>
-          <li>✅ Assignment: =, +=, -=, *=, etc.</li>
-          <li>✅ Comparison: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
-          <li>✅ Logical: and, or, not</li>
-          <li>✅ Identity: is, is not</li>
-          <li>✅ Membership: in, not in</li>
-          <li>✅ Ternary: value_if_true if condition else value_if_false</li>
-          <li>✅ Precedence: () → ** → * / // % → + - → comparisons → not → and → or</li>
+          <li>Arithmetic: +, -, *, /, //, %, **</li>
+          <li>Assignment: =, +=, -=, *=, etc.</li>
+          <li>Comparison: ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+          <li>Logical: and, or, not</li>
+          <li>Identity: is, is not</li>
+          <li>Membership: in, not in</li>
+          <li>Ternary: value_if_true if condition else value_if_false</li>
+          <li>Precedence: () → ** → * / // % → + - → comparisons → not → and → or</li>
         </ul>
       </Section>
     </MateriLayout>

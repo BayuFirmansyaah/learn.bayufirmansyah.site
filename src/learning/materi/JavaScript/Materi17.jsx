@@ -37,7 +37,7 @@ function addToTotal(value) {
   return total;
 }
 
-// ✅ Pure function
+// Pure function
 function add(a, b) {
   return a + b;
 }
@@ -48,7 +48,7 @@ function multiply(x) {
   return x * multiplier;  // Depends on external variable
 }
 
-// ✅ Pure (all inputs as parameters)
+// Pure (all inputs as parameters)
 function multiply(x, multiplier) {
   return x * multiplier;
 }
@@ -59,7 +59,7 @@ function addItem(arr, item) {
   return arr;
 }
 
-// ✅ Pure (returns new array)
+// Pure (returns new array)
 function addItem(arr, item) {
   return [...arr, item];  // New array
 }
@@ -69,7 +69,7 @@ function getRandomNumber() {
   return Math.random();  // Different output setiap call
 }
 
-// ✅ Pure
+// Pure
 function getDoubled(numbers) {
   return numbers.map(n => n * 2);
 }
@@ -90,7 +90,7 @@ numbers.push(6);       // Modifies original
 numbers.pop();         // Modifies original
 numbers.splice(1, 1);  // Modifies original
 
-// ✅ Immutable operations
+// Immutable operations
 const newNumbers1 = [...numbers, 6];        // Add to end
 const newNumbers2 = [0, ...numbers];        // Add to start
 const newNumbers3 = numbers.slice(0, -1);   // Remove last
@@ -116,7 +116,7 @@ const updated = updateAt([1, 2, 3], 1, 99);  // [1, 99, 3]`}
 // ❌ Mutable
 user.age = 26;  // Modifies original
 
-// ✅ Immutable (create new object)
+// Immutable (create new object)
 const updatedUser = { ...user, age: 26 };
 
 // Nested object update
@@ -128,7 +128,7 @@ const state = {
 // ❌ Mutable
 state.user.address.city = 'LA';
 
-// ✅ Immutable
+// Immutable
 const newState = {
   ...state,
   user: {
@@ -521,7 +521,7 @@ function sumImperative(numbers) {
   return sum;
 }
 
-// ✅ Functional (recursion)
+// Functional (recursion)
 function sumRecursive(numbers) {
   if (numbers.length === 0) return 0;
   const [head, ...tail] = numbers;
@@ -669,7 +669,7 @@ console.log(ageValidation);    // { valid: true }`}
           <div>
             <strong>2. Avoid Mutations</strong>
             <CodeBlock language="javascript">
-{`// ✅ Immutable
+{`// Immutable
 const updated = { ...obj, key: newValue };
 const newArr = [...arr, newItem];`}
             </CodeBlock>
@@ -686,7 +686,7 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 
-// ✅ Declarative (what)
+// Declarative (what)
 const result = arr
   .filter(n => n % 2 === 0)
   .map(n => n * 2);`}

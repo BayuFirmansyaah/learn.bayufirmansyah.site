@@ -584,7 +584,7 @@ console.log(list);`}
 {`// ❌ Buruk
 const element = document.getElementById('myId');
 
-// ✅ Baik - lebih konsisten
+// Baik - lebih konsisten
 const element = document.querySelector('#myId');`}
             </CodeBlock>
           </div>
@@ -597,7 +597,7 @@ for (let i = 0; i < 100; i++) {
   document.querySelector('.box').style.width = i + 'px';
 }
 
-// ✅ Baik - cache hasil query
+// Baik - cache hasil query
 const box = document.querySelector('.box');
 for (let i = 0; i < 100; i++) {
   box.style.width = i + 'px';
@@ -611,7 +611,7 @@ for (let i = 0; i < 100; i++) {
 {`// ❌ Buruk
 element.className += ' active';
 
-// ✅ Baik
+// Baik
 element.classList.add('active');`}
             </CodeBlock>
           </div>
@@ -622,7 +622,7 @@ element.classList.add('active');`}
 {`// ❌ Buruk - XSS vulnerability
 element.innerHTML = userInput;
 
-// ✅ Baik - aman dari XSS
+// Baik - aman dari XSS
 element.textContent = userInput;`}
             </CodeBlock>
           </div>
@@ -635,7 +635,7 @@ element.style.color = 'red';
 element.style.fontSize = '20px';
 element.style.padding = '10px';
 
-// ✅ Baik - gunakan CSS class
+// Baik - gunakan CSS class
 element.classList.add('highlight');
 // CSS: .highlight { color: red; font-size: 20px; padding: 10px; }`}
             </CodeBlock>
@@ -650,7 +650,7 @@ for (let i = 0; i < 100; i++) {
   document.body.appendChild(div);  // Reflow setiap loop!
 }
 
-// ✅ Baik - batch DOM changes
+// Baik - batch DOM changes
 const fragment = document.createDocumentFragment();
 for (let i = 0; i < 100; i++) {
   const div = document.createElement('div');

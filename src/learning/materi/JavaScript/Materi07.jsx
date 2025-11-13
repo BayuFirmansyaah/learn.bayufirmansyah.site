@@ -376,7 +376,7 @@ let product = Object.seal({
   price: 1000
 });
 
-product.price = 1200;     // ✅ OK
+product.price = 1200;     // OK
 product.category = "Tech"; // ❌ Ignored
 delete product.name;      // ❌ Ignored
 
@@ -450,27 +450,27 @@ console.log(JSON.stringify(obj));
 
       <Section id="best-practices" heading="Best Practices">
         <ul>
-          <li>✅ Use dot notation when possible: <code>user.name</code></li>
-          <li>✅ Use bracket notation for dynamic keys: <code>user[key]</code></li>
-          <li>✅ Use regular functions untuk object methods (not arrow)</li>
-          <li>✅ Use destructuring untuk extract multiple properties</li>
-          <li>✅ Use spread operator untuk copy/merge objects</li>
-          <li>✅ Use <code>const</code> untuk objects (properties can change)</li>
-          <li>✅ Check property existence dengan <code>in</code> atau <code>hasOwnProperty()</code></li>
-          <li>✅ Use optional chaining (<code>?.</code>) untuk avoid errors</li>
+          <li>Use dot notation when possible: <code>user.name</code></li>
+          <li>Use bracket notation for dynamic keys: <code>user[key]</code></li>
+          <li>Use regular functions untuk object methods (not arrow)</li>
+          <li>Use destructuring untuk extract multiple properties</li>
+          <li>Use spread operator untuk copy/merge objects</li>
+          <li>Use <code>const</code> untuk objects (properties can change)</li>
+          <li>Check property existence dengan <code>in</code> atau <code>hasOwnProperty()</code></li>
+          <li>Use optional chaining (<code>?.</code>) untuk avoid errors</li>
         </ul>
       </Section>
 
       <Section id="summary" heading="Rangkuman">
         <ul>
-          <li>✅ Objects store key-value pairs (properties)</li>
-          <li>✅ Access: dot notation (<code>obj.key</code>) or bracket (<code>obj[key]</code>)</li>
-          <li>✅ Methods: functions as object properties</li>
-          <li>✅ <code>this</code> refers to the object (use regular functions)</li>
-          <li>✅ Destructuring untuk extract properties</li>
-          <li>✅ <code>Object.keys/values/entries()</code> untuk iteration</li>
-          <li>✅ <code>Object.assign()</code> or spread untuk copy/merge</li>
-          <li>✅ JSON untuk data serialization/exchange</li>
+          <li>Objects store key-value pairs (properties)</li>
+          <li>Access: dot notation (<code>obj.key</code>) or bracket (<code>obj[key]</code>)</li>
+          <li>Methods: functions as object properties</li>
+          <li><code>this</code> refers to the object (use regular functions)</li>
+          <li>Destructuring untuk extract properties</li>
+          <li><code>Object.keys/values/entries()</code> untuk iteration</li>
+          <li><code>Object.assign()</code> or spread untuk copy/merge</li>
+          <li>JSON untuk data serialization/exchange</li>
         </ul>
       </Section>
     </MateriLayout>

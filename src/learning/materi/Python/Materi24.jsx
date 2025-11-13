@@ -246,12 +246,12 @@ alembic downgrade -1`}
 
       <Section title="Summary">
         <ul>
-          <li>✅ SQLite: Built-in, file-based database</li>
-          <li>✅ SQLAlchemy: Popular ORM for Python</li>
-          <li>✅ psycopg2: PostgreSQL adapter</li>
-          <li>✅ Models: Define database schema as classes</li>
-          <li>✅ Relationships: One-to-many, many-to-many</li>
-          <li>✅ Alembic: Database migrations</li>
+          <li>SQLite: Built-in, file-based database</li>
+          <li>SQLAlchemy: Popular ORM for Python</li>
+          <li>psycopg2: PostgreSQL adapter</li>
+          <li>Models: Define database schema as classes</li>
+          <li>Relationships: One-to-many, many-to-many</li>
+          <li>Alembic: Database migrations</li>
         </ul>
       </Section>
     </MateriLayout>

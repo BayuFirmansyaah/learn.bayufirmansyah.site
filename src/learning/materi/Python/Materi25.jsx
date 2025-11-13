@@ -241,27 +241,27 @@ jobs:
 
       <Section title="Production Checklist">
         <ul>
-          <li>✅ Write comprehensive tests (aim for 80%+ coverage)</li>
-          <li>✅ Use environment variables for secrets</li>
-          <li>✅ Set up CI/CD pipeline</li>
-          <li>✅ Use production WSGI server (gunicorn, uvicorn)</li>
-          <li>✅ Enable HTTPS/SSL</li>
-          <li>✅ Set up monitoring and logging</li>
-          <li>✅ Database backups</li>
-          <li>✅ Use process manager (systemd, supervisor)</li>
-          <li>✅ Configure firewall and security groups</li>
+          <li>Write comprehensive tests (aim for 80%+ coverage)</li>
+          <li>Use environment variables for secrets</li>
+          <li>Set up CI/CD pipeline</li>
+          <li>Use production WSGI server (gunicorn, uvicorn)</li>
+          <li>Enable HTTPS/SSL</li>
+          <li>Set up monitoring and logging</li>
+          <li>Database backups</li>
+          <li>Use process manager (systemd, supervisor)</li>
+          <li>Configure firewall and security groups</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ pytest: Modern Python testing framework</li>
-          <li>✅ Fixtures: Reusable test setup</li>
-          <li>✅ Mocking: Test external dependencies</li>
-          <li>✅ Coverage: Measure test completeness</li>
-          <li>✅ Docker: Containerize applications</li>
-          <li>✅ CI/CD: Automate testing and deployment</li>
-          <li>✅ Environment variables: Secure configuration</li>
+          <li>pytest: Modern Python testing framework</li>
+          <li>Fixtures: Reusable test setup</li>
+          <li>Mocking: Test external dependencies</li>
+          <li>Coverage: Measure test completeness</li>
+          <li>Docker: Containerize applications</li>
+          <li>CI/CD: Automate testing and deployment</li>
+          <li>Environment variables: Secure configuration</li>
         </ul>
       </Section>
     </MateriLayout>

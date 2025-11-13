@@ -468,7 +468,7 @@ const user = await fetchUser(1);
 {`// ❌ Buruk
 throw 'Something went wrong';
 
-// ✅ Baik
+// Baik
 throw new Error('Something went wrong');`}
             </CodeBlock>
           </div>
@@ -479,7 +479,7 @@ throw new Error('Something went wrong');`}
 {`// ❌ Buruk - tidak informatif
 throw new Error('Invalid input');
 
-// ✅ Baik - jelas dan actionable
+// Baik - jelas dan actionable
 throw new Error('Email must be a valid email address with @ symbol');`}
             </CodeBlock>
           </div>
@@ -487,7 +487,7 @@ throw new Error('Email must be a valid email address with @ symbol');`}
           <div>
             <strong>3. Gunakan Custom Error Classes</strong>
             <CodeBlock language="javascript">
-{`// ✅ Memudahkan error handling
+{`// Memudahkan error handling
 class ValidationError extends Error {
   constructor(message, field) {
     super(message);
@@ -509,7 +509,7 @@ try {
           <div>
             <strong>4. Always Handle Async Errors</strong>
             <CodeBlock language="javascript">
-{`// ✅ Always use try/catch dengan async/await
+{`// Always use try/catch dengan async/await
 async function fetchData() {
   try {
     const data = await fetch('/api/data');
@@ -532,7 +532,7 @@ try {
   // Empty catch - BAD!
 }
 
-// ✅ Baik - log atau re-throw
+// Baik - log atau re-throw
 try {
   riskyOperation();
 } catch (error) {
@@ -545,7 +545,7 @@ try {
           <div>
             <strong>6. Use Finally untuk Cleanup</strong>
             <CodeBlock language="javascript">
-{`// ✅ Cleanup selalu dijalankan
+{`// Cleanup selalu dijalankan
 let connection;
 try {
   connection = await database.connect();

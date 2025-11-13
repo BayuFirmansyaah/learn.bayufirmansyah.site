@@ -502,7 +502,7 @@ for i in range(1, n + 1):
 for i in range(10):
     pass  # i: 0, 1, 2, ..., 9
 
-# ✅ Correct: untuk 1-10
+# Correct: untuk 1-10
 for i in range(1, 11):
     pass  # i: 1, 2, 3, ..., 10`}
         </CodeBlock>
@@ -515,13 +515,13 @@ for num in numbers:
     if num % 2 == 0:
         numbers.remove(num)  # Can skip elements!
 
-# ✅ Correct: loop over copy
+# Correct: loop over copy
 numbers = [1, 2, 3, 4, 5]
 for num in numbers[:]:  # Loop over copy
     if num % 2 == 0:
         numbers.remove(num)
 
-# ✅ Better: list comprehension
+# Better: list comprehension
 numbers = [num for num in numbers if num % 2 != 0]`}
         </CodeBlock>
 
@@ -533,7 +533,7 @@ while count < 5:
     print(count)
     # Lupa: count += 1  # Infinite loop!
 
-# ✅ Correct
+# Correct
 count = 0
 while count < 5:
     print(count)
@@ -543,26 +543,26 @@ while count < 5:
 
       <Section title="Best Practices">
         <ul>
-          <li>✅ Gunakan <code>for</code> loop jika tahu berapa kali loop, <code>while</code> jika kondisi dinamis</li>
-          <li>✅ Prefer <code>enumerate()</code> daripada <code>range(len())</code></li>
-          <li>✅ Use <code>for-else</code> untuk search scenarios</li>
-          <li>✅ Avoid modifying collection saat loop, gunakan copy atau list comprehension</li>
-          <li>✅ Keep nesting minimal (max 2-3 levels)</li>
-          <li>✅ Use <code>break</code> untuk early exit, bukan flag variables</li>
-          <li>✅ Add comments untuk complex loop logic</li>
+          <li>Gunakan <code>for</code> loop jika tahu berapa kali loop, <code>while</code> jika kondisi dinamis</li>
+          <li>Prefer <code>enumerate()</code> daripada <code>range(len())</code></li>
+          <li>Use <code>for-else</code> untuk search scenarios</li>
+          <li>Avoid modifying collection saat loop, gunakan copy atau list comprehension</li>
+          <li>Keep nesting minimal (max 2-3 levels)</li>
+          <li>Use <code>break</code> untuk early exit, bukan flag variables</li>
+          <li>Add comments untuk complex loop logic</li>
         </ul>
       </Section>
 
       <Section title="Summary">
         <ul>
-          <li>✅ if-elif-else untuk conditional branching</li>
-          <li>✅ for loop untuk iterating collections atau range</li>
-          <li>✅ while loop untuk kondisi yang tidak pasti</li>
-          <li>✅ break keluar dari loop, continue skip iteration</li>
-          <li>✅ else clause pada loop untuk "no break" scenario</li>
-          <li>✅ pass sebagai placeholder</li>
-          <li>✅ match-case (Python 3.10+) untuk pattern matching</li>
-          <li>✅ enumerate() untuk index+value, zip() untuk multiple lists</li>
+          <li>if-elif-else untuk conditional branching</li>
+          <li>for loop untuk iterating collections atau range</li>
+          <li>while loop untuk kondisi yang tidak pasti</li>
+          <li>break keluar dari loop, continue skip iteration</li>
+          <li>else clause pada loop untuk "no break" scenario</li>
+          <li>pass sebagai placeholder</li>
+          <li>match-case (Python 3.10+) untuk pattern matching</li>
+          <li>enumerate() untuk index+value, zip() untuk multiple lists</li>
         </ul>
       </Section>
     </MateriLayout>

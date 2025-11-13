@@ -179,13 +179,13 @@ for email in emails:
 
       <Section title="Summary">
         <ul>
-          <li>✅ re module: Python regex library</li>
-          <li>✅ Patterns: \\d (digit), \\w (word), \\s (space), . (any)</li>
-          <li>✅ Quantifiers: * (0+), + (1+), ? (0/1), {`{n,m}`}</li>
-          <li>✅ re.search(), re.match(), re.findall()</li>
-          <li>✅ Groups: () for capturing, (?P&lt;name&gt;) for named</li>
-          <li>✅ re.sub() for replacement</li>
-          <li>✅ re.compile() for reuse and performance</li>
+          <li>re module: Python regex library</li>
+          <li>Patterns: \\d (digit), \\w (word), \\s (space), . (any)</li>
+          <li>Quantifiers: * (0+), + (1+), ? (0/1), {`{n,m}`}</li>
+          <li>re.search(), re.match(), re.findall()</li>
+          <li>Groups: () for capturing, (?P&lt;name&gt;) for named</li>
+          <li>re.sub() for replacement</li>
+          <li>re.compile() for reuse and performance</li>
         </ul>
       </Section>
     </MateriLayout>

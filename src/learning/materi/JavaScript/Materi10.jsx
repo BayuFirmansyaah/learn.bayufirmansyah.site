@@ -524,7 +524,7 @@ items.forEach(item => {
 });
 // Problem: item baru tidak punya listener!
 
-// ✅ Baik - gunakan event delegation
+// Baik - gunakan event delegation
 const list = document.querySelector('.list');
 list.addEventListener('click', (e) => {
   // Check if clicked element is an item
@@ -656,7 +656,7 @@ dataStore.update('username', 'Alice');`}
 {`<!-- ❌ Buruk - inline handler -->
 <button onclick="handleClick()">Click</button>
 
-// ✅ Baik - addEventListener
+// Baik - addEventListener
 const button = document.querySelector('button');
 button.addEventListener('click', handleClick);`}
             </CodeBlock>
@@ -670,7 +670,7 @@ document.querySelectorAll('.item').forEach(item => {
   item.addEventListener('click', handler);
 });
 
-// ✅ Baik - listener bekerja untuk semua item (termasuk yang baru)
+// Baik - listener bekerja untuk semua item (termasuk yang baru)
 document.querySelector('.container').addEventListener('click', (e) => {
   if (e.target.classList.contains('item')) {
     handler(e);
@@ -697,7 +697,7 @@ button.removeEventListener('click', handleClick);`}
           <div>
             <strong>4. Gunakan passive: true untuk Scroll Events</strong>
             <CodeBlock language="javascript">
-{`// ✅ Improve scroll performance
+{`// Improve scroll performance
 document.addEventListener('scroll', handler, { passive: true });
 document.addEventListener('touchmove', handler, { passive: true });`}
             </CodeBlock>
