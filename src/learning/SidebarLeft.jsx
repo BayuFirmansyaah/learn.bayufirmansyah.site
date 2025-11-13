@@ -3,12 +3,14 @@ import * as LaravelMateri from './materi/Laravel/index.js';
 import * as KotlinMateri from './materi/Kotlin/index.js';
 import * as FlutterMateri from './materi/Flutter/index.js';
 import * as JavaScriptMateri from './materi/JavaScript/index.js';
+import * as PythonMateri from './materi/Python/index.js';
 
 const materiMap = {
   'Laravel': LaravelMateri,
   'Kotlin': KotlinMateri,
   'Flutter': FlutterMateri,
-  'JavaScript': JavaScriptMateri
+  'JavaScript': JavaScriptMateri,
+  'Python': PythonMateri
 };
 
 export default function SidebarLeft({ category, currentMateriIndex, setCurrentMateriIndex }) {

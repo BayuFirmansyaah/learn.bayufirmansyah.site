@@ -26,7 +26,8 @@ function LearningPage({ selectedCategory, onBack }) {
     'laravel': 'Laravel',
     'kotlin': 'Kotlin',
     'flutter': 'Flutter',
-    'javascript': 'JavaScript'
+    'javascript': 'JavaScript',
+    'python': 'Python'
   };
   
   const category = urlCategory 
