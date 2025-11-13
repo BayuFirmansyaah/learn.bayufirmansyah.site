@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import CodeBlock from './components/CodeBlock';
 import StructuredContent from './components/StructuredContent';
 import NavigationButtons from './components/NavigationButtons';
@@ -245,6 +245,18 @@ function detectLanguage(category, code) {
 }
 
 export default function Content({ category, currentMateriIndex, setCurrentMateriIndex }) {
+  // Ref for main content
+  const contentRef = useRef(null);
+
+  // Scroll to top when materi changes
+  useEffect(() => {
+    // Try scrolling the main content container first
+    if (contentRef.current) {
+      contentRef.current.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // Fallback: scroll window to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentMateriIndex, category]);
   const materiModule = materiMap[category];
   const materiList = materiModule?.materiList || [];
   const totalMateri = materiList.length;
@@ -252,7 +264,7 @@ export default function Content({ category, currentMateriIndex, setCurrentMateri
 
   if (!currentMateri) {
     return (
-      <main className="content">
+      <main className="content" ref={contentRef}>
         <div className="content-empty">
           <p>Materi tidak ditemukan</p>
         </div>
@@ -266,7 +278,7 @@ export default function Content({ category, currentMateriIndex, setCurrentMateri
   if (isReactComponent) {
     const MateriComponent = currentMateri;
     return (
-      <main className="content">
+      <main className="content" ref={contentRef}>
         <article className="materi-content">
           <MateriComponent />
           <NavigationButtons 
@@ -286,7 +298,7 @@ export default function Content({ category, currentMateriIndex, setCurrentMateri
   // Use new renderer for structured format
   if (isStructuredFormat) {
     return (
-      <main className="content">
+      <main className="content" ref={contentRef}>
         <article className="materi-content">
           <StructuredContent materi={currentMateri} />
           <NavigationButtons 
@@ -304,8 +316,8 @@ export default function Content({ category, currentMateriIndex, setCurrentMateri
   const contentBlocks = parseContent(currentMateri.content, category);
 
   return (
-    <main className="content">
-      <article className="materi-content">
+  <main className="content" ref={contentRef}>
+  <article className="materi-content">
         <h1 className="content-title">{currentMateri.title}</h1>
         <div className="content-body">
           {contentBlocks.map((block, index) => {

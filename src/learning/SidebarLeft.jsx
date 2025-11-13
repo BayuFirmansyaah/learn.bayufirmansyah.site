@@ -14,6 +14,7 @@ const materiMap = {
 export default function SidebarLeft({ category, currentMateriIndex, setCurrentMateriIndex }) {
   const materiModule = materiMap[category];
   const materiList = materiModule?.materiList || [];
+  const materiTitles = materiModule?.materiTitles || [];
 
   return (
     <aside className="sidebar-left">
@@ -23,14 +24,14 @@ export default function SidebarLeft({ category, currentMateriIndex, setCurrentMa
       </div>
       
       <nav className="materi-nav">
-        {materiList.map((materi, index) => (
+        {materiList.map((_, index) => (
           <button
             key={index}
             className={`materi-item ${index === currentMateriIndex ? 'active' : ''}`}
             onClick={() => setCurrentMateriIndex(index)}
           >
             <span className="materi-number">{index + 1}</span>
-            <span className="materi-title">{materi.title}</span>
+            <span className="materi-title">{materiTitles[index] || `Materi ${index + 1}`}</span>
           </button>
         ))}
       </nav>
