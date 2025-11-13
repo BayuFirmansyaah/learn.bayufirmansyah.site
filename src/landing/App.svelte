@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher } from 'svelte';
   import FeatureCard from './components/FeatureCard.svelte';
+  import ChatWidget from './components/ChatWidget.svelte';
   
   const dispatch = createEventDispatcher();
   
@@ -67,8 +68,8 @@
       
       <div class="navbar-menu" class:active={mobileMenuOpen}>
         <a href="#home" class="nav-link" on:click={() => mobileMenuOpen = false}>Home</a>
-        <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
         <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Materi</a>
+        <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
         <a href="#testimonials" class="nav-link" on:click={() => mobileMenuOpen = false}>Testimoni</a>
         <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="nav-link-social">
           <i class="fa-brands fa-tiktok"></i>
@@ -159,6 +160,25 @@
     </div>
   </header>
 
+  <!-- Materi Pembelajaran Section -->
+  <section class="categories" id="categories">
+    <div class="categories-content">
+      <div class="section-header">
+        <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
+        <p class="section-description">Jelajahi 67 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
+      </div>
+      <div class="category-grid">
+        {#each categories as category}
+          <FeatureCard 
+            {category} 
+            on:click={() => selectCategory(category.name)} 
+          />
+        {/each}
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
   <section class="about-section" id="about">
     <div class="about-content">
       <div class="section-header">
@@ -350,23 +370,7 @@
     </div>
   </section>
 
-  <section class="categories" id="categories">
-    <div class="categories-content">
-      <div class="section-header">
-        <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
-        <p class="section-description">Jelajahi 67 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
-      </div>
-      <div class="category-grid">
-        {#each categories as category}
-          <FeatureCard 
-            {category} 
-            on:click={() => selectCategory(category.name)} 
-          />
-        {/each}
-      </div>
-    </div>
-  </section>
-
+  <!-- CTA Section -->
   <section class="cta-section">
     <div class="cta-content">
       <div class="cta-main">
@@ -1802,3 +1806,6 @@
     }
   }
 </style>
+
+<!-- Live Chat Widget -->
+<ChatWidget />

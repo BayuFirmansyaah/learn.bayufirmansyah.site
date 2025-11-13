@@ -1,0 +1,40 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="60" fill="#4361EE"/>
+  
+  <!-- Pattern Decoration -->
+  <circle cx="30" cy="30" r="3" fill="#5B7FFF" opacity="0.3"/>
+  <circle cx="90" cy="25" r="2" fill="#5B7FFF" opacity="0.3"/>
+  <circle cx="85" cy="90" r="3" fill="#5B7FFF" opacity="0.3"/>
+  <circle cx="25" cy="85" r="2" fill="#5B7FFF" opacity="0.3"/>
+  
+  <!-- Code Symbol Background -->
+  <circle cx="60" cy="55" r="35" fill="#3651D4"/>
+  
+  <!-- Face -->
+  <circle cx="60" cy="52" r="28" fill="#FFFFFF"/>
+  
+  <!-- Hair -->
+  <path d="M32 45C32 35 38 28 48 26C52 25 56 25 60 25C64 25 68 25 72 26C82 28 88 35 88 45C88 48 87 51 85 54C83 52 80 51 77 51C75 44 68 39 60 39C52 39 45 44 43 51C40 51 37 52 35 54C33 51 32 48 32 45Z" fill="#2D3748"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="50" cy="52" rx="3" ry="4" fill="#2D3748"/>
+  <ellipse cx="70" cy="52" rx="3" ry="4" fill="#2D3748"/>
+  
+  <!-- Smile -->
+  <path d="M48 62C48 62 52 66 60 66C68 66 72 62 72 62" stroke="#2D3748" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Code Symbol -->
+  <g transform="translate(60, 90)">
+    <!-- Left Bracket -->
+    <path d="M-15 -8 L-20 -3 L-15 2" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Right Bracket -->
+    <path d="M15 -8 L20 -3 L15 2" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Slash -->
+    <line x1="-5" y1="5" x2="5" y2="-11" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Small Decorative Code Icons -->
+  <text x="20" y="105" font-family="monospace" font-size="10" fill="#FFFFFF" opacity="0.6">&lt;/&gt;</text>
+  <text x="90" y="105" font-family="monospace" font-size="10" fill="#FFFFFF" opacity="0.6">{}</text>
+</svg>
