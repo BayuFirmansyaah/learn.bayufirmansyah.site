@@ -45,6 +45,13 @@
       icon: 'fa-brands fa-square-js',
       color: '#F7DF1E',
       totalMateri: 25
+    },
+    {
+      name: 'Python',
+      description: 'Bahasa pemrograman serbaguna untuk AI, web, dan data science',
+      icon: 'fa-brands fa-python',
+      color: '#3776AB',
+      totalMateri: 25
     }
   ];
   
@@ -109,17 +116,17 @@
         </h1>
         
         <p class="hero-subtitle">
-          Pembelajaran terstruktur dengan 67 materi lengkap dalam 4 teknologi modern. 
+          Pembelajaran terstruktur dengan 104 materi lengkap dalam 5 teknologi modern. 
           Dirancang untuk pemula, mahasiswa, dan profesional yang ingin mengembangkan skill programming.
         </p>
         
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-number">67</div>
+            <div class="stat-number">104</div>
             <div class="stat-label">Materi Pembelajaran</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">4</div>
+            <div class="stat-number">5</div>
             <div class="stat-label">Teknologi Modern</div>
           </div>
           <div class="stat-item">
@@ -165,7 +172,7 @@
     <div class="categories-content">
       <div class="section-header">
         <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
-        <p class="section-description">Jelajahi 67 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
+        <p class="section-description">Jelajahi 104 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
       </div>
       <div class="category-grid">
         {#each categories as category}
@@ -284,11 +291,11 @@
           <div class="proof-stat-label">Pembelajar Aktif</div>
         </div>
         <div class="proof-stat-item">
-          <div class="proof-stat-number">67</div>
+          <div class="proof-stat-number">104</div>
           <div class="proof-stat-label">Materi Pembelajaran</div>
         </div>
         <div class="proof-stat-item">
-          <div class="proof-stat-number">4</div>
+          <div class="proof-stat-number">5</div>
           <div class="proof-stat-label">Teknologi Modern</div>
         </div>
         <div class="proof-stat-item">
@@ -376,7 +383,7 @@
       <div class="cta-main">
         <h2 class="cta-title">Mulai Perjalanan Programming Anda Hari Ini</h2>
         <p class="cta-description">
-          Akses penuh ke 67 materi pembelajaran dalam 4 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
+          Akses penuh ke 104 materi pembelajaran dalam 5 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
         </p>
         <div class="cta-benefits">
           <div class="cta-benefit-item">
@@ -434,6 +441,7 @@
           <li><a href="#" on:click|preventDefault={() => selectCategory('Kotlin')}>Kotlin Programming</a></li>
           <li><a href="#" on:click|preventDefault={() => selectCategory('Flutter')}>Flutter Mobile</a></li>
           <li><a href="#" on:click|preventDefault={() => selectCategory('JavaScript')}>JavaScript Modern</a></li>
+          <li><a href="#" on:click|preventDefault={() => selectCategory('Python')}>Python Programming</a></li>
         </ul>
       </div>
 
