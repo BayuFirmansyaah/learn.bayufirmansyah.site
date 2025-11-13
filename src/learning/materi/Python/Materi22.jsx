@@ -7,14 +7,14 @@ import Note from '../../components/Note';
 export default function Materi22() {
   return (
     <MateriLayout title="Web Scraping">
-      <Section title="Setup">
+      <Section id="setup" heading="Setup">
         <CodeBlock language="bash">
 {`# Install required packages
 pip install requests beautifulsoup4 lxml`}
         </CodeBlock>
       </Section>
 
-      <Section title="Basic Web Scraping">
+      <Section id="basic-web-scraping" heading="Basic Web Scraping">
         <CodeBlock language="python">
 {`import requests
 from bs4 import BeautifulSoup
@@ -37,7 +37,7 @@ for p in paragraphs:
         </CodeBlock>
       </Section>
 
-      <Section title="Finding Elements">
+      <Section id="finding-elements" heading="Finding Elements">
         <CodeBlock language="python">
 {`from bs4 import BeautifulSoup
 
@@ -74,7 +74,7 @@ print(link['href'])  # https://example.com`}
         </CodeBlock>
       </Section>
 
-      <Section title="CSS Selectors">
+      <Section id="css-selectors" heading="CSS Selectors">
         <CodeBlock language="python">
 {`# CSS selectors (more powerful)
 soup.select('.text')           # By class
@@ -86,7 +86,7 @@ soup.select('a[href]')         # Tag with attribute`}
         </CodeBlock>
       </Section>
 
-      <Section title="Extracting Data">
+      <Section id="extracting-data" heading="Extracting Data">
         <CodeBlock language="python">
 {`import requests
 from bs4 import BeautifulSoup
@@ -117,7 +117,7 @@ for quote in quotes[:3]:
         </CodeBlock>
       </Section>
 
-      <Section title="Handling Multiple Pages">
+      <Section id="handling-multiple-pages" heading="Handling Multiple Pages">
         <CodeBlock language="python">
 {`import requests
 from bs4 import BeautifulSoup
@@ -145,7 +145,7 @@ def scrape_multiple_pages(base_url, max_pages=3):
         </CodeBlock>
       </Section>
 
-      <Section title="Error Handling">
+      <Section id="error-handling" heading="Error Handling">
         <CodeBlock language="python">
 {`import requests
 from bs4 import BeautifulSoup
@@ -169,7 +169,7 @@ def safe_scrape(url):
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <Note type="warning">
           <strong>Web Scraping Ethics:</strong>
           <ul>
@@ -200,7 +200,7 @@ def polite_scrape(urls):
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>requests: Fetch web pages</li>
           <li>BeautifulSoup: Parse HTML</li>

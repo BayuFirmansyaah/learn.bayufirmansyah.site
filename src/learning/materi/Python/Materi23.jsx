@@ -7,14 +7,14 @@ import Note from '../../components/Note';
 export default function Materi23() {
   return (
     <MateriLayout title="REST API with FastAPI">
-      <Section title="Setup FastAPI">
+      <Section id="setup-fastapi" heading="Setup FastAPI">
         <CodeBlock language="bash">
 {`# Install FastAPI and Uvicorn (ASGI server)
 pip install fastapi uvicorn[standard]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Hello World API">
+      <Section id="hello-world-api" heading="Hello World API">
         <CodeBlock language="python">
 {`from fastapi import FastAPI
 
@@ -33,7 +33,7 @@ def greet(name: str):
         </CodeBlock>
       </Section>
 
-      <Section title="Request Models (Pydantic)">
+      <Section id="request-models-pydantic" heading="Request Models (Pydantic)">
         <CodeBlock language="python">
 {`from fastapi import FastAPI
 from pydantic import BaseModel
@@ -61,7 +61,7 @@ def create_user(user: User):
         </CodeBlock>
       </Section>
 
-      <Section title="Path and Query Parameters">
+      <Section id="path-and-query-parameters" heading="Path and Query Parameters">
         <CodeBlock language="python">
 {`from fastapi import FastAPI
 
@@ -84,7 +84,7 @@ def search(q: str, limit: int = 10):
         </CodeBlock>
       </Section>
 
-      <Section title="CRUD Operations">
+      <Section id="crud-operations" heading="CRUD Operations">
         <CodeBlock language="python">
 {`from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -139,7 +139,7 @@ def delete_item(item_id: int):
         </CodeBlock>
       </Section>
 
-      <Section title="Response Models">
+      <Section id="response-models" heading="Response Models">
         <CodeBlock language="python">
 {`from fastapi import FastAPI
 from pydantic import BaseModel
@@ -162,7 +162,7 @@ def create_user(user: UserIn):
         </CodeBlock>
       </Section>
 
-      <Section title="Async Endpoints">
+      <Section id="async-endpoints" heading="Async Endpoints">
         <CodeBlock language="python">
 {`from fastapi import FastAPI
 import asyncio
@@ -180,7 +180,7 @@ async def fast_endpoint():
         </CodeBlock>
       </Section>
 
-      <Section title="Automatic Documentation">
+      <Section id="automatic-documentation" heading="Automatic Documentation">
         <Note type="info">
           FastAPI automatically generates interactive API docs:
           <ul>
@@ -190,7 +190,7 @@ async def fast_endpoint():
         </Note>
       </Section>
 
-      <Section title="Complete Example">
+      <Section id="complete-example" heading="Complete Example">
         <CodeBlock language="python">
 {`from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, EmailStr
@@ -233,7 +233,7 @@ def create_user(user: User):
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>FastAPI: Modern, fast Python web framework</li>
           <li>Pydantic: Data validation with type hints</li>

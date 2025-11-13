@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi12() {
   return (
     <MateriLayout title="OOP Basics - Object-Oriented Programming">
-      <Section title="Classes and Objects">
+      <Section id="classes-and-objects" heading="Classes and Objects">
         <CodeBlock language="python">
 {`# Define a class
 class Person:
@@ -27,7 +27,7 @@ print(person2.name)     # Ani`}
         </CodeBlock>
       </Section>
 
-      <Section title="Constructor (__init__)">
+      <Section id="constructor-init" heading="Constructor (__init__)">
         <CodeBlock language="python">
 {`class Car:
     def __init__(self, brand, model, year):
@@ -46,7 +46,7 @@ print(f"Total mileage: {car.mileage}km")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Instance vs Class Attributes">
+      <Section id="instance-vs-class-attributes" heading="Instance vs Class Attributes">
         <CodeBlock language="python">
 {`class Dog:
     # Class attribute (shared by all instances)
@@ -71,7 +71,7 @@ print(dog1.species)  # Dog (affects all instances)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Methods">
+      <Section id="methods" heading="Methods">
         <CodeBlock language="python">
 {`class BankAccount:
     def __init__(self, owner, balance=0):
@@ -99,7 +99,7 @@ print(account.get_balance())  # $1300`}
         </CodeBlock>
       </Section>
 
-      <Section title="Inheritance">
+      <Section id="inheritance" heading="Inheritance">
         <CodeBlock language="python">
 {`# Parent class
 class Animal:
@@ -127,7 +127,7 @@ print(cat.speak()) # Meow!`}
         </CodeBlock>
       </Section>
 
-      <Section title="super() Function">
+      <Section id="super-function" heading="super() Function">
         <CodeBlock language="python">
 {`class Person:
     def __init__(self, name, age):
@@ -145,7 +145,7 @@ print(student.student_id) # 12345`}
         </CodeBlock>
       </Section>
 
-      <Section title="Encapsulation (Private Members)">
+      <Section id="encapsulation-private-members" heading="Encapsulation (Private Members)">
         <CodeBlock language="python">
 {`class BankAccount:
     def __init__(self, owner, balance):
@@ -164,7 +164,7 @@ print(account.get_balance())  # 1000 (via public method)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Property Decorators">
+      <Section id="property-decorators" heading="Property Decorators">
         <CodeBlock language="python">
 {`class Person:
     def __init__(self, name, age):
@@ -198,7 +198,7 @@ person.age = 26      # via setter
         </CodeBlock>
       </Section>
 
-      <Section title="Special Methods (Magic Methods)">
+      <Section id="special-methods-magic-methods" heading="Special Methods (Magic Methods)">
         <CodeBlock language="python">
 {`class Book:
     def __init__(self, title, author, pages):
@@ -225,7 +225,7 @@ print(repr(book))     # Book('Python 101', 'John Doe', 300)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Class: Blueprint untuk objects</li>
           <li>Object: Instance dari class</li>

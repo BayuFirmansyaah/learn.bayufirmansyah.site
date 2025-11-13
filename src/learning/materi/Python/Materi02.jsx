@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi02() {
   return (
     <MateriLayout title="Variables & Data Types">
-      <Section title="Variables di Python">
+      <Section id="variables-di-python" heading="Variables di Python">
         <p>
           Variable adalah container untuk menyimpan data. Di Python, kamu tidak perlu 
           mendeklarasikan tipe data secara eksplisit (dynamically typed).
@@ -36,7 +36,7 @@ print(name, age, height, is_student)
         </Note>
       </Section>
 
-      <Section title="Naming Rules & Conventions">
+      <Section id="naming-rules-conventions" heading="Naming Rules & Conventions">
         <h3>Rules (Harus Diikuti)</h3>
         <ul>
           <li>Harus dimulai dengan huruf (a-z, A-Z) atau underscore (_)</li>
@@ -77,7 +77,7 @@ _internal_counter = 0`}
         </CodeBlock>
       </Section>
 
-      <Section title="Built-in Data Types">
+      <Section id="builtin-data-types" heading="Built-in Data Types">
         <h3>1. Numeric Types</h3>
         
         <h4>Integer (int)</h4>
@@ -128,7 +128,7 @@ print(abs(z))  # 5.0 (magnitude)`}
         </CodeBlock>
       </Section>
 
-      <Section title="String (str)">
+      <Section id="string-str" heading="String (str)">
         <h3>Membuat String</h3>
         <CodeBlock language="python">
 {`# Single quotes
@@ -207,7 +207,7 @@ message = "Nama: %s, Umur: %d" % (name, age)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Boolean (bool)">
+      <Section id="boolean-bool" heading="Boolean (bool)">
         <CodeBlock language="python">
 {`# Boolean values
 is_active = True
@@ -238,7 +238,7 @@ if [1, 2, 3]:
         </CodeBlock>
       </Section>
 
-      <Section title="None Type">
+      <Section id="none-type" heading="None Type">
         <CodeBlock language="python">
 {`# None - representasi "tidak ada nilai"
 result = None
@@ -264,7 +264,7 @@ print(none_value is None)    # True (use 'is' for None)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Type Conversion (Casting)">
+      <Section id="type-conversion-casting" heading="Type Conversion (Casting)">
         <h3>Explicit Conversion</h3>
         <CodeBlock language="python">
 {`# String to Integer
@@ -315,7 +315,7 @@ else:
         </CodeBlock>
       </Section>
 
-      <Section title="Type Checking">
+      <Section id="type-checking" heading="Type Checking">
         <CodeBlock language="python">
 {`# type() function
 x = 42
@@ -342,7 +342,7 @@ print(process_number(5))     # 10
         </CodeBlock>
       </Section>
 
-      <Section title="Input dari User">
+      <Section id="input-dari-user" heading="Input dari User">
         <CodeBlock language="python">
 {`# input() selalu return string
 name = input("Masukkan nama: ")
@@ -365,7 +365,7 @@ except ValueError:
         </CodeBlock>
       </Section>
 
-      <Section title="Constants Convention">
+      <Section id="constants-convention" heading="Constants Convention">
         <CodeBlock language="python">
 {`# Python tidak punya true constants
 # Convention: UPPERCASE untuk constants
@@ -387,7 +387,7 @@ for attempt in range(MAX_RETRIES):
         </CodeBlock>
       </Section>
 
-      <Section title="Variable Scope - Preview">
+      <Section id="variable-scope-preview" heading="Variable Scope - Preview">
         <CodeBlock language="python">
 {`# Global variable
 global_var = "I'm global"
@@ -413,7 +413,7 @@ print(counter)  # 1`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Calculator Sederhana</h3>
         <CodeBlock language="python">
 {`# Simple calculator
@@ -469,7 +469,7 @@ else:
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Typo pada Variable Name</h3>
         <CodeBlock language="python">
 {`# ❌ Typo
@@ -505,7 +505,7 @@ result = 10 % 3   # 1`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Gunakan nama variable yang descriptive: <code>user_age</code> lebih baik dari <code>x</code></li>
           <li>Follow PEP 8: snake_case untuk variables</li>
@@ -517,7 +517,7 @@ result = 10 % 3   # 1`}
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Python adalah dynamically typed (tidak perlu declare type)</li>
           <li>Built-in types: int, float, complex, str, bool, None</li>

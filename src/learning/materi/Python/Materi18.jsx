@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi18() {
   return (
     <MateriLayout title="Regular Expressions">
-      <Section title="Introduction to Regex">
+      <Section id="introduction-to-regex" heading="Introduction to Regex">
         <p>Regular expressions (regex) untuk pattern matching dalam strings.</p>
         <CodeBlock language="python">
 {`import re
@@ -21,7 +21,7 @@ if re.search(pattern, text):
         </CodeBlock>
       </Section>
 
-      <Section title="Common Patterns">
+      <Section id="common-patterns" heading="Common Patterns">
         <CodeBlock language="python">
 {`import re
 
@@ -54,7 +54,7 @@ re.search(r"\\d{2,4}", "12345")  # Finds '1234'`}
         </CodeBlock>
       </Section>
 
-      <Section title="re.search() vs re.match() vs re.findall()">
+      <Section id="research-vs-rematch-vs-refindall" heading="re.search() vs re.match() vs re.findall()">
         <CodeBlock language="python">
 {`import re
 
@@ -74,7 +74,7 @@ print(numbers)  # ['123-456-7890', '098-765-4321']`}
         </CodeBlock>
       </Section>
 
-      <Section title="Groups and Capturing">
+      <Section id="groups-and-capturing" heading="Groups and Capturing">
         <CodeBlock language="python">
 {`import re
 
@@ -97,7 +97,7 @@ if match:
         </CodeBlock>
       </Section>
 
-      <Section title="re.sub() - Replace">
+      <Section id="resub-replace" heading="re.sub() - Replace">
         <CodeBlock language="python">
 {`import re
 
@@ -113,7 +113,7 @@ print(result)  # Date: 15/01/2024`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Email Validation</h3>
         <CodeBlock language="python">
 {`import re
@@ -157,7 +157,7 @@ print(format_phone("123-456-7890"))    # (123) 456-7890`}
         </CodeBlock>
       </Section>
 
-      <Section title="Compile Patterns for Reuse">
+      <Section id="compile-patterns-for-reuse" heading="Compile Patterns for Reuse">
         <CodeBlock language="python">
 {`import re
 
@@ -177,7 +177,7 @@ for email in emails:
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>re module: Python regex library</li>
           <li>Patterns: \\d (digit), \\w (word), \\s (space), . (any)</li>

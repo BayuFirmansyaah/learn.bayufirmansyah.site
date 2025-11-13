@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi19() {
   return (
     <MateriLayout title="Multithreading & Multiprocessing">
-      <Section title="Threading Basics">
+      <Section id="threading-basics" heading="Threading Basics">
         <CodeBlock language="python">
 {`import threading
 import time
@@ -33,7 +33,7 @@ print("All threads done")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Thread with Class">
+      <Section id="thread-with-class" heading="Thread with Class">
         <CodeBlock language="python">
 {`import threading
 import time
@@ -60,7 +60,7 @@ for t in threads:
         </CodeBlock>
       </Section>
 
-      <Section title="Thread-Safe with Lock">
+      <Section id="threadsafe-with-lock" heading="Thread-Safe with Lock">
         <CodeBlock language="python">
 {`import threading
 
@@ -86,7 +86,7 @@ print(f"Counter: {counter}")  # 500000 (correct)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Multiprocessing Basics">
+      <Section id="multiprocessing-basics" heading="Multiprocessing Basics">
         <CodeBlock language="python">
 {`from multiprocessing import Process
 import time
@@ -111,7 +111,7 @@ if __name__ == "__main__":
         </CodeBlock>
       </Section>
 
-      <Section title="Process Pool">
+      <Section id="process-pool" heading="Process Pool">
         <CodeBlock language="python">
 {`from multiprocessing import Pool
 
@@ -126,7 +126,7 @@ if __name__ == "__main__":
         </CodeBlock>
       </Section>
 
-      <Section title="concurrent.futures">
+      <Section id="concurrentfutures" heading="concurrent.futures">
         <CodeBlock language="python">
 {`from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
@@ -145,7 +145,7 @@ with ThreadPoolExecutor(max_workers=3) as executor:
         </CodeBlock>
       </Section>
 
-      <Section title="When to Use What?">
+      <Section id="when-to-use-what" heading="When to Use What?">
         <Note type="info">
           <strong>Threading (I/O-bound):</strong>
           <ul>
@@ -162,7 +162,7 @@ with ThreadPoolExecutor(max_workers=3) as executor:
         </Note>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>threading: For I/O-bound tasks</li>
           <li>multiprocessing: For CPU-bound tasks</li>

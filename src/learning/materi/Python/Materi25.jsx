@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi25() {
   return (
     <MateriLayout title="Testing & Deployment">
-      <Section title="Testing with pytest">
+      <Section id="testing-with-pytest" heading="Testing with pytest">
         <CodeBlock language="bash">
 {`# Install pytest
 pip install pytest`}
@@ -40,7 +40,7 @@ def test_divide():
         </CodeBlock>
       </Section>
 
-      <Section title="pytest Fixtures">
+      <Section id="pytest-fixtures" heading="pytest Fixtures">
         <CodeBlock language="python">
 {`import pytest
 
@@ -66,7 +66,7 @@ def database():
         </CodeBlock>
       </Section>
 
-      <Section title="Mocking">
+      <Section id="mocking" heading="Mocking">
         <CodeBlock language="python">
 {`from unittest.mock import Mock, patch
 
@@ -91,7 +91,7 @@ def test_fetch_data(mock_get):
         </CodeBlock>
       </Section>
 
-      <Section title="Code Coverage">
+      <Section id="code-coverage" heading="Code Coverage">
         <CodeBlock language="bash">
 {`# Install coverage
 pip install pytest-cov
@@ -104,7 +104,7 @@ pytest --cov=myapp --cov-report=html tests/`}
         </CodeBlock>
       </Section>
 
-      <Section title="Requirements File">
+      <Section id="requirements-file" heading="Requirements File">
         <CodeBlock language="bash">
 {`# Generate requirements.txt
 pip freeze > requirements.txt
@@ -123,7 +123,7 @@ python-dotenv==1.0.0`}
         </CodeBlock>
       </Section>
 
-      <Section title="Environment Variables">
+      <Section id="environment-variables" heading="Environment Variables">
         <CodeBlock language="python">
 {`# .env file
 DATABASE_URL=postgresql://user:pass@localhost/db
@@ -142,7 +142,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'`}
         </CodeBlock>
       </Section>
 
-      <Section title="Docker Deployment">
+      <Section id="docker-deployment" heading="Docker Deployment">
         <CodeBlock language="dockerfile">
 {`# Dockerfile
 FROM python:3.11-slim
@@ -193,7 +193,7 @@ docker-compose down`}
         </CodeBlock>
       </Section>
 
-      <Section title="CI/CD with GitHub Actions">
+      <Section id="cicd-with-github-actions" heading="CI/CD with GitHub Actions">
         <CodeBlock language="yaml">
 {`# .github/workflows/test.yml
 name: Tests
@@ -225,7 +225,7 @@ jobs:
         </CodeBlock>
       </Section>
 
-      <Section title="Deployment Platforms">
+      <Section id="deployment-platforms" heading="Deployment Platforms">
         <Note type="info">
           <strong>Popular Python Deployment Options:</strong>
           <ul>
@@ -239,7 +239,7 @@ jobs:
         </Note>
       </Section>
 
-      <Section title="Production Checklist">
+      <Section id="production-checklist" heading="Production Checklist">
         <ul>
           <li>Write comprehensive tests (aim for 80%+ coverage)</li>
           <li>Use environment variables for secrets</li>
@@ -253,7 +253,7 @@ jobs:
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>pytest: Modern Python testing framework</li>
           <li>Fixtures: Reusable test setup</li>

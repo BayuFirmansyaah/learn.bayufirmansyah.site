@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi24() {
   return (
     <MateriLayout title="Database Integration">
-      <Section title="SQLite (Built-in)">
+      <Section id="sqlite-builtin" heading="SQLite (Built-in)">
         <CodeBlock language="python">
 {`import sqlite3
 
@@ -43,7 +43,7 @@ conn.close()`}
         </CodeBlock>
       </Section>
 
-      <Section title="Context Manager for Database">
+      <Section id="context-manager-for-database" heading="Context Manager for Database">
         <CodeBlock language="python">
 {`import sqlite3
 from contextlib import contextmanager
@@ -69,7 +69,7 @@ with get_db_connection('app.db') as conn:
         </CodeBlock>
       </Section>
 
-      <Section title="SQLAlchemy ORM">
+      <Section id="sqlalchemy-orm" heading="SQLAlchemy ORM">
         <CodeBlock language="bash">
 {`# Install SQLAlchemy
 pip install sqlalchemy`}
@@ -129,7 +129,7 @@ session.close()`}
         </CodeBlock>
       </Section>
 
-      <Section title="PostgreSQL with psycopg2">
+      <Section id="postgresql-with-psycopg2" heading="PostgreSQL with psycopg2">
         <CodeBlock language="bash">
 {`# Install psycopg2
 pip install psycopg2-binary`}
@@ -176,7 +176,7 @@ conn.close()`}
         </CodeBlock>
       </Section>
 
-      <Section title="SQLAlchemy with Relationships">
+      <Section id="sqlalchemy-with-relationships" heading="SQLAlchemy with Relationships">
         <CodeBlock language="python">
 {`from sqlalchemy import create_engine, Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
@@ -225,7 +225,7 @@ for book in author.books:
         </CodeBlock>
       </Section>
 
-      <Section title="Database Migration with Alembic">
+      <Section id="database-migration-with-alembic" heading="Database Migration with Alembic">
         <CodeBlock language="bash">
 {`# Install Alembic
 pip install alembic
@@ -244,7 +244,7 @@ alembic downgrade -1`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>SQLite: Built-in, file-based database</li>
           <li>SQLAlchemy: Popular ORM for Python</li>

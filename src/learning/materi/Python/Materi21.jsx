@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi21() {
   return (
     <MateriLayout title="Type Hints & Annotations">
-      <Section title="Basic Type Hints">
+      <Section id="basic-type-hints" heading="Basic Type Hints">
         <CodeBlock language="python">
 {`# Function with type hints
 def greet(name: str) -> str:
@@ -24,7 +24,7 @@ result = greet(123)  # No error, but mypy will warn`}
         </CodeBlock>
       </Section>
 
-      <Section title="Collection Types">
+      <Section id="collection-types" heading="Collection Types">
         <CodeBlock language="python">
 {`from typing import List, Dict, Tuple, Set, Optional
 
@@ -51,7 +51,7 @@ def find_user(user_id: int) -> Optional[str]:
         </CodeBlock>
       </Section>
 
-      <Section title="Union and Any">
+      <Section id="union-and-any" heading="Union and Any">
         <CodeBlock language="python">
 {`from typing import Union, Any
 
@@ -68,7 +68,7 @@ def process_data(data: Any) -> Any:
         </CodeBlock>
       </Section>
 
-      <Section title="Callable">
+      <Section id="callable" heading="Callable">
         <CodeBlock language="python">
 {`from typing import Callable
 
@@ -83,7 +83,7 @@ result = execute(add, 5, 3)  # 8`}
         </CodeBlock>
       </Section>
 
-      <Section title="Generic Types">
+      <Section id="generic-types" heading="Generic Types">
         <CodeBlock language="python">
 {`from typing import TypeVar, Generic
 
@@ -109,7 +109,7 @@ str_stack.push("hello")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Type Checking with mypy">
+      <Section id="type-checking-with-mypy" heading="Type Checking with mypy">
         <CodeBlock language="bash">
 {`# Install mypy
 pip install mypy
@@ -122,7 +122,7 @@ mypy script.py
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Example">
+      <Section id="practical-example" heading="Practical Example">
         <CodeBlock language="python">
 {`from typing import List, Dict, Optional
 
@@ -159,7 +159,7 @@ if user:
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Type hints: Optional but highly recommended</li>
           <li>Basic types: int, str, float, bool</li>

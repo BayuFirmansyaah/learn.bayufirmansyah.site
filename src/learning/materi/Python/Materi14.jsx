@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi14() {
   return (
     <MateriLayout title="List Comprehension & Generator Expressions">
-      <Section title="List Comprehension Basics">
+      <Section id="list-comprehension-basics" heading="List Comprehension Basics">
         <CodeBlock language="python">
 {`# Traditional way
 squares = []
@@ -28,7 +28,7 @@ print(labels)  # ['even', 'odd', 'even', 'odd', 'even']`}
         </CodeBlock>
       </Section>
 
-      <Section title="Nested List Comprehension">
+      <Section id="nested-list-comprehension" heading="Nested List Comprehension">
         <CodeBlock language="python">
 {`# Flatten 2D list
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -41,7 +41,7 @@ print(matrix)  # [[1, 2, 3], [2, 4, 6], [3, 6, 9]]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Dict Comprehension">
+      <Section id="dict-comprehension" heading="Dict Comprehension">
         <CodeBlock language="python">
 {`# Create dict
 squares = {x: x**2 for x in range(6)}
@@ -58,7 +58,7 @@ print(upper_prices)  # {'APPLE': 0.5, 'BANANA': 0.3, 'ORANGE': 0.7}`}
         </CodeBlock>
       </Section>
 
-      <Section title="Set Comprehension">
+      <Section id="set-comprehension" heading="Set Comprehension">
         <CodeBlock language="python">
 {`# Unique squares
 squares = {x**2 for x in [1, 2, 2, 3, 3, 4]}
@@ -71,7 +71,7 @@ print(evens)  # {2, 4}`}
         </CodeBlock>
       </Section>
 
-      <Section title="Generator Expressions">
+      <Section id="generator-expressions" heading="Generator Expressions">
         <p>Sama seperti list comprehension, tapi lebih memory efficient (lazy evaluation):</p>
         <CodeBlock language="python">
 {`# List comprehension (creates entire list in memory)
@@ -91,7 +91,7 @@ total = sum(x**2 for x in range(1000))  # Efficient!`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Text Processing</h3>
         <CodeBlock language="python">
 {`text = "Hello World Python"
@@ -125,7 +125,7 @@ lookup = {u["name"]: u["age"] for u in users}`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>List comprehension: [expr for item in iterable if condition]</li>
           <li>Dict comprehension: {`{k: v for item in iterable}`}</li>

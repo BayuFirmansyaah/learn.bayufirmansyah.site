@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi16() {
   return (
     <MateriLayout title="Decorators">
-      <Section title="What are Decorators?">
+      <Section id="what-are-decorators" heading="What are Decorators?">
         <p>Decorator adalah function yang memodifikasi behavior function/method lain.</p>
         <CodeBlock language="python">
 {`def my_decorator(func):
@@ -29,7 +29,7 @@ say_hello()
         </CodeBlock>
       </Section>
 
-      <Section title="Decorator with Arguments">
+      <Section id="decorator-with-arguments" heading="Decorator with Arguments">
         <CodeBlock language="python">
 {`def repeat(times):
     def decorator(func):
@@ -52,7 +52,7 @@ greet("Budi")
         </CodeBlock>
       </Section>
 
-      <Section title="Preserving Metadata with functools.wraps">
+      <Section id="preserving-metadata-with-functoolswraps" heading="Preserving Metadata with functools.wraps">
         <CodeBlock language="python">
 {`from functools import wraps
 
@@ -73,7 +73,7 @@ print(example.__doc__)   # This is example function`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Decorators">
+      <Section id="practical-decorators" heading="Practical Decorators">
         <h3>1. Timer Decorator</h3>
         <CodeBlock language="python">
 {`import time
@@ -132,7 +132,7 @@ print(fibonacci(50))  # Fast! (cached results)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Class Decorators">
+      <Section id="class-decorators" heading="Class Decorators">
         <CodeBlock language="python">
 {`def add_str_method(cls):
     def __str__(self):
@@ -149,7 +149,7 @@ print(obj)  # MyClass instance`}
         </CodeBlock>
       </Section>
 
-      <Section title="Built-in Decorators">
+      <Section id="builtin-decorators" heading="Built-in Decorators">
         <CodeBlock language="python">
 {`class Person:
     def __init__(self, name):
@@ -181,7 +181,7 @@ print(Person.is_adult(20))  # Static method`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Decorator: Function yang memodifikasi function lain</li>
           <li>Syntax: @decorator_name di atas function</li>

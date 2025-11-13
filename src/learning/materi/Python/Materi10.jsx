@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi10() {
   return (
     <MateriLayout title="Exception Handling">
-      <Section title="What are Exceptions?">
+      <Section id="what-are-exceptions" heading="What are Exceptions?">
         <p>
           Exception adalah error yang terjadi saat program running. Tanpa handling, 
           program akan crash. Python menyediakan try-except untuk handle exceptions.
@@ -26,7 +26,7 @@ except ValueError:
         </CodeBlock>
       </Section>
 
-      <Section title="try-except Basic">
+      <Section id="tryexcept-basic" heading="try-except Basic">
         <CodeBlock language="python">
 {`# Basic try-except
 try:
@@ -63,7 +63,7 @@ except Exception as e:
         </Note>
       </Section>
 
-      <Section title="try-except-else-finally">
+      <Section id="tryexceptelsefinally" heading="try-except-else-finally">
         <CodeBlock language="python">
 {`# else: runs if NO exception
 try:
@@ -97,7 +97,7 @@ finally:
         </CodeBlock>
       </Section>
 
-      <Section title="Getting Exception Details">
+      <Section id="getting-exception-details" heading="Getting Exception Details">
         <CodeBlock language="python">
 {`# Capture exception object
 try:
@@ -117,7 +117,7 @@ except ZeroDivisionError:
         </CodeBlock>
       </Section>
 
-      <Section title="Common Built-in Exceptions">
+      <Section id="common-builtin-exceptions" heading="Common Built-in Exceptions">
         <CodeBlock language="python">
 {`# ValueError - Invalid value
 try:
@@ -171,7 +171,7 @@ except NameError:
         </CodeBlock>
       </Section>
 
-      <Section title="Raising Exceptions">
+      <Section id="raising-exceptions" heading="Raising Exceptions">
         <CodeBlock language="python">
 {`# Raise exception manually
 def validate_age(age):
@@ -202,7 +202,7 @@ except KeyError:
         </CodeBlock>
       </Section>
 
-      <Section title="Custom Exceptions">
+      <Section id="custom-exceptions" heading="Custom Exceptions">
         <CodeBlock language="python">
 {`# Define custom exception
 class InvalidEmailError(Exception):
@@ -234,7 +234,7 @@ except InvalidPasswordError as e:
         </CodeBlock>
       </Section>
 
-      <Section title="Exception Hierarchy">
+      <Section id="exception-hierarchy" heading="Exception Hierarchy">
         <CodeBlock language="python">
 {`# Catch from most specific to most general
 try:
@@ -260,7 +260,7 @@ except ValueError:  # Never reached!
         </Note>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Safe Input Validator</h3>
         <CodeBlock language="python">
 {`def get_integer(prompt, min_val=None, max_val=None):
@@ -396,7 +396,7 @@ result = safe_divide(10, "2")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Catch specific exceptions, avoid bare <code>except:</code></li>
           <li>Don't silently ignore exceptions - log or handle properly</li>
@@ -409,7 +409,7 @@ result = safe_divide(10, "2")`}
         </ul>
       </Section>
 
-      <Section title="Anti-patterns to Avoid">
+      <Section id="antipatterns-to-avoid" heading="Anti-patterns to Avoid">
         <CodeBlock language="python">
 {`# ❌ Catching everything
 try:
@@ -441,7 +441,7 @@ except (ValueError, TypeError):
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li><code>try-except</code> untuk handle exceptions</li>
           <li><code>else</code> runs jika no exception</li>

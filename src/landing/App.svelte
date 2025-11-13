@@ -162,6 +162,9 @@
           <div class="floating-element floating-4">
             <img src="/src/landing/assets/images/javascript-icon.svg" alt="JavaScript" />
           </div>
+          <div class="floating-element floating-5">
+            <img src="/src/landing/assets/images/python-icon.svg" alt="Python" />
+          </div>
         </div>
       </div>
     </div>
@@ -931,6 +934,12 @@
     bottom: 15%;
     right: -5%;
     animation-delay: 1.5s;
+  }
+
+  .floating-5 {
+    top: 50%;
+    right: -12%;
+    animation-delay: 2s;
   }
 
   @keyframes float {

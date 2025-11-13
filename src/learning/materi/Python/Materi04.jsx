@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi04() {
   return (
     <MateriLayout title="Control Flow">
-      <Section title="if Statement">
+      <Section id="if-statement" heading="if Statement">
         <p>
           if statement digunakan untuk menjalankan code berdasarkan kondisi tertentu.
         </p>
@@ -46,7 +46,7 @@ print(f"Grade: {grade}")`}
         </Note>
       </Section>
 
-      <Section title="Nested if">
+      <Section id="nested-if" heading="Nested if">
         <CodeBlock language="python">
 {`# Nested if statements
 age = 25
@@ -70,7 +70,7 @@ else:
         </CodeBlock>
       </Section>
 
-      <Section title="for Loop">
+      <Section id="for-loop" heading="for Loop">
         <h3>1. Loop dengan range()</h3>
         <CodeBlock language="python">
 {`# Loop 0 sampai 4
@@ -152,7 +152,7 @@ for name, age, city in zip(names, ages, cities):
         </CodeBlock>
       </Section>
 
-      <Section title="while Loop">
+      <Section id="while-loop" heading="while Loop">
         <CodeBlock language="python">
 {`# Basic while loop
 count = 0
@@ -180,7 +180,7 @@ while True:
         </CodeBlock>
       </Section>
 
-      <Section title="break Statement">
+      <Section id="break-statement" heading="break Statement">
         <p>break digunakan untuk keluar dari loop sebelum selesai:</p>
         <CodeBlock language="python">
 {`# Find first even number
@@ -210,7 +210,7 @@ for i in range(3):
         </CodeBlock>
       </Section>
 
-      <Section title="continue Statement">
+      <Section id="continue-statement" heading="continue Statement">
         <p>continue skip current iteration dan lanjut ke iteration berikutnya:</p>
         <CodeBlock language="python">
 {`# Skip odd numbers
@@ -237,7 +237,7 @@ print(f"Total: {total}")  # 60`}
         </CodeBlock>
       </Section>
 
-      <Section title="else Clause dengan Loop">
+      <Section id="else-clause-dengan-loop" heading="else Clause dengan Loop">
         <p>
           else pada loop dijalankan jika loop selesai tanpa break:
         </p>
@@ -277,7 +277,7 @@ else:
         </CodeBlock>
       </Section>
 
-      <Section title="pass Statement">
+      <Section id="pass-statement" heading="pass Statement">
         <p>pass adalah placeholder (tidak melakukan apa-apa):</p>
         <CodeBlock language="python">
 {`# Empty function (akan diimplementasi nanti)
@@ -304,7 +304,7 @@ for i in range(10):
         </CodeBlock>
       </Section>
 
-      <Section title="match-case (Python 3.10+)">
+      <Section id="matchcase-python-310" heading="match-case (Python 3.10+)">
         <p>Pattern matching (seperti switch-case di bahasa lain):</p>
         <CodeBlock language="python">
 {`# Basic match-case
@@ -365,7 +365,7 @@ print(describe_age(25))  # Adult`}
         </Note>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Number Guessing Game</h3>
         <CodeBlock language="python">
 {`import random
@@ -495,7 +495,7 @@ for i in range(1, n + 1):
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Off-by-One Error</h3>
         <CodeBlock language="python">
 {`# ❌ Wrong: range(10) goes 0-9, not 1-10
@@ -541,7 +541,7 @@ while count < 5:
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Gunakan <code>for</code> loop jika tahu berapa kali loop, <code>while</code> jika kondisi dinamis</li>
           <li>Prefer <code>enumerate()</code> daripada <code>range(len())</code></li>
@@ -553,7 +553,7 @@ while count < 5:
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>if-elif-else untuk conditional branching</li>
           <li>for loop untuk iterating collections atau range</li>

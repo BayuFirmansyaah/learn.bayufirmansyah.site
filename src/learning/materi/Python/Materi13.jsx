@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi13() {
   return (
     <MateriLayout title="OOP Advanced">
-      <Section title="Multiple Inheritance">
+      <Section id="multiple-inheritance" heading="Multiple Inheritance">
         <CodeBlock language="python">
 {`class A:
     def method_a(self):
@@ -28,7 +28,7 @@ print(obj.method_c())  # From C`}
         </CodeBlock>
       </Section>
 
-      <Section title="Method Resolution Order (MRO)">
+      <Section id="method-resolution-order-mro" heading="Method Resolution Order (MRO)">
         <CodeBlock language="python">
 {`class A:
     def greet(self):
@@ -51,7 +51,7 @@ print(D.__mro__)    # Shows resolution order`}
         </CodeBlock>
       </Section>
 
-      <Section title="Abstract Base Classes">
+      <Section id="abstract-base-classes" heading="Abstract Base Classes">
         <CodeBlock language="python">
 {`from abc import ABC, abstractmethod
 
@@ -81,7 +81,7 @@ print(rect.area())  # 50`}
         </CodeBlock>
       </Section>
 
-      <Section title="Class Methods and Static Methods">
+      <Section id="class-methods-and-static-methods" heading="Class Methods and Static Methods">
         <CodeBlock language="python">
 {`class Person:
     count = 0
@@ -106,7 +106,7 @@ print(Person.is_adult(25))   # True (static method)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Operator Overloading">
+      <Section id="operator-overloading" heading="Operator Overloading">
         <CodeBlock language="python">
 {`class Vector:
     def __init__(self, x, y):
@@ -126,7 +126,7 @@ print(v3)     # Vector(6, 8)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Polymorphism">
+      <Section id="polymorphism" heading="Polymorphism">
         <CodeBlock language="python">
 {`class Animal:
     def speak(self):
@@ -150,7 +150,7 @@ make_sound(cat)  # Meow!`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Multiple inheritance: class C(A, B)</li>
           <li>MRO: Method Resolution Order</li>

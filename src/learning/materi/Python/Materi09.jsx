@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi09() {
   return (
     <MateriLayout title="File Handling">
-      <Section title="Opening Files">
+      <Section id="opening-files" heading="Opening Files">
         <CodeBlock language="python">
 {`# Open file (read mode - default)
 file = open("data.txt", "r")
@@ -36,7 +36,7 @@ file = open("image.png", "rb")`}
         </Note>
       </Section>
 
-      <Section title="Reading Files">
+      <Section id="reading-files" heading="Reading Files">
         <h3>1. read() - Read Entire File</h3>
         <CodeBlock language="python">
 {`# Read entire file as string
@@ -81,7 +81,7 @@ file.close()`}
         </CodeBlock>
       </Section>
 
-      <Section title="Writing Files">
+      <Section id="writing-files" heading="Writing Files">
         <CodeBlock language="python">
 {`# Write mode (overwrites existing file)
 file = open("output.txt", "w")
@@ -102,7 +102,7 @@ file.close()`}
         </CodeBlock>
       </Section>
 
-      <Section title="with Statement (Context Manager)">
+      <Section id="with-statement-context-manager" heading="with Statement (Context Manager)">
         <p>Best practice - automatically closes file:</p>
         <CodeBlock language="python">
 {`# Reading with 'with'
@@ -127,7 +127,7 @@ with open("input.txt", "r") as infile, \\
         </Note>
       </Section>
 
-      <Section title="File Existence & Info">
+      <Section id="file-existence-info" heading="File Existence & Info">
         <CodeBlock language="python">
 {`import os
 
@@ -155,7 +155,7 @@ print(f"Size: {stat.st_size}")`}
         </CodeBlock>
       </Section>
 
-      <Section title="File Operations">
+      <Section id="file-operations" heading="File Operations">
         <CodeBlock language="python">
 {`import os
 import shutil
@@ -191,7 +191,7 @@ for file in files:
         </CodeBlock>
       </Section>
 
-      <Section title="Working with Paths">
+      <Section id="working-with-paths" heading="Working with Paths">
         <CodeBlock language="python">
 {`import os
 
@@ -222,7 +222,7 @@ name, ext = os.path.splitext("file.txt")  # ('file', '.txt')`}
         </CodeBlock>
       </Section>
 
-      <Section title="Working with CSV Files">
+      <Section id="working-with-csv-files" heading="Working with CSV Files">
         <CodeBlock language="python">
 {`import csv
 
@@ -263,7 +263,7 @@ with open("output.csv", "w", newline='') as file:
         </CodeBlock>
       </Section>
 
-      <Section title="Working with JSON Files">
+      <Section id="working-with-json-files" heading="Working with JSON Files">
         <CodeBlock language="python">
 {`import json
 
@@ -293,7 +293,7 @@ print(json_string)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Line Counter</h3>
         <CodeBlock language="python">
 {`def count_lines(filename):
@@ -406,7 +406,7 @@ print(config.get("app_name"))`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Always use <code>with</code> statement (context manager)</li>
           <li>Handle exceptions (FileNotFoundError, PermissionError, etc.)</li>
@@ -418,7 +418,7 @@ print(config.get("app_name"))`}
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>File modes: 'r', 'w', 'a', 'x', 'r+', 'b'</li>
           <li>Read methods: read(), readline(), readlines()</li>

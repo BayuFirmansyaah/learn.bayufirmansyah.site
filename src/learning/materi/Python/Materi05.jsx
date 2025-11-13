@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi05() {
   return (
     <MateriLayout title="Functions">
-      <Section title="Defining Functions">
+      <Section id="defining-functions" heading="Defining Functions">
         <CodeBlock language="python">
 {`# Basic function
 def greet():
@@ -38,7 +38,7 @@ greet_person("Citra", greeting="Hey")  # Hey, Citra!`}
         </CodeBlock>
       </Section>
 
-      <Section title="Return Statement">
+      <Section id="return-statement" heading="Return Statement">
         <CodeBlock language="python">
 {`# Return single value
 def square(x):
@@ -71,7 +71,7 @@ print(result)  # None`}
         </CodeBlock>
       </Section>
 
-      <Section title="Arguments Types">
+      <Section id="arguments-types" heading="Arguments Types">
         <h3>1. Positional Arguments</h3>
         <CodeBlock language="python">
 {`def describe_person(name, age, city):
@@ -159,7 +159,7 @@ complex_function(1, 2, 3, 4, key1="value", extra="data")
         </CodeBlock>
       </Section>
 
-      <Section title="Lambda Functions">
+      <Section id="lambda-functions" heading="Lambda Functions">
         <p>Anonymous functions (one-liner):</p>
         <CodeBlock language="python">
 {`# Regular function
@@ -200,7 +200,7 @@ print([u["name"] for u in sorted_users])  # ['Ani', 'Budi', 'Citra']`}
         </Note>
       </Section>
 
-      <Section title="Scope & Global Variables">
+      <Section id="scope-global-variables" heading="Scope & Global Variables">
         <CodeBlock language="python">
 {`# Global scope
 global_var = "I'm global"
@@ -251,7 +251,7 @@ outer()`}
         </CodeBlock>
       </Section>
 
-      <Section title="Docstrings">
+      <Section id="docstrings" heading="Docstrings">
         <CodeBlock language="python">
 {`def calculate_area(radius):
     """
@@ -278,7 +278,7 @@ help(calculate_area)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Recursion">
+      <Section id="recursion" heading="Recursion">
         <CodeBlock language="python">
 {`# Factorial using recursion
 def factorial(n):
@@ -312,7 +312,7 @@ countdown(5)  # 5, 4, 3, 2, 1, Blastoff!`}
         </Note>
       </Section>
 
-      <Section title="Higher-Order Functions">
+      <Section id="higherorder-functions" heading="Higher-Order Functions">
         <CodeBlock language="python">
 {`# Function sebagai parameter
 def apply_operation(x, y, operation):
@@ -341,7 +341,7 @@ print(triple(5))  # 15`}
         </CodeBlock>
       </Section>
 
-      <Section title="Decorators (Preview)">
+      <Section id="decorators-preview" heading="Decorators (Preview)">
         <CodeBlock language="python">
 {`# Simple decorator
 def uppercase_decorator(func):
@@ -361,7 +361,7 @@ print(greet())  # HELLO
         </CodeBlock>
       </Section>
 
-      <Section title="Type Hints (Python 3.5+)">
+      <Section id="type-hints-python-35" heading="Type Hints (Python 3.5+)">
         <CodeBlock language="python">
 {`# Type hints untuk better code documentation
 def add(a: int, b: int) -> int:
@@ -392,7 +392,7 @@ def calculate(x: Union[int, float]) -> float:
         </Note>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Temperature Converter</h3>
         <CodeBlock language="python">
 {`def celsius_to_fahrenheit(celsius):
@@ -468,7 +468,7 @@ for key, value in stats.items():
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Function names: lowercase with underscores (snake_case)</li>
           <li>One function, one responsibility (Single Responsibility Principle)</li>
@@ -481,7 +481,7 @@ for key, value in stats.items():
         </ul>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Mutable Default Arguments</h3>
         <CodeBlock language="python">
 {`# ❌ Bug: list shared across calls
@@ -515,7 +515,7 @@ def add(a, b):
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>def keyword untuk define functions</li>
           <li>Parameters: positional, keyword, default, *args, **kwargs</li>

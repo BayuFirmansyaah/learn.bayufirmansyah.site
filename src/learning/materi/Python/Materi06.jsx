@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi06() {
   return (
     <MateriLayout title="Lists & Tuples">
-      <Section title="Lists">
+      <Section id="lists" heading="Lists">
         <p>
           List adalah collection yang ordered, mutable (bisa diubah), dan allow duplicate values.
         </p>
@@ -168,7 +168,7 @@ for index, fruit in enumerate(fruits, start=1):
         </CodeBlock>
       </Section>
 
-      <Section title="Tuples">
+      <Section id="tuples" heading="Tuples">
         <p>
           Tuple adalah collection yang ordered, immutable (tidak bisa diubah), dan allow duplicate values.
         </p>
@@ -280,7 +280,7 @@ name, _, city = get_user()  # Ignore age`}
         </CodeBlock>
       </Section>
 
-      <Section title="Lists vs Tuples">
+      <Section id="lists-vs-tuples" heading="Lists vs Tuples">
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr style={{ backgroundColor: '#f0f0f0' }}>
@@ -324,7 +324,7 @@ name, _, city = get_user()  # Ignore age`}
         </Note>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Shopping List Manager</h3>
         <CodeBlock language="python">
 {`shopping_list = []
@@ -445,7 +445,7 @@ for color in palette:
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Modifying List While Looping</h3>
         <CodeBlock language="python">
 {`# ❌ Dangerous
@@ -492,7 +492,7 @@ print(original)  # [[1, 2], [3, 4]] ✅`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Use <code>list</code> untuk data yang berubah, <code>tuple</code> untuk data konstan</li>
           <li>List comprehension lebih readable daripada loop+append</li>
@@ -504,7 +504,7 @@ print(original)  # [[1, 2], [3, 4]] ✅`}
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li><strong>List:</strong> Mutable, ordered collection dengan banyak methods</li>
           <li><strong>Tuple:</strong> Immutable, ordered collection, lebih cepat</li>

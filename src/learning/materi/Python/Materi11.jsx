@@ -7,14 +7,14 @@ import Note from '../../components/Note';
 export default function Materi11() {
   return (
     <MateriLayout title="Modules & Packages">
-      <Section title="What are Modules?">
+      <Section id="what-are-modules" heading="What are Modules?">
         <p>
           Module adalah file Python (.py) yang berisi functions, classes, dan variables 
           yang dapat diimport dan digunakan di program lain.
         </p>
       </Section>
 
-      <Section title="Creating a Module">
+      <Section id="creating-a-module" heading="Creating a Module">
         <CodeBlock language="python">
 {`# mymodule.py
 def greet(name):
@@ -27,7 +27,7 @@ PI = 3.14159`}
         </CodeBlock>
       </Section>
 
-      <Section title="Importing Modules">
+      <Section id="importing-modules" heading="Importing Modules">
         <CodeBlock language="python">
 {`# Import entire module
 import mymodule
@@ -52,7 +52,7 @@ from mymodule import *`}
         </CodeBlock>
       </Section>
 
-      <Section title="Built-in Modules">
+      <Section id="builtin-modules" heading="Built-in Modules">
         <CodeBlock language="python">
 {`# math module
 import math
@@ -86,7 +86,7 @@ print(os.listdir('.'))`}
         </CodeBlock>
       </Section>
 
-      <Section title="Packages">
+      <Section id="packages" heading="Packages">
         <p>Package adalah directory yang berisi multiple modules dengan file __init__.py</p>
 
         <CodeBlock language="bash">
@@ -112,7 +112,7 @@ __all__ = ['module1', 'module2']`}
         </CodeBlock>
       </Section>
 
-      <Section title="Module Search Path">
+      <Section id="module-search-path" heading="Module Search Path">
         <CodeBlock language="python">
 {`import sys
 
@@ -125,7 +125,7 @@ sys.path.append('/path/to/modules')`}
         </CodeBlock>
       </Section>
 
-      <Section title="if __name__ == '__main__'">
+      <Section id="if-name-main" heading="if __name__ == '__main__'">
         <CodeBlock language="python">
 {`# mymodule.py
 def main():
@@ -145,7 +145,7 @@ if __name__ == "__main__":
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Module = Python file dengan reusable code</li>
           <li>Import dengan: import, from...import</li>

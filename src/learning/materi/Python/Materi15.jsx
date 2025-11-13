@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi15() {
   return (
     <MateriLayout title="Iterators & Generators">
-      <Section title="Iterators">
+      <Section id="iterators" heading="Iterators">
         <p>Iterator adalah object yang dapat di-loop. Implements __iter__() dan __next__()</p>
         <CodeBlock language="python">
 {`# Any iterable can create iterator
@@ -25,7 +25,7 @@ for item in my_list:
         </CodeBlock>
       </Section>
 
-      <Section title="Creating Custom Iterator">
+      <Section id="creating-custom-iterator" heading="Creating Custom Iterator">
         <CodeBlock language="python">
 {`class Counter:
     def __init__(self, start, end):
@@ -48,7 +48,7 @@ for num in counter:
         </CodeBlock>
       </Section>
 
-      <Section title="Generators with yield">
+      <Section id="generators-with-yield" heading="Generators with yield">
         <p>Generator adalah function yang menggunakan yield untuk return values one at a time:</p>
         <CodeBlock language="python">
 {`def count_up_to(n):
@@ -69,7 +69,7 @@ print(next(counter))  # 2`}
         </CodeBlock>
       </Section>
 
-      <Section title="Generator Benefits">
+      <Section id="generator-benefits" heading="Generator Benefits">
         <CodeBlock language="python">
 {`# Memory efficient - generates values on-demand
 def read_large_file(file_path):
@@ -94,7 +94,7 @@ for _ in range(10):
         </CodeBlock>
       </Section>
 
-      <Section title="Generator Expressions">
+      <Section id="generator-expressions" heading="Generator Expressions">
         <CodeBlock language="python">
 {`# Generator expression (like list comprehension but lazy)
 squares_gen = (x**2 for x in range(1000000))
@@ -105,7 +105,7 @@ max_val = max(x**2 for x in range(100))`}
         </CodeBlock>
       </Section>
 
-      <Section title="itertools Module">
+      <Section id="itertools-module" heading="itertools Module">
         <CodeBlock language="python">
 {`import itertools
 
@@ -132,7 +132,7 @@ print(list(first_10))  # [0, 1, 2, ..., 9]`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Iterator: Object dengan __iter__() dan __next__()</li>
           <li>Generator: Function dengan yield keyword</li>

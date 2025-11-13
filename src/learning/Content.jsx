@@ -264,16 +264,6 @@ export default function Content({ category, currentMateriIndex, setCurrentMateri
   const totalMateri = materiList.length;
   const currentMateri = materiList[currentMateriIndex];
 
-  // Debug logging
-  console.log('Content Debug:', {
-    category,
-    currentMateriIndex,
-    materiModule,
-    materiListLength: materiList.length,
-    currentMateri,
-    materiListFirst3: materiList.slice(0, 3)
-  });
-
   if (!currentMateri) {
     return (
       <main className="content" ref={contentRef}>

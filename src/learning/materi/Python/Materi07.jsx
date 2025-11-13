@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi07() {
   return (
     <MateriLayout title="Dictionaries & Sets">
-      <Section title="Dictionaries">
+      <Section id="dictionaries" heading="Dictionaries">
         <p>
           Dictionary adalah collection yang unordered (Python 3.7+ ordered by insertion), 
           mutable, dan indexed dengan key-value pairs. Key harus unique.
@@ -161,7 +161,7 @@ for user_id, user_data in users.items():
         </CodeBlock>
       </Section>
 
-      <Section title="Dictionary Comprehension">
+      <Section id="dictionary-comprehension" heading="Dictionary Comprehension">
         <CodeBlock language="python">
 {`# Basic dict comprehension
 squares = {x: x**2 for x in range(5)}
@@ -182,7 +182,7 @@ print(upper_dict)  # {'name': 'BUDI', 'city': 'JAKARTA'}`}
         </CodeBlock>
       </Section>
 
-      <Section title="Sets">
+      <Section id="sets" heading="Sets">
         <p>
           Set adalah collection yang unordered, unindexed, tidak allow duplicates, dan mutable.
         </p>
@@ -298,7 +298,7 @@ print(3 in frozen)
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Remove Duplicates</h3>
         <CodeBlock language="python">
 {`# From list
@@ -405,7 +405,7 @@ def fibonacci_cached(n):
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Mutable Default Arguments</h3>
         <CodeBlock language="python">
 {`# ❌ Bug: dict shared across calls
@@ -453,7 +453,7 @@ user = {k: v for k, v in user.items() if k != "age"}`}
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Use <code>get()</code> untuk safe access, hindari KeyError</li>
           <li>Dict comprehension untuk transform data</li>
@@ -465,7 +465,7 @@ user = {k: v for k, v in user.items() if k != "age"}`}
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li><strong>Dictionary:</strong> Key-value pairs, ordered (3.7+), mutable, keys unique</li>
           <li>Dict methods: get, keys, values, items, update, pop, clear</li>

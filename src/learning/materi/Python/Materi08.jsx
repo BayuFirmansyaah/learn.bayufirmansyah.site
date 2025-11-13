@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi08() {
   return (
     <MateriLayout title="String Methods">
-      <Section title="String Basics">
+      <Section id="string-basics" heading="String Basics">
         <CodeBlock language="python">
 {`# Strings are immutable sequences of characters
 text = "Hello, World!"
@@ -22,7 +22,7 @@ print(text[::-1])   # !dlroW ,olleH (reverse)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Case Conversion Methods">
+      <Section id="case-conversion-methods" heading="Case Conversion Methods">
         <CodeBlock language="python">
 {`text = "Hello World"
 
@@ -48,7 +48,7 @@ print(text.istitle())  # True`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Searching">
+      <Section id="string-searching" heading="String Searching">
         <CodeBlock language="python">
 {`text = "Hello World, Welcome to Python"
 
@@ -78,7 +78,7 @@ print(text.startswith("World", 6))  # True (start from index 6)`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Replacement">
+      <Section id="string-replacement" heading="String Replacement">
         <CodeBlock language="python">
 {`text = "Hello World"
 
@@ -98,7 +98,7 @@ print(original)  # Still "Hello"`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Split & Join">
+      <Section id="string-split-join" heading="String Split & Join">
         <CodeBlock language="python">
 {`# Split (default: split by whitespace)
 text = "Hello World Python"
@@ -131,7 +131,7 @@ print(text)  # apple, banana, cherry`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Stripping">
+      <Section id="string-stripping" heading="String Stripping">
         <CodeBlock language="python">
 {`# Remove whitespace from both ends
 text = "  Hello World  "
@@ -157,7 +157,7 @@ print(text.removesuffix("Test"))  # "TestHello"`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Formatting">
+      <Section id="string-formatting" heading="String Formatting">
         <h3>1. f-strings (Python 3.6+, RECOMMENDED)</h3>
         <CodeBlock language="python">
 {`name = "Budi"
@@ -206,7 +206,7 @@ print(message)  # Budi is 25 years old`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Validation">
+      <Section id="string-validation" heading="String Validation">
         <CodeBlock language="python">
 {`# Check if all characters are alphabetic
 print("Hello".isalpha())     # True
@@ -234,7 +234,7 @@ print("Hello World".isprintable())     # True`}
         </CodeBlock>
       </Section>
 
-      <Section title="String Padding & Alignment">
+      <Section id="string-padding-alignment" heading="String Padding & Alignment">
         <CodeBlock language="python">
 {`text = "Hello"
 
@@ -256,7 +256,7 @@ print(number.zfill(5))      # "00042"`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Email Validator</h3>
         <CodeBlock language="python">
 {`def validate_email(email):
@@ -404,7 +404,7 @@ print(get_initials("Mary Jane Smith"))    # MJS`}
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Strings are Immutable</h3>
         <CodeBlock language="python">
 {`# ❌ This doesn't modify original string
@@ -431,7 +431,7 @@ if words:
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Use f-strings untuk formatting (Python 3.6+)</li>
           <li>Use <code>strip()</code> untuk clean user input</li>
@@ -442,7 +442,7 @@ if words:
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Case: upper, lower, title, capitalize, swapcase</li>
           <li>Search: find, rfind, index, count, startswith, endswith</li>

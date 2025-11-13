@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi01() {
   return (
     <MateriLayout title="Instalasi & Pengenalan Python">
-      <Section title="Apa itu Python?">
+      <Section id="apa-itu-python" heading="Apa itu Python?">
         <p>
           Python adalah bahasa pemrograman high-level yang dibuat oleh Guido van Rossum 
           dan dirilis pertama kali pada tahun 1991. Python dikenal karena sintaksnya 
@@ -19,7 +19,7 @@ export default function Materi01() {
         </p>
       </Section>
 
-      <Section title="Keunggulan Python">
+      <Section id="keunggulan-python" heading="Keunggulan Python">
         <ul>
           <li><strong>Mudah Dipelajari:</strong> Sintaks yang simpel dan readable</li>
           <li><strong>Versatile:</strong> Bisa untuk web, data science, AI, automation, dll</li>
@@ -29,7 +29,7 @@ export default function Materi01() {
         </ul>
       </Section>
 
-      <Section title="Instalasi Python">
+      <Section id="instalasi-python" heading="Instalasi Python">
         <h3>1. Download Python</h3>
         <p>
           Kunjungi <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">python.org/downloads</a> 
@@ -65,7 +65,7 @@ python3 --version
         </CodeBlock>
       </Section>
 
-      <Section title="Setup Environment">
+      <Section id="setup-environment" heading="Setup Environment">
         <h3>1. Install pip (Package Manager)</h3>
         <p>Biasanya sudah include, cek dengan:</p>
         <CodeBlock language="bash">
@@ -97,7 +97,7 @@ deactivate`}
         </Note>
       </Section>
 
-      <Section title="IDE & Text Editor Recommended">
+      <Section id="ide-text-editor-recommended" heading="IDE & Text Editor Recommended">
         <h3>1. Visual Studio Code (Recommended untuk Pemula)</h3>
         <ul>
           <li>Free, lightweight, powerful</li>
@@ -122,7 +122,7 @@ jupyter notebook`}
         <p>Lightweight text editor dengan plugin Python.</p>
       </Section>
 
-      <Section title="Hello World - Program Python Pertama">
+      <Section id="hello-world-program-python-pertama" heading="Hello World - Program Python Pertama">
         <h3>1. Menggunakan Python Interactive Shell</h3>
         <CodeBlock language="bash">
 {`python
@@ -159,7 +159,7 @@ python3 hello.py`}
         </CodeBlock>
       </Section>
 
-      <Section title="Struktur Dasar Python">
+      <Section id="struktur-dasar-python" heading="Struktur Dasar Python">
         <h3>1. Comments</h3>
         <CodeBlock language="python">
 {`# Ini adalah single-line comment
@@ -209,7 +209,7 @@ print(NAME)  # Citra
         </CodeBlock>
       </Section>
 
-      <Section title="Python Interactive Mode vs Script Mode">
+      <Section id="python-interactive-mode-vs-script-mode" heading="Python Interactive Mode vs Script Mode">
         <h3>1. Interactive Mode (REPL)</h3>
         <p>Cocok untuk testing cepat, eksperimen, dan learning:</p>
         <CodeBlock language="python">
@@ -234,7 +234,7 @@ print(greet("World"))
         </CodeBlock>
       </Section>
 
-      <Section title="Pip - Package Manager">
+      <Section id="pip-package-manager" heading="Pip - Package Manager">
         <h3>Install Package</h3>
         <CodeBlock language="bash">
 {`# Install package
@@ -277,7 +277,7 @@ pip freeze > requirements.txt
         </CodeBlock>
       </Section>
 
-      <Section title="Python REPL Tips">
+      <Section id="python-repl-tips" heading="Python REPL Tips">
         <h3>Useful Commands di Interactive Mode</h3>
         <CodeBlock language="python">
 {`# Help function
@@ -307,7 +307,7 @@ pip freeze > requirements.txt
         </CodeBlock>
       </Section>
 
-      <Section title="Python Style Guide (PEP 8)">
+      <Section id="python-style-guide-pep-8" heading="Python Style Guide (PEP 8)">
         <p>
           PEP 8 adalah style guide resmi Python. Beberapa aturan penting:
         </p>
@@ -380,7 +380,7 @@ from math import sqrt, pi`}
         </CodeBlock>
       </Section>
 
-      <Section title="Common Python Tools">
+      <Section id="common-python-tools" heading="Common Python Tools">
         <h3>1. Black (Code Formatter)</h3>
         <CodeBlock language="bash">
 {`pip install black
@@ -407,7 +407,7 @@ ipython`}
         </CodeBlock>
       </Section>
 
-      <Section title="Contoh Program Sederhana">
+      <Section id="contoh-program-sederhana" heading="Contoh Program Sederhana">
         <CodeBlock language="python">
 {`# program.py - Program interaktif sederhana
 
@@ -440,7 +440,7 @@ print("🎉 Selamat belajar Python!")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Troubleshooting Common Issues">
+      <Section id="troubleshooting-common-issues" heading="Troubleshooting Common Issues">
         <h3>1. "python not found"</h3>
         <ul>
           <li>Pastikan Python sudah terinstall</li>
@@ -475,7 +475,7 @@ pip install --user package_name
         </ul>
       </Section>
 
-      <Section title="Next Steps">
+      <Section id="next-steps" heading="Next Steps">
         <p>Setelah instalasi berhasil, kamu siap untuk:</p>
         <ul>
           <li>Belajar Variables & Data Types (Materi 02)</li>
@@ -489,7 +489,7 @@ pip install --user package_name
         </Note>
       </Section>
 
-      <Section title="Resources">
+      <Section id="resources" heading="Resources">
         <ul>
           <li><a href="https://docs.python.org/3/" target="_blank" rel="noopener noreferrer">Python Official Documentation</a></li>
           <li><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener noreferrer">PEP 8 Style Guide</a></li>

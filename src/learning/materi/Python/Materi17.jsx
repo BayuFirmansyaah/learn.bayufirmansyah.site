@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi17() {
   return (
     <MateriLayout title="Context Managers">
-      <Section title="What are Context Managers?">
+      <Section id="what-are-context-managers" heading="What are Context Managers?">
         <p>Context manager mengatur setup dan cleanup resources (files, connections, locks).</p>
         <CodeBlock language="python">
 {`# with statement uses context manager
@@ -24,7 +24,7 @@ finally:
         </CodeBlock>
       </Section>
 
-      <Section title="Creating Context Manager (Class-based)">
+      <Section id="creating-context-manager-classbased" heading="Creating Context Manager (Class-based)">
         <CodeBlock language="python">
 {`class FileManager:
     def __init__(self, filename, mode):
@@ -52,7 +52,7 @@ with FileManager('test.txt', 'w') as f:
         </CodeBlock>
       </Section>
 
-      <Section title="Creating Context Manager (contextlib)">
+      <Section id="creating-context-manager-contextlib" heading="Creating Context Manager (contextlib)">
         <CodeBlock language="python">
 {`from contextlib import contextmanager
 
@@ -71,7 +71,7 @@ with file_manager('test.txt', 'w') as f:
         </CodeBlock>
       </Section>
 
-      <Section title="Database Connection Manager">
+      <Section id="database-connection-manager" heading="Database Connection Manager">
         <CodeBlock language="python">
 {`import sqlite3
 from contextlib import contextmanager
@@ -93,7 +93,7 @@ with database_connection('app.db') as conn:
         </CodeBlock>
       </Section>
 
-      <Section title="Timer Context Manager">
+      <Section id="timer-context-manager" heading="Timer Context Manager">
         <CodeBlock language="python">
 {`import time
 from contextlib import contextmanager
@@ -114,7 +114,7 @@ with timer("Processing"):
         </CodeBlock>
       </Section>
 
-      <Section title="Multiple Context Managers">
+      <Section id="multiple-context-managers" heading="Multiple Context Managers">
         <CodeBlock language="python">
 {`# Multiple with statements
 with open('input.txt', 'r') as infile, \\
@@ -129,7 +129,7 @@ with open('file1.txt', 'r') as f1:
         </CodeBlock>
       </Section>
 
-      <Section title="Practical: Temporary Directory">
+      <Section id="practical-temporary-directory" heading="Practical: Temporary Directory">
         <CodeBlock language="python">
 {`import os
 import shutil
@@ -152,7 +152,7 @@ with temporary_directory('temp_work') as tmpdir:
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Context manager: Manages resource setup/cleanup</li>
           <li>with statement: Cleaner resource management</li>

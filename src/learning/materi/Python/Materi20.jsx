@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi20() {
   return (
     <MateriLayout title="Async Programming (asyncio)">
-      <Section title="Async/Await Basics">
+      <Section id="asyncawait-basics" heading="Async/Await Basics">
         <CodeBlock language="python">
 {`import asyncio
 
@@ -21,7 +21,7 @@ asyncio.run(say_hello())`}
         </CodeBlock>
       </Section>
 
-      <Section title="Multiple Async Tasks">
+      <Section id="multiple-async-tasks" heading="Multiple Async Tasks">
         <CodeBlock language="python">
 {`import asyncio
 
@@ -45,7 +45,7 @@ asyncio.run(main())
         </CodeBlock>
       </Section>
 
-      <Section title="Creating Tasks">
+      <Section id="creating-tasks" heading="Creating Tasks">
         <CodeBlock language="python">
 {`import asyncio
 
@@ -70,7 +70,7 @@ asyncio.run(main())`}
         </CodeBlock>
       </Section>
 
-      <Section title="Async HTTP with aiohttp">
+      <Section id="async-http-with-aiohttp" heading="Async HTTP with aiohttp">
         <CodeBlock language="python">
 {`import asyncio
 import aiohttp
@@ -96,7 +96,7 @@ async def main():
         </CodeBlock>
       </Section>
 
-      <Section title="Timeout and Exception Handling">
+      <Section id="timeout-and-exception-handling" heading="Timeout and Exception Handling">
         <CodeBlock language="python">
 {`import asyncio
 
@@ -120,7 +120,7 @@ asyncio.run(main())`}
         </CodeBlock>
       </Section>
 
-      <Section title="Async Generators">
+      <Section id="async-generators" heading="Async Generators">
         <CodeBlock language="python">
 {`import asyncio
 
@@ -137,7 +137,7 @@ asyncio.run(main())`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical: Concurrent API Calls">
+      <Section id="practical-concurrent-api-calls" heading="Practical: Concurrent API Calls">
         <CodeBlock language="python">
 {`import asyncio
 import time
@@ -162,7 +162,7 @@ asyncio.run(main())`}
         </CodeBlock>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>async/await: Define and call async functions</li>
           <li>asyncio.run(): Run async main function</li>

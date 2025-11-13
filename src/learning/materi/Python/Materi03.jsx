@@ -7,7 +7,7 @@ import Note from '../../components/Note';
 export default function Materi03() {
   return (
     <MateriLayout title="Operators">
-      <Section title="Arithmetic Operators">
+      <Section id="arithmetic-operators" heading="Arithmetic Operators">
         <p>Operator untuk operasi matematika dasar:</p>
         <CodeBlock language="python">
 {`# Addition
@@ -43,7 +43,7 @@ result = (2 + 3) * 4  # 20 (parentheses first)`}
         </Note>
       </Section>
 
-      <Section title="Assignment Operators">
+      <Section id="assignment-operators" heading="Assignment Operators">
         <CodeBlock language="python">
 {`# Basic assignment
 x = 10
@@ -69,7 +69,7 @@ x = y = z = 0`}
         </CodeBlock>
       </Section>
 
-      <Section title="Comparison Operators">
+      <Section id="comparison-operators" heading="Comparison Operators">
         <p>Operator untuk membandingkan nilai (return boolean):</p>
         <CodeBlock language="python">
 {`# Equal to
@@ -121,7 +121,7 @@ if x == None:  # ❌ Works, but not recommended
         </CodeBlock>
       </Section>
 
-      <Section title="Logical Operators">
+      <Section id="logical-operators" heading="Logical Operators">
         <CodeBlock language="python">
 {`# AND - True jika kedua True
 result = True and True   # True
@@ -177,7 +177,7 @@ result = check2() or check1()
         </CodeBlock>
       </Section>
 
-      <Section title="Identity Operators">
+      <Section id="identity-operators" heading="Identity Operators">
         <CodeBlock language="python">
 {`# is - check if same object
 a = [1, 2, 3]
@@ -207,7 +207,7 @@ print(x is y)  # False (different objects)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Membership Operators">
+      <Section id="membership-operators" heading="Membership Operators">
         <CodeBlock language="python">
 {`# in - check if value exists
 numbers = [1, 2, 3, 4, 5]
@@ -233,7 +233,7 @@ print(20 in coordinates)    # True`}
         </CodeBlock>
       </Section>
 
-      <Section title="Bitwise Operators">
+      <Section id="bitwise-operators" heading="Bitwise Operators">
         <p>Operator untuk operasi bit-level (jarang dipakai untuk beginner):</p>
         <CodeBlock language="python">
 {`# AND
@@ -261,7 +261,7 @@ fast_divide = x >> 2    # 2 (divide by 4)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Operator Precedence">
+      <Section id="operator-precedence" heading="Operator Precedence">
         <p>Urutan prioritas operator (dari tertinggi ke terendah):</p>
         <CodeBlock language="python">
 {`# 1. () - Parentheses
@@ -315,7 +315,7 @@ print(result)  # False`}
         </Note>
       </Section>
 
-      <Section title="Ternary Operator">
+      <Section id="ternary-operator" heading="Ternary Operator">
         <CodeBlock language="python">
 {`# Syntax: value_if_true if condition else value_if_false
 
@@ -342,7 +342,7 @@ print(max_value)  # 20`}
         </CodeBlock>
       </Section>
 
-      <Section title="Walrus Operator (:=)">
+      <Section id="walrus-operator" heading="Walrus Operator (:=)">
         <p>Python 3.8+: Assignment expression</p>
         <CodeBlock language="python">
 {`# Without walrus
@@ -370,7 +370,7 @@ while (line := input("Enter text (or 'quit'): ")) != 'quit':
         </CodeBlock>
       </Section>
 
-      <Section title="Operator Overloading Preview">
+      <Section id="operator-overloading-preview" heading="Operator Overloading Preview">
         <CodeBlock language="python">
 {`# Python allows custom operator behavior for classes
 
@@ -399,7 +399,7 @@ print(p1 == Point(1, 2))  # True (uses __eq__)`}
         </CodeBlock>
       </Section>
 
-      <Section title="Practical Examples">
+      <Section id="practical-examples" heading="Practical Examples">
         <h3>1. Even/Odd Checker</h3>
         <CodeBlock language="python">
 {`number = int(input("Enter a number: "))
@@ -463,7 +463,7 @@ print(f"Category: {category}")`}
         </CodeBlock>
       </Section>
 
-      <Section title="Common Mistakes">
+      <Section id="common-mistakes" heading="Common Mistakes">
         <h3>1. Using = instead of ==</h3>
         <CodeBlock language="python">
 {`# ❌ Assignment, not comparison
@@ -503,7 +503,7 @@ if x in [1, 2, 3]:
         </CodeBlock>
       </Section>
 
-      <Section title="Best Practices">
+      <Section id="best-practices" heading="Best Practices">
         <ul>
           <li>Gunakan parentheses untuk clarity dalam complex expressions</li>
           <li>Prefer <code>is</code> untuk None checking</li>
@@ -515,7 +515,7 @@ if x in [1, 2, 3]:
         </ul>
       </Section>
 
-      <Section title="Summary">
+      <Section id="summary" heading="Summary">
         <ul>
           <li>Arithmetic: +, -, *, /, //, %, **</li>
           <li>Assignment: =, +=, -=, *=, etc.</li>
