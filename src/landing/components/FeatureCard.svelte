@@ -5,6 +5,14 @@
   
   const dispatch = createEventDispatcher();
   
+  // Map technology names to icon filenames
+  const iconMap = {
+    'Laravel': '/src/landing/assets/images/laravel-icon.svg',
+    'Kotlin': '/src/landing/assets/images/kotlin-icon.svg',
+    'Flutter': '/src/landing/assets/images/flutter-icon.svg',
+    'JavaScript': '/src/landing/assets/images/javascript-icon.svg'
+  };
+  
   function handleClick() {
     dispatch('click');
   }
@@ -23,40 +31,66 @@
   tabindex="0"
   on:click={handleClick}
   on:keydown={handleKeyDown}
+  style="--card-color: {category.color}"
 >
-  <div class="icon-container" style="background: {category.color}15; border-color: {category.color}">
-    <i class="{category.icon}" style="color: {category.color}"></i>
+  <div class="card-header">
+    <div class="icon-container">
+      <img src="{iconMap[category.name]}" alt="{category.name}" class="tech-icon" />
+    </div>
+    <div class="materi-badge">{category.totalMateri} Materi</div>
   </div>
-  <h3 class="card-title">{category.name}</h3>
-  <p class="card-description">{category.description}</p>
+  
+  <div class="card-content">
+    <h3 class="card-title">{category.name}</h3>
+    <p class="card-description">{category.description}</p>
+  </div>
+  
   <div class="card-footer">
-    <span class="materi-count">{category.totalMateri} Materi</span>
-    <span class="arrow">→</span>
+    <span class="cta-text">Mulai Belajar</span>
+    <span class="arrow">
+      <i class="fa-solid fa-arrow-right"></i>
+    </span>
   </div>
 </div>
 
 <style>
   .feature-card {
     background: white;
-    border-radius: 16px;
-    padding: 30px;
+    border-radius: 20px;
+    padding: 0;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border: 2px solid #e2e8f0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 2px solid #E2E8F0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .feature-card:hover,
   .feature-card:focus {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(67, 97, 238, 0.15);
-    border-color: #4361ee;
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    border-color: var(--card-color);
     outline: none;
   }
   
   .feature-card:focus-visible {
-    outline: 2px solid #4361ee;
+    outline: 2px solid var(--card-color);
     outline-offset: 2px;
+  }
+
+  .card-header {
+    background: #F7FAFC;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #E2E8F0;
+    position: relative;
+  }
+
+  .feature-card:hover .card-header {
+    background: var(--card-color);
   }
 
   .icon-container {
@@ -66,23 +100,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    border: 2px solid;
-    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
   }
 
   .feature-card:hover .icon-container {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 
-  .icon-container i {
-    font-size: 2.5rem;
+  .tech-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .materi-badge {
+    background: white;
+    color: #2D3748;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 2px solid #E2E8F0;
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover .materi-badge {
+    background: white;
+    color: var(--card-color);
+    border-color: white;
+  }
+
+  .card-content {
+    padding: 30px;
+    flex: 1;
   }
 
   .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2d3748;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2D3748;
     margin-bottom: 12px;
   }
 
@@ -90,30 +149,62 @@
     font-size: 1rem;
     color: #718096;
     line-height: 1.6;
-    margin-bottom: 20px;
   }
 
   .card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 15px;
-    border-top: 1px solid #e2e8f0;
+    padding: 20px 30px;
+    border-top: 2px solid #E2E8F0;
+    background: white;
+    transition: all 0.3s ease;
   }
 
-  .materi-count {
-    font-size: 0.9rem;
-    color: #4361ee;
+  .feature-card:hover .card-footer {
+    background: #F7FAFC;
+  }
+
+  .cta-text {
     font-weight: 600;
+    color: #4A5568;
+    font-size: 1rem;
+  }
+
+  .feature-card:hover .cta-text {
+    color: var(--card-color);
   }
 
   .arrow {
-    font-size: 1.5rem;
-    color: #4361ee;
-    transition: transform 0.3s ease;
+    color: #4A5568;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
   }
 
   .feature-card:hover .arrow {
     transform: translateX(5px);
+    color: var(--card-color);
+  }
+
+  @media (max-width: 768px) {
+    .card-header {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+    }
+
+    .tech-icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+    }
   }
 </style>

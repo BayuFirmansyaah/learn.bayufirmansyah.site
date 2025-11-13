@@ -1,0 +1,65 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Laptop Body -->
+  <rect x="100" y="100" width="600" height="380" rx="12" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+  
+  <!-- Screen -->
+  <rect x="115" y="115" width="570" height="340" rx="8" fill="#1A202C"/>
+  
+  <!-- Screen Content - Learning Interface -->
+  <rect x="130" y="130" width="540" height="310" fill="#FFFFFF"/>
+  
+  <!-- Header Bar -->
+  <rect x="130" y="130" width="540" height="50" fill="#4361EE"/>
+  <text x="150" y="162" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">ubay.tech - Platform Pembelajaran</text>
+  
+  <!-- Sidebar -->
+  <rect x="130" y="180" width="150" height="260" fill="#F7FAFC"/>
+  <rect x="145" y="195" width="120" height="30" rx="4" fill="#4361EE" opacity="0.1"/>
+  <rect x="150" y="202" width="15" height="15" rx="3" fill="#4361EE"/>
+  <text x="172" y="215" font-family="Arial, sans-serif" font-size="12" fill="#2D3748">Laravel</text>
+  
+  <rect x="145" y="235" width="120" height="30" rx="4" fill="#7F52FF" opacity="0.1"/>
+  <rect x="150" y="242" width="15" height="15" rx="3" fill="#7F52FF"/>
+  <text x="172" y="255" font-family="Arial, sans-serif" font-size="12" fill="#2D3748">Kotlin</text>
+  
+  <rect x="145" y="275" width="120" height="30" rx="4" fill="#02569B" opacity="0.1"/>
+  <rect x="150" y="282" width="15" height="15" rx="3" fill="#02569B"/>
+  <text x="172" y="295" font-family="Arial, sans-serif" font-size="12" fill="#2D3748">Flutter</text>
+  
+  <!-- Main Content Area -->
+  <rect x="290" y="190" width="370" height="240" fill="#FFFFFF"/>
+  
+  <!-- Code Block -->
+  <rect x="305" y="205" width="340" height="150" rx="6" fill="#1A202C"/>
+  <circle cx="320" cy="220" r="4" fill="#FF5F56"/>
+  <circle cx="335" cy="220" r="4" fill="#FFBD2E"/>
+  <circle cx="350" cy="220" r="4" fill="#27C93F"/>
+  
+  <!-- Code Lines -->
+  <rect x="320" y="235" width="100" height="6" rx="3" fill="#4361EE"/>
+  <rect x="320" y="250" width="150" height="6" rx="3" fill="#48BB78"/>
+  <rect x="335" y="265" width="120" height="6" rx="3" fill="#F6AD55"/>
+  <rect x="335" y="280" width="180" height="6" rx="3" fill="#7F52FF"/>
+  <rect x="320" y="295" width="90" height="6" rx="3" fill="#4361EE"/>
+  <rect x="335" y="310" width="140" height="6" rx="3" fill="#48BB78"/>
+  <rect x="320" y="325" width="110" height="6" rx="3" fill="#F6AD55"/>
+  
+  <!-- Text Content -->
+  <rect x="305" y="370" width="280" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="305" y="385" width="320" height="8" rx="4" fill="#E2E8F0"/>
+  <rect x="305" y="400" width="260" height="8" rx="4" fill="#E2E8F0"/>
+  
+  <!-- Laptop Base -->
+  <rect x="80" y="480" width="640" height="15" rx="8" fill="#4A5568"/>
+  <rect x="90" y="480" width="620" height="8" rx="4" fill="#718096"/>
+  
+  <!-- Keyboard Base -->
+  <rect x="100" y="495" width="600" height="60" rx="8" fill="#2D3748"/>
+  <ellipse cx="400" cy="525" rx="250" ry="20" fill="#1A202C" opacity="0.5"/>
+  
+  <!-- Trackpad -->
+  <rect x="320" y="510" width="160" height="80" rx="6" fill="#1A202C" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="400" cy="560" rx="280" ry="20" fill="#000000" opacity="0.1"/>
+</svg>
