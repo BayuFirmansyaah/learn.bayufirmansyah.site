@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: learning-bayufirmansyah
+    ports:
+      - "9999:9999"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - learning-network
+
+networks:
+  learning-network:
+    driver: bridge
