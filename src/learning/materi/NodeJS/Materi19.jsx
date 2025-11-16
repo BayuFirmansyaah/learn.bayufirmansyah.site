@@ -2,7 +2,7 @@ import React from 'react';
 import MateriLayout from '../../components/MateriLayout';
 import Section from '../../components/Section';
 import CodeBlock from '../../components/CodeBlock';
-import Note from '../../component';
+import Note from '../../components/Note';
 
 export default function Materi19() {
   return (

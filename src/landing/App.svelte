@@ -28,14 +28,14 @@
     {
       name: 'Kotlin',
       description: 'Bahasa pemrograman modern untuk Android dan backend',
-      icon: 'fa-solid fa-code',
+      icon: 'fa-brands fa-android',
       color: '#7F52FF',
       totalMateri: 17
     },
     {
       name: 'Flutter',
       description: 'Framework UI untuk membangun aplikasi mobile cross-platform',
-      icon: 'fa-brands fa-android',
+      icon: 'fa-brands fa-flutter',
       color: '#02569B',
       totalMateri: 17
     },
@@ -51,6 +51,13 @@
       description: 'Bahasa pemrograman serbaguna untuk AI, web, dan data science',
       icon: 'fa-brands fa-python',
       color: '#3776AB',
+      totalMateri: 25
+    },
+    {
+      name: 'NodeJS',
+      description: 'Runtime JavaScript untuk backend & full-stack development',
+      icon: 'fa-brands fa-node-js',
+      color: '#339933',
       totalMateri: 25
     }
   ];
@@ -116,17 +123,17 @@
         </h1>
         
         <p class="hero-subtitle">
-          Pembelajaran terstruktur dengan 104 materi lengkap dalam 5 teknologi modern. 
+          Pembelajaran terstruktur dengan 129 materi lengkap dalam 6 teknologi modern. 
           Dirancang untuk pemula, mahasiswa, dan profesional yang ingin mengembangkan skill programming.
         </p>
         
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-number">104</div>
+            <div class="stat-number">129</div>
             <div class="stat-label">Materi Pembelajaran</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">5</div>
+            <div class="stat-number">6</div>
             <div class="stat-label">Teknologi Modern</div>
           </div>
           <div class="stat-item">
@@ -151,19 +158,22 @@
         <div class="hero-illustration-wrapper">
           <img src="/src/landing/assets/images/hero-illustration.svg" alt="Programming Illustration" class="hero-illustration" />
           <div class="floating-element floating-1">
-            <img src="/src/landing/assets/images/laravel-icon.svg" alt="Laravel" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" style="filter: none;" />
           </div>
           <div class="floating-element floating-2">
-            <img src="/src/landing/assets/images/kotlin-icon.svg" alt="Kotlin" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
           </div>
           <div class="floating-element floating-3">
-            <img src="/src/landing/assets/images/flutter-icon.svg" alt="Flutter" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Flutter" />
           </div>
           <div class="floating-element floating-4">
-            <img src="/src/landing/assets/images/javascript-icon.svg" alt="JavaScript" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
           </div>
           <div class="floating-element floating-5">
-            <img src="/src/landing/assets/images/python-icon.svg" alt="Python" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
+          </div>
+          <div class="floating-element floating-6">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
           </div>
         </div>
       </div>
@@ -175,7 +185,7 @@
     <div class="categories-content">
       <div class="section-header">
         <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
-        <p class="section-description">Jelajahi 104 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
+        <p class="section-description">Jelajahi 129 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
       </div>
       <div class="category-grid">
         {#each categories as category}
@@ -294,11 +304,11 @@
           <div class="proof-stat-label">Pembelajar Aktif</div>
         </div>
         <div class="proof-stat-item">
-          <div class="proof-stat-number">104</div>
+          <div class="proof-stat-number">129</div>
           <div class="proof-stat-label">Materi Pembelajaran</div>
         </div>
         <div class="proof-stat-item">
-          <div class="proof-stat-number">5</div>
+          <div class="proof-stat-number">6</div>
           <div class="proof-stat-label">Teknologi Modern</div>
         </div>
         <div class="proof-stat-item">
@@ -386,7 +396,7 @@
       <div class="cta-main">
         <h2 class="cta-title">Mulai Perjalanan Programming Anda Hari Ini</h2>
         <p class="cta-description">
-          Akses penuh ke 104 materi pembelajaran dalam 5 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
+          Akses penuh ke 129 materi pembelajaran dalam 6 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
         </p>
         <div class="cta-benefits">
           <div class="cta-benefit-item">
@@ -445,6 +455,7 @@
           <li><a href="#" on:click|preventDefault={() => selectCategory('Flutter')}>Flutter Mobile</a></li>
           <li><a href="#" on:click|preventDefault={() => selectCategory('JavaScript')}>JavaScript Modern</a></li>
           <li><a href="#" on:click|preventDefault={() => selectCategory('Python')}>Python Programming</a></li>
+          <li><a href="#" on:click|preventDefault={() => selectCategory('NodeJS')}>Node.js & Express</a></li>
         </ul>
       </div>
 
@@ -463,11 +474,14 @@
           <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer-social-link">
             <i class="fa-brands fa-tiktok"></i>
           </a>
+          <a href="https://wa.me/6281330972830" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-link">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
           <a href="https://superproof.com" target="_blank" rel="noopener noreferrer" aria-label="Superproof" class="footer-social-link">
             <i class="fa-solid fa-graduation-cap"></i>
           </a>
         </div>
-        <p class="footer-contact">Pertanyaan? Hubungi melalui social media.</p>
+        <p class="footer-contact">Pertanyaan? Hubungi via WhatsApp atau social media.</p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -889,10 +903,67 @@
     max-width: 500px;
   }
 
-  .hero-illustration {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15));
+  .hero-code-window {
+    background: #1e293b;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .code-window-header {
+    background: #0f172a;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .code-dots {
+    display: flex;
+    gap: 8px;
+  }
+
+  .code-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .code-dots span:nth-child(1) {
+    background: #ef4444;
+  }
+
+  .code-dots span:nth-child(2) {
+    background: #f59e0b;
+  }
+
+  .code-dots span:nth-child(3) {
+    background: #10b981;
+  }
+
+  .code-content {
+    padding: 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #94a3b8;
+  }
+
+  .code-line {
+    margin-bottom: 4px;
+  }
+
+  .code-keyword {
+    color: #c792ea;
+    font-weight: 600;
+  }
+
+  .code-function {
+    color: #82aaff;
+  }
+
+  .code-string {
+    color: #c3e88d;
   }
 
   .floating-element {
@@ -913,25 +984,25 @@
   }
 
   .floating-1 {
-    top: 10%;
+    top: 5%;
     left: -10%;
     animation-delay: 0s;
   }
 
   .floating-2 {
-    top: 20%;
+    top: 25%;
     right: -8%;
     animation-delay: 0.5s;
   }
 
   .floating-3 {
-    bottom: 30%;
+    bottom: 35%;
     left: -8%;
     animation-delay: 1s;
   }
 
   .floating-4 {
-    bottom: 15%;
+    bottom: 20%;
     right: -5%;
     animation-delay: 1.5s;
   }
@@ -940,6 +1011,12 @@
     top: 50%;
     right: -12%;
     animation-delay: 2s;
+  }
+
+  .floating-6 {
+    bottom: 5%;
+    left: 5%;
+    animation-delay: 2.5s;
   }
 
   @keyframes float {

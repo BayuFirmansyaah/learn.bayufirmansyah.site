@@ -5,12 +5,14 @@
   
   const dispatch = createEventDispatcher();
   
-  // Map technology names to icon filenames
+  // Map technology names to CDN icon URLs
   const iconMap = {
-    'Laravel': '/src/landing/assets/images/laravel-icon.svg',
-    'Kotlin': '/src/landing/assets/images/kotlin-icon.svg',
-    'Flutter': '/src/landing/assets/images/flutter-icon.svg',
-    'JavaScript': '/src/landing/assets/images/javascript-icon.svg'
+    'Laravel': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
+    'Kotlin': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg',
+    'Flutter': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg',
+    'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+    'NodeJS': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg'
   };
   
   function handleClick() {
