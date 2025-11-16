@@ -70,6 +70,18 @@
 <svelte:window on:scroll={handleScroll} />
 
 <div class="landing-container">
+  <!-- Mobile Menu Overlay -->
+  {#if mobileMenuOpen}
+    <div 
+      class="mobile-menu-overlay" 
+      on:click={toggleMobileMenu}
+      on:keydown={(e) => e.key === 'Escape' && toggleMobileMenu()}
+      role="button"
+      tabindex="-1"
+      aria-label="Close menu"
+    ></div>
+  {/if}
+
   <!-- Navigation Bar -->
   <nav class="navbar" class:scrolled>
     <div class="navbar-container">
@@ -695,6 +707,27 @@
     transform: rotate(-45deg) translate(6px, -6px);
   }
 
+  /* Mobile Menu Overlay */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 968px) {
     .navbar-menu {
       position: fixed;
@@ -709,6 +742,7 @@
       gap: 25px;
       box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
       transition: right 0.3s ease;
+      z-index: 999;
     }
 
     .navbar-menu.active {
@@ -746,6 +780,13 @@
     color: white;
     overflow: hidden;
     min-height: 650px;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 20px 60px;
+      min-height: auto;
+    }
   }
 
   .hero-background-pattern {
@@ -833,6 +874,19 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
 
+  @media (max-width: 480px) {
+    .hero-badge {
+      font-size: 0.75rem;
+      padding: 6px 14px;
+      gap: 6px;
+    }
+
+    .hero-badge span {
+      display: inline;
+      word-break: break-word;
+    }
+  }
+
   .hero-badge i {
     color: #FFD700;
   }
@@ -865,6 +919,13 @@
     flex-wrap: wrap;
   }
 
+  @media (max-width: 640px) {
+    .hero-stats {
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
   .stat-item {
     text-align: left;
   }
@@ -887,6 +948,18 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 640px) {
+    .hero-cta {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .hero-cta a {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   /* Hero Visual */
@@ -1108,34 +1181,62 @@
 
   @media (max-width: 640px) {
     .hero {
-      padding: 60px 20px;
+      padding: 100px 15px 50px;
     }
 
     .hero-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
+      line-height: 1.2;
     }
 
     .hero-subtitle {
-      font-size: 1rem;
+      font-size: 0.95rem;
+      margin-bottom: 30px;
     }
 
     .stat-number {
-      font-size: 2.2rem;
+      font-size: 2rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
     }
 
     .hero-stats {
-      gap: 30px;
+      gap: 20px;
     }
 
     .floating-element {
-      width: 40px;
-      height: 40px;
+      display: none;
+    }
+
+    .hero-illustration {
+      max-width: 280px;
     }
 
     .btn-primary,
     .btn-secondary {
-      padding: 14px 24px;
-      font-size: 1rem;
+      padding: 12px 20px;
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding: 90px 15px 40px;
+    }
+
+    .hero-title {
+      font-size: 1.6rem;
+    }
+
+    .hero-badge {
+      font-size: 0.8rem;
+      padding: 6px 16px;
+    }
+
+    .stat-number {
+      font-size: 1.8rem;
     }
   }
 

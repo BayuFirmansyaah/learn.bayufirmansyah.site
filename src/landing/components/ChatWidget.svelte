@@ -487,20 +487,91 @@
     .chat-window {
       width: calc(100vw - 32px);
       max-width: 380px;
-      bottom: 75px;
-      right: -8px;
+      bottom: 80px;
+      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .chat-header {
+      padding: 14px;
+    }
+
+    .chat-avatar {
+      width: 40px;
+      height: 40px;
+    }
+
+    .chat-name {
+      font-size: 15px;
+    }
+
+    .chat-status {
+      font-size: 12px;
     }
   }
   
   @media (max-width: 480px) {
+    .chat-widget {
+      bottom: 12px;
+      right: 12px;
+    }
+
+    .chat-toggle-btn {
+      width: 52px;
+      height: 52px;
+      font-size: 20px;
+    }
+
     .chat-window {
-      width: calc(100vw - 16px);
-      right: -12px;
-      max-height: 480px;
+      width: calc(100vw - 24px);
+      max-width: none;
+      max-height: 500px;
+      bottom: 70px;
     }
     
     .chat-messages {
-      max-height: 250px;
+      max-height: 280px;
+      padding: 12px;
+    }
+
+    .message-bubble {
+      max-width: 220px;
+      font-size: 14px;
+      padding: 10px 14px;
+    }
+
+    .message-avatar {
+      width: 30px;
+      height: 30px;
+    }
+
+    .chat-cta-btn {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    .notification-badge {
+      width: 10px;
+      height: 10px;
+      top: 8px;
+      right: 8px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .chat-window {
+      width: calc(100vw - 16px);
+    }
+
+    .message-bubble {
+      max-width: 180px;
+      font-size: 13px;
+    }
+
+    .chat-cta-btn {
+      font-size: 13px;
+      padding: 10px 14px;
     }
   }
 </style>
