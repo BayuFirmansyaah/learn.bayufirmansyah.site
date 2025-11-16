@@ -156,7 +156,7 @@
       
       <div class="hero-visual">
         <div class="hero-illustration-wrapper">
-          <img src="/src/landing/assets/images/hero-illustration.svg" alt="Programming Illustration" class="hero-illustration" />
+          <img src="/assets/images/hero-illustration.svg" alt="Programming Illustration" class="hero-illustration" />
           <div class="floating-element floating-1">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" style="filter: none;" />
           </div>
@@ -209,7 +209,7 @@
       <div class="benefits-grid">
         <div class="benefit-card">
           <div class="benefit-visual">
-            <img src="/src/landing/assets/images/learning-student.svg" alt="Pemula" class="benefit-image" />
+            <img src="/assets/images/learning-student.svg" alt="Pemula" class="benefit-image" />
           </div>
           <div class="benefit-content-wrapper">
             <div class="benefit-icon-badge">
@@ -229,7 +229,7 @@
 
         <div class="benefit-card">
           <div class="benefit-visual">
-            <img src="/src/landing/assets/images/learning-student.svg" alt="Mahasiswa" class="benefit-image" />
+            <img src="/assets/images/learning-student.svg" alt="Mahasiswa" class="benefit-image" />
           </div>
           <div class="benefit-content-wrapper">
             <div class="benefit-icon-badge">
@@ -249,7 +249,7 @@
 
         <div class="benefit-card">
           <div class="benefit-visual">
-            <img src="/src/landing/assets/images/professional-coding.svg" alt="Profesional" class="benefit-image" />
+            <img src="/assets/images/professional-coding.svg" alt="Profesional" class="benefit-image" />
           </div>
           <div class="benefit-content-wrapper">
             <div class="benefit-icon-badge">
@@ -269,7 +269,7 @@
 
         <div class="benefit-card">
           <div class="benefit-visual">
-            <img src="/src/landing/assets/images/mentor-discussion.svg" alt="Mentoring" class="benefit-image" />
+            <img src="/assets/images/mentor-discussion.svg" alt="Mentoring" class="benefit-image" />
           </div>
           <div class="benefit-content-wrapper">
             <div class="benefit-icon-badge">
@@ -330,7 +330,7 @@
             "Materi Laravel sangat lengkap dan mudah dipahami. Dari yang tidak tahu sama sekali, sekarang sudah bisa bikin aplikasi web sendiri."
           </p>
           <div class="testimonial-author">
-            <img src="/src/landing/assets/images/avatar-1.svg" alt="Ahmad Rizki" class="author-avatar-img" />
+            <img src="/assets/images/avatar-1.svg" alt="Ahmad Rizki" class="author-avatar-img" />
             <div class="author-info">
               <div class="author-name">Ahmad Rizki</div>
               <div class="author-role">Mahasiswa Informatika</div>
@@ -353,7 +353,7 @@
             "Tutorial Flutter-nya sangat membantu untuk tugas akhir. Penjelasannya detail dan contoh kodenya bisa langsung dipakai."
           </p>
           <div class="testimonial-author">
-            <img src="/src/landing/assets/images/avatar-2.svg" alt="Siti Nurhaliza" class="author-avatar-img" />
+            <img src="/assets/images/avatar-2.svg" alt="Siti Nurhaliza" class="author-avatar-img" />
             <div class="author-info">
               <div class="author-name">Siti Nurhaliza</div>
               <div class="author-role">Fresh Graduate</div>
@@ -376,7 +376,7 @@
             "Sebagai professional yang ingin upskilling, platform ini sangat membantu. Materi up-to-date dan sesuai kebutuhan industri."
           </p>
           <div class="testimonial-author">
-            <img src="/src/landing/assets/images/avatar-3.svg" alt="Budi Santoso" class="author-avatar-img" />
+            <img src="/assets/images/avatar-3.svg" alt="Budi Santoso" class="author-avatar-img" />
             <div class="author-info">
               <div class="author-name">Budi Santoso</div>
               <div class="author-role">Backend Developer</div>

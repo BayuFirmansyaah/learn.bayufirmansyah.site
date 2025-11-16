@@ -1,0 +1,57 @@
+<svg width="300" height="600" viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone Body -->
+  <rect x="50" y="30" width="200" height="540" rx="30" fill="#2D3748" stroke="#4A5568" stroke-width="3"/>
+  
+  <!-- Screen -->
+  <rect x="60" y="50" width="180" height="500" rx="20" fill="#1A202C"/>
+  
+  <!-- Screen Content -->
+  <rect x="65" y="55" width="170" height="490" fill="#FFFFFF"/>
+  
+  <!-- Status Bar -->
+  <rect x="65" y="55" width="170" height="30" fill="#4361EE"/>
+  <text x="75" y="75" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF">9:41</text>
+  <circle cx="210" cy="70" r="3" fill="#FFFFFF"/>
+  <rect x="215" y="67" width="12" height="6" rx="2" fill="#FFFFFF"/>
+  
+  <!-- App Header -->
+  <rect x="65" y="85" width="170" height="40" fill="#F7FAFC"/>
+  <text x="75" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2D3748">Materi Kotlin</text>
+  
+  <!-- Content Cards -->
+  <rect x="75" y="140" width="150" height="80" rx="8" fill="#F0F4FF" stroke="#4361EE" stroke-width="1"/>
+  <rect x="85" y="150" width="40" height="40" rx="8" fill="#4361EE"/>
+  <text x="92" y="178" font-size="20" fill="#FFFFFF">1</text>
+  <text x="135" y="168" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2D3748">Pengenalan</text>
+  <text x="135" y="183" font-family="Arial, sans-serif" font-size="9" fill="#718096">Kotlin Basics</text>
+  <rect x="135" y="195" width="80" height="4" rx="2" fill="#4361EE" opacity="0.3"/>
+  <rect x="135" y="195" width="50" height="4" rx="2" fill="#4361EE"/>
+  
+  <rect x="75" y="235" width="150" height="80" rx="8" fill="#F0FFF4" stroke="#48BB78" stroke-width="1"/>
+  <rect x="85" y="245" width="40" height="40" rx="8" fill="#48BB78"/>
+  <text x="92" y="273" font-size="20" fill="#FFFFFF">2</text>
+  <text x="135" y="263" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2D3748">Instalasi</text>
+  <text x="135" y="278" font-family="Arial, sans-serif" font-size="9" fill="#718096">Setup Environment</text>
+  <rect x="135" y="290" width="80" height="4" rx="2" fill="#48BB78" opacity="0.3"/>
+  <rect x="135" y="290" width="60" height="4" rx="2" fill="#48BB78"/>
+  
+  <rect x="75" y="330" width="150" height="80" rx="8" fill="#FFFAF0" stroke="#F6AD55" stroke-width="1"/>
+  <rect x="85" y="340" width="40" height="40" rx="8" fill="#F6AD55"/>
+  <text x="92" y="368" font-size="20" fill="#FFFFFF">3</text>
+  <text x="135" y="358" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#2D3748">Dasar</text>
+  <text x="135" y="373" font-family="Arial, sans-serif" font-size="9" fill="#718096">Programming Basics</text>
+  <rect x="135" y="385" width="80" height="4" rx="2" fill="#F6AD55" opacity="0.3"/>
+  <rect x="135" y="385" width="40" height="4" rx="2" fill="#F6AD55"/>
+  
+  <!-- Bottom Navigation -->
+  <rect x="65" y="515" width="170" height="30" fill="#F7FAFC"/>
+  <circle cx="95" cy="530" r="8" fill="#4361EE"/>
+  <circle cx="150" cy="530" r="8" fill="#CBD5E0"/>
+  <circle cx="205" cy="530" r="8" fill="#CBD5E0"/>
+  
+  <!-- Home Button Area -->
+  <rect x="120" y="555" width="60" height="5" rx="2.5" fill="#4A5568"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="580" rx="80" ry="10" fill="#000000" opacity="0.1"/>
+</svg>

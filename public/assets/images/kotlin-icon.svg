@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kotlin Logo Style -->
+  <rect width="120" height="120" fill="#7F52FF"/>
+  
+  <!-- K Shape -->
+  <polygon points="20,20 35,20 35,50 65,20 85,20 50,55 85,100 65,100 35,60 35,100 20,100" fill="#FFFFFF"/>
+  
+  <!-- Triangle Accent -->
+  <path d="M85 20 L100 35 L85 35 Z" fill="#FFFFFF" opacity="0.3"/>
+  <path d="M85 85 L100 100 L85 100 Z" fill="#FFFFFF" opacity="0.3"/>
+</svg>

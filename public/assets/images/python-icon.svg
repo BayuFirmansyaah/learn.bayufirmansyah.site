@@ -1,0 +1,20 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="120" height="120" rx="20" fill="#3776AB"/>
+  
+  <!-- Python Snake Icon (Simplified) -->
+  <g transform="translate(20, 20)">
+    <!-- Top Snake (Blue) -->
+    <path d="M40 0 C20 0 10 10 10 20 L10 35 L50 35 L50 40 L20 40 C10 40 0 50 0 60 L0 80 L15 80 L15 55 C15 45 25 40 35 40 L50 40 L50 25 C50 10 45 0 40 0 Z" fill="#FFD43B"/>
+    
+    <!-- Bottom Snake (Yellow) -->
+    <path d="M40 80 C60 80 70 70 70 60 L70 45 L30 45 L30 40 L60 40 C70 40 80 30 80 20 L80 0 L65 0 L65 25 C65 35 55 40 45 40 L30 40 L30 55 C30 70 35 80 40 80 Z" fill="#3776AB"/>
+    
+    <!-- Eyes -->
+    <circle cx="25" cy="15" r="3" fill="#3776AB"/>
+    <circle cx="55" cy="65" r="3" fill="#FFD43B"/>
+  </g>
+  
+  <!-- Python Text (Optional) -->
+  <text x="15" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#FFD43B">PYTHON</text>
+</svg>

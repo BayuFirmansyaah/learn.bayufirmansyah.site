@@ -1,0 +1,26 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Avatar Background -->
+  <circle cx="60" cy="60" r="60" fill="#7F52FF"/>
+  
+  <!-- Face -->
+  <circle cx="60" cy="50" r="25" fill="#F7FAFC"/>
+  
+  <!-- Hair (Long) -->
+  <ellipse cx="40" cy="45" rx="8" ry="30" fill="#2D3748"/>
+  <ellipse cx="80" cy="45" rx="8" ry="30" fill="#2D3748"/>
+  <path d="M 35 35 Q 35 18 60 15 Q 85 18 85 35 L 85 50 L 35 50 Z" fill="#2D3748"/>
+  
+  <!-- Eyes -->
+  <circle cx="52" cy="48" r="3" fill="#2D3748"/>
+  <circle cx="68" cy="48" r="3" fill="#2D3748"/>
+  
+  <!-- Smile -->
+  <path d="M 48 58 Q 60 65 72 58" stroke="#2D3748" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Body (Shirt) -->
+  <path d="M 30 100 Q 30 75 60 75 Q 90 75 90 100 L 90 120 L 30 120 Z" fill="#7F52FF"/>
+  <path d="M 30 100 Q 30 75 60 75 Q 90 75 90 100 L 90 120 L 30 120 Z" fill="#FFFFFF" opacity="0.2"/>
+  
+  <!-- Necklace -->
+  <circle cx="60" cy="78" r="4" fill="#F6AD55"/>
+</svg>

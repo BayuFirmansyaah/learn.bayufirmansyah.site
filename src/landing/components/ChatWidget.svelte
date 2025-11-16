@@ -106,7 +106,7 @@
       <!-- Header -->
       <div class="chat-header">
         <div class="chat-header-profile">
-          <img src="/src/landing/assets/images/ubay-avatar.svg" alt="ubay.tech" class="chat-avatar" />
+          <img src="/assets/images/ubay-avatar.svg" alt="ubay.tech" class="chat-avatar" />
           <div class="chat-header-info">
             <h4 class="chat-name">ubay.tech</h4>
             <span class="chat-status">
@@ -133,7 +133,7 @@
         
         {#if isTyping}
           <div class="message-item">
-            <img src="/src/landing/assets/images/ubay-avatar.svg" alt="ubay.tech" class="message-avatar" />
+            <img src="/assets/images/ubay-avatar.svg" alt="ubay.tech" class="message-avatar" />
             <div class="message-bubble typing">
               <div class="typing-indicator">
                 <span></span>

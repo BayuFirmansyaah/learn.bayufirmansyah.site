@@ -1,0 +1,18 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Flutter Logo Style -->
+  <defs>
+    <linearGradient id="flutterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#02569B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0277BD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="120" height="120" fill="url(#flutterGrad)"/>
+  
+  <!-- F Shape Modern -->
+  <polygon points="35,30 75,30 75,45 50,45 50,55 70,55 70,70 50,70 50,90 35,90" fill="#FFFFFF"/>
+  
+  <!-- Bird Wing Accent -->
+  <path d="M80 35 Q 90 45 85 55 L 75 50 Q 78 45 80 35" fill="#FFFFFF" opacity="0.7"/>
+  <path d="M80 65 Q 90 75 85 85 L 75 80 Q 78 75 80 65" fill="#FFFFFF" opacity="0.7"/>
+</svg>

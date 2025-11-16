@@ -1,0 +1,69 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monitor/Laptop -->
+  <rect x="100" y="80" width="400" height="280" rx="8" fill="#2D3748" stroke="#4A5568" stroke-width="2"/>
+  <rect x="110" y="90" width="380" height="240" rx="4" fill="#1A202C"/>
+  
+  <!-- Code Lines -->
+  <rect x="130" y="110" width="80" height="8" rx="4" fill="#4361EE"/>
+  <rect x="220" y="110" width="60" height="8" rx="4" fill="#7F52FF"/>
+  <rect x="290" y="110" width="40" height="8" rx="4" fill="#48BB78"/>
+  
+  <rect x="130" y="130" width="60" height="8" rx="4" fill="#48BB78"/>
+  <rect x="200" y="130" width="100" height="8" rx="4" fill="#4361EE"/>
+  <rect x="310" y="130" width="50" height="8" rx="4" fill="#F6AD55"/>
+  
+  <rect x="130" y="150" width="40" height="8" rx="4" fill="#F6AD55"/>
+  <rect x="180" y="150" width="120" height="8" rx="4" fill="#7F52FF"/>
+  <rect x="310" y="150" width="70" height="8" rx="4" fill="#4361EE"/>
+  
+  <rect x="150" y="170" width="90" height="8" rx="4" fill="#48BB78"/>
+  <rect x="250" y="170" width="60" height="8" rx="4" fill="#F6AD55"/>
+  
+  <rect x="150" y="190" width="70" height="8" rx="4" fill="#7F52FF"/>
+  <rect x="230" y="190" width="80" height="8" rx="4" fill="#4361EE"/>
+  
+  <rect x="130" y="210" width="50" height="8" rx="4" fill="#4361EE"/>
+  <rect x="190" y="210" width="100" height="8" rx="4" fill="#48BB78"/>
+  
+  <!-- Terminal Window -->
+  <rect x="130" y="240" width="340" height="70" rx="4" fill="#0D1117"/>
+  <circle cx="145" cy="255" r="4" fill="#FF5F56"/>
+  <circle cx="160" cy="255" r="4" fill="#FFBD2E"/>
+  <circle cx="175" cy="255" r="4" fill="#27C93F"/>
+  
+  <rect x="145" y="270" width="100" height="6" rx="3" fill="#58A6FF"/>
+  <rect x="145" y="285" width="140" height="6" rx="3" fill="#48BB78"/>
+  <rect x="145" y="295" width="80" height="6" rx="3" fill="#F6AD55"/>
+  
+  <!-- Keyboard Base -->
+  <rect x="110" y="370" width="380" height="15" rx="6" fill="#4A5568"/>
+  <rect x="120" y="370" width="360" height="8" rx="4" fill="#718096"/>
+  
+  <!-- Coffee Cup -->
+  <ellipse cx="520" cy="420" rx="25" ry="6" fill="#E2E8F0"/>
+  <rect x="495" y="390" width="50" height="30" rx="4" fill="#F7FAFC" stroke="#4A5568" stroke-width="2"/>
+  <rect x="488" y="395" width="8" height="20" rx="4" fill="#E2E8F0"/>
+  <path d="M 500 400 Q 510 395 520 400 Q 530 405 540 400" stroke="#CBD5E0" stroke-width="2" fill="none"/>
+  
+  <!-- Plant Pot -->
+  <path d="M 50 420 L 60 450 L 90 450 L 100 420 Z" fill="#E2E8F0" stroke="#4A5568" stroke-width="2"/>
+  <ellipse cx="75" cy="420" rx="25" ry="8" fill="#F7FAFC" stroke="#4A5568" stroke-width="2"/>
+  
+  <!-- Plant Leaves -->
+  <ellipse cx="60" cy="400" rx="12" ry="20" fill="#48BB78" transform="rotate(-20 60 400)"/>
+  <ellipse cx="75" cy="390" rx="12" ry="22" fill="#48BB78"/>
+  <ellipse cx="90" cy="400" rx="12" ry="20" fill="#48BB78" transform="rotate(20 90 400)"/>
+  
+  <!-- Floating Code Brackets -->
+  <text x="50" y="150" font-family="monospace" font-size="48" fill="#4361EE" opacity="0.3">{</text>
+  <text x="530" y="200" font-family="monospace" font-size="48" fill="#7F52FF" opacity="0.3">}</text>
+  
+  <!-- Code Symbols -->
+  <text x="500" y="100" font-family="monospace" font-size="36" fill="#48BB78" opacity="0.3">&lt;/&gt;</text>
+  <text x="40" y="280" font-family="monospace" font-size="40" fill="#F6AD55" opacity="0.3">( )</text>
+  
+  <!-- Books Stack -->
+  <rect x="460" y="320" width="80" height="12" rx="2" fill="#4361EE"/>
+  <rect x="465" y="332" width="75" height="12" rx="2" fill="#7F52FF"/>
+  <rect x="470" y="344" width="70" height="12" rx="2" fill="#48BB78"/>
+</svg>
