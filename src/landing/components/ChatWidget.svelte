@@ -475,7 +475,8 @@
   @media (max-width: 768px) {
     .chat-widget {
       bottom: 16px;
-      right: 16px;
+      right: auto;
+      left: 16px;
     }
     
     .chat-toggle-btn {

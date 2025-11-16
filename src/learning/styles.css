@@ -199,10 +199,14 @@
   max-width: 1000px;
   margin: 0 auto;
   width: 100%;
+  overflow-x: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .materi-content {
   max-width: 100%;
+  overflow-x: auto;
 }
 
 .content-title {
@@ -211,6 +215,9 @@
   margin-bottom: 30px;
   font-weight: 600;
   line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .content-body p {
@@ -451,6 +458,7 @@
   padding: 20px !important;
   margin: 0;
   overflow: auto;
+  overflow-x: auto;
   font-family: var(--font-mono);
   font-size: 0.9rem;
   line-height: 1.7;
@@ -458,6 +466,7 @@
   tab-size: 2;
   max-width: 100%;
   white-space: pre;
+  -webkit-overflow-scrolling: touch;
 }
 
 .code-block code {
@@ -779,6 +788,9 @@
   max-width: var(--content-max-width);
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .subsections {
@@ -799,6 +811,9 @@
   padding-left: 1rem;
   letter-spacing: -0.02em;
   line-height: var(--lh-heading);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .section-heading::before {
@@ -844,6 +859,9 @@
   margin-bottom: var(--space-paragraph);
   font-weight: 400;
   letter-spacing: 0.003em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .section-content p:last-child {
@@ -899,6 +917,9 @@
   margin-bottom: var(--space-paragraph);
   font-weight: 400;
   letter-spacing: 0.003em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .section-paragraph code {
@@ -915,6 +936,8 @@
 /* Code Blocks in Sections */
 .section-code {
   margin: 2rem 0;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 .code-caption {
@@ -964,11 +987,16 @@
   line-height: 1.6;
   color: var(--color-text);
   font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .note-content p {
   margin: 0;
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Note Type Variants */
