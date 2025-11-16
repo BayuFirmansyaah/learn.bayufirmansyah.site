@@ -486,22 +486,22 @@
     
     .chat-window {
       position: fixed;
-      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
-      bottom: auto;
+      top: auto;
       width: 100%;
       max-width: 100%;
       height: auto;
       max-height: 70vh;
-      border-radius: 0 0 16px 16px;
-      animation: slideDown 0.3s ease-out;
+      border-radius: 16px 16px 0 0;
+      animation: slideUp 0.3s ease-out;
     }
 
-    @keyframes slideDown {
+    @keyframes slideUp {
       from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(20px);
       }
       to {
         opacity: 1;
