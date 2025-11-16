@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:caprover": "npm run build && caprover deploy",
+    "deploy:docker": "docker-compose up -d --build"
   },
   "dependencies": {
     "prismjs": "^1.30.0",

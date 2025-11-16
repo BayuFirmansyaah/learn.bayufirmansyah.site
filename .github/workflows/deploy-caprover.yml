@@ -1,0 +1,49 @@
+name: Deploy to CapRover
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build application
+        run: npm run build
+      
+      - name: Install CapRover CLI
+        run: npm install -g caprover
+      
+      - name: Deploy to CapRover
+        env:
+          CAPROVER_SERVER: ${{ secrets.CAPROVER_SERVER }}
+          CAPROVER_PASSWORD: ${{ secrets.CAPROVER_PASSWORD }}
+          CAPROVER_APP_NAME: ${{ secrets.CAPROVER_APP_NAME }}
+        run: |
+          echo "Deploying to CapRover..."
+          caprover deploy \
+            --caproverUrl $CAPROVER_SERVER \
+            --caproverPassword $CAPROVER_PASSWORD \
+            --appName $CAPROVER_APP_NAME
+      
+      - name: Deployment Summary
+        if: success()
+        run: |
+          echo "✅ Deployment successful!"
+          echo "App: ${{ secrets.CAPROVER_APP_NAME }}"
+          echo "Server: ${{ secrets.CAPROVER_SERVER }}"
