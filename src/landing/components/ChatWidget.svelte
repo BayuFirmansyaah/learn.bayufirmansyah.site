@@ -485,16 +485,32 @@
     }
     
     .chat-window {
-      width: calc(100vw - 32px);
-      max-width: 380px;
-      bottom: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
       right: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      bottom: auto;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 70vh;
+      border-radius: 0 0 16px 16px;
+      animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .chat-header {
-      padding: 14px;
+      padding: 16px;
     }
 
     .chat-avatar {
@@ -509,34 +525,15 @@
     .chat-status {
       font-size: 12px;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .chat-widget {
-      bottom: 12px;
-      right: 12px;
-    }
 
-    .chat-toggle-btn {
-      width: 52px;
-      height: 52px;
-      font-size: 20px;
-    }
-
-    .chat-window {
-      width: calc(100vw - 24px);
-      max-width: none;
-      max-height: 500px;
-      bottom: 70px;
-    }
-    
     .chat-messages {
-      max-height: 280px;
-      padding: 12px;
+      max-height: calc(70vh - 200px);
+      min-height: 200px;
+      padding: 16px;
     }
 
     .message-bubble {
-      max-width: 220px;
+      max-width: 85%;
       font-size: 14px;
       padding: 10px 14px;
     }
@@ -546,8 +543,12 @@
       height: 30px;
     }
 
+    .chat-cta {
+      padding: 16px;
+    }
+
     .chat-cta-btn {
-      padding: 12px 16px;
+      padding: 14px 16px;
       font-size: 14px;
     }
 
@@ -558,20 +559,41 @@
       right: 8px;
     }
   }
-
-  @media (max-width: 360px) {
+  
+  @media (max-width: 480px) {
     .chat-window {
-      width: calc(100vw - 16px);
+      max-height: 75vh;
+    }
+
+    .chat-messages {
+      max-height: calc(75vh - 200px);
+      min-height: 180px;
+      padding: 14px;
     }
 
     .message-bubble {
-      max-width: 180px;
+      max-width: 80%;
       font-size: 13px;
     }
 
     .chat-cta-btn {
+      padding: 12px 14px;
       font-size: 13px;
-      padding: 10px 14px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .chat-window {
+      max-height: 80vh;
+    }
+
+    .chat-messages {
+      max-height: calc(80vh - 200px);
+    }
+
+    .message-bubble {
+      font-size: 13px;
+      padding: 9px 12px;
     }
   }
 </style>
