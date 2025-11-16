@@ -93,6 +93,9 @@
       </div>
       
       <div class="navbar-menu" class:active={mobileMenuOpen}>
+        <button class="mobile-menu-close" on:click={toggleMobileMenu} aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <a href="#home" class="nav-link" on:click={() => mobileMenuOpen = false}>Home</a>
         <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Materi</a>
         <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
@@ -674,6 +677,10 @@
     padding: 5px;
   }
 
+  .mobile-menu-close {
+    display: none;
+  }
+
   .hamburger {
     width: 28px;
     height: 20px;
@@ -733,7 +740,8 @@
       position: fixed;
       top: 0;
       right: -100%;
-      width: 280px;
+      width: 100%;
+      max-width: 320px;
       height: 100vh;
       background: white;
       flex-direction: column;
@@ -743,10 +751,34 @@
       box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
       transition: right 0.3s ease;
       z-index: 999;
+      overflow-y: auto;
     }
 
     .navbar-menu.active {
       right: 0;
+    }
+
+    .mobile-menu-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #F7FAFC;
+      border: none;
+      color: #2D3748;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-menu-close:hover {
+      background: #E2E8F0;
+      color: #4361EE;
     }
 
     .nav-link,
@@ -769,6 +801,13 @@
 
     .mobile-menu-toggle {
       display: block;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .navbar-menu {
+      max-width: 100%;
+      width: 100%;
     }
   }
 
