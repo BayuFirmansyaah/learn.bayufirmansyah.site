@@ -2,7 +2,7 @@ export const mentors = [
   {
     id: 1,
     name: "Bayu Firmansyah",
-    photo: "/assets/images/ubay-avatar.svg",
+    photo: "/assets/images/mentors/bayu.jpeg",
     specialization: ["Full Stack Development", "Laravel", "Flutter", "Mobile Development"],
     experience: "5+ tahun",
     summary: "Full Stack Developer dengan 5 tahun pengalaman hands-on. Saat ini kuliah di Asia Cyber University dan bekerja di perusahaan teknologi Surabaya. Passionate dalam membangun sistem front-end dan back-end yang berkualitas, serta mengajar programming untuk membantu orang lain berkembang di dunia teknologi.",
@@ -99,7 +99,7 @@ export const mentors = [
   {
     id: 2,
     name: "Islam Nurul Yakin",
-    photo: "/assets/images/avatar-3.svg",
+    photo: "/assets/images/mentors/islam.JPG",
     specialization: ["DevOps Engineering", "Cloud Computing", "SRE", "Kubernetes"],
     experience: "5+ tahun",
     summary: "SRE dan Cloud Computing Enthusiast dengan pengalaman sebagai DevOps Engineer di PT. Sentra Vidya Utama sejak 2022. Berpengalaman dalam Kubernetes, Monitoring (Prometheus, Grafana), Log Management, Proxy (Envoy, HAProxy), Service Mesh Istio, serta Cloud platforms seperti AWS dan GCP. Juga aktif sebagai Teaching Assistant dan Amateur Speaker di GDGoC BiOn.",
@@ -175,7 +175,7 @@ export const mentors = [
   {
     id: 3,
     name: "Nadia Lovely",
-    photo: "/assets/images/avatar-2.svg",
+    photo: "/assets/images/mentors/nadia.jpeg",
     specialization: ["Frontend Development", "React", "Next.js", "Vue.js", "Flutter"],
     experience: "2+ tahun",
     summary: "Dedicated Frontend Engineer dengan hampir 2 tahun pengalaman dalam industrial front-end development. Passionate untuk continuous learning dan mengeksplorasi intersection antara business dan programming. Expertise dalam crafting engaging user interfaces, spesialisasi web development menggunakan Next.js dan Tailwind CSS. Memiliki effective communication skills yang strong untuk teamwork dalam diverse professional settings.",

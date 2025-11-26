@@ -311,6 +311,7 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: center;
     border-radius: 20px;
     border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
