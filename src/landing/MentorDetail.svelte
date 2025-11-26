@@ -53,6 +53,11 @@
         <!-- Social Media Links -->
         {#if mentor.socialMedia}
           <div class="social-links">
+            {#if mentor.socialMedia.email}
+              <a href="mailto:{mentor.socialMedia.email}" class="social-link" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            {/if}
             {#if mentor.socialMedia.linkedin}
               <a href={mentor.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
@@ -61,6 +66,16 @@
             {#if mentor.socialMedia.github}
               <a href={mentor.socialMedia.github} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
+              </a>
+            {/if}
+            {#if mentor.socialMedia.medium}
+              <a href={mentor.socialMedia.medium} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Medium">
+                <i class="fa-brands fa-medium"></i>
+              </a>
+            {/if}
+            {#if mentor.socialMedia.website}
+              <a href={mentor.socialMedia.website} target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Website">
+                <i class="fa-solid fa-globe"></i>
               </a>
             {/if}
             {#if mentor.socialMedia.tiktok}
@@ -94,6 +109,26 @@
           {/each}
         </ul>
       </div>
+
+      <!-- Certifications -->
+      {#if mentor.certifications && mentor.certifications.length > 0}
+      <div class="detail-section">
+        <div class="section-header-detail">
+          <div class="section-icon">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h2 class="section-title">Sertifikasi</h2>
+        </div>
+        <ul class="detail-list">
+          {#each mentor.certifications as cert}
+            <li class="detail-item">
+              <i class="fa-solid fa-award"></i>
+              <span>{cert}</span>
+            </li>
+          {/each}
+        </ul>
+      </div>
+      {/if}
 
       <!-- Work Experience -->
       <div class="detail-section">
