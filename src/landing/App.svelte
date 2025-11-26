@@ -97,7 +97,8 @@
           <i class="fa-solid fa-xmark"></i>
         </button>
         <a href="#home" class="nav-link" on:click={() => mobileMenuOpen = false}>Home</a>
-        <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Materi</a>
+        <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Kursus</a>
+        <a href="#services" class="nav-link" on:click={() => mobileMenuOpen = false}>Pembuatan Aplikasi</a>
         <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
         <a href="#testimonials" class="nav-link" on:click={() => mobileMenuOpen = false}>Testimoni</a>
         <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="nav-link-social">
@@ -130,16 +131,15 @@
       <div class="hero-content">
         <div class="hero-badge">
           <i class="fa-solid fa-star"></i>
-          <span>Platform Pembelajaran Programming Terpercaya</span>
+          <span>Kursus Programming Surabaya - Software House Profesional</span>
         </div>
         
         <h1 class="hero-title">
-          Kuasai Programming dari <span class="highlight">Dasar hingga Profesional</span>
+          Kursus Programming & <span class="highlight">Jasa Pembuatan Aplikasi</span> di Surabaya
         </h1>
         
         <p class="hero-subtitle">
-          Pembelajaran terstruktur dengan 129 materi lengkap dalam 6 teknologi modern. 
-          Dirancang untuk pemula, mahasiswa, dan profesional yang ingin mengembangkan skill programming.
+          <strong>PT Ubay Solusi Teknologi</strong> - Platform pembelajaran programming dengan 129 materi lengkap dan layanan software house profesional. Kursus Laravel, Flutter, Kotlin, JavaScript, Python, NodeJS. Jasa pembuatan aplikasi mobile & web di Surabaya.
         </p>
         
         <div class="hero-stats">
@@ -209,6 +209,127 @@
             on:click={() => selectCategory(category.name)} 
           />
         {/each}
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section - Jasa Pembuatan Aplikasi -->
+  <section class="services-section" id="services">
+    <div class="services-content">
+      <div class="section-header">
+        <h2 class="section-title-main">Jasa Pembuatan Aplikasi Mobile & Web Profesional</h2>
+        <p class="section-description">PT Ubay Solusi Teknologi - Software house terpercaya di Surabaya. Kami menyediakan layanan pengembangan aplikasi custom dengan teknologi terkini dan tim developer berpengalaman.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Aplikasi Mobile</h3>
+          <p class="service-description">
+            Pembuatan aplikasi Android & iOS native atau cross-platform menggunakan Flutter dan Kotlin. Aplikasi mobile yang responsif, cepat, dan user-friendly.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check-circle"></i> Android & iOS Development</li>
+            <li><i class="fa-solid fa-check-circle"></i> Flutter Cross-Platform</li>
+            <li><i class="fa-solid fa-check-circle"></i> UI/UX Design Modern</li>
+            <li><i class="fa-solid fa-check-circle"></i> Integration API & Database</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured">
+          <div class="featured-badge">
+            <i class="fa-solid fa-star"></i>
+            <span>Paling Diminati</span>
+          </div>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Aplikasi Web</h3>
+          <p class="service-description">
+            Pembuatan website profesional, web application, dan sistem informasi berbasis web. Menggunakan Laravel, React, dan teknologi web modern lainnya.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check-circle"></i> Website Company Profile</li>
+            <li><i class="fa-solid fa-check-circle"></i> Web Application Custom</li>
+            <li><i class="fa-solid fa-check-circle"></i> E-Commerce & Marketplace</li>
+            <li><i class="fa-solid fa-check-circle"></i> Sistem Informasi Manajemen</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Software Development</h3>
+          <p class="service-description">
+            Layanan pengembangan software custom sesuai kebutuhan bisnis. Dari konsultasi, design, development, hingga maintenance dan support.
+          </p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check-circle"></i> Custom Software Solutions</li>
+            <li><i class="fa-solid fa-check-circle"></i> Backend API Development</li>
+            <li><i class="fa-solid fa-check-circle"></i> Database Design & Optimization</li>
+            <li><i class="fa-solid fa-check-circle"></i> Maintenance & Support 24/7</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="services-cta">
+        <h3 class="services-cta-title">Butuh Konsultasi untuk Project Anda?</h3>
+        <p class="services-cta-description">
+          Hubungi kami untuk diskusi kebutuhan aplikasi Anda. Tim kami siap membantu mewujudkan ide bisnis Anda menjadi aplikasi yang powerful dan scalable.
+        </p>
+        <div class="services-cta-buttons">
+          <a href="https://wa.me/6281330972830?text=Halo%20Ubay%20Tech%2C%20saya%20ingin%20konsultasi%20tentang%20pembuatan%20aplikasi" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Konsultasi via WhatsApp</span>
+          </a>
+          <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="btn-tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            <span>Lihat Portfolio di TikTok</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="why-choose-us">
+        <h3 class="why-title">Mengapa Memilih PT Ubay Solusi Teknologi?</h3>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>Terpercaya & Profesional</h4>
+            <p>Software house resmi dengan legalitas PT dan portfolio project yang solid</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <h4>Teknologi Modern</h4>
+            <p>Menggunakan tech stack terkini untuk performa aplikasi yang optimal</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h4>Tim Berpengalaman</h4>
+            <p>Developer senior yang ahli di bidangnya dengan pengalaman industri</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h4>Support Maksimal</h4>
+            <p>Layanan konsultasi, development, hingga maintenance & support berkelanjutan</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -459,48 +580,65 @@
     <div class="footer-content">
       <div class="footer-section footer-about">
         <h3 class="footer-brand">ubay.tech</h3>
-        <p class="footer-tagline">Platform pembelajaran programming dengan materi lengkap dalam bahasa Indonesia. Belajar dari dasar hingga level profesional dengan standar industri.</p>
+        <p class="footer-tagline">Platform pembelajaran programming dan software house profesional. Kursus programming Surabaya, jasa pembuatan aplikasi mobile & web. Dibawah naungan <strong>PT Ubay Solusi Teknologi</strong>.</p>
+        <div class="footer-location">
+          <i class="fa-solid fa-map-marker-alt"></i>
+          <span>Surabaya, Jawa Timur, Indonesia</span>
+        </div>
       </div>
       
       <div class="footer-section">
-        <h4 class="footer-heading">Teknologi</h4>
+        <h4 class="footer-heading">Kursus Programming</h4>
         <ul class="footer-links">
-          <li><a href="#" on:click|preventDefault={() => selectCategory('Laravel')}>Laravel Development</a></li>
-          <li><a href="#" on:click|preventDefault={() => selectCategory('Kotlin')}>Kotlin Programming</a></li>
-          <li><a href="#" on:click|preventDefault={() => selectCategory('Flutter')}>Flutter Mobile</a></li>
-          <li><a href="#" on:click|preventDefault={() => selectCategory('JavaScript')}>JavaScript Modern</a></li>
-          <li><a href="#" on:click|preventDefault={() => selectCategory('Python')}>Python Programming</a></li>
-          <li><a href="#" on:click|preventDefault={() => selectCategory('NodeJS')}>Node.js & Express</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('Laravel')}>Kursus Laravel</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('Flutter')}>Kursus Flutter</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('Kotlin')}>Kursus Kotlin</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('JavaScript')}>Kursus JavaScript</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('Python')}>Kursus Python</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('NodeJS')}>Kursus Node.js</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-heading">Resource</h4>
+        <h4 class="footer-heading">Layanan</h4>
         <ul class="footer-links">
-          <li><a href="#" on:click|preventDefault={() => window.scrollTo({top: 0, behavior: 'smooth'})}>Materi Pembelajaran</a></li>
-          <li><a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer">Tips Programming</a></li>
-          <li><a href="https://superproof.com" target="_blank" rel="noopener noreferrer">Mentoring Personal</a></li>
+          <li><a href="#services">Jasa Pembuatan Aplikasi</a></li>
+          <li><a href="#services">Aplikasi Mobile Android & iOS</a></li>
+          <li><a href="#services">Aplikasi Web & Website</a></li>
+          <li><a href="#services">Software Development</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
-        <h4 class="footer-heading">Connect</h4>
+        <h4 class="footer-heading">Hubungi Kami</h4>
         <div class="footer-social">
           <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer-social-link">
             <i class="fa-brands fa-tiktok"></i>
           </a>
-          <a href="https://wa.me/6281330972830" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-link">
+          <a href="https://wa.me/6281330972830?text=Halo%20Ubay%20Tech" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="footer-social-link">
             <i class="fa-brands fa-whatsapp"></i>
           </a>
           <a href="https://superproof.com" target="_blank" rel="noopener noreferrer" aria-label="Superproof" class="footer-social-link">
             <i class="fa-solid fa-graduation-cap"></i>
           </a>
         </div>
-        <p class="footer-contact">Pertanyaan? Hubungi via WhatsApp atau social media.</p>
+        <div class="footer-contact-info">
+          <p class="footer-contact">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+6281330972830">+62 813-3097-2830</a>
+          </p>
+          <p class="footer-contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Konsultasi via WhatsApp</span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 ubay.tech. Platform pembelajaran programming berbahasa Indonesia.</p>
+      <p>&copy; 2025 <strong>PT Ubay Solusi Teknologi</strong> | ubay.tech - Kursus Programming Surabaya & Jasa Pembuatan Aplikasi</p>
+      <p class="footer-keywords">Software House Surabaya | Developer Aplikasi Mobile & Web | Belajar Programming Online</p>
     </div>
   </footer>
 </div>
@@ -1622,6 +1760,346 @@
     }
   }
 
+  /* Services Section - Jasa Pembuatan Aplikasi */
+  .services-section {
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #F7FAFC 0%, #FFFFFF 100%);
+    position: relative;
+  }
+
+  .services-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .service-card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid #E2E8F0;
+    padding: 40px 35px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: visible;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(67, 97, 238, 0.15);
+    border-color: #4361EE;
+  }
+
+  .service-card.featured {
+    border-color: #4361EE;
+    background: linear-gradient(135deg, #4361EE 0%, #3451cc 100%);
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .service-card.featured:hover {
+    transform: translateY(-10px) scale(1.05);
+  }
+
+  .featured-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #FFD700;
+    color: #2D3748;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .featured-badge i {
+    font-size: 14px;
+  }
+
+  .service-icon-wrapper {
+    margin-bottom: 25px;
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4361EE 0%, #5a75f9 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 36px;
+    box-shadow: 0 10px 30px rgba(67, 97, 238, 0.3);
+  }
+
+  .service-card.featured .service-icon {
+    background: white;
+    color: #4361EE;
+  }
+
+  .service-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2D3748;
+    margin-bottom: 16px;
+  }
+
+  .service-card.featured .service-title {
+    color: white;
+  }
+
+  .service-description {
+    font-size: 1.05rem;
+    color: #4A5568;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .service-card.featured .service-description {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #4A5568;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  .service-card.featured .service-features li {
+    color: white;
+  }
+
+  .service-features i {
+    color: #48BB78;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .service-card.featured .service-features i {
+    color: #FFD700;
+  }
+
+  .services-cta {
+    background: linear-gradient(135deg, #4361EE 0%, #3451cc 100%);
+    padding: 60px 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .services-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 1;
+  }
+
+  .services-cta > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .services-cta-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .services-cta-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    opacity: 0.95;
+  }
+
+  .services-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-whatsapp,
+  .btn-tiktok {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .btn-whatsapp {
+    background: #25D366;
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  }
+
+  .btn-whatsapp:hover {
+    background: #20BA5A;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  }
+
+  .btn-tiktok {
+    background: white;
+    color: #2D3748;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-tiktok:hover {
+    background: #F7FAFC;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .why-choose-us {
+    background: #FFFFFF;
+    padding: 60px 50px;
+    border-radius: 25px;
+    border: 2px solid #E2E8F0;
+  }
+
+  .why-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2D3748;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+
+  .why-item {
+    text-align: center;
+  }
+
+  .why-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4361EE 0%, #5a75f9 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 32px;
+    box-shadow: 0 10px 30px rgba(67, 97, 238, 0.2);
+  }
+
+  .why-item h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2D3748;
+    margin-bottom: 12px;
+  }
+
+  .why-item p {
+    font-size: 0.95rem;
+    color: #718096;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 968px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card.featured {
+      transform: scale(1);
+    }
+
+    .service-card.featured:hover {
+      transform: translateY(-10px) scale(1);
+    }
+
+    .services-cta {
+      padding: 40px 30px;
+    }
+
+    .services-cta-title {
+      font-size: 1.6rem;
+    }
+
+    .services-cta-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn-whatsapp,
+    .btn-tiktok {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .why-choose-us {
+      padding: 40px 30px;
+    }
+
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .services-section {
+      padding: 80px 15px;
+    }
+
+    .service-card {
+      padding: 30px 25px;
+    }
+
+    .services-cta {
+      padding: 35px 20px;
+    }
+
+    .why-choose-us {
+      padding: 35px 20px;
+    }
+
+    .why-title {
+      font-size: 1.6rem;
+    }
+  }
+
   /* CTA Section */
   .cta-section {
     background: linear-gradient(135deg, #4361ee 0%, #3451cc 100%);
@@ -1826,6 +2304,21 @@
     color: #cbd5e0;
     line-height: 1.7;
     font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #cbd5e0;
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .footer-location i {
+    color: #4361ee;
+    font-size: 16px;
   }
 
   .footer-heading {
@@ -1881,10 +2374,33 @@
     transform: translateY(-3px);
   }
 
+  .footer-contact-info {
+    margin-top: 15px;
+  }
+
   .footer-contact {
     color: #cbd5e0;
     font-size: 0.9rem;
     line-height: 1.6;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-contact i {
+    color: #4361ee;
+    font-size: 14px;
+  }
+
+  .footer-contact a {
+    color: #cbd5e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-contact a:hover {
+    color: #4361ee;
   }
 
   .footer-bottom {
@@ -1896,6 +2412,13 @@
   .footer-bottom p {
     color: #a0aec0;
     font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .footer-keywords {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-top: 5px;
   }
 
   @media (max-width: 968px) {
