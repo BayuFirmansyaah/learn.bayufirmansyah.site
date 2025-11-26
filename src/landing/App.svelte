@@ -65,6 +65,11 @@
   function selectCategory(category) {
     dispatch('categorySelect', category);
   }
+  
+  function goToMentor() {
+    dispatch('goToMentor');
+    mobileMenuOpen = false;
+  }
 </script>
 
 <svelte:window on:scroll={handleScroll} />
@@ -96,11 +101,9 @@
         <button class="mobile-menu-close" on:click={toggleMobileMenu} aria-label="Close menu">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <a href="#home" class="nav-link" on:click={() => mobileMenuOpen = false}>Home</a>
         <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Kursus</a>
-        <a href="#services" class="nav-link" on:click={() => mobileMenuOpen = false}>Pembuatan Aplikasi</a>
-        <a href="#about" class="nav-link" on:click={() => mobileMenuOpen = false}>Tentang</a>
-        <a href="#testimonials" class="nav-link" on:click={() => mobileMenuOpen = false}>Testimoni</a>
+        <button class="nav-link" on:click={goToMentor}>Mentor</button>
+        <a href="#services" class="nav-link" on:click={() => mobileMenuOpen = false}>Jasa Aplikasi</a>
         <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="nav-link-social">
           <i class="fa-brands fa-tiktok"></i>
         </a>
@@ -726,6 +729,9 @@
     font-size: 1rem;
     transition: all 0.3s ease;
     position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   .navbar.scrolled .nav-link {

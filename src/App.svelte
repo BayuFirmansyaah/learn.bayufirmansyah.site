@@ -1,9 +1,12 @@
 <script>
   import { onMount } from 'svelte';
   import Landing from './landing/App.svelte';
+  import OurMentor from './landing/OurMentor.svelte';
+  import MentorDetail from './landing/MentorDetail.svelte';
   
-  let currentView = 'landing'; // 'landing' or 'learning'
+  let currentView = 'landing'; // 'landing', 'learning', 'mentor', 'mentorDetail'
   let selectedCategory = '';
+  let selectedMentor = null;
   let learningContainer;
   let reactRoot;
   
@@ -25,21 +28,33 @@
   }
 
   onMount(() => {
-    // Check if we're on a learning URL
-    if (window.location.pathname.startsWith('/learning')) {
+    // Check URL and set initial view
+    const path = window.location.pathname;
+    
+    if (path.startsWith('/learning')) {
       currentView = 'learning';
-      const pathParts = window.location.pathname.split('/');
+      const pathParts = path.split('/');
       if (pathParts[2]) {
         selectedCategory = pathParts[2].charAt(0).toUpperCase() + pathParts[2].slice(1);
       }
+    } else if (path === '/mentor') {
+      currentView = 'mentor';
+    } else if (path.startsWith('/mentor/')) {
+      currentView = 'mentorDetail';
+      // Parse mentor ID from URL if needed
     }
 
     // Listen for back/forward navigation
     const handlePopState = () => {
-      if (window.location.pathname === '/') {
+      const path = window.location.pathname;
+      if (path === '/') {
         currentView = 'landing';
-      } else if (window.location.pathname.startsWith('/learning')) {
+      } else if (path.startsWith('/learning')) {
         currentView = 'learning';
+      } else if (path === '/mentor') {
+        currentView = 'mentor';
+      } else if (path.startsWith('/mentor/')) {
+        currentView = 'mentorDetail';
       }
     };
     window.addEventListener('popstate', handlePopState);
@@ -84,10 +99,44 @@
       reactRoot = null;
     }
   }
+
+  function handleGoToMentor() {
+    currentView = 'mentor';
+    selectedMentor = null;
+    window.history.pushState({}, '', '/mentor');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleMentorSelect(event) {
+    selectedMentor = event.detail;
+    currentView = 'mentorDetail';
+    window.history.pushState({}, '', `/mentor/${selectedMentor.id}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleBackToMentorList() {
+    currentView = 'mentor';
+    selectedMentor = null;
+    window.history.pushState({}, '', '/mentor');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 </script>
 
 {#if currentView === 'landing'}
-  <Landing on:categorySelect={(e) => handleCategorySelect(e.detail)} />
+  <Landing 
+    on:categorySelect={(e) => handleCategorySelect(e.detail)}
+    on:goToMentor={handleGoToMentor}
+  />
+{:else if currentView === 'mentor'}
+  <OurMentor 
+    on:mentorSelect={handleMentorSelect}
+    on:goToLanding={handleBackToHome}
+  />
+{:else if currentView === 'mentorDetail' && selectedMentor}
+  <MentorDetail 
+    mentor={selectedMentor}
+    on:back={handleBackToMentorList}
+  />
 {:else if currentView === 'learning'}
   <div bind:this={learningContainer}></div>
 {/if}
