@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Generate PWA Icons</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        const sizes = [72, 96, 128, 144, 152, 192, 384, 512];
+        
+        sizes.forEach(size => {
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+            
+            // Gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#4F46E5');
+            gradient.addColorStop(1, '#7C3AED');
+            
+            // Background with rounded corners
+            const radius = size * 0.2;
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            ctx.roundRect(0, 0, size, size, radius);
+            ctx.fill();
+            
+            // Code brackets
+            ctx.strokeStyle = 'white';
+            ctx.lineWidth = size * 0.047;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            
+            // Left bracket
+            ctx.beginPath();
+            ctx.moveTo(size * 0.273, size * 0.313);
+            ctx.lineTo(size * 0.156, size * 0.5);
+            ctx.lineTo(size * 0.273, size * 0.688);
+            ctx.stroke();
+            
+            // Right bracket
+            ctx.beginPath();
+            ctx.moveTo(size * 0.727, size * 0.313);
+            ctx.lineTo(size * 0.844, size * 0.5);
+            ctx.lineTo(size * 0.727, size * 0.688);
+            ctx.stroke();
+            
+            // Forward slash
+            ctx.beginPath();
+            ctx.moveTo(size * 0.566, size * 0.273);
+            ctx.lineTo(size * 0.434, size * 0.727);
+            ctx.stroke();
+            
+            // Letter U
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.156}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('U', size * 0.5, size * 0.82);
+            
+            // Download
+            canvas.toBlob(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `icon-${size}x${size}.png`;
+                a.click();
+                URL.revokeObjectURL(url);
+            });
+        });
+        
+        document.body.innerHTML = '<h1>Icons generated! Check your downloads.</h1>';
+    </script>
+</body>
+</html>

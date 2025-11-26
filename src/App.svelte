@@ -1,15 +1,28 @@
 <script>
   import { onMount } from 'svelte';
   import Landing from './landing/App.svelte';
-  import React from 'react';
-  import ReactDOM from 'react-dom/client';
-  import { BrowserRouter } from 'react-router-dom';
-  import LearningApp from './learning/App.jsx';
   
   let currentView = 'landing'; // 'landing' or 'learning'
   let selectedCategory = '';
   let learningContainer;
   let reactRoot;
+  
+  // Lazy load React and dependencies
+  let React;
+  let ReactDOM;
+  let BrowserRouter;
+  let LearningApp;
+
+  async function loadReactApp() {
+    if (!React) {
+      [React, ReactDOM, { BrowserRouter }, LearningApp] = await Promise.all([
+        import('react'),
+        import('react-dom/client'),
+        import('react-router-dom'),
+        import('./learning/App.jsx')
+      ]);
+    }
+  }
 
   onMount(() => {
     // Check if we're on a learning URL
@@ -40,22 +53,27 @@
   });
 
   $: if (currentView === 'learning' && learningContainer && !reactRoot) {
-    reactRoot = ReactDOM.createRoot(learningContainer);
-    reactRoot.render(
-      React.createElement(BrowserRouter, null,
-        React.createElement(LearningApp, { 
-          selectedCategory,
-          onBack: handleBackToHome 
-        })
-      )
-    );
+    loadReactApp().then(() => {
+      reactRoot = ReactDOM.createRoot(learningContainer);
+      reactRoot.render(
+        React.createElement(BrowserRouter, null,
+          React.createElement(LearningApp.default, { 
+            selectedCategory,
+            onBack: handleBackToHome 
+          })
+        )
+      );
+    });
   }
 
-  function handleCategorySelect(category) {
+  async function handleCategorySelect(category) {
     selectedCategory = category;
     currentView = 'learning';
     const url = `/learning/${category.toLowerCase()}/1`;
     window.history.pushState({}, '', url);
+    
+    // Preload React app
+    await loadReactApp();
   }
 
   function handleBackToHome() {

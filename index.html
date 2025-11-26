@@ -26,11 +26,37 @@
   <link rel="alternate" hreflang="id" href="https://ubay.tech/">
   <link rel="alternate" hreflang="x-default" href="https://ubay.tech/">
   
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- DNS Prefetch & Preconnect for external resources -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  
+  <!-- Preload critical assets -->
+  <link rel="preload" href="/src/main.js" as="script" crossorigin>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ubay Tech">
+  <meta name="application-name" content="Ubay Tech">
+  <meta name="msapplication-TileColor" content="#4F46E5">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#4F46E5">
+  
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/icon-128x128.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -199,10 +225,120 @@
       width: 100%;
       overflow-x: hidden;
     }
+
+    /* Loading indicator */
+    #app-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      z-index: 9999;
+      transition: opacity 0.3s ease-out;
+    }
+
+    #app-loader.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loader-text {
+      color: white;
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
+  <!-- App Loading Indicator -->
+  <div id="app-loader">
+    <div style="text-align: center;">
+      <div class="loader"></div>
+      <div class="loader-text">Loading Ubay Tech...</div>
+    </div>
+  </div>
+  
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
+  
+  <!-- Remove loader when app is ready -->
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loader = document.getElementById('app-loader');
+        if (loader) {
+          loader.classList.add('loaded');
+          setTimeout(() => loader.remove(), 300);
+        }
+      }, 100);
+    });
+  </script>
+  
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered:', registration);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New service worker available, show update notification
+                  if (confirm('Update tersedia! Reload untuk mendapatkan versi terbaru?')) {
+                    newWorker.postMessage({ type: 'SKIP_WAITING' });
+                    window.location.reload();
+                  }
+                }
+              });
+            });
+          })
+          .catch(err => console.log('SW registration failed:', err));
+      });
+
+      // Handle controller change
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) return;
+        refreshing = true;
+        window.location.reload();
+      });
+    }
+
+    // Install prompt for PWA
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      // You can show install button here
+      console.log('PWA install prompt ready');
+    });
+
+    window.addEventListener('appinstalled', () => {
+      console.log('PWA installed successfully');
+      deferredPrompt = null;
+    });
+  </script>
 </body>
 </html>
