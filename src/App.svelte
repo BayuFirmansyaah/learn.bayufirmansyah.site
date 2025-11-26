@@ -3,10 +3,13 @@
   import Landing from './landing/App.svelte';
   import OurMentor from './landing/OurMentor.svelte';
   import MentorDetail from './landing/MentorDetail.svelte';
+  import Portfolio from './landing/Portfolio.svelte';
+  import ProjectDetail from './landing/ProjectDetail.svelte';
   
-  let currentView = 'landing'; // 'landing', 'learning', 'mentor', 'mentorDetail'
+  let currentView = 'landing'; // 'landing', 'learning', 'mentor', 'mentorDetail', 'portfolio', 'projectDetail'
   let selectedCategory = '';
   let selectedMentor = null;
+  let selectedProject = null;
   let learningContainer;
   let reactRoot;
   
@@ -41,7 +44,10 @@
       currentView = 'mentor';
     } else if (path.startsWith('/mentor/')) {
       currentView = 'mentorDetail';
-      // Parse mentor ID from URL if needed
+    } else if (path === '/portfolio') {
+      currentView = 'portfolio';
+    } else if (path.startsWith('/portfolio/')) {
+      currentView = 'projectDetail';
     }
 
     // Listen for back/forward navigation
@@ -55,6 +61,10 @@
         currentView = 'mentor';
       } else if (path.startsWith('/mentor/')) {
         currentView = 'mentorDetail';
+      } else if (path === '/portfolio') {
+        currentView = 'portfolio';
+      } else if (path.startsWith('/portfolio/')) {
+        currentView = 'projectDetail';
       }
     };
     window.addEventListener('popstate', handlePopState);
@@ -120,12 +130,34 @@
     window.history.pushState({}, '', '/mentor');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  function handleGoToPortfolio() {
+    currentView = 'portfolio';
+    selectedProject = null;
+    window.history.pushState({}, '', '/portfolio');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleProjectSelect(event) {
+    selectedProject = event.detail;
+    currentView = 'projectDetail';
+    window.history.pushState({}, '', `/portfolio/${selectedProject.id}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function handleBackToPortfolioList() {
+    currentView = 'portfolio';
+    selectedProject = null;
+    window.history.pushState({}, '', '/portfolio');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 </script>
 
 {#if currentView === 'landing'}
   <Landing 
     on:categorySelect={(e) => handleCategorySelect(e.detail)}
     on:goToMentor={handleGoToMentor}
+    on:goToPortfolio={handleGoToPortfolio}
   />
 {:else if currentView === 'mentor'}
   <OurMentor 
@@ -136,6 +168,16 @@
   <MentorDetail 
     mentor={selectedMentor}
     on:back={handleBackToMentorList}
+  />
+{:else if currentView === 'portfolio'}
+  <Portfolio 
+    on:projectSelect={handleProjectSelect}
+    on:goToLanding={handleBackToHome}
+  />
+{:else if currentView === 'projectDetail' && selectedProject}
+  <ProjectDetail 
+    project={selectedProject}
+    on:back={handleBackToPortfolioList}
   />
 {:else if currentView === 'learning'}
   <div bind:this={learningContainer}></div>

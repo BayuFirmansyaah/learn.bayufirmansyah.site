@@ -70,6 +70,11 @@
     dispatch('goToMentor');
     mobileMenuOpen = false;
   }
+  
+  function goToPortfolio() {
+    dispatch('goToPortfolio');
+    mobileMenuOpen = false;
+  }
 </script>
 
 <svelte:window on:scroll={handleScroll} />
@@ -103,7 +108,7 @@
         </button>
         <a href="#categories" class="nav-link" on:click={() => mobileMenuOpen = false}>Kursus</a>
         <button class="nav-link" on:click={goToMentor}>Mentor</button>
-        <a href="#services" class="nav-link" on:click={() => mobileMenuOpen = false}>Jasa Aplikasi</a>
+        <button class="nav-link" on:click={goToPortfolio}>Portfolio</button>
         <a href="https://www.tiktok.com/@ubay.tech" target="_blank" rel="noopener noreferrer" class="nav-link-social">
           <i class="fa-brands fa-tiktok"></i>
         </a>
