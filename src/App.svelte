@@ -5,8 +5,9 @@
   import MentorDetail from './landing/MentorDetail.svelte';
   import Portfolio from './landing/Portfolio.svelte';
   import ProjectDetail from './landing/ProjectDetail.svelte';
+  import Learning from './landing/Learning.svelte';
   
-  let currentView = 'landing'; // 'landing', 'learning', 'mentor', 'mentorDetail', 'portfolio', 'projectDetail'
+  let currentView = 'landing'; // 'landing', 'learning', 'learningDetail', 'mentor', 'mentorDetail', 'portfolio', 'projectDetail'
   let selectedCategory = '';
   let selectedMentor = null;
   let selectedProject = null;
@@ -34,8 +35,10 @@
     // Check URL and set initial view
     const path = window.location.pathname;
     
-    if (path.startsWith('/learning')) {
+    if (path === '/belajar') {
       currentView = 'learning';
+    } else if (path.startsWith('/learning')) {
+      currentView = 'learningDetail';
       const pathParts = path.split('/');
       if (pathParts[2]) {
         selectedCategory = pathParts[2].charAt(0).toUpperCase() + pathParts[2].slice(1);
@@ -55,8 +58,10 @@
       const path = window.location.pathname;
       if (path === '/') {
         currentView = 'landing';
-      } else if (path.startsWith('/learning')) {
+      } else if (path === '/belajar') {
         currentView = 'learning';
+      } else if (path.startsWith('/learning')) {
+        currentView = 'learningDetail';
       } else if (path === '/mentor') {
         currentView = 'mentor';
       } else if (path.startsWith('/mentor/')) {
@@ -77,7 +82,7 @@
     };
   });
 
-  $: if (currentView === 'learning' && learningContainer && !reactRoot) {
+  $: if (currentView === 'learningDetail' && learningContainer && !reactRoot) {
     loadReactApp().then(() => {
       reactRoot = ReactDOM.createRoot(learningContainer);
       reactRoot.render(
@@ -91,9 +96,26 @@
     });
   }
 
+  function handleGoToLearning() {
+    currentView = 'learning';
+    window.history.pushState({}, '', '/belajar');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  async function handleTopicSelect(event) {
+    selectedCategory = event.detail;
+    currentView = 'learningDetail';
+    const url = `/learning/${selectedCategory.toLowerCase()}/1`;
+    window.history.pushState({}, '', url);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // Preload React app
+    await loadReactApp();
+  }
+
   async function handleCategorySelect(category) {
     selectedCategory = category;
-    currentView = 'learning';
+    currentView = 'learningDetail';
     const url = `/learning/${category.toLowerCase()}/1`;
     window.history.pushState({}, '', url);
     
@@ -158,6 +180,12 @@
     on:categorySelect={(e) => handleCategorySelect(e.detail)}
     on:goToMentor={handleGoToMentor}
     on:goToPortfolio={handleGoToPortfolio}
+    on:goToLearning={handleGoToLearning}
+  />
+{:else if currentView === 'learning'}
+  <Learning 
+    on:topicSelect={handleTopicSelect}
+    on:goToLanding={handleBackToHome}
   />
 {:else if currentView === 'mentor'}
   <OurMentor 
@@ -179,6 +207,6 @@
     project={selectedProject}
     on:back={handleBackToPortfolioList}
   />
-{:else if currentView === 'learning'}
+{:else if currentView === 'learningDetail'}
   <div bind:this={learningContainer}></div>
 {/if}
