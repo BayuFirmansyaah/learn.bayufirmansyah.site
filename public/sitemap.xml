@@ -92,4 +92,134 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Our Mentor - Main Page -->
+  <url>
+    <loc>https://ubay.tech/mentor</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Mentor Profiles -->
+  <url>
+    <loc>https://ubay.tech/mentor/1</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/2</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/3</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/4</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/5</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/6</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/7</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/mentor/8</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Portfolio - Main Page -->
+  <url>
+    <loc>https://ubay.tech/portfolio</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Portfolio Projects -->
+  <url>
+    <loc>https://ubay.tech/portfolio/tokobayu</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/pt-sejahtera</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/restokita</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/sehatku</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/edulearn</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/propertiku</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/payku</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://ubay.tech/portfolio/stockmaster</loc>
+    <lastmod>2025-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
