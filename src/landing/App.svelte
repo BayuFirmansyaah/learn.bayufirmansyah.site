@@ -59,6 +59,13 @@
       icon: 'fa-brands fa-node-js',
       color: '#339933',
       totalMateri: 25
+    },
+    {
+      name: 'Git',
+      description: 'Version control system untuk kolaborasi dan manajemen kode',
+      icon: 'fa-brands fa-git-alt',
+      color: '#F05032',
+      totalMateri: 20
     }
   ];
   
@@ -147,16 +154,16 @@
         </h1>
         
         <p class="hero-subtitle">
-          <strong>PT Ubay Solusi Teknologi</strong> - Platform pembelajaran programming dengan 129 materi lengkap dan layanan software house profesional. Kursus Laravel, Flutter, Kotlin, JavaScript, Python, NodeJS. Jasa pembuatan aplikasi mobile & web di Surabaya.
+          <strong>PT Ubay Solusi Teknologi</strong> - Platform pembelajaran programming dengan 149 materi lengkap dan layanan software house profesional. Kursus Laravel, Flutter, Kotlin, JavaScript, Python, NodeJS, Git & GitHub. Jasa pembuatan aplikasi mobile & web di Surabaya.
         </p>
         
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-number">129</div>
+            <div class="stat-number">149</div>
             <div class="stat-label">Materi Pembelajaran</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">6</div>
+            <div class="stat-number">7</div>
             <div class="stat-label">Teknologi Modern</div>
           </div>
           <div class="stat-item">
@@ -198,6 +205,9 @@
           <div class="floating-element floating-6">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" />
           </div>
+          <div class="floating-element floating-7">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" />
+          </div>
         </div>
       </div>
     </div>
@@ -208,7 +218,7 @@
     <div class="categories-content">
       <div class="section-header">
         <h2 class="section-title-main">Pilih Teknologi untuk Memulai Pembelajaran</h2>
-        <p class="section-description">Jelajahi 129 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
+        <p class="section-description">Jelajahi 149 materi pembelajaran yang disusun secara sistematis dalam bahasa Indonesia dengan standar industri</p>
       </div>
       <div class="category-grid">
         {#each categories as category}
@@ -540,7 +550,7 @@
       <div class="cta-main">
         <h2 class="cta-title">Mulai Perjalanan Programming Anda Hari Ini</h2>
         <p class="cta-description">
-          Akses penuh ke 129 materi pembelajaran dalam 6 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
+          Akses penuh ke 149 materi pembelajaran dalam 7 teknologi modern. Pelajari dari dasar hingga level profesional dengan panduan lengkap dalam bahasa Indonesia.
         </p>
         <div class="cta-benefits">
           <div class="cta-benefit-item">
@@ -604,6 +614,7 @@
           <li><a href="#categories" on:click|preventDefault={() => selectCategory('JavaScript')}>Kursus JavaScript</a></li>
           <li><a href="#categories" on:click|preventDefault={() => selectCategory('Python')}>Kursus Python</a></li>
           <li><a href="#categories" on:click|preventDefault={() => selectCategory('NodeJS')}>Kursus Node.js</a></li>
+          <li><a href="#categories" on:click|preventDefault={() => selectCategory('Git')}>Kursus Git & GitHub</a></li>
         </ul>
       </div>
 
@@ -1278,6 +1289,12 @@
     bottom: 5%;
     left: 5%;
     animation-delay: 2.5s;
+  }
+
+  .floating-7 {
+    top: 40%;
+    right: 8%;
+    animation-delay: 3s;
   }
 
   @keyframes float {

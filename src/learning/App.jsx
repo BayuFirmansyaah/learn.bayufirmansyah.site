@@ -28,7 +28,8 @@ function LearningPage({ selectedCategory, onBack }) {
     'flutter': 'Flutter',
     'javascript': 'JavaScript',
     'python': 'Python',
-    'nodejs': 'NodeJS'
+    'nodejs': 'NodeJS',
+    'git': 'Git'
   };
   
   const category = urlCategory 

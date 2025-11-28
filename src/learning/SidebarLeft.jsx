@@ -5,6 +5,7 @@ import * as FlutterMateri from './materi/Flutter/index.js';
 import * as JavaScriptMateri from './materi/JavaScript/index.js';
 import * as PythonMateri from './materi/Python/index.js';
 import * as NodeJSMateri from './materi/NodeJS/index.js';
+import * as GitMateri from './materi/Git/index.js';
 
 const materiMap = {
   'Laravel': LaravelMateri,
@@ -12,7 +13,8 @@ const materiMap = {
   'Flutter': FlutterMateri,
   'JavaScript': JavaScriptMateri,
   'Python': PythonMateri,
-  'NodeJS': NodeJSMateri
+  'NodeJS': NodeJSMateri,
+  'Git': GitMateri
 };
 
 export default function SidebarLeft({ category, currentMateriIndex, setCurrentMateriIndex }) {
