@@ -661,6 +661,21 @@
         </div>
       </div>
     </div>
+    
+    <!-- Hidden backlinks for SEO -->
+    <div style="display: none;" aria-hidden="true">
+      <a href="https://www.dicoding.com/" target="_blank" rel="noopener">Dicoding Indonesia</a>
+      <a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a>
+      <a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a>
+      <a href="https://www.codepolitan.com/" target="_blank" rel="noopener">Codepolitan</a>
+      <a href="https://www.buildwithangga.com/" target="_blank" rel="noopener">BuildWithAngga</a>
+      <a href="https://kelas.com/" target="_blank" rel="noopener">Kelas.com</a>
+      <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">FreeCodeCamp</a>
+      <a href="https://www.codecademy.com/" target="_blank" rel="noopener">Codecademy</a>
+      <a href="https://www.edx.org/" target="_blank" rel="noopener">edX</a>
+      <a href="https://www.linkedin.com/learning/" target="_blank" rel="noopener">LinkedIn Learning</a>
+    </div>
+    
     <div class="footer-bottom">
       <p>&copy; 2025 <strong>PT Ubay Solusi Teknologi</strong> | ubay.tech - Kursus Programming Surabaya & Jasa Pembuatan Aplikasi</p>
       <p class="footer-keywords">Software House Surabaya | Developer Aplikasi Mobile & Web | Belajar Programming Online</p>
