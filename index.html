@@ -136,7 +136,93 @@
         "publisher": {
           "@id": "https://ubay.tech/#organization"
         },
-        "inLanguage": "id-ID"
+        "inLanguage": "id-ID",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://ubay.tech/learning/{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://ubay.tech/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ubay.tech/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Kursus Pemrograman",
+            "item": "https://ubay.tech/belajar"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Jasa Pembuatan Aplikasi",
+            "item": "https://ubay.tech/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Portfolio",
+            "item": "https://ubay.tech/portfolio"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Mentor",
+            "item": "https://ubay.tech/mentor"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://ubay.tech/#sitenavig
+
+ation",
+        "name": "Main Navigation",
+        "description": "Navigasi utama website Ubay Tech",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Kursus Pemrograman",
+            "description": "Materi pembelajaran programming lengkap",
+            "url": "https://ubay.tech/belajar"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Jasa Pembuatan Aplikasi",
+            "description": "Layanan pembuatan aplikasi mobile dan web",
+            "url": "https://ubay.tech/#services"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Portfolio",
+            "description": "Portfolio project yang telah dikerjakan",
+            "url": "https://ubay.tech/portfolio"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Mentor",
+            "description": "Tim pengajar profesional",
+            "url": "https://ubay.tech/mentor"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Kontak",
+            "description": "Hubungi kami untuk konsultasi",
+            "url": "https://wa.me/6281330972830"
+          }
+        ]
       },
       {
         "@type": "Course",
