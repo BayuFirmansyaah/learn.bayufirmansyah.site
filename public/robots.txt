@@ -4,7 +4,6 @@
 
 # Default rules for all bots
 User-agent: *
-Content-signal: search=yes,ai-train=no
 Allow: /
 Disallow: /admin/
 Disallow: /private/
@@ -14,57 +13,28 @@ Disallow: /api/
 # Sitemap location
 Sitemap: https://ubay.tech/sitemap.xml
 
+# AI training policies in separate ai.txt file
+# See: https://ubay.tech/ai.txt
+
 # Crawl-delay for all bots
 Crawl-delay: 1
 
 # Specific rules for major search engines
 User-agent: Googlebot
-Content-signal: search=yes,ai-train=no
 Allow: /
 Crawl-delay: 0
 
 User-agent: Bingbot
-Content-signal: search=yes,ai-train=no
 Allow: /
 Crawl-delay: 0
 
 User-agent: Slurp
-Content-signal: search=yes,ai-train=no
 Allow: /
 Crawl-delay: 1
 
 User-agent: DuckDuckBot
-Content-signal: search=yes,ai-train=no
 Allow: /
 Crawl-delay: 0
-
-# Block AI training bots
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
-User-agent: cohere-ai
-Disallow: /
-
-User-agent: Omgilibot
-Disallow: /
-
-User-agent: FacebookBot
-Disallow: /
 
 # Block bad bots & scrapers
 User-agent: AhrefsBot

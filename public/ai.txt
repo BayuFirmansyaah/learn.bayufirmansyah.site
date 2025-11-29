@@ -1,0 +1,175 @@
+# ai.txt for ubay.tech
+# PT Ubay Solusi Teknologi
+# AI Training and Crawling Policy
+# Last Updated: 2025-11-29
+
+# ============================================
+# AI Training Policy
+# ============================================
+
+# This website's content is protected from AI training
+# and data mining without explicit permission.
+
+Contact: https://wa.me/6281330972830
+Website: https://ubay.tech
+
+# ============================================
+# Content Signal Declaration
+# ============================================
+
+# Default policy for all content
+Content-signal: search=yes, ai-train=no, ai-crawl=no
+
+# Educational content policy
+# Our programming tutorials and course materials are:
+# - Allowed for search engine indexing
+# - NOT allowed for AI model training
+# - NOT allowed for commercial AI usage
+# - Protected by copyright
+
+# ============================================
+# Blocked AI Training Bots
+# ============================================
+
+# OpenAI Bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Google AI Training Bot
+User-agent: Google-Extended
+Disallow: /
+
+# Anthropic (Claude) Bots
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Common Crawl (used for AI training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Disallow: /
+
+# Omgili Bot
+User-agent: Omgilibot
+Disallow: /
+
+# Meta/Facebook AI
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Diffbot
+User-agent: Diffbot
+Disallow: /
+
+# Applebot Extended (AI training)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+
+# Amazon Bot
+User-agent: Amazonbot
+Disallow: /
+
+# Claude AI specific
+User-agent: ClaudeBot
+Disallow: /
+
+# ============================================
+# Terms of Use for AI Training
+# ============================================
+
+# If you wish to use our content for AI training
+# or model development, please contact us for licensing:
+# Email: contact via WhatsApp
+# Phone: +62-813-3097-2830
+
+# Unauthorized use of this website's content for:
+# - Training machine learning models
+# - Creating derivative AI products
+# - Building language models
+# - Data scraping for AI purposes
+# is strictly prohibited and may result in legal action.
+
+# ============================================
+# Copyright Notice
+# ============================================
+
+# Copyright (c) 2025 PT Ubay Solusi Teknologi
+# All Rights Reserved.
+
+# All content on this website including but not limited to:
+# - Programming tutorials
+# - Course materials
+# - Code examples
+# - Documentation
+# - Images and media
+# - Website design
+
+# is protected by Indonesian copyright law and
+# international copyright treaties.
+
+# ============================================
+# Allowed Use Cases
+# ============================================
+
+# The following uses are permitted:
+# 1. Search engine indexing (Googlebot, Bingbot, etc.)
+# 2. Academic research (with proper citation)
+# 3. Personal learning and study
+# 4. Social media sharing (with attribution)
+
+# The following uses are NOT permitted without license:
+# 1. AI model training
+# 2. Commercial data mining
+# 3. Bulk content extraction
+# 4. Creating competing services
+# 5. Reselling or redistributing content
+
+# ============================================
+# Reporting Violations
+# ============================================
+
+# If you notice unauthorized use of our content,
+# please report to: https://wa.me/6281330972830
+
+# ============================================
+# Legal Framework
+# ============================================
+
+# This policy is enforced under:
+# - Indonesian Copyright Law (UU No. 28 Tahun 2014)
+# - WIPO Copyright Treaty
+# - Berne Convention
+# - Universal Copyright Convention
+
+# Violations may result in:
+# - IP blocking
+# - Legal proceedings
+# - Damages claims
+# - Injunctive relief
+
+# ============================================
+# Updates
+# ============================================
+
+# This policy may be updated periodically.
+# Last modified: 2025-11-29
+# Check this file regularly for changes.
+
+# For questions or licensing inquiries:
+# Contact: +62-813-3097-2830 (WhatsApp)
+# Website: https://ubay.tech
